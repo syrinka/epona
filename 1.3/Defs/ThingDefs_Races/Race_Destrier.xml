@@ -220,7 +220,7 @@
         <forcedRaceTraitEntries>
 
         </forcedRaceTraitEntries>
-        <bodyTypes>
+        <alienPartGenerator>
           <!-- game looks for files in the <head> path named aliencrowntypes_south, _east, _north
           (And _west, if present, it is not required though) (If genderedHeads is enabled suffix
           should me _Male_south or _Female_south)(Masks use the same nameing convetion but with an m
@@ -1170,7 +1170,7 @@
             </li>
 
           </bodyAddons>
-        </bodyTypes>
+        </alienPartGenerator>
         <chemicalSettings>
           <!--
                 <li>
