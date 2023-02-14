@@ -338,7 +338,7 @@
             </forcedRaceTraitEntries>
             <alienPartGenerator>
 				<!-- game looks for files in the <head> path named aliencrowntypes_south, _east, _north (And _west, if present, it is not required though) (If genderedHeads is enabled suffix should me _Male_south or _Female_south)(Masks use the same nameing convetion but with an m at the end e.g. _southm)-->
-                <aliencrowntypes>
+                <headTypes>
                     <li>Average_Amber</li>
                     <li>Average_Aquamarine</li>
                     <li>Average_Emerald</li>
@@ -346,7 +346,7 @@
                     <li>Average_Topaz</li>
                     <li>Average_Sapphire</li>
 
-                </aliencrowntypes>
+                </headTypes>
 				<!-- game looks for files in the <body> path named alienbodytypes_south, _east, _north (And _west, if present, it is not required though) (If genderedHeads is enabled suffix should me _Male_south or _Female_south)(Masks use the same nameing convetion but with an m at the end e.g. _southm)-->
                 <alienbodytypes>
                 <li>EponaBody</li>
