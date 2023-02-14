@@ -7,7 +7,6 @@
     <defaultFactionType>EponicRobberFaction</defaultFactionType>
     <race>Alien_Epona</race>
     <chemicalAddictionChance>0.005</chemicalAddictionChance>
-    <baseRecruitDifficulty>0.60</baseRecruitDifficulty>
 	<invNutrition>2.55</invNutrition>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <apparelTags>
