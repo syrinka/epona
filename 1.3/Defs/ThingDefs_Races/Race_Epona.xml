@@ -275,6 +275,30 @@
     </woundAnchors>
   </BodyTypeDef>
 
+  <HeadTypeDef>
+    <defName>Epona_Amber</defName>
+    <graphicPath>Things/Pawn/Epona/Heads/Average_Amber</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef>
+    <defName>Epona_Aquamarine</defName>
+    <graphicPath>Things/Pawn/Epona/Heads/Average_Aquamarine</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef>
+    <defName>Epona_Emerald</defName>
+    <graphicPath>Things/Pawn/Epona/Heads/Average_Emerald</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef>
+    <defName>Epona_Ruby</defName>
+    <graphicPath>Things/Pawn/Epona/Heads/Average_Ruby</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef>
+    <defName>Epona_Topaz</defName>
+    <graphicPath>Things/Pawn/Epona/Heads/Average_Topaz</graphicPath>
+  </HeadTypeDef>
 
   <!--
 	           <apparel>
@@ -338,13 +362,11 @@
           should me _Male_south or _Female_south)(Masks use the same nameing convetion but with an m
           at the end e.g. _southm)-->
           <headTypes>
-            <li>Average_Amber</li>
-            <li>Average_Aquamarine</li>
-            <li>Average_Emerald</li>
-            <li>Average_Ruby</li>
-            <li>Average_Topaz</li>
-            <li>Average_Sapphire</li>
-
+            <li>Epona_Amber</li>
+            <li>Epona_Aquamarine</li>
+            <li>Epona_Emerald</li>
+            <li>Epona_Ruby</li>
+            <li>Epona_Topaz</li>
           </headTypes>
           <!-- game looks for files in the <body> path named alienbodytypes_south, _east, _north
           (And _west, if present, it is not required though) (If genderedHeads is enabled suffix

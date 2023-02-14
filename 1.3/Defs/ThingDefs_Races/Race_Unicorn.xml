@@ -12,6 +12,16 @@
         </apparel>
 		-->
 
+    <HeadTypeDef>
+        <defName>Unicorn_One</defName>
+        <graphicPath>Things/Pawn/Unicorn/Heads/Average_One</graphicPath>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>Unicorn_Two</defName>
+        <graphicPath>Things/Pawn/Unicorn/Heads/Average_Two</graphicPath>
+    </HeadTypeDef>
+
     <AlienRace.ThingDef_AlienRace ParentName="BaseEponaPawn">
         <defName>Alien_Unicorn</defName>
         <label>유니포넨</label>
@@ -50,8 +60,8 @@
                     enabled suffix should me _Male_south or _Female_south)(Masks use the same
                     nameing convetion but with an m at the end e.g. _southm)-->
                     <headTypes>
-                        <li>Average_One</li>
-                        <li>Average_Two</li>
+                        <li>Unicorn_One</li>
+                        <li>Unicorn_Two</li>
                     </headTypes>
                     <!-- game looks for files in the <body> path named alienbodytypes_south, _east,
                     _north (And _west, if present, it is not required though) (If genderedHeads is

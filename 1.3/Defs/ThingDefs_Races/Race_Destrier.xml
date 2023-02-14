@@ -172,6 +172,16 @@
         </apparel>
 		-->
 
+  <HeadTypeDef>
+    <defName>Destrier_Amber</defName>
+    <graphicPath>Things/Pawn/Destrier/Heads/Average_Amber</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef>
+    <defName>Destrier_Rosite</defName>
+    <graphicPath>Things/Pawn/Destrier/Heads/Average_Rosite</graphicPath>
+  </HeadTypeDef>
+
   <AlienRace.ThingDef_AlienRace ParentName="BaseEponaPawn">
     <defName>Alien_Destrier</defName>
     <label>데스트리어</label>
@@ -210,8 +220,8 @@
           should me _Male_south or _Female_south)(Masks use the same nameing convetion but with an m
           at the end e.g. _southm)-->
           <headTypes>
-            <li>Average_Amber</li>
-            <li>Average_Rosite</li>
+            <li>Destrier_Amber</li>
+            <li>Destrier_Rosite</li>
           </headTypes>
           <!-- game looks for files in the <body> path named alienbodytypes_south, _east, _north
           (And _west, if present, it is not required though) (If genderedHeads is enabled suffix
