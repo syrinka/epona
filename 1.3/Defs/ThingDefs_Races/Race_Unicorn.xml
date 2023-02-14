@@ -77,9 +77,6 @@
                         <li>EponaBody</li>
                     </bodyTypes>
 
-                    <useGenderedHeads>false</useGenderedHeads>
-                    <useGenderedBodies>false</useGenderedBodies>
-
                     <!-- 피부 프리셋색상 설정 -->
 
 
@@ -820,8 +817,6 @@
                             <inFrontOfBody>true</inFrontOfBody>
                             <defaultOffset>Tail</defaultOffset>
                             <shaderType>Cutout</shaderType>
-                            <drawIfDrafted>false</drawIfDrafted>
-                            <drawIfUndrafted>true</drawIfUndrafted>
                             <offsets>
                                 <south>
                                     <bodyTypes>
@@ -871,8 +866,6 @@
                             <inFrontOfBody>true</inFrontOfBody>
                             <defaultOffset>Tail</defaultOffset>
                             <shaderType>Cutout</shaderType>
-                            <drawIfDrafted>true</drawIfDrafted>
-                            <drawIfUndrafted>false</drawIfUndrafted>
                             <offsets>
                                 <south>
                                     <bodyTypes>
