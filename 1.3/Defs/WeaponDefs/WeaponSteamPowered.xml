@@ -175,7 +175,7 @@
 		</projectile>
 	</ThingDef>
 	
-  <ThingDef ParentName="BaseGas">
+  <ThingDef ParentName="MoteBase">
     <defName>Gas_Steam</defName>
     <label>smoke</label>
     <graphicData>
