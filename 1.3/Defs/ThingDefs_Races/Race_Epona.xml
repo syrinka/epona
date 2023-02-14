@@ -310,32 +310,16 @@
     <alienRace>
       <graphicPaths>
         <head>
-          <path>Things/Pawn/LoliEpona/Heads/</path>
-          <ageGraphics>
-            <HumanlikeAdult>Things/Pawn/Epona/Heads/</HumanlikeAdult>
-            <EponalikeTeenager>Things/Pawn/Epona/Heads/</EponalikeTeenager>
-          </ageGraphics>
+          <path>Things/Pawn/Epona/Heads/</path>
         </head>
         <body>
-          <path>Things/Pawn/LoliEpona/Bodies/</path>
-          <ageGraphics>
-            <HumanlikeAdult>Things/Pawn/Epona/Bodies/</HumanlikeAdult>
-            <EponalikeTeenager>Things/Pawn/Epona/Bodies/</EponalikeTeenager>
-          </ageGraphics>
+          <path>Things/Pawn/Epona/Bodies/</path>
         </body>
         <skeleton>
-          <path>Things/Pawn/LoliEpona/Bodies/Dessicated/Dessicated_Male</path>
-          <ageGraphics>
-            <HumanlikeAdult>Things/Pawn/Epona/Bodies/Dessicated/Dessicated_Male</HumanlikeAdult>
-            <EponalikeTeenager>Things/Pawn/Epona/Bodies/Dessicated/Dessicated_Male</EponalikeTeenager>
-          </ageGraphics>
+          <path>Things/Pawn/Epona/Bodies/Dessicated/Dessicated_Male</path>
         </skeleton>
         <skull>
-          <path>Things/Pawn/LoliEpona/Heads/Skull/Skull</path>
-          <ageGraphics>
-            <HumanlikeAdult>Things/Pawn/Epona/Heads/Skull/Skull</HumanlikeAdult>
-            <EponalikeTeenager>Things/Pawn/Epona/Heads/Skull/Skull</EponalikeTeenager>
-          </ageGraphics>
+          <path>Things/Pawn/Epona/Heads/Skull/Skull</path>
         </skull>
       </graphicPaths>
       <generalSettings>

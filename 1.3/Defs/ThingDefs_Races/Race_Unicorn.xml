@@ -22,32 +22,16 @@
         <alienRace>
             <graphicPaths>
                 <head>
-                    <path>Things/Pawn/UnicornPolice/Heads/</path>
-                    <ageGraphics>
-                        <HumanlikeAdult>Things/Pawn/Unicorn/Heads/</HumanlikeAdult>
-                        <EponalikeTeenager>Things/Pawn/Unicorn/Heads/</EponalikeTeenager>
-                    </ageGraphics>
+                    <path>Things/Pawn/Unicorn/Heads/</path>
                 </head>
                 <body>
-                    <path>Things/Pawn/UnicornPolice/Bodies/</path>
-                    <ageGraphics>
-                        <HumanlikeAdult>Things/Pawn/Unicorn/Bodies/</HumanlikeAdult>
-                        <EponalikeTeenager>Things/Pawn/Unicorn/Bodies/</EponalikeTeenager>
-                    </ageGraphics>
+                    <path>Things/Pawn/Unicorn/Bodies/</path>
                 </body>
                 <skeleton>
-                    <path>Things/Pawn/LoliEpona/Bodies/Dessicated/Dessicated_Male</path>
-                    <ageGraphics>
-                        <HumanlikeAdult>Things/Pawn/Unicorn/Bodies/Dessicated/Dessicated_Male</HumanlikeAdult>
-                        <EponalikeTeenager>Things/Pawn/Unicorn/Bodies/Dessicated/Dessicated_Male</EponalikeTeenager>
-                    </ageGraphics>
+                    <path>Things/Pawn/Unicorn/Bodies/Dessicated/Dessicated_Male</path>
                 </skeleton>
                 <skull>
-                    <path>Things/Pawn/LoliEpona/Heads/Skull/Skull</path>
-                    <ageGraphics>
-                        <HumanlikeAdult>Things/Pawn/Unicorn/Heads/Skull/Skull</HumanlikeAdult>
-                        <EponalikeTeenager>Things/Pawn/Unicorn/Heads/Skull/Skull</EponalikeTeenager>
-                    </ageGraphics>
+                    <path>Things/Pawn/Unicorn/Heads/Skull/Skull</path>
                 </skull>
             </graphicPaths>
             <generalSettings>

@@ -182,32 +182,16 @@
     <alienRace>
       <graphicPaths>
         <head>
-          <path>Things/Pawn/LoliDesuChan/Heads/</path>
-          <ageGraphics>
-            <HumanlikeAdult>Things/Pawn/Destrier/Heads/</HumanlikeAdult>
-            <EponalikeTeenager>Things/Pawn/Destrier/Heads/</EponalikeTeenager>
-          </ageGraphics>
+          <path>Things/Pawn/Destrier/Heads/</path>
         </head>
         <body>
-          <path>Things/Pawn/LoliDesuChan/Bodies/</path>
-          <ageGraphics>
-            <HumanlikeAdult>Things/Pawn/Destrier/Bodies/</HumanlikeAdult>
-            <EponalikeTeenager>Things/Pawn/Destrier/Bodies/</EponalikeTeenager>
-          </ageGraphics>
+          <path>Things/Pawn/Destrier/Bodies/</path>
         </body>
         <skeleton>
-          <path>Things/Pawn/LoliEpona/Bodies/Dessicated/Dessicated_Male</path>
-          <ageGraphics>
-            <HumanlikeAdult>Things/Pawn/Destrier/Bodies/Dessicated/Dessicated_Male</HumanlikeAdult>
-            <EponalikeTeenager>Things/Pawn/Destrier/Bodies/Dessicated/Dessicated_Male</EponalikeTeenager>
-          </ageGraphics>
+          <path>Things/Pawn/Destrier/Bodies/Dessicated/Dessicated_Male</path>
         </skeleton>
         <skull>
-          <path>Things/Pawn/LoliEpona/Heads/Skull/Skull</path>
-          <ageGraphics>
-            <HumanlikeAdult>Things/Pawn/Destrier/Heads/Skull/Skull</HumanlikeAdult>
-            <EponalikeTeenager>Things/Pawn/Destrier/Heads/Skull/Skull</EponalikeTeenager>
-          </ageGraphics>
+          <path>Things/Pawn/Destrier/Heads/Skull/Skull</path>
         </skull>
       </graphicPaths>
       <generalSettings>
