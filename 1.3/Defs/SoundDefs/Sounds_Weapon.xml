@@ -8,8 +8,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/Epona_HandCannon</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/Epona_HandCannon</clipPath>
           </li>
         </grains>      
         <volumeRange><min>28</min><max>28</max></volumeRange>
@@ -30,8 +30,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/Epona_Steam</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/Epona_Steam</clipPath>
           </li>
         </grains>      
         <volumeRange><min>28</min><max>78</max></volumeRange>
@@ -52,8 +52,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/Epona_Sniper</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/Epona_Sniper</clipPath>
           </li>
         </grains>      
         <volumeRange><min>28</min><max>28</max></volumeRange>
@@ -74,8 +74,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/Epona_Impact</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/Epona_Impact</clipPath>
           </li>
         </grains>      
         <volumeRange><min>31</min><max>41</max></volumeRange>
