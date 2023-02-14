@@ -152,7 +152,6 @@
 	  <armorPenetrationBase>0.5</armorPenetrationBase>
 			<alwaysFreeIntercept>false</alwaysFreeIntercept>
 			<flyOverhead>false</flyOverhead>
-           <preExplosionSpawnThingDef>Gas_Steam</preExplosionSpawnThingDef>
     </projectile>
 	</ThingDef>
 
@@ -171,26 +170,8 @@
 			<damageAmountBase>5</damageAmountBase>
 			<speed>45</speed>
 			<explosionRadius>1.6</explosionRadius>
-           <preExplosionSpawnThingDef>Gas_Steam</preExplosionSpawnThingDef>
 		</projectile>
 	</ThingDef>
-	
-  <ThingDef ParentName="MoteBase">
-    <defName>Gas_Steam</defName>
-    <label>smoke</label>
-    <graphicData>
-      <texPath>Things/Gas/Puff</texPath>
-      <drawSize>2.2</drawSize>
-      <color>(1.0,1.0,1.0,0.5)</color>
-    </graphicData>
-    <gas>
-      <expireSeconds>3~12</expireSeconds>
-      <blockTurretTracking>true</blockTurretTracking>
-      <accuracyPenalty>0.7</accuracyPenalty>
-      <rotationSpeed>10</rotationSpeed>
-    </gas>
-  </ThingDef>
-  
   
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Epona_Weapon_Steamgatling</defName>
