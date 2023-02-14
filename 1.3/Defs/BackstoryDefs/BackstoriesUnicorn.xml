@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<AlienRace.BackstoryDef Name="Unicorn_BaseBackstory" Abstract="True">
+<AlienRace.AlienBackstoryDef Name="Unicorn_BaseBackstory" Abstract="True">
 		<disallowedTraitsChance>
 			<li>
 				<defName>Beauty</defName>
@@ -28,7 +28,7 @@
 		<bodyTypeFemale>EponaBody</bodyTypeFemale>
 	</AlienRace.AlienBackstoryDef>
 
-  <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Unicorn_BaseBackstory">
     <defName>Unicorn_Adult_Doc</defName>
     <title>유니포넨 의사</title>
     <titleShort>의사</titleShort>
@@ -53,7 +53,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
  
-  <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Unicorn_BaseBackstory">
     <defName>Unicorn_Adult_FieldDoc</defName>
     <title>유니포넨 야전군의관</title>
     <titleShort>야전군의관</titleShort>
@@ -75,7 +75,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Unicorn_BaseBackstory">
     <defName>Unicorn_Adult_Paladin</defName>
     <title>유니포넨 팔라딘</title>
     <titleShort>팔라딘</titleShort>
@@ -105,7 +105,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Unicorn_BaseBackstory">
     <defName>Unicorn_Adult_Priest</defName>
     <title>유니포넨 방랑 수도사</title>
     <titleShort>방랑 수도사</titleShort>
@@ -135,7 +135,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Unicorn_BaseBackstory">
     <defName>Unicorn_Adult_Mage</defName>
     <title>유니포넨 마법사</title>
     <titleShort>마법사</titleShort>

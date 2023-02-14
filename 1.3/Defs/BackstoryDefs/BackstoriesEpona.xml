@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<AlienRace.BackstoryDef Name="Epona_BaseBackstory" Abstract="True">
+<AlienRace.AlienBackstoryDef Name="Epona_BaseBackstory" Abstract="True">
 		<disallowedTraitsChance>
 			<li>
 				<defName>Beauty</defName>
@@ -18,7 +18,7 @@
 		<bodyTypeFemale>EponaBody</bodyTypeFemale>
 	</AlienRace.AlienBackstoryDef>
 
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Kern</defName>
     <title>에포나 무장농민</title>
     <titleShort>무장농민</titleShort>
@@ -47,7 +47,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
  
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Farmer</defName>
     <title>에포나 해방 농노</title>
     <titleShort>해방 농노</titleShort>
@@ -73,7 +73,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_FreeFarmer</defName>
     <title>에포나 자유농</title>
     <titleShort>자유농</titleShort>
@@ -103,7 +103,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_SmartFarmer</defName>
     <title>에포나 똑똑한 농노</title>
     <titleShort>똘똘이</titleShort>
@@ -145,7 +145,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Innkeeper</defName>
     <title>에포나 여관 주인</title>
     <titleShort>여관주인</titleShort>
@@ -171,7 +171,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
  
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_DesertedLevy</defName>
     <title>에포나 탈영 징집병</title>
     <titleShort>징집병</titleShort>
@@ -200,7 +200,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_LowFallenNoble</defName>
     <title>에포나 몰락귀족</title>
     <titleShort>몰락귀족</titleShort>
@@ -222,7 +222,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Brigand</defName>
     <title>에포나 산적</title>
     <titleShort>산적</titleShort>
@@ -244,7 +244,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_WanderDoctor</defName>
     <title>에포나 떠돌이 의사</title>
     <titleShort>떠돌이 의사</titleShort>
@@ -271,7 +271,7 @@
   </AlienRace.AlienBackstoryDef>  
   
 
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Carpenter</defName>
     <title>에포나 목수</title>
     <titleShort>목수</titleShort>
@@ -289,7 +289,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Blacksmith</defName>
     <title>에포나 대장장이</title>
     <titleShort>대장장이</titleShort>
@@ -311,7 +311,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Labour</defName>
     <title>에포나 공장 노동자</title>
     <titleShort>장인</titleShort>
@@ -329,7 +329,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Stonemason</defName>
     <title>에포나 석공</title>
     <titleShort>석공</titleShort>
@@ -351,7 +351,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Witch</defName>
     <title>에포나 마녀</title>
     <titleShort>마녀</titleShort>
@@ -377,7 +377,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Toy</defName>
     <title>수상하게 돈이 많은 귀족의 장난감</title>
     <titleShort>장난감</titleShort>
@@ -401,7 +401,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Poacher</defName>
     <title>에포나 밀렵꾼</title>
     <titleShort>밀렵꾼</titleShort>
@@ -423,7 +423,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Cavalry</defName>
     <title>에포나 중기병</title>
     <titleShort>중기병</titleShort>
@@ -445,7 +445,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_LightCavalry</defName>
     <title>에포나 경기병</title>
     <titleShort>경기병</titleShort>
@@ -467,7 +467,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Varangian</defName>
     <title>에포나 퇴역한 제국군인</title>
     <titleShort>제국인</titleShort>
@@ -493,7 +493,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_MidFallenNoble</defName>
     <title>에포나 소귀족</title>
     <titleShort>소귀족</titleShort>
@@ -528,7 +528,7 @@
 		</workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Inquisition</defName>
     <title>에포나 이단심문관</title>
     <titleShort>이단심문관</titleShort>
@@ -554,7 +554,7 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Noble</defName>
     <title>에포나 왕궁귀족</title>
     <titleShort>귀족</titleShort>
@@ -585,7 +585,7 @@
 		</workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Scholar</defName>
     <title>에포나 학자</title>
     <titleShort>학자</titleShort>
@@ -618,7 +618,7 @@
 			</workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstory">
     <defName>Epona_Adult_Warlord</defName>
     <title>에포나 전쟁군주</title>
     <titleShort>전쟁군주</titleShort>

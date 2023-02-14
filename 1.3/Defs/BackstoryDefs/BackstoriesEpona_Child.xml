@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
  
-<AlienRace.BackstoryDef Name="Epona_BaseBackstoryChild" Abstract="True">
+<AlienRace.AlienBackstoryDef Name="Epona_BaseBackstoryChild" Abstract="True">
 		<disallowedTraitsChance>
 			<li>
 				<defName>Beauty</defName>
@@ -21,7 +21,7 @@
 		<bodyTypeFemale>EponaBody</bodyTypeFemale>
 	</AlienRace.AlienBackstoryDef>
 	
- <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+ <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstoryChild">
     <defName>Epona_Child_Farmer</defName>
     <title>에포나 농민의 아이</title>
 	<titleShort>농민의 아이</titleShort>
@@ -46,7 +46,7 @@
     </spawnCategories>
  </AlienRace.AlienBackstoryDef>
 
- <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+ <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstoryChild">
     <defName>Epona_Child_Thief</defName>
     <title>에포나 서리꾼</title>
 	<titleShort>서리꾼</titleShort>
@@ -72,7 +72,7 @@
     </spawnCategories>
  </AlienRace.AlienBackstoryDef>
  
- <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+ <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstoryChild">
     <defName>Epona_Child_Forager</defName>
     <title>에포나 채집꾼 꼬마</title>
 	<titleShort>채집꾼 꼬마</titleShort>
@@ -94,7 +94,7 @@
     </spawnCategories>
  </AlienRace.AlienBackstoryDef>
  
- <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+ <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstoryChild">
     <defName>Epona_Child_Shepherd</defName>
     <title>에포나 목동</title>
 	<titleShort>목동</titleShort>
@@ -120,7 +120,7 @@
     </spawnCategories>
  </AlienRace.AlienBackstoryDef>
  
- <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+ <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstoryChild">
     <defName>Epona_Child_Wildhorse</defName>
     <title>에포나 야생마</title>
 	<titleShort>야생마</titleShort>
@@ -158,7 +158,7 @@
     </spawnCategories>
  </AlienRace.AlienBackstoryDef>
  
- <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+ <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstoryChild">
     <defName>Epona_Child_Blacksmith</defName>
     <title>에포나 대장장이의 조수</title>
 	<titleShort>조수</titleShort>
@@ -184,7 +184,7 @@
     </spawnCategories>
  </AlienRace.AlienBackstoryDef>
  
-  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+  <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstoryChild">
     <defName>Epona_Child_Thug</defName>
     <title>에포나 골목대장</title>
 	<titleShort>골목대장</titleShort>
@@ -220,7 +220,7 @@
 		</forcedTraitsChance>
  </AlienRace.AlienBackstoryDef>
 
- <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+ <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstoryChild">
     <defName>Epona_Child_Squire</defName>
     <title>에포나 종자</title>
 	<titleShort>종자</titleShort>
@@ -247,7 +247,7 @@
     </spawnCategories>
  </AlienRace.AlienBackstoryDef>
 
- <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+ <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstoryChild">
     <defName>Epona_Child_Burgher</defName>
     <title>에포나 성벽안 꼬마</title>
 	<titleShort>부르거</titleShort>
@@ -277,7 +277,7 @@
     </spawnCategories>
  </AlienRace.AlienBackstoryDef>
  
- <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+ <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstoryChild">
     <defName>Epona_Child_Soldier</defName>
     <title>에포나 소년병</title>
 	<titleShort>소년병</titleShort>
@@ -307,7 +307,7 @@
     </spawnCategories>
  </AlienRace.AlienBackstoryDef>
  
- <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+ <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstoryChild">
     <defName>Epona_Child_Noble</defName>
     <title>에포나 귀공녀</title>
 	<titleShort>귀공녀</titleShort>
@@ -343,7 +343,7 @@
  </AlienRace.AlienBackstoryDef>
 
  
- <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+ <AlienRace.AlienBackstoryDef ParentName="Epona_BaseBackstoryChild">
     <defName>Epona_Child_Student</defName>
     <title>에포나 학생</title>
 	<titleShort>학생</titleShort>
