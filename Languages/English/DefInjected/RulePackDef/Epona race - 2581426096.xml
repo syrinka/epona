@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LeaderTitleMaker_Eponic.rulePack.rulesStrings.0>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</LeaderTitleMaker_Eponic.rulePack.rulesStrings.0>
+  <LeaderTitleMaker_Eponic.rulePack.rulesStrings.1>cultureLeaderAdjective->Ard</LeaderTitleMaker_Eponic.rulePack.rulesStrings.1>
+  <LeaderTitleMaker_Eponic.rulePack.rulesStrings.2>cultureLeaderAdjective->Ollam</LeaderTitleMaker_Eponic.rulePack.rulesStrings.2>
+  <LeaderTitleMaker_Eponic.rulePack.rulesStrings.3>cultureLeaderAdjective->Gruffudd</LeaderTitleMaker_Eponic.rulePack.rulesStrings.3>
+  <LeaderTitleMaker_Eponic.rulePack.rulesStrings.4>cultureLeaderAdjective->Ri</LeaderTitleMaker_Eponic.rulePack.rulesStrings.4>
+  <LeaderTitleMaker_Eponic.rulePack.rulesStrings.5>cultureLeaderAdjective->Mael</LeaderTitleMaker_Eponic.rulePack.rulesStrings.5>
+  <LeaderTitleMaker_Eponic.rulePack.rulesStrings.6>cultureLeaderAdjective->Brenin</LeaderTitleMaker_Eponic.rulePack.rulesStrings.6>
+  <NamerDeityEponic.rulePack.rulesStrings.0>r_deityName->[name]</NamerDeityEponic.rulePack.rulesStrings.0>
+  <NamerDeityEponic.rulePack.rulesStrings.1>name->Epona</NamerDeityEponic.rulePack.rulesStrings.1>
+  <NamerDeityEponic.rulePack.rulesStrings.2>name->Eponia</NamerDeityEponic.rulePack.rulesStrings.2>
+  <NamerDeityEponic.rulePack.rulesStrings.3>name->Eponie</NamerDeityEponic.rulePack.rulesStrings.3>
+  <NamerDeityEponic.rulePack.rulesStrings.4>name->Eponai</NamerDeityEponic.rulePack.rulesStrings.4>
+  <NamerDeityEponic.rulePack.rulesStrings.5>name->Eponina</NamerDeityEponic.rulePack.rulesStrings.5>
+  <NamerDeityEponic.rulePack.rulesStrings.6>name->Eponea</NamerDeityEponic.rulePack.rulesStrings.6>
+  <NamerDeityEponic.rulePack.rulesStrings.7>name->Epone</NamerDeityEponic.rulePack.rulesStrings.7>
+  <NamerDeityEponic.rulePack.rulesStrings.8>name->Eponen</NamerDeityEponic.rulePack.rulesStrings.8>
+
+  <DeityTypeMakerEponic.rulePack.rulesStrings.0>r_deityType->[memeConcept]'s [god]</DeityTypeMakerEponic.rulePack.rulesStrings.0>
+  <DeityTypeMakerEponic.rulePack.rulesStrings.1>god(p=7)->God</DeityTypeMakerEponic.rulePack.rulesStrings.1>
+  <DeityTypeMakerEponic.rulePack.rulesStrings.2>god(p=4)->[memeGod]</DeityTypeMakerEponic.rulePack.rulesStrings.2>
+  <DeityTypeMakerEponic.rulePack.rulesStrings.3>god(p=3)->Sacred Horse</DeityTypeMakerEponic.rulePack.rulesStrings.3>
+  <DeityTypeMakerEponic.rulePack.rulesStrings.4>god->King of Horse</DeityTypeMakerEponic.rulePack.rulesStrings.4>
+  <NamerFaction_EponaKingdom.rulePack.rulesStrings.0>r_name->Horseradish Seofonrice</NamerFaction_EponaKingdom.rulePack.rulesStrings.0>
+  <NamerFaction_EponaKingdom.rulePack.rulesStrings.1>r_name->Stargaze United Kingdom</NamerFaction_EponaKingdom.rulePack.rulesStrings.1>
+  <NamerFaction_EponaKingdom.rulePack.rulesStrings.2>r_name->Kingdom of Carrot</NamerFaction_EponaKingdom.rulePack.rulesStrings.2>
+  <NamerFaction_EponaKingdom.rulePack.rulesStrings.3>r_name->Great Laverbread Coalition</NamerFaction_EponaKingdom.rulePack.rulesStrings.3>
+  <NamerFaction_EponaKingdom.rulePack.rulesStrings.4>r_name->Blackpudding Clans</NamerFaction_EponaKingdom.rulePack.rulesStrings.4>
+  <NamerFaction_EponaKingdom.rulePack.rulesStrings.5>r_name->Epoland</NamerFaction_EponaKingdom.rulePack.rulesStrings.5>
+</LanguageData>

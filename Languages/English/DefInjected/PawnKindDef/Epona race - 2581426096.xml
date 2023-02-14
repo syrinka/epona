@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Epona_Colonist.label>Epona Colonist</Epona_Colonist.label>
+  <Epona_ChildColonist.label>Epona Colonist</Epona_ChildColonist.label>
+  <Epona_Leader.label>Epona Leader</Epona_Leader.label>
+  <Epona_Leader.labelPlural>leaders</Epona_Leader.labelPlural>
+  <Epona_Trader.label>Epona Trader</Epona_Trader.label>
+  <EponaSlave.label>Epona slave</EponaSlave.label>
+  <EponaRefugee.label>Epona Refugee</EponaRefugee.label>
+  <Epona_Soldier_Kern.label>Kern</Epona_Soldier_Kern.label>
+  <Epona_Soldier_Caracole.label>Caracole</Epona_Soldier_Caracole.label>
+  <Epona_Soldier_Dragoon.label>Dragoon</Epona_Soldier_Dragoon.label>
+  <Epona_Soldier_Besieger.label>Besieger</Epona_Soldier_Besieger.label>
+  <Epona_Soldier_Gallowglass.label>Gallowglass</Epona_Soldier_Gallowglass.label>
+  <Epona_Soldier_Destrier_Gallowglass.label>Gallowglass Vanguard</Epona_Soldier_Destrier_Gallowglass.label>
+  <Epona_Soldier_Bomber.label>Bomber</Epona_Soldier_Bomber.label>
+  <Epona_Soldier_Fian.label>Errant Knight</Epona_Soldier_Fian.label>
+  <Epona_Soldier_Destrier_Fian.label>Errant Knight</Epona_Soldier_Destrier_Fian.label>
+  <Epona_Soldier_Noble.label>Free Baron</Epona_Soldier_Noble.label>
+  <Epona_Soldier_SteamFian.label>Steam Knight</Epona_Soldier_SteamFian.label>
+  <Epona_Aid_Soldier_Peasant.label>Armed Peasant</Epona_Aid_Soldier_Peasant.label>
+  <Epona_Aid_Soldier_FreeCompany.label>Mercenary</Epona_Aid_Soldier_FreeCompany.label>
+  <Epona_Druid_Colonist.label>Epona Colonist</Epona_Druid_Colonist.label>
+  <Epona_Druid_Leader.label>Epona Leader</Epona_Druid_Leader.label>
+  <Epona_Druid_Leader.labelPlural>leaders</Epona_Druid_Leader.labelPlural>
+  <Epona_Druid_Trader.label>Epona Trader</Epona_Druid_Trader.label>
+  <Epona_DruidSlave.label>Epona slave</Epona_DruidSlave.label>
+  <Epona_DruidRefugee.label>Epona Refugee</Epona_DruidRefugee.label>
+  <Epona_Druid_Soldier_Spearman.label>Hunter</Epona_Druid_Soldier_Spearman.label>
+  <Epona_Druid_Soldier_Ranger.label>Ranger</Epona_Druid_Soldier_Ranger.label>
+  <Epona_Druid_Soldier_RangerCaptain.label>Ranger Captain</Epona_Druid_Soldier_RangerCaptain.label>
+  <Epona_Robber_Leader.label>Robber Baron</Epona_Robber_Leader.label>
+  <Epona_Robber_Leader.labelPlural>Robber Baron</Epona_Robber_Leader.labelPlural>
+  <Epona_Robber_Soldier_Fian.label>Robber Knight</Epona_Robber_Soldier_Fian.label>
+  <Epona_Robber_Soldier_Destrier_Fian.label>Robber Knight</Epona_Robber_Soldier_Destrier_Fian.label>
+  <Epona_Robber_Soldier_Noble.label>Robber Baron</Epona_Robber_Soldier_Noble.label>
+  <Epona_Robber_Soldier_SteamFian.label>Steam Knight</Epona_Robber_Soldier_SteamFian.label>
+  <Epona_Soldier_Fian_Hippogryph.label>Fian</Epona_Soldier_Fian_Hippogryph.label>
+  <Epona_Soldier_Destrier_Fian_Hippogryph.label>Fian</Epona_Soldier_Destrier_Fian_Hippogryph.label>
+  <Epona_Soldier_FianMaster_Hippogryph.label>Fian Captain</Epona_Soldier_FianMaster_Hippogryph.label>
+  <Epona_Soldier_Noble_Hippogryph.label>Royal Blood</Epona_Soldier_Noble_Hippogryph.label>
+  <EponaPlayerColonist.label>Epona Colonist</EponaPlayerColonist.label>
+  <DestrierPlayerColonist.label>Destrier Colonist</DestrierPlayerColonist.label>
+  <EponaPlayerChildColonist.label>Epona Child Colonist</EponaPlayerChildColonist.label>
+  <EponaPlayerSquire.label>Epona Colonist</EponaPlayerSquire.label>
+  <Epona_GiantSheep_Pawn.label>Gordyfu</Epona_GiantSheep_Pawn.label>
+  <Epona_GiantSheep_Pawn.labelPlural>Gordyfu</Epona_GiantSheep_Pawn.labelPlural>
+  <Epona_GiantSheep_Pawn.labelMale>Gordyfu Ram</Epona_GiantSheep_Pawn.labelMale>
+  <Epona_GiantSheep_Pawn.labelFemale>Gordyfu Ewe</Epona_GiantSheep_Pawn.labelFemale>
+  <Epona_GiantSheep_Pawn.lifeStages.0.label>lamb</Epona_GiantSheep_Pawn.lifeStages.0.label>
+  <Epona_GiantSheep_Pawn.lifeStages.0.labelPlural>lambs</Epona_GiantSheep_Pawn.lifeStages.0.labelPlural>
+  <Epona_Pwca_Pawn.label>Pwca</Epona_Pwca_Pawn.label>
+  <Epona_Pwca_Pawn.labelMale>Pwca</Epona_Pwca_Pawn.labelMale>
+  <Epona_Pwca_Pawn.labelFemale>Pwca</Epona_Pwca_Pawn.labelFemale>
+  <Epona_Pwca_Pawn.lifeStages.0.label>foal</Epona_Pwca_Pawn.lifeStages.0.label>
+  
+  <Epona_Aid_Soldier_Redshank.label>Redshank Sharpshooter</Epona_Aid_Soldier_Redshank.label>
+  <Epona_Aid_Doctor.label>Doctor</Epona_Aid_Doctor.label>
+  
+  <Epona_Aid_DoctorAdvanced.label>Uniponen Fieldmedic</Epona_Aid_DoctorAdvanced.label>
+
+  <Epona_Soldier_Argoulet.label>Argoulet</Epona_Soldier_Argoulet.label>
+  <Epona_Robber_Soldier_Argoulet.label>Argoulet Brigand</Epona_Robber_Soldier_Argoulet.label>
+</LanguageData>

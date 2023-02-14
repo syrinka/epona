@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Vanilla Furniture Expanded - Security</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="EponaBuildingMonsMeg"]/comps</xpath>
+                <value>
+                        <li Class="VFESecurity.CompProperties_LongRangeArtillery">
+        <worldTileRange>15</worldTileRange>
+        <maxForcedMissRadiusFactor>7</maxForcedMissRadiusFactor>
+        <gizmoIconTexPath>Things/WeaponRanged/EponaBuildingMonsMeg</gizmoIconTexPath>
+                        </li>
+                </value>
+            </li>
+        </operations>
+    </match>
+  </Operation>
+</Patch>

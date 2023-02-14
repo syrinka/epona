@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="BaseUnicornPlayerPawnKind">
+    <race>Alien_Unicorn</race>
+    <combatPower>40</combatPower>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseUnicornPlayerPawnKind">
+    <defName>UnicornPlayerColonist</defName>
+    <label>Unicorn Colonist</label>
+    <!--펙션def의 defname
+	-->
+	<defaultFactionType>EponaPlayerColony</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+		<li>Unicorn_Caste</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+    <apparelTags>
+	  <li>EponaPriest</li>
+    </apparelTags>
+	<styleItemTags>
+		<li>
+			<tag>Urban</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2500</max>
+    </apparelMoney>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+	<minGenerationAge>10</minGenerationAge>
+    <maxGenerationAge>36</maxGenerationAge>
+
+  </PawnKindDef>
+  
+  <PawnKindDef Abstract="True" Name="BaseEponaPlayerPawnKind">
+    <race>Alien_Epona</race>
+    <combatPower>40</combatPower>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseEponaPlayerPawnKind">
+    <defName>EponaPlayerColonist</defName>
+    <label>Epona Colonist</label>
+    <!--펙션def의 defname
+	-->
+	<defaultFactionType>EponaPlayerColony</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+		<li>Epona_LowCaste</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+    <apparelTags>
+	  <li>EponaCommon</li>
+	  
+    </apparelTags>
+	<styleItemTags>
+		<li>
+			<tag>Urban</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
+    <apparelMoney>
+      <min>240</min>
+      <max>1440</max>
+    </apparelMoney>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+	<minGenerationAge>14</minGenerationAge>
+  </PawnKindDef>
+
+  <PawnKindDef Abstract="True" Name="BaseDestrierPlayerPawnKind">
+    <race>Alien_Destrier</race>
+    <combatPower>40</combatPower>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseDestrierPlayerPawnKind">
+    <defName>DestrierPlayerColonist</defName>
+    <label>Destrier Colonist</label>
+    <!--펙션def의 defname
+	-->
+	<defaultFactionType>EponaPlayerColony</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+		<li>Epona_LowCaste</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+    <apparelTags>
+	  <li>EponaCommon</li>
+    </apparelTags>
+	<styleItemTags>
+		<li>
+			<tag>Urban</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
+    <apparelMoney>
+      <min>240</min>
+      <max>1440</max>
+    </apparelMoney>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+	<minGenerationAge>14</minGenerationAge>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BaseEponaPlayerPawnKind">
+    <defName>EponaPlayerChildColonist</defName>
+    <label>Epona Child Colonist</label>
+    <!--펙션def의 defname
+	-->
+	<defaultFactionType>EponaPlayerColony</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+		<li>Epona_LowCaste</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+    <apparelTags>
+	  <li>EponaChild</li>
+	  <li>EponaCuteHat</li>
+      <li>EponaCuteCape</li>
+    </apparelTags>
+	<styleItemTags>
+		<li>
+			<tag>Urban</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
+    <apparelMoney>
+      <min>300</min>
+      <max>500</max>
+    </apparelMoney>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+    <maxGenerationAge>12</maxGenerationAge>
+  </PawnKindDef> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <PawnKindDef ParentName="BaseEponaPlayerPawnKind">
+    <defName>EponaPlayerSquire</defName>
+    <label>Epona Colonist</label>
+    <!--펙션def의 defname
+	-->
+	<minGenerationAge>14</minGenerationAge>
+    <maxGenerationAge>18</maxGenerationAge>
+
+	<defaultFactionType>EponaPlayerColony</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+		<li>Epona_SquireCaste</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+    <apparelTags>
+	  <li>EponaCommon</li>
+    </apparelTags>
+	<apparelRequired>
+      <li>Epona_Apparel_Noble</li>
+    </apparelRequired>
+	<styleItemTags>
+		<li>
+			<tag>Urban</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
+    <apparelMoney>
+      <min>200</min>
+      <max>500</max>
+    </apparelMoney>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>5~9</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>3~8</range>
+			</li>
+			<li>
+				<skill>Medicine</skill>
+				<range>4~10</range>
+			</li>
+			<li>
+				<skill>Artistic</skill>
+				<range>3~9</range>
+			</li>
+		</skills>
+  </PawnKindDef>
+  
+</Defs>

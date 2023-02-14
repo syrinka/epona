@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Epona_Pwca</defName>
+    <label>푸카</label>
+    <description>에포나들이 요정이라 믿고있는 말과 사슴을 섞은거같이 생긴 갑각류 입니다. 섬유질의 껍질을 가지고 있으며. 녹 용을 생산합니다.</description>
+    <statBases>
+      <MoveSpeed>6.2</MoveSpeed>
+      <MarketValue>1250</MarketValue>
+      <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+      <ComfyTemperatureMax>35</ComfyTemperatureMax>
+      <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.0</ArmorRating_Heat>
+      <FilthRate>30</FilthRate>
+      <CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+    </statBases>
+    <uiIconScale>1.1</uiIconScale>
+    <comps>
+      <li Class="CompProperties_Shearable">
+        <woolDef>Steel</woolDef>
+        <shearIntervalDays>5</shearIntervalDays>
+        <woolAmount>10</woolAmount>
+      </li>
+    </comps>
+    <race>
+      <herdAnimal>true</herdAnimal>
+      <body>QuadrupedAnimalWithHooves</body>
+      <baseBodySize>3</baseBodySize>
+      <baseHealthScale>2.5</baseHealthScale>
+      <baseHungerRate>0.0</baseHungerRate>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>WoodLog</leatherDef>
+      <gestationPeriodDays>666</gestationPeriodDays>
+      <wildness>0.6</wildness>
+      <roamMtbDays>2</roamMtbDays>
+      <petness>0.6</petness>
+      <trainability>Intermediate</trainability>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <packAnimal>true</packAnimal>
+      <lifeExpectancy>50</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.3333</minAge>
+          <soundWounded>Pawn_Horse_Wounded</soundWounded>
+          <soundDeath>Pawn_Horse_Death</soundDeath>
+          <soundCall>Pawn_Horse_Call</soundCall>
+          <soundAngry>Pawn_Horse_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>EponaDruidAnimal</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>32</power>
+        <cooldownTime>2.9</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+      <li>
+        <label>left hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Epona_Pwca_Pawn</defName>
+    <label>푸카</label>
+    <labelMale>푸카</labelMale>
+    <labelFemale>푸카</labelFemale>
+    <race>Epona_Pwca</race>
+    <combatPower>250</combatPower>
+    <ecoSystemWeight>0.05</ecoSystemWeight>
+    <wildGroupSize>1</wildGroupSize>
+    <lifeStages>
+      <li>
+        <label>foal</label>
+        <bodyGraphicData>
+          <texPath>Things/Animal/Pwca/Pwca</texPath>
+          <drawSize>1.6</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Horse/Dessicated_Horse</texPath>
+          <drawSize>1.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Animal/Pwca/Pwca</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Horse/Dessicated_Horse</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Animal/Pwca/Pwca</texPath>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Horse/Dessicated_Horse</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

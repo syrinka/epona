@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Centaur.label>Centaur</Centaur.label>
+  <Centaur.corePart.parts.6.customLabel>left lung</Centaur.corePart.parts.6.customLabel>
+  <Centaur.corePart.parts.7.customLabel>right lung</Centaur.corePart.parts.7.customLabel>
+  <Centaur.corePart.parts.8.customLabel>left kidney</Centaur.corePart.parts.8.customLabel>
+  <Centaur.corePart.parts.9.customLabel>right kidney</Centaur.corePart.parts.9.customLabel>
+  <Centaur.corePart.parts.11.parts.0.parts.1.customLabel>left eye</Centaur.corePart.parts.11.parts.0.parts.1.customLabel>
+  <Centaur.corePart.parts.11.parts.0.parts.2.customLabel>right eye</Centaur.corePart.parts.11.parts.0.parts.2.customLabel>
+  <Centaur.corePart.parts.11.parts.0.parts.3.customLabel>left ear</Centaur.corePart.parts.11.parts.0.parts.3.customLabel>
+  <Centaur.corePart.parts.11.parts.0.parts.4.customLabel>right ear</Centaur.corePart.parts.11.parts.0.parts.4.customLabel>
+  <Centaur.corePart.parts.12.customLabel>left shoulder</Centaur.corePart.parts.12.customLabel>
+  <Centaur.corePart.parts.12.parts.0.customLabel>left clavicle</Centaur.corePart.parts.12.parts.0.customLabel>
+  <Centaur.corePart.parts.12.parts.1.customLabel>left arm</Centaur.corePart.parts.12.parts.1.customLabel>
+  <Centaur.corePart.parts.12.parts.1.parts.0.customLabel>left humerus</Centaur.corePart.parts.12.parts.1.parts.0.customLabel>
+  <Centaur.corePart.parts.12.parts.1.parts.1.customLabel>left radius</Centaur.corePart.parts.12.parts.1.parts.1.customLabel>
+  <Centaur.corePart.parts.12.parts.1.parts.2.customLabel>left hand</Centaur.corePart.parts.12.parts.1.parts.2.customLabel>
+  <Centaur.corePart.parts.12.parts.1.parts.2.parts.0.customLabel>left little finger</Centaur.corePart.parts.12.parts.1.parts.2.parts.0.customLabel>
+  <Centaur.corePart.parts.12.parts.1.parts.2.parts.1.customLabel>left ring finger</Centaur.corePart.parts.12.parts.1.parts.2.parts.1.customLabel>
+  <Centaur.corePart.parts.12.parts.1.parts.2.parts.2.customLabel>left middle finger</Centaur.corePart.parts.12.parts.1.parts.2.parts.2.customLabel>
+  <Centaur.corePart.parts.12.parts.1.parts.2.parts.3.customLabel>left index finger</Centaur.corePart.parts.12.parts.1.parts.2.parts.3.customLabel>
+  <Centaur.corePart.parts.12.parts.1.parts.2.parts.4.customLabel>left thumb</Centaur.corePart.parts.12.parts.1.parts.2.parts.4.customLabel>
+  <Centaur.corePart.parts.13.customLabel>right shoulder</Centaur.corePart.parts.13.customLabel>
+  <Centaur.corePart.parts.13.parts.0.customLabel>right clavicle</Centaur.corePart.parts.13.parts.0.customLabel>
+  <Centaur.corePart.parts.13.parts.1.customLabel>right arm</Centaur.corePart.parts.13.parts.1.customLabel>
+  <Centaur.corePart.parts.13.parts.1.parts.0.customLabel>right humerus</Centaur.corePart.parts.13.parts.1.parts.0.customLabel>
+  <Centaur.corePart.parts.13.parts.1.parts.1.customLabel>right radius</Centaur.corePart.parts.13.parts.1.parts.1.customLabel>
+  <Centaur.corePart.parts.13.parts.1.parts.2.customLabel>right hand</Centaur.corePart.parts.13.parts.1.parts.2.customLabel>
+  <Centaur.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>right little finger</Centaur.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>
+  <Centaur.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>right ring finger</Centaur.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>
+  <Centaur.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>right middle finger</Centaur.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>
+  <Centaur.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>right index finger</Centaur.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>
+  <Centaur.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>right thumb</Centaur.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>
+  <Centaur.corePart.parts.15.customLabel>left leg</Centaur.corePart.parts.15.customLabel>
+  <Centaur.corePart.parts.15.parts.0.customLabel>left femur</Centaur.corePart.parts.15.parts.0.customLabel>
+  <Centaur.corePart.parts.15.parts.1.customLabel>left tibia</Centaur.corePart.parts.15.parts.1.customLabel>
+  <Centaur.corePart.parts.15.parts.2.customLabel>left hoof</Centaur.corePart.parts.15.parts.2.customLabel>
+  <Centaur.corePart.parts.16.customLabel>right leg</Centaur.corePart.parts.16.customLabel>
+  <Centaur.corePart.parts.16.parts.0.customLabel>right femur</Centaur.corePart.parts.16.parts.0.customLabel>
+  <Centaur.corePart.parts.16.parts.1.customLabel>right tibia</Centaur.corePart.parts.16.parts.1.customLabel>
+  <Centaur.corePart.parts.16.parts.2.customLabel>right hoof</Centaur.corePart.parts.16.parts.2.customLabel>
+  <Centaur.corePart.parts.17.customLabel>left rear leg</Centaur.corePart.parts.17.customLabel>
+  <Centaur.corePart.parts.17.parts.0.customLabel>left rear femur</Centaur.corePart.parts.17.parts.0.customLabel>
+  <Centaur.corePart.parts.17.parts.1.customLabel>left rear tibia</Centaur.corePart.parts.17.parts.1.customLabel>
+  <Centaur.corePart.parts.17.parts.2.customLabel>left rear hoof</Centaur.corePart.parts.17.parts.2.customLabel>
+  <Centaur.corePart.parts.18.customLabel>right rear leg</Centaur.corePart.parts.18.customLabel>
+  <Centaur.corePart.parts.18.parts.0.customLabel>right rear femur</Centaur.corePart.parts.18.parts.0.customLabel>
+  <Centaur.corePart.parts.18.parts.1.customLabel>right rear tibia</Centaur.corePart.parts.18.parts.1.customLabel>
+  <Centaur.corePart.parts.18.parts.2.customLabel>right rear hoof</Centaur.corePart.parts.18.parts.2.customLabel>
+  <CentaurUnicorn.label>CentaurUnicorn</CentaurUnicorn.label>
+  <CentaurUnicorn.corePart.parts.6.customLabel>left lung</CentaurUnicorn.corePart.parts.6.customLabel>
+  <CentaurUnicorn.corePart.parts.7.customLabel>right lung</CentaurUnicorn.corePart.parts.7.customLabel>
+  <CentaurUnicorn.corePart.parts.8.customLabel>left kidney</CentaurUnicorn.corePart.parts.8.customLabel>
+  <CentaurUnicorn.corePart.parts.9.customLabel>right kidney</CentaurUnicorn.corePart.parts.9.customLabel>
+  <CentaurUnicorn.corePart.parts.11.parts.0.parts.1.customLabel>left eye</CentaurUnicorn.corePart.parts.11.parts.0.parts.1.customLabel>
+  <CentaurUnicorn.corePart.parts.11.parts.0.parts.2.customLabel>right eye</CentaurUnicorn.corePart.parts.11.parts.0.parts.2.customLabel>
+  <CentaurUnicorn.corePart.parts.11.parts.0.parts.3.customLabel>horn</CentaurUnicorn.corePart.parts.11.parts.0.parts.3.customLabel>
+  <CentaurUnicorn.corePart.parts.11.parts.0.parts.4.customLabel>left ear</CentaurUnicorn.corePart.parts.11.parts.0.parts.4.customLabel>
+  <CentaurUnicorn.corePart.parts.11.parts.0.parts.5.customLabel>right ear</CentaurUnicorn.corePart.parts.11.parts.0.parts.5.customLabel>
+  <CentaurUnicorn.corePart.parts.12.customLabel>left shoulder</CentaurUnicorn.corePart.parts.12.customLabel>
+  <CentaurUnicorn.corePart.parts.12.parts.0.customLabel>left clavicle</CentaurUnicorn.corePart.parts.12.parts.0.customLabel>
+  <CentaurUnicorn.corePart.parts.12.parts.1.customLabel>left arm</CentaurUnicorn.corePart.parts.12.parts.1.customLabel>
+  <CentaurUnicorn.corePart.parts.12.parts.1.parts.0.customLabel>left humerus</CentaurUnicorn.corePart.parts.12.parts.1.parts.0.customLabel>
+  <CentaurUnicorn.corePart.parts.12.parts.1.parts.1.customLabel>left radius</CentaurUnicorn.corePart.parts.12.parts.1.parts.1.customLabel>
+  <CentaurUnicorn.corePart.parts.12.parts.1.parts.2.customLabel>left hand</CentaurUnicorn.corePart.parts.12.parts.1.parts.2.customLabel>
+  <CentaurUnicorn.corePart.parts.12.parts.1.parts.2.parts.0.customLabel>left little finger</CentaurUnicorn.corePart.parts.12.parts.1.parts.2.parts.0.customLabel>
+  <CentaurUnicorn.corePart.parts.12.parts.1.parts.2.parts.1.customLabel>left ring finger</CentaurUnicorn.corePart.parts.12.parts.1.parts.2.parts.1.customLabel>
+  <CentaurUnicorn.corePart.parts.12.parts.1.parts.2.parts.2.customLabel>left middle finger</CentaurUnicorn.corePart.parts.12.parts.1.parts.2.parts.2.customLabel>
+  <CentaurUnicorn.corePart.parts.12.parts.1.parts.2.parts.3.customLabel>left index finger</CentaurUnicorn.corePart.parts.12.parts.1.parts.2.parts.3.customLabel>
+  <CentaurUnicorn.corePart.parts.12.parts.1.parts.2.parts.4.customLabel>left thumb</CentaurUnicorn.corePart.parts.12.parts.1.parts.2.parts.4.customLabel>
+  <CentaurUnicorn.corePart.parts.13.customLabel>right shoulder</CentaurUnicorn.corePart.parts.13.customLabel>
+  <CentaurUnicorn.corePart.parts.13.parts.0.customLabel>right clavicle</CentaurUnicorn.corePart.parts.13.parts.0.customLabel>
+  <CentaurUnicorn.corePart.parts.13.parts.1.customLabel>right arm</CentaurUnicorn.corePart.parts.13.parts.1.customLabel>
+  <CentaurUnicorn.corePart.parts.13.parts.1.parts.0.customLabel>right humerus</CentaurUnicorn.corePart.parts.13.parts.1.parts.0.customLabel>
+  <CentaurUnicorn.corePart.parts.13.parts.1.parts.1.customLabel>right radius</CentaurUnicorn.corePart.parts.13.parts.1.parts.1.customLabel>
+  <CentaurUnicorn.corePart.parts.13.parts.1.parts.2.customLabel>right hand</CentaurUnicorn.corePart.parts.13.parts.1.parts.2.customLabel>
+  <CentaurUnicorn.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>right little finger</CentaurUnicorn.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>
+  <CentaurUnicorn.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>right ring finger</CentaurUnicorn.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>
+  <CentaurUnicorn.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>right middle finger</CentaurUnicorn.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>
+  <CentaurUnicorn.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>right index finger</CentaurUnicorn.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>
+  <CentaurUnicorn.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>right thumb</CentaurUnicorn.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>
+  <CentaurUnicorn.corePart.parts.15.customLabel>left leg</CentaurUnicorn.corePart.parts.15.customLabel>
+  <CentaurUnicorn.corePart.parts.15.parts.0.customLabel>left femur</CentaurUnicorn.corePart.parts.15.parts.0.customLabel>
+  <CentaurUnicorn.corePart.parts.15.parts.1.customLabel>left tibia</CentaurUnicorn.corePart.parts.15.parts.1.customLabel>
+  <CentaurUnicorn.corePart.parts.15.parts.2.customLabel>left hoof</CentaurUnicorn.corePart.parts.15.parts.2.customLabel>
+  <CentaurUnicorn.corePart.parts.16.customLabel>right leg</CentaurUnicorn.corePart.parts.16.customLabel>
+  <CentaurUnicorn.corePart.parts.16.parts.0.customLabel>right femur</CentaurUnicorn.corePart.parts.16.parts.0.customLabel>
+  <CentaurUnicorn.corePart.parts.16.parts.1.customLabel>right tibia</CentaurUnicorn.corePart.parts.16.parts.1.customLabel>
+  <CentaurUnicorn.corePart.parts.16.parts.2.customLabel>right hoof</CentaurUnicorn.corePart.parts.16.parts.2.customLabel>
+  <CentaurUnicorn.corePart.parts.17.customLabel>left rear leg</CentaurUnicorn.corePart.parts.17.customLabel>
+  <CentaurUnicorn.corePart.parts.17.parts.0.customLabel>left rear femur</CentaurUnicorn.corePart.parts.17.parts.0.customLabel>
+  <CentaurUnicorn.corePart.parts.17.parts.1.customLabel>left rear tibia</CentaurUnicorn.corePart.parts.17.parts.1.customLabel>
+  <CentaurUnicorn.corePart.parts.17.parts.2.customLabel>left rear hoof</CentaurUnicorn.corePart.parts.17.parts.2.customLabel>
+  <CentaurUnicorn.corePart.parts.18.customLabel>right rear leg</CentaurUnicorn.corePart.parts.18.customLabel>
+  <CentaurUnicorn.corePart.parts.18.parts.0.customLabel>right rear femur</CentaurUnicorn.corePart.parts.18.parts.0.customLabel>
+  <CentaurUnicorn.corePart.parts.18.parts.1.customLabel>right rear tibia</CentaurUnicorn.corePart.parts.18.parts.1.customLabel>
+  <CentaurUnicorn.corePart.parts.18.parts.2.customLabel>right rear hoof</CentaurUnicorn.corePart.parts.18.parts.2.customLabel>
+</LanguageData>

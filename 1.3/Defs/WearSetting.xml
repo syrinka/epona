@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<Epona_WearSetting.WearSettingDef Name="Epona_Steamarmor_Setting" Abstract="True">
+		<wearSetting>
+			<li>
+				<!--무기도 제한 할 수 있지만, 줍고 나서 조건 변환등이 있을때 떨구거나 하는건 불가능 -->
+				<!--만약 무기를 넣고 메시지가 어색하다면 별도의 리스트를 만들어서 메시지를 따로 쓰는걸 추천-->
+				<wearList>
+					<li>Epona_Weapon_Steamlance</li>
+					<li>Epona_Weapon_Steamgatling</li>
+					<li>Epona_Weapon_Steamflak</li>
+
+				</wearList>
+				<condition>
+					<bodyTypeDef>
+						<li>EponaBody</li>
+						<li>DestrierBody</li>
+						<li>Female</li>
+						<li>Thin</li>
+					</bodyTypeDef>
+					<mustWearWith>
+							<li>Epona_Apparel_PowerArmor</li>
+							<li>Epona_Apparel_PowerArmorMunition</li>
+					</mustWearWith>
+				</condition>
+				<cantReason>Epona_Steamarmor_Cantreason</cantReason>
+				<!--<addHediff>
+					<li>
+						<hediff>
+							<li>AlcoholHigh</li>
+						</hediff>
+						<partsToAffect>
+							<li>Mincho_Torso</li>
+						</partsToAffect>
+						<addHediffMessage>AddHediffMessage</addHediffMessage>
+					</li>
+				</addHediff>-->
+				<!--<forceDropHediff>
+					<li>PsychiteTolerance</li>
+				</forceDropHediff>-->
+				<forceDrop>true</forceDrop>
+				<forceDropMessage>Epona_Steamarmor_ForceDropMessage</forceDropMessage>
+				<lockApparel>false</lockApparel>
+				<!--<lockApparelMessage>LockApparelMessage</lockApparelMessage>-->
+				<!--<boolString>
+					<ageFalse>Mincho_ageFalse</ageFalse>
+					<ageTrue>Mincho_ageTrue</ageTrue>
+					<genderTrue>Mincho_genderTrue</genderTrue>
+					<genderFalse>Mincho_genderFalse</genderFalse>
+					<bodyTypeTrue>Mincho_bodyTypeTrue</bodyTypeTrue>
+					<bodyTypeFalse>Mincho_bodyTypeFalse</bodyTypeFalse>
+					<orHediffTrue>Mincho_orHediffTrue</orHediffTrue>
+					<orHediffFalse>Mincho_orHediffFalse</orHediffFalse>
+					<andHediffTrue>Mincho_andHediffTrue</andHediffTrue>
+					<andHediffFalse>Mincho_andHediffFalse</andHediffFalse>
+					<forbiddenHediffTrue>Mincho_forbiddenHediffTrue</forbiddenHediffTrue>
+					<forbiddenHediffFalse>Mincho_forbiddenHediffFalse</forbiddenHediffFalse>
+				</boolString>-->
+			</li>
+		</wearSetting>
+	</Epona_WearSetting.WearSettingDef>
+	<Epona_WearSetting.WearSettingDef ParentName="Epona_Steamarmor_Setting">
+		<defName>Epona_ThingDef_Epona</defName>
+		<targetRace>Alien_Epona</targetRace>
+	</Epona_WearSetting.WearSettingDef>
+	<Epona_WearSetting.WearSettingDef ParentName="Epona_Steamarmor_Setting">
+		<defName>Epona_ThingDef_Destrier</defName>
+		<targetRace>Alien_Destrier</targetRace>
+	</Epona_WearSetting.WearSettingDef>
+	<Epona_WearSetting.WearSettingDef ParentName="Epona_Steamarmor_Setting">
+		<defName>Epona_ThingDef_Unicorn</defName>
+		<targetRace>Alien_Unicorn</targetRace>
+	</Epona_WearSetting.WearSettingDef>
+</Defs>

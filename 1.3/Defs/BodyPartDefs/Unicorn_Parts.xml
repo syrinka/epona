@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+	<BodyPartDef>
+		<defName>CentaurUnicornHorn</defName>
+		<label>horn</label>
+		<hitPoints>15</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<beautyRelated>true</beautyRelated>		
+	</BodyPartDef>
+
+</Defs>

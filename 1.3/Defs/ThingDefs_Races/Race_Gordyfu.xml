@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>Epona_Sheep</defName>
+		<label>고르뒤푸</label>
+		<description>고르뒤푸(gordyfu)는 "과하게 자란" 이라는 뜻의 'wedi gordyfu'라는 웨일스어에서 이름을 따온 유전자 조작된 거대한 양입니다. 양모와 고기를 얻기위해 개조되었으며 에포나 유목민들에게 가장 중요한 가축중 하나입니다.</description>
+  <descriptionHyperlinks>
+			<ThingDef>WoolSheep</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MoveSpeed>3.2</MoveSpeed>
+			<MarketValue>1500</MarketValue>
+			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<MeatAmount>82</MeatAmount>
+			      <FilthRate>75</FilthRate>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>3.5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Shearable">
+				<woolDef>WoolSheep</woolDef>
+				<shearIntervalDays>3</shearIntervalDays>
+				<woolAmount>40</woolAmount>
+			</li>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>3</milkIntervalDays>
+                <milkAmount>50</milkAmount>
+            </li>
+		</comps>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<body>QuadrupedAnimalWithHooves</body>
+			<baseBodySize>6.0</baseBodySize>
+			<baseHealthScale>5</baseHealthScale>
+			<baseHungerRate>1.5</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<leatherDef>Epona_Sheep_Leather</leatherDef>
+			<gestationPeriodDays>32</gestationPeriodDays>
+			<wildness>0.5</wildness>
+			<trainability>None</trainability>
+			<packAnimal>true</packAnimal>
+            <roamMtbDays>7</roamMtbDays>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+	  <wildBiomes>
+	    <TropicalRainforest>0</TropicalRainforest>
+		<TropicalSwamp>0</TropicalSwamp>
+		<AridShrubland>0.1</AridShrubland>
+        <Desert>0.05</Desert>
+		<ExtremeDesert>0</ExtremeDesert>
+		<TemperateForest>0.2</TemperateForest>
+		<TemperateSwamp>0.1</TemperateSwamp>
+		<BorealForest>0.1</BorealForest>
+		<Tundra>0.1</Tundra>
+		<ColdBog>0.1</ColdBog>
+		<IceSheet>0</IceSheet>
+		<SeaIce>0</SeaIce>
+      </wildBiomes>
+			<lifeExpectancy>50</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.5</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>1.0</minAge>
+          <soundWounded>Pawn_Sheep_Wounded</soundWounded>
+          <soundDeath>Pawn_Sheep_Death</soundDeath>
+          <soundCall>Pawn_Sheep_Call</soundCall>
+          <soundAngry>Pawn_Sheep_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalFarm</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Epona_GiantSheep_Pawn</defName>
+    <label>고르뒤푸</label>
+    <labelPlural>고르뒤푸 양</labelPlural>
+    <labelMale>고르뒤푸 숫양</labelMale>
+    <labelFemale>고르뒤푸 암양</labelFemale>
+    <race>Epona_Sheep</race>
+    <combatPower>225</combatPower>
+    <ecoSystemWeight>5.0</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>lamb</label>
+        <labelPlural>lambs</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Sheeplike/EponaSheepFemale</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Sheeplike/EponaSheepFemale</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Sheeplike/EponaSheepMale</texPath>
+          <drawSize>2.60</drawSize>
+          <shadowData>
+            <volume>(1.2, 0.9, 0.9)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Sheeplike/EponaSheepFemale</texPath>
+          <drawSize>2.60</drawSize>
+          <shadowData>
+            <volume>(1.2, 0.9, 0.9)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepMale</texPath>
+          <drawSize>2.60</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
+          <drawSize>2.60</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Sheeplike/EponaSheepMale</texPath>
+          <drawSize>4.0</drawSize>
+          <shadowData>
+            <volume>(1.8, 0.9, 0.9)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Sheeplike/EponaSheepFemale</texPath>
+          <drawSize>3.5</drawSize>
+          <shadowData>
+            <volume>(1.8, 0.9, 0.9)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepMale</texPath>
+          <drawSize>3.2</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
+          <drawSize>3.4</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="LeatherBase">
+		<defName>Epona_Sheep_Leather</defName>
+		<label>고르뒤푸 가죽</label>
+		<description>양모와 다르게 가죽은 통풍이 잘되는 시원한 소재입니다.</description>
+		<graphicData>
+			<color>(247,230,218)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.3</MarketValue>
+			<StuffPower_Insulation_Cold>11</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>21</StuffPower_Insulation_Heat>
+		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<stuffProps>
+			<color>(248,248,248)</color>
+			<commonality>0.025</commonality>
+		</stuffProps>
+	</ThingDef>
+</Defs>

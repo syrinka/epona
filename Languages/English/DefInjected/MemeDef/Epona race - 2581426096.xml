@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Structure_TheistEponic.label>Horse Worship</Structure_TheistEponic.label>
+  <Structure_TheistEponic.description>Praise the Horse!</Structure_TheistEponic.description>
+  <Structure_TheistEponic.generalRules.rulesStrings.0>memeCreed->Sect</Structure_TheistEponic.generalRules.rulesStrings.0>
+  <Structure_TheistEponic.generalRules.rulesStrings.1>memeCreed->Cult</Structure_TheistEponic.generalRules.rulesStrings.1>
+  <Structure_TheistEponic.generalRules.rulesStrings.2>memeCreed->Temple</Structure_TheistEponic.generalRules.rulesStrings.2>
+  <Structure_TheistEponic.generalRules.rulesStrings.3>memeCreed->'s Believe</Structure_TheistEponic.generalRules.rulesStrings.3>
+  <Structure_TheistEponic.generalRules.rulesStrings.4>memeHyphenPrefix->Theocracy</Structure_TheistEponic.generalRules.rulesStrings.4>
+  <Structure_TheistEponic.generalRules.rulesStrings.5>memeConcept->creation</Structure_TheistEponic.generalRules.rulesStrings.5>
+  <Structure_TheistEponic.generalRules.rulesStrings.6>memeConcept->life</Structure_TheistEponic.generalRules.rulesStrings.6>
+  <Structure_TheistEponic.generalRules.rulesStrings.7>memeLeaderNoun->Ri</Structure_TheistEponic.generalRules.rulesStrings.7>
+  <Structure_TheistEponic.generalRules.rulesStrings.8>memeLeaderAdjective->Ard</Structure_TheistEponic.generalRules.rulesStrings.8>
+  <Structure_TheistEponic.generalRules.rulesStrings.9>memeLeaderAdjective->Ollam</Structure_TheistEponic.generalRules.rulesStrings.9>
+  <Structure_TheistEponic.generalRules.rulesStrings.10>memeMoralist->Num</Structure_TheistEponic.generalRules.rulesStrings.10>
+  <Structure_TheistEponic.generalRules.rulesStrings.11>memeMoralist->Scholar</Structure_TheistEponic.generalRules.rulesStrings.11>
+  <Structure_TheistEponic.generalRules.rulesStrings.12>memeMoralist->Templar</Structure_TheistEponic.generalRules.rulesStrings.12>
+  <Structure_TheistEponic.generalRules.rulesStrings.13>memeMoralist->Umamusume</Structure_TheistEponic.generalRules.rulesStrings.13>
+  <Structure_TheistEponic.symbolPacks.0.adjective>Eponist</Structure_TheistEponic.symbolPacks.0.adjective>
+  <Structure_TheistEponic.symbolPacks.1.adjective>Umapyoi Densetser</Structure_TheistEponic.symbolPacks.1.adjective>
+</LanguageData>

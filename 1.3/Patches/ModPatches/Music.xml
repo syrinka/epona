@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Musical Instruments (Continued)</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs</xpath>
+                <value>
+
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Bagpipes</defName>
+		<label>에포나 백파이프</label>
+		<description>백파이프의 제조법을 배웁니다.</description>
+		<baseCost>600</baseCost>
+    <prerequisites>
+      <li>PrimitiveInstruments</li>
+    </prerequisites>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>6</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Accordion</defName>
+		<label>에포나 아코디언</label>
+		<description>아코디언의 제조법을 배웁니다.</description>
+		<baseCost>500</baseCost>
+    <prerequisites>
+      <li>Epona_Research_Bagpipes</li>
+    </prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>6</researchViewY>
+	</ResearchProjectDef>
+	
+ <ThingDef Name="EponaMusicalInstrumentBase" Abstract="true">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Beauty>1</Beauty>
+      <SellPriceFactor>0.50</SellPriceFactor>
+    </statBases>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <smeltable>true</smeltable>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+      <effectWorking>Sculpt</effectWorking>
+      <soundWorking>Recipe_Sculpt</soundWorking>
+      <recipeUsers>
+        <li>TableMusicalInstruments</li>
+      </recipeUsers>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtMusicalInstrument</nameMaker>
+        <descriptionMaker>ArtDescription_MusicalInstrument</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_Usable">
+        <useJob>TakeInstrument</useJob>
+        <useLabel>Take to inventory</useLabel>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>MusicalInstrument</li>
+    </tradeTags>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <thingCategories>
+      <li>MusicalInstruments</li>
+    </thingCategories>
+    <pathCost>10</pathCost>
+  </ThingDef>
+  
+  <ThingDef ParentName="EponaMusicalInstrumentBase">
+    <label>그레이트 스탈리온 파이프</label>
+    <defName>Epona_Instrument_GreatHighlandPipes</defName>
+    <description>그레이트 하이랜드 백파이프와 유사한 백파이프 입니다.</description>
+    <graphicData>
+      <texPath>Things/Item/Pipes/GreatHighlandPipes</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <Mass>5</Mass>
+    </statBases>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMusicalInstruments</li>
+      </recipeUsers>
+      <researchPrerequisite>Epona_Research_Bagpipes</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <WoodLog>40</WoodLog>
+    </costList>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>80</costStuffCount>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.4</easiness>
+        <expressiveness>0.6</expressiveness>
+        <xOffset>0</xOffset>
+        <zOffset>0.0</zOffset>
+        <xOffsetFacing>0</xOffsetFacing>
+        <zOffsetFacing>0.0</zOffsetFacing>
+        <vertical>true</vertical>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="EponaMusicalInstrumentBase">
+    <label>에포네스 파이프</label>
+    <defName>Epona_Instrument_UilleannPipes</defName>
+    <description>일리언 파이프와 유사한 백파이프 입니다.</description>
+    <graphicData>
+      <texPath>Things/Item/Pipes/UilleannPipes</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+			</graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>4</Mass>
+    </statBases>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMusicalInstruments</li>
+      </recipeUsers>
+      <researchPrerequisite>Epona_Research_Bagpipes</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <WoodLog>20</WoodLog>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>75</costStuffCount>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.2</easiness>
+        <expressiveness>0.9</expressiveness>
+        <xOffset>0</xOffset>
+        <zOffset>0.0</zOffset>
+        <xOffsetFacing>0</xOffsetFacing>
+        <zOffsetFacing>0.0</zOffsetFacing>
+        <vertical>true</vertical>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="EponaMusicalInstrumentBase">
+    <label>카발리어 아코디언</label>
+    <defName>Epona_Instrument_Accordion</defName>
+    <description>에포나들이 즐겨쓰는 아코디언 입니다.</description>
+    <graphicData>
+      <texPath>Things/Item/Pipes/Accordion</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+			</graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <WorkToMake>65000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMusicalInstruments</li>
+      </recipeUsers>
+      <researchPrerequisite>Epona_Research_Accordion</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <WoodLog>30</WoodLog>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.3</easiness>
+        <expressiveness>0.8</expressiveness>
+        <xOffset>0.1</xOffset>
+        <zOffset>0.0</zOffset>
+        <xOffsetFacing>-0.05</xOffsetFacing>
+        <zOffsetFacing>-0.2</zOffsetFacing>
+        <vertical>true</vertical>
+
+      </li>
+    </comps>
+  </ThingDef>
+                </value>
+            </li>
+        </operations>
+    </match>
+  </Operation>
+</Patch>

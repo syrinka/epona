@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Epona_Clansman.label>Epona Clanshorse</Epona_Clansman.label>
+  <Epona_Clansman.description>Clanshorse of eponic kingdoms.</Epona_Clansman.description>
+  <Epona_Squire.label>Epona Squire</Epona_Squire.label>
+  <Epona_Squire.description>Squire of eponic kingdoms.</Epona_Squire.description>
+  <Epona_KnightBachelor.label>Epona Knight Bachelor</Epona_KnightBachelor.label>
+  <Epona_KnightBachelor.description>Knight Bachelor of eponic kingdoms.</Epona_KnightBachelor.description>
+  <Epona_KnightBanneret.label>Epona Knight Banneret</Epona_KnightBanneret.label>
+  <Epona_KnightBanneret.description>Knight Banneret of eponic kingdoms.</Epona_KnightBanneret.description>
+  <Epona_Uasal.label>Epona Uasal</Epona_Uasal.label>
+  <Epona_Uasal.description>a hereditary noble. can mobilize a single squad of knights.</Epona_Uasal.description>
+  <Epona_Taoiseach.label>Epona Taoiseach</Epona_Taoiseach.label>
+  <Epona_Taoiseach.description>a hereditary noble. can mobilize a two squads of knights.</Epona_Taoiseach.description>
+  <Epona_Ri.label>Epona Ri</Epona_Ri.label>
+  <Epona_Ri.description>Petty King, who forms the Union of the Epona Kingdoms.</Epona_Ri.description>
+  
+  <Epona_Paladin.label>Knight of the Carrot that looks like a round table</Epona_Paladin.label>
+  <Epona_Paladin.description>Knight, chosen by the king. Although have to go on an adventure to find holy carrots. recommend not going...</Epona_Paladin.description>
+</LanguageData>

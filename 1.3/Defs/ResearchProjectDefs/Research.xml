@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== 원시연구  ========================= -->
+	<!-- ==================== 중세연구  ========================= -->
+	<!-- ==================== 현대연구  ========================= -->
+	<!-- ==================== 미래연구  ========================= -->
+	
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Space</defName>
+		<label>우주로 간다!</label>
+		<description>Epoland cannot into space... 진짜로...? (for SOS2!)</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>Epona_Research_JackofPlate</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Kitchen</defName>
+		<label>에포나식 주방</label>
+		<description>맛없다고 하지마!</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>6</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Smith</defName>
+		<label>에포나 단조</label>
+		<description>에포나들의 전통적인 단조법을 배웁니다.</description>
+		<baseCost>300</baseCost>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_FullPlate</defName>
+		<label>에포나 풀 플레이트</label>
+		<description>전신을 덮을 수 있는 판금갑옷 제조법을 배웁니다.</description>
+		<baseCost>1000</baseCost>
+    <prerequisites>
+      <li>PlateArmor</li>
+      <li>Epona_Research_Smith</li>
+    </prerequisites>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Shield</defName>
+		<label>에포나 방탄방패</label>
+		<description>무겁지만 성능이 확실한 방탄방패 제조법을 배웁니다.</description>
+		<baseCost>1200</baseCost>
+    <prerequisites>
+      <li>Epona_Research_FullPlate</li>
+    </prerequisites>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Steam</defName>
+		<label>에포나 증기동력</label>
+		<description>증기동력을 지니고 있는 파워아머 제조법을 배웁니다.</description>
+		<baseCost>4000</baseCost>
+    <prerequisites>
+      <li>Epona_Research_Shield</li>
+    </prerequisites>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_SteamGatling</defName>
+		<label>에포나 증기 중화기</label>
+		<description>증기 동력으로 발사 가능한 중화기 제조법을 배웁니다.</description>
+		<baseCost>1000</baseCost>
+    <prerequisites>
+      <li>Epona_Research_Steam</li>
+    </prerequisites>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Munition</defName>
+		<label>에포나 뮤니션 기어</label>
+		<description>설계와 도량형이 통일된 에포나들의 무기 제조법을 배웁니다.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Epona_Research_Smith</li>
+    </prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_HandCannon</defName>
+		<label>에포나 핸드캐논</label>
+		<description>대구경 핸드캐논의 제조법을 배웁니다.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Epona_Research_Munition</li>
+    </prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Saw</defName>
+		<label>에포나 모터</label>
+		<description>굉장한 속도를 지닌 증기 모터를 개발합니다.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Epona_Research_HandCannon</li>
+      <li>Machining</li>
+
+    </prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Sewing</defName>
+		<label>에포나 재봉</label>
+		<description>단순한 에포나용 옷의 재봉법을 배웁니다.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_AdvancedSewing</defName>
+		<label>에포나 고급 재봉</label>
+		<description>복잡한 에포나용 옷의 재봉법을 배웁니다.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Epona_Research_Sewing</li>
+    </prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_JackofPlate</defName>
+		<label>에포나 전투 내의</label>
+		<description>잭 오브 플레이트의 재봉법을 배웁니다.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Epona_Research_AdvancedSewing</li>
+	  <li>Epona_Research_Munition</li>
+    </prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Bombarrot</defName>
+		<label>폭당근 재배</label>
+		<description>포탄으로 사용되거나, 일종의 화폐로 쓰이는 폭당근의 재배법을 배웁니다.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<!-- <requiredResearchFacilities>
+			<li>EponaBuildingBook</li>
+		</requiredResearchFacilities>-->
+		<researchViewX>0</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Cannon</defName>
+		<label>폭당근 대포 주조</label>
+		<description>폭당근 박격포와 오르간건의 제조법을 배웁니다.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<!-- <requiredResearchFacilities>
+			<li>EponaBuildingBook</li>
+		</requiredResearchFacilities>-->
+    <prerequisites>
+      <li>Epona_Research_Bombarrot</li>
+    </prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_MonsMeg</defName>
+		<label>고르뒤푸 캐논</label>
+		<description>거대한 공성포의 제조법을 배웁니다</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<!-- <requiredResearchFacilities>
+			<li>EponaBuildingBook</li>
+		</requiredResearchFacilities>-->
+    <prerequisites>
+      <li>Epona_Research_Cannon</li>
+    </prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Alicorn</defName>
+		<label>알리콘 약품</label>
+		<description>알리콘을 이용해 산업 약품을 번화계 약품으로 만들 수 있습니다.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<!-- <requiredResearchFacilities>
+			<li>EponaBuildingBook</li>
+		</requiredResearchFacilities>-->
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>6</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<tab>Epona_ResearchTab</tab>
+		<defName>Epona_Research_Elixir</defName>
+		<label>알리콘 영약</label>
+		<description>알리콘을 이용해 만들 수 있는 영구적 상처를 치료할수 있는 영약의 제조법을 배웁니다.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<!-- <requiredResearchFacilities>
+			<li>EponaBuildingBook</li>
+		</requiredResearchFacilities>-->
+    <prerequisites>
+      <li>Epona_Research_Alicorn</li>
+    </prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>6</researchViewY>
+	</ResearchProjectDef>
+</Defs>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Epona_Call_Peasantry.label>Peasant Laborer</Epona_Call_Peasantry.label>
+  <Epona_Call_Peasantry.description>Treat four Peasants almost for free for three days!</Epona_Call_Peasantry.description>
+  <Epona_Call_ArmedPeasantry.label>Peasant Levy</Epona_Call_ArmedPeasantry.label>
+  <Epona_Call_ArmedPeasantry.description>Call five armed serfs.</Epona_Call_ArmedPeasantry.description>
+  <Epona_Call_FreeCompany.label>Call Free Company</Epona_Call_FreeCompany.label>
+  <Epona_Call_FreeCompany.description>call eight veteran mercenaries to the battlefield.</Epona_Call_FreeCompany.description>
+  <Epona_Hire_Squire.label>Knight-Servant Contract</Epona_Hire_Squire.label>
+  <Epona_Hire_Squire.description>It is a contract between the knight and the servant.</Epona_Hire_Squire.description>
+  <Epona_Get_Powerarmor.label>Royal Power Armor Award</Epona_Get_Powerarmor.label>
+  <Epona_Get_Powerarmor.description>You can receive the steam-powered Epona exclusive power armor from the king.</Epona_Get_Powerarmor.description>
+  <Epona_Call_Knight.label>Call Fianna</Epona_Call_Knight.label>
+  <Epona_Call_Knight.description>call four knights.</Epona_Call_Knight.description>
+  <Epona_Call_MassPeasantry.label>Mass Peasantry Mobilization</Epona_Call_MassPeasantry.label>
+  <Epona_Call_MassPeasantry.description>Forced mobilization of 10 serfs for one week.</Epona_Call_MassPeasantry.description>
+  <Epona_Call_KnightDestrier.label>Call Destrier Fianna</Epona_Call_KnightDestrier.label>
+  <Epona_Call_KnightDestrier.description>call four destrier knights.</Epona_Call_KnightDestrier.description>
+  <Epona_Call_KnightSteam.label>Call Steam Knight</Epona_Call_KnightSteam.label>
+  <Epona_Call_KnightSteam.description>call steam knight.</Epona_Call_KnightSteam.description>
+  
+  <Epona_Call_Doctor.label>Call Field Doctor</Epona_Call_Doctor.label>
+  <Epona_Call_Doctor.description>MEDIC!!!</Epona_Call_Doctor.description>
+  <Epona_Call_Redshank.label>Call Redshank Sharpshooter Company</Epona_Call_Redshank.label>
+  <Epona_Call_Redshank.description>call five notorious mercenaries.</Epona_Call_Redshank.description>
+  <Epona_Call_KnightSmall.label>Call Rogue Knight Company</Epona_Call_KnightSmall.label>
+  <Epona_Call_KnightSmall.description>call four knights.</Epona_Call_KnightSmall.description>
+  
+  <Epona_Call_FreeLance.label>Call Freelancers</Epona_Call_FreeLance.label>
+  <Epona_Call_FreeLance.description>"Arise, arise, Riders of Eponen!" 5 heavily armed lancers are called to the battlefield.</Epona_Call_FreeLance.description>
+  <Epona_Call_DoctorAdvanced.label>Call Uniponen Fieldmedic</Epona_Call_DoctorAdvanced.label>
+  <Epona_Call_DoctorAdvanced.description>A highly trained unicorn doctor is called for 3 days.</Epona_Call_DoctorAdvanced.description>
+</LanguageData>

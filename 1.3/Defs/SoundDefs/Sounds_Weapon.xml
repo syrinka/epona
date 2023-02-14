@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>Epona_HandCannon_fire</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapons/Epona_HandCannon</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange><min>28</min><max>28</max></volumeRange>
+        <pitchRange>
+          <min>0.9082353</min>        
+          <max>1.045882</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Epona_Steam_fire</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapons/Epona_Steam</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange><min>28</min><max>78</max></volumeRange>
+        <pitchRange>
+          <min>0.7082353</min>        
+          <max>1.445882</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Epona_Sniper_fire</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapons/Epona_Sniper</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange><min>28</min><max>28</max></volumeRange>
+        <pitchRange>
+          <min>0.7082353</min>        
+          <max>0.845882</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Epona_Impact</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapons/Epona_Impact</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange><min>31</min><max>41</max></volumeRange>
+        <pitchRange>
+          <min>0.7082353</min>        
+          <max>1.045882</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

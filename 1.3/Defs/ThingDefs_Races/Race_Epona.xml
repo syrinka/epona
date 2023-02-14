@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <BodyPartGroupDef>
+    <defName>EponaEars</defName>
+    <label>EponaEars</label>
+    <listOrder>204</listOrder>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>EponaEarsNotHair</defName>
+    <label>EponaEarsNotHair</label>
+    <listOrder>203</listOrder>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>EponaTail</defName>
+    <label>EponaTail</label>
+    <listOrder>203</listOrder>
+  </BodyPartGroupDef>
+  
+<AlienRace.RaceSettings>
+    <defName>Epona_Settings</defName>
+     <pawnKindSettings>
+            
+			<startingColonists>
+				<li>
+				<pawnKindEntries>
+					<li>
+                    <kindDefs>
+                        <li>EponaPlayerColonist</li>
+                    </kindDefs>
+                    <chance>60.0</chance>
+					</li>
+					<li>
+                    <kindDefs>
+                        <li>DestrierPlayerColonist</li>
+                    </kindDefs>
+                    <chance>25.0</chance>
+					</li>
+					<li>
+                    <kindDefs>
+                        <li>EponaPlayerChildColonist</li>
+                    </kindDefs>
+                    <chance>12.5</chance>
+					</li>
+					<li>
+                    <kindDefs>
+                        <li>UnicornPlayerColonist</li>
+                    </kindDefs>
+                    <chance>2.5</chance>
+					</li>					
+				</pawnKindEntries>
+					<factionDefs>
+						<li>EponaPlayerColony</li> 
+					</factionDefs>
+				</li>
+			</startingColonists>
+			<alienslavekinds>
+                <li>
+                    <kindDefs>
+                        <li>EponaSlave</li>
+                    </kindDefs>
+                    <chance>25.0</chance>
+                </li>
+                <li>
+                    <kindDefs>
+                        <li>EponaSlaveDestrier</li>
+                    </kindDefs>
+                    <chance>10.0</chance>
+                </li>
+                <li>
+                    <kindDefs>
+                        <li>EponaSlaveUnicorn</li>
+                    </kindDefs>
+                    <chance>1.0</chance>
+                </li>
+            </alienslavekinds>
+            <alienrefugeekinds> <!-- pawnkinds listed here will show up as chased refugees for the event -->
+                <li>
+                    <kindDefs>
+                        <li>EponaRefugee</li>
+                    </kindDefs>
+                    <chance>15.0</chance>
+                </li>
+            </alienrefugeekinds>
+            <alienwandererkinds> <!-- pawnkinds listed here will show up as wanders that join your colony for the event -->
+                <li>
+                    <pawnKindEntries>
+                        <li>
+                            <kindDefs>
+								<li>Epona_Colonist</li>
+                            </kindDefs>
+                            <chance>90.0</chance>
+                        </li>
+                        <li>
+                            <kindDefs>
+								<li>Epona_ChildColonist</li>
+                            </kindDefs>
+                            <chance>10.0</chance>
+                        </li>
+                        <li>
+                            <kindDefs>
+								<li>DestrierPlayerColonist</li>
+                            </kindDefs>
+                            <chance>25.0</chance>
+                        </li>
+					<li>
+                             <kindDefs>
+                                 <li>UnicornPlayerColonist</li>
+                             </kindDefs>
+                          <chance>2.5</chance>
+					</li>	
+                    </pawnKindEntries>
+                    <factionDefs>
+                        <li>EponicKingdomFaction</li> 
+                    </factionDefs>
+                </li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+  </AlienRace.RaceSettings>
+
+  <BodyTypeDef>
+    <defName>EponaBody</defName>
+    <headOffset>(0.00, 0.56)</headOffset>
+    <bodyNakedGraphicPath>Things/Pawn/Epona/Bodies/Naked_Epona</bodyNakedGraphicPath>
+    <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
+    <woundAnchors>
+      <li>
+        <rotation>South</rotation>
+        <group>Torso</group>
+        <offset>(0,0,-0.1)</offset>
+        <range>0.2</range>
+        <debugColor>(1,0,0,1)</debugColor>
+      </li>
+      <li>
+        <rotation>South</rotation>
+        <tag>LeftLeg</tag>
+        <offset>(-0.12,0,-0.325)</offset>
+        <range>0.125</range>
+        <debugColor>(0,1,0,1)</debugColor>
+      </li>
+      <li>
+        <rotation>South</rotation>
+        <tag>RightLeg</tag>
+        <offset>(0.12,0,-0.325)</offset>
+        <range>0.125</range>
+        <debugColor>(0,0,1,1)</debugColor>
+      </li>
+      <li>
+        <rotation>South</rotation>
+        <tag>LeftShoulder</tag>
+        <offset>(-0.12,0,0.05)</offset>
+        <range>0.15</range>
+        <debugColor>(1,1,0,1)</debugColor>
+      </li>
+      <li>
+        <rotation>South</rotation>
+        <tag>RightShoulder</tag>
+        <offset>(0.12,0,0.05)</offset>
+        <range>0.15</range>
+        <debugColor>(1,0,1,1)</debugColor>
+      </li>
+      <li>
+        <rotation>South</rotation>
+        <group>FullHead</group>
+        <offset>(0, 0, 0.3)</offset>
+        <range>0.15</range>
+        <layer>Head</layer>
+        <debugColor>(0,1,1,1)</debugColor>
+      </li>
+      <li>
+        <rotation>South</rotation>
+        <tag>RightEye</tag>
+        <canMirror>false</canMirror>
+        <offset>(-0.095, 0, 0.26)</offset>
+        <range>0</range>
+        <layer>Head</layer>
+        <debugColor>(1,1,1,1)</debugColor>
+      </li>
+      <li>
+        <rotation>South</rotation>
+        <tag>LeftEye</tag>
+        <canMirror>false</canMirror>
+        <offset>(0.095, 0, 0.26)</offset>
+        <range>0</range>
+        <layer>Head</layer>
+        <debugColor>(0,0,0,1)</debugColor>
+      </li>
+      <li>
+        <rotation>West</rotation>
+        <group>FullHead</group>
+        <offset>(-0.17, 0, 0.32)</offset>
+        <range>0.2</range>
+        <layer>Head</layer>
+        <debugColor>(0,1,1,1)</debugColor>
+      </li>
+      <li>
+        <rotation>West</rotation>
+        <group>Torso</group>
+        <offset>(0,0,-0.13)</offset>
+        <range>0.2</range>
+        <debugColor>(1,0,0,1)</debugColor>
+      </li>
+      <li>
+        <rotation>East</rotation>
+        <tag>LeftShoulder</tag>
+        <offset>(-0.05,0,0.1)</offset>
+        <range>0.15</range>
+        <canMirror>false</canMirror>
+        <debugColor>(1,1,0,1)</debugColor>
+      </li>
+      <li>
+        <rotation>East</rotation>
+        <tag>LeftLeg</tag>
+        <offset>(-0.05,0,-0.3)</offset>
+        <range>0.15</range>
+        <canMirror>false</canMirror>
+        <debugColor>(0,1,0,1)</debugColor>
+      </li>
+      <li>
+        <rotation>West</rotation>
+        <tag>RightShoulder</tag>
+        <offset>(0.05,0,0.1)</offset>
+        <range>0.15</range>
+        <canMirror>false</canMirror>
+        <debugColor>(1,0,1,1)</debugColor>
+      </li>
+      <li>
+        <rotation>West</rotation>
+        <tag>RightLeg</tag>
+        <offset>(0.05,0,-0.3)</offset>
+        <range>0.15</range>
+        <canMirror>false</canMirror>
+        <debugColor>(0,0,1,1)</debugColor>
+      </li>
+      <li>
+        <rotation>East</rotation>
+        <tag>RightEye</tag>
+        <canMirror>false</canMirror>
+        <crownType>Narrow</crownType>
+        <offset>(0.12, 0, 0.26)</offset>
+        <range>0</range>
+        <layer>Head</layer>
+        <debugColor>(1,1,1,1)</debugColor>
+      </li>
+      <li>
+        <rotation>West</rotation>
+        <tag>LeftEye</tag>
+        <canMirror>false</canMirror>
+        <crownType>Narrow</crownType>
+        <offset>(-0.12, 0, 0.26)</offset>
+        <range>0</range>
+        <layer>Head</layer>
+        <debugColor>(0,0,0,1)</debugColor>
+      </li>
+      <li>
+        <rotation>East</rotation>
+        <tag>RightEye</tag>
+        <canMirror>false</canMirror>
+        <crownType>Average</crownType>
+        <offset>(0.19, 0, 0.26)</offset>
+        <range>0</range>
+        <layer>Head</layer>
+        <debugColor>(1,1,1,1)</debugColor>
+      </li>
+      <li>
+        <rotation>West</rotation>
+        <tag>LeftEye</tag>
+        <canMirror>false</canMirror>
+        <crownType>Average</crownType>
+        <offset>(-0.19, 0, 0.26)</offset>
+        <range>0</range>
+        <layer>Head</layer>
+        <debugColor>(0,0,0,1)</debugColor>
+      </li>
+    </woundAnchors>
+  </BodyTypeDef>
+  
+
+       <!--
+	           <apparel>
+            <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+            <wornGraphicPath>Mincho_Apparel/Mincho_KnightlyTiara/Texture</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <tags>
+                <li>Mincho_Knight</li>
+                <li>PrestigeCombatGear</li>
+            </tags>
+        </apparel>
+		-->
+
+
+<ThingDef Name="BaseEponaPawn" ParentName="BasePawn" Abstract="True">
+    <statBases>
+      <Mass>65</Mass>
+    </statBases>
+	<inspectorTabs>
+	</inspectorTabs>
+    <comps>
+    </comps>
+  </ThingDef>
+
+<AlienRace.ThingDef_AlienRace ParentName="BaseEponaPawn">
+    <defName>Alien_Epona</defName>
+    <label>에포나</label>
+    <description>에포나는 번화계에 기원을 두고 있다는것 외에는 전혀 기원을 알 수 없는 휴머노이드 생명체 입니다. 어떤 학자들은 에포나가 말과의 유전자 결합이 된 인종이 아닌 일종의 곤충과의 키메라 라고 보는 의견도 있습니다. 그 진실이 어떻든. 에포나들은 스스로 켄타우로스라 여기고 있으며. 변방계 여러곳에 말의 이름으로 자신들만의 왕국을 세웠습니다.</description>
+    <!-- 에일리언레이스셋팅 -->
+	
+	<alienRace>
+        <graphicPaths>
+			<!-- This tells the game to look in the folder MODFOLER/Textures/Things/Pawn/Heads/ for Images -->
+            <!-- -->
+			<li>
+                <head>Things/Pawn/LoliEpona/Heads/</head>
+                <body>Things/Pawn/LoliEpona/Bodies/</body>
+                <skeleton>Things/Pawn/LoliEpona/Bodies/Dessicated/Dessicated_Male</skeleton>
+                <skull>Things/Pawn/LoliEpona/Heads/Skull/Skull</skull>
+            </li>
+			<li>
+                <lifeStageDefs>
+                    <li>HumanlikeAdult</li>
+                    <li>EponalikeTeenager</li>
+                </lifeStageDefs>
+                <head>Things/Pawn/Epona/Heads/</head>
+                <body>Things/Pawn/Epona/Bodies/</body>
+                <skeleton>Things/Pawn/Epona/Bodies/Dessicated/Dessicated_Male</skeleton>
+                <skull>Things/Pawn/Epona/Heads/Skull/Skull</skull>
+            </li>
+			<!-- -->
+        </graphicPaths>
+        <generalSettings>
+            <humanRecipeImport>true</humanRecipeImport>
+            <maleGenderProbability>0.4</maleGenderProbability>
+            <immuneToAge>false</immuneToAge>
+			<maxDamageForSocialfight>8</maxDamageForSocialfight>
+			<!-- 
+			<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>-->
+            <forcedRaceTraitEntries>
+
+            </forcedRaceTraitEntries>
+            <alienPartGenerator>
+				<!-- game looks for files in the <head> path named aliencrowntypes_south, _east, _north (And _west, if present, it is not required though) (If genderedHeads is enabled suffix should me _Male_south or _Female_south)(Masks use the same nameing convetion but with an m at the end e.g. _southm)-->
+                <aliencrowntypes>
+                    <li>Average_Amber</li>
+                    <li>Average_Aquamarine</li>
+                    <li>Average_Emerald</li>
+                    <li>Average_Ruby</li>
+                    <li>Average_Topaz</li>
+                    <li>Average_Sapphire</li>
+
+                </aliencrowntypes>
+				<!-- game looks for files in the <body> path named alienbodytypes_south, _east, _north (And _west, if present, it is not required though) (If genderedHeads is enabled suffix should me _Male_south or _Female_south)(Masks use the same nameing convetion but with an m at the end e.g. _southm)-->
+                <alienbodytypes>
+                <li>EponaBody</li>
+                </alienbodytypes>
+
+				<useGenderedHeads>false</useGenderedHeads>
+				<useGenderedBodies>false</useGenderedBodies>
+				
+            <!-- 피부 프리셋색상 설정 --> 
+			
+			
+					<colorChannels>
+						<li>
+							<name>hediff</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- 백 -->
+									<li>
+										<weight>15</weight>
+										<min>(1.0,1.0,1.0)</min>
+										<max>(1.0,1.0,1.0)</max>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- 다크브라운3:2:0.5 -->
+									<li>
+										<weight>35</weight>
+										<min>(0.25,0.1,0)</min>
+										<max>(0.4,0.15,0.05)</max>
+									</li>
+									<!-- 브라운5:4:1 -->
+									<li>
+										<weight>20</weight>
+										<min>(0.5,0.35,0.1)</min>
+										<max>(0.6,0.40,0.2)</max>
+									</li>
+									<!-- 블랙 -->
+									<li>
+										<weight>32</weight>
+										<min>(0.1,0.0,0)</min>
+										<max>(0.2,0.1,0.05)</max>
+									</li>
+									<!-- 블론드 -->
+									<li>
+										<weight>14</weight>
+										<min>(0.9,0.85,0.7)</min>
+										<max>(1.0,0.9,0.8)</max>
+									</li>
+									<!-- 베이지 -->
+									<li>
+										<weight>6</weight>
+										<min>(0.8,0.6,0.4)</min>
+										<max>(1.0,0.75,0.45)</max>
+									</li>
+									<!-- 어두운 베이지 -->
+									<li>
+										<weight>9</weight>
+										<min>(0.6,0.4,0.2)</min>
+										<max>(0.8,0.5,0.25)</max>
+									</li>
+									<!-- 라이트 레드 -->
+									<li>
+										<weight>1</weight>
+										<min>(0.9,0.6,0.4)</min>
+										<max>(1.0,0.8,0.6)</max>
+									</li>
+									<!-- 블루 펄 -->
+									<li>
+										<weight>1</weight>
+										<min>(0.6,0.78,0.78)</min>
+										<max>(0.8,0.8,0.8)</max>
+									</li>
+									<!-- 탁금발 -->
+									<li>
+										<weight>5</weight>
+										<min>(0.65,0.6,0.4)</min>
+										<max>(0.75,0.7,0.6)</max>
+									</li>
+									<!-- 적갈 -->
+									<li>
+										<weight>3</weight>
+										<min>(0.65,0.4,0.3)</min>
+										<max>(0.75,0.55,0.4)</max>
+									</li>
+									<!--  탁갈 -->
+									<li>
+										<weight>12</weight>
+										<min>(0.55,0.4,0.35)</min>
+										<max>(0.62,0.55,0.4)</max>
+									</li>
+									<!--  흑갈 -->
+									<li>
+										<weight>17</weight>
+										<min>(0.4,0.2,0.12)</min>
+										<max>(0.62,0.4,0.35)</max>
+									</li>
+									<!--  탁파랑 -->
+									<li>
+										<weight>2</weight>
+										<min>(0.42,0.47,0.45)</min>
+										<max>(0.55,0.57,0.6)</max>
+									</li>
+									<!--  흑파랑 -->
+									<li>
+										<weight>2</weight>
+										<min>(0.32,0.32,0.27)</min>
+										<max>(0.38,0.33,0.38)</max>
+									</li>
+									<!--  흑파랑 -->
+									<li>
+										<weight>1</weight>
+										<min>(0.28,0.07,0.1)</min>
+										<max>(0.35,0.25,0.27)</max>
+									</li>
+									<!--  미드나잇 블루 -->
+									<li>
+										<weight>1</weight>
+										<min>(0.1,0.15,0.25)</min>
+										<max>(0.25,0.32,0.4)</max>
+									</li>
+									<!--  흑파랑 -->
+									<li>
+										<weight>1</weight>
+										<min>(0.35,0.2,0.1)</min>
+										<max>(0.7,0.3,0.2)</max>
+									</li>
+									<!-- 오렌지 -->
+									<li>
+										<weight>1</weight>
+										<min>(0.7,0.3,0)</min>
+										<max>(1.0,0.6,0.5)</max>
+									</li>
+									<!-- 백 -->
+									<li>
+										<weight>15</weight>
+										<min>(0.9,0.9,0.9)</min>
+										<max>(1.0,1.0,1.0)</max>
+									</li>
+								</options>
+							</first>
+						</li>
+            <li>
+              <name>hair</name>
+              <first Class="AlienRace.ColorGenerator_CustomAlienChannel">
+                <colorChannel>skin_1</colorChannel>
+              </first>
+            </li>
+					</colorChannels>
+				<headOffset>(0, -0.15)</headOffset>
+				<headOffsetDirectional>
+						<north>(0, -0.21)</north>
+						<east>(-0.03, -0.199)</east>
+						<south>(0, -0.19)</south>
+						<west>(0.03, -0.199)</west>
+				</headOffsetDirectional>
+			<customDrawSize>(1.2, 1.2)</customDrawSize>
+			<customHeadDrawSize>(0.85, 0.85)</customHeadDrawSize>
+		    <customPortraitHeadDrawSize>(0.85, 0.85)</customPortraitHeadDrawSize>
+			<customPortraitDrawSize>(1.2, 1.2)</customPortraitDrawSize>
+			<atlasScale>4</atlasScale>
+            <bodyAddons>
+            <li>
+				<path>Things/Pawn/Addons/Blank</path>
+				<bodyPart>Torso</bodyPart>
+				<drawSize>1.2</drawSize>
+				<colorChannel>hair</colorChannel>
+                <drawnInBed>false</drawnInBed>
+                <inFrontOfBody>false</inFrontOfBody>
+				<defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(0,0)</EponaBody>
+                                    </bodyTypes>
+									<layerOffset>0.272</layerOffset>
+
+                </south>
+
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(0,0.525)</EponaBody>
+                                    </bodyTypes>
+									<layerOffset>0.272</layerOffset>
+
+                </north>
+
+                <east>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.425,0.22)</EponaBody>
+                                    </bodyTypes>
+									<layerOffset>0.272</layerOffset>
+
+                </east>
+                </offsets>
+                <hediffGraphics>
+								<Epona_OHPG_male>Things/Pawn/Addons/TailsMale/HorseTail</Epona_OHPG_male>
+								<Epona_OHPG_female>Things/Pawn/Addons/Tails/HorseTail</Epona_OHPG_female>
+								<Epona_Loli>Things/Pawn/Addons/TailsLoli/HorseTail</Epona_Loli>
+								<Epona_Shota>Things/Pawn/Addons/TailsLoli/HorseTail</Epona_Shota>
+
+                </hediffGraphics>
+				<hiddenUnderApparelFor>
+				<li>EponaTail</li>
+				</hiddenUnderApparelFor>
+            </li>
+
+			
+			<li>
+				<path>Things/Pawn/Addons/Hair/HorseHair</path>
+				<bodyPart>Head</bodyPart>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>hair</colorChannel>
+                <drawnInBed>true</drawnInBed>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+				<drawSize>0.85</drawSize>
+				<angle>0</angle>
+				<hediffGraphics>
+				</hediffGraphics>
+				<offsets>
+				<south>
+									<bodyTypes>
+										<EponaBody>(-0.4185,0.436)</EponaBody>
+									</bodyTypes>
+									<portraitBodyTypes>
+                                        <EponaBody>(-0.4185,0.436)</EponaBody>
+                                    </portraitBodyTypes>
+					        		<layerOffset>-0.272</layerOffset>
+				</south>
+				<north>
+									<bodyTypes>
+										<EponaBody>(0,0.853)</EponaBody>
+									</bodyTypes>
+					        		<layerOffset>-0.272</layerOffset>
+				</north>
+				<east>
+									<bodyTypes>
+										<EponaBody>(-0.395,0.417)</EponaBody>
+									</bodyTypes>
+					        		<layerOffset>-0.272</layerOffset>
+				</east>
+				<west>
+									<bodyTypes>
+										<EponaBody>(-0.395,0.417)</EponaBody>
+									</bodyTypes>
+					        		<layerOffset>-0.272</layerOffset>
+				</west>
+			    </offsets>
+				<hiddenUnderApparelFor>
+				<li>EponaEars</li>
+				</hiddenUnderApparelFor>
+			</li>	
+			<li>
+				<path>Things/Pawn/Addons/Hair/HorseHairNorth</path>
+				<bodyPart>Head</bodyPart>
+				<inFrontOfBody>false</inFrontOfBody>
+				<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+                <drawnInBed>true</drawnInBed>
+                <defaultOffset>Tail</defaultOffset>
+				<colorChannel>hair</colorChannel>
+                <shaderType>Cutout</shaderType>
+				<drawSize>0.85</drawSize>
+				<angle>0</angle>
+				<hediffGraphics>
+				</hediffGraphics>
+				<offsets>
+				<south>
+									<bodyTypes>
+										<EponaBody>(-0.4185,0.43)</EponaBody>
+									</bodyTypes>
+									<portraitBodyTypes>
+                                        <EponaBody>(-0.4185,0.43)</EponaBody>
+                                    </portraitBodyTypes>
+					        		<layerOffset>-0.272</layerOffset>
+				</south>
+				<north>
+									<bodyTypes>
+										<EponaBody>(0,0.787)</EponaBody>
+									</bodyTypes>
+					        		<layerOffset>-0.272</layerOffset>
+				</north>
+				<east>
+									<bodyTypes>
+										<EponaBody>(-0.398,0.398)</EponaBody>
+									</bodyTypes>
+					        		<layerOffset>-0.272</layerOffset>
+				</east>
+				<west>
+									<bodyTypes>
+										<EponaBody>(-0.398,0.398)</EponaBody>
+									</bodyTypes>
+					        		<layerOffset>-0.272</layerOffset>
+				</west>
+			    </offsets>
+				<hiddenUnderApparelFor>
+				<li>EponaEars</li>
+				</hiddenUnderApparelFor>
+			</li>	
+			<li>
+				<path>Things/Pawn/Addons/HairBack/HorseHair</path>
+				<bodyPart>Head</bodyPart>
+				<inFrontOfBody>false</inFrontOfBody>
+				<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+                <drawnInBed>true</drawnInBed>
+                <defaultOffset>Tail</defaultOffset>
+				<colorChannel>hair</colorChannel>
+                <shaderType>Cutout</shaderType>
+				<drawSize>0.85</drawSize>
+				<angle>0</angle>
+				<hediffGraphics>
+				</hediffGraphics>
+				<offsets>
+				<south>
+									<bodyTypes>
+										<EponaBody>(-0.4185,0.43)</EponaBody>
+									</bodyTypes>
+									<portraitBodyTypes>
+                                        <EponaBody>(-0.4185,0.43)</EponaBody>
+                                    </portraitBodyTypes>
+							        <layerOffset>-0.309</layerOffset>
+				</south>
+				<north>
+									<bodyTypes>
+										<EponaBody>(0,0.853)</EponaBody>
+									</bodyTypes>
+							        <layerOffset>-0.309</layerOffset>
+				</north>
+				<east>
+									<bodyTypes>
+										<EponaBody>(-0.398,0.425)</EponaBody>
+									</bodyTypes>
+							        <layerOffset>-0.309</layerOffset>
+				</east>
+				<west>
+									<bodyTypes>
+										<EponaBody>(-0.398,0.425)</EponaBody>
+									</bodyTypes>
+							        <layerOffset>-0.309</layerOffset>
+				</west>
+			    </offsets>
+				<hiddenUnderApparelFor>
+				<li>EponaEars</li>
+				</hiddenUnderApparelFor>
+			</li>	
+			<li>
+				<path>Things/Pawn/Addons/HairBack/HorseHairEast</path>
+				<bodyPart>Head</bodyPart>
+				<inFrontOfBody>false</inFrontOfBody>
+				<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+                <drawnInBed>true</drawnInBed>
+                <defaultOffset>Tail</defaultOffset>
+				<colorChannel>hair</colorChannel>
+                <shaderType>Cutout</shaderType>
+				<drawSize>0.85</drawSize>
+				<angle>0</angle>
+				<hediffGraphics>
+				</hediffGraphics>
+				<offsets>
+				<south>
+									<bodyTypes>
+										<EponaBody>(-0.4185,0.43)</EponaBody>
+									</bodyTypes>
+									<portraitBodyTypes>
+                                        <EponaBody>(-0.4185,0.43)</EponaBody>
+                                    </portraitBodyTypes>
+							        <layerOffset>-0.309</layerOffset>
+				</south>
+				<north>
+									<bodyTypes>
+										<EponaBody>(0,0.853)</EponaBody>
+									</bodyTypes>
+							        <layerOffset>-0.309</layerOffset>
+				</north>
+				<east>
+									<bodyTypes>
+										<EponaBody>(-0.425,0.425)</EponaBody>
+									</bodyTypes>
+							        <layerOffset>-0.309</layerOffset>
+				</east>
+				<west>
+									<bodyTypes>
+										<EponaBody>(-0.425,0.425)</EponaBody>
+									</bodyTypes>
+							        <layerOffset>-0.309</layerOffset>
+				</west>
+			    </offsets>
+				<hiddenUnderApparelFor>
+				<li>EponaEars</li>
+				</hiddenUnderApparelFor>
+			</li>	
+			
+			<li>
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Torso</bodyPart>
+				<drawSize>0.85</drawSize>
+				<colorChannel>hair</colorChannel>
+                <drawnInBed>true</drawnInBed>
+                <inFrontOfBody>false</inFrontOfBody>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.43)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </south>
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(0,0.88)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </north>
+				<!-- 여기가 귀-->
+				<east>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.4,0.392)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </east>
+				<west>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.4,0.392)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </west>
+                </offsets>
+                <hediffGraphics>
+								<Epona_OHPG_male>Things/Pawn/Addons/EarsMale/Horse_EarLeftEast</Epona_OHPG_male>
+								<Epona_OHPG_female>Things/Pawn/Addons/Ears/Horse_EarLeftEast</Epona_OHPG_female>
+								<Epona_Shota>Things/Pawn/Addons/EarsLoli/Horse_EarLeftEast</Epona_Shota>
+								<Epona_Loli>Things/Pawn/Addons/EarsLoli/Horse_EarLeftEast</Epona_Loli>
+                </hediffGraphics>
+				<hiddenUnderApparelFor>
+				<li>EponaEars</li>
+				<li>EponaEarsNotHair</li>
+				</hiddenUnderApparelFor>
+            </li>
+			<li>
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Torso</bodyPart>
+				<drawSize>0.85</drawSize>
+				<colorChannel>hair</colorChannel>
+                <drawnInBed>true</drawnInBed>
+                <inFrontOfBody>false</inFrontOfBody>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.43)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </south>
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(0,0.787)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.3</layerOffset>
+                </north>
+				<!-- 여기가 귀-->
+				<east>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.398)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </east>
+				<west>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.398)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </west>
+                </offsets>
+                <hediffGraphics>
+								<Epona_OHPG_male>Things/Pawn/Addons/EarsMale/Horse_EarLeftNorth</Epona_OHPG_male>
+								<Epona_OHPG_female>Things/Pawn/Addons/Ears/Horse_EarLeftNorth</Epona_OHPG_female>
+								<Epona_Shota>Things/Pawn/Addons/EarsLoli/Horse_EarLeftNorth</Epona_Shota>
+								<Epona_Loli>Things/Pawn/Addons/EarsLoli/Horse_EarLeftNorth</Epona_Loli>
+                </hediffGraphics>
+				<hiddenUnderApparelFor>
+				<li>EponaEars</li>
+				<li>EponaEarsNotHair</li>
+				</hiddenUnderApparelFor>
+            </li>
+			<li>
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Torso</bodyPart>
+				<drawSize>0.85</drawSize>
+				<colorChannel>hair</colorChannel>
+                <drawnInBed>true</drawnInBed>
+                <inFrontOfBody>true</inFrontOfBody>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.43)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </south>
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(0,0.88)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </north>
+				<!-- 여기가 귀-->
+				<east>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.398)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </east>
+				<west>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.398)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </west>
+                </offsets>
+                <hediffGraphics>
+								<Epona_EarPLZ>Things/Pawn/Addons/EarsPLZ/EarsPLZ</Epona_EarPLZ>
+								<Epona_OHPG_male>Things/Pawn/Addons/EarsMale/Horse_EarLeftSouth</Epona_OHPG_male>
+								<Epona_OHPG_female>Things/Pawn/Addons/Ears/Horse_EarLeftSouth</Epona_OHPG_female>
+								<Epona_Shota>Things/Pawn/Addons/EarsLoli/Horse_EarLeftSouth</Epona_Shota>
+								<Epona_Loli>Things/Pawn/Addons/EarsLoli/Horse_EarLeftSouth</Epona_Loli>
+                </hediffGraphics>
+				<hiddenUnderApparelFor>
+				<li>EponaEars</li>
+				<li>EponaEarsNotHair</li>
+				</hiddenUnderApparelFor>
+            </li>
+			<li>
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Torso</bodyPart>
+				<drawSize>0.85</drawSize>
+				<colorChannel>hair</colorChannel>
+                <drawnInBed>true</drawnInBed>
+                <inFrontOfBody>true</inFrontOfBody>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.43)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </south>
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(0,0.88)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </north>
+				<!-- 여기가 귀-->
+				<east>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.4,0.392)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </east>
+				<west>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.4,0.392)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </west>
+                </offsets>
+                <hediffGraphics>
+								<Epona_OHPG_male>Things/Pawn/Addons/EarsMale/Horse_EarLeftWest</Epona_OHPG_male>
+								<Epona_OHPG_female>Things/Pawn/Addons/Ears/Horse_EarLeftWest</Epona_OHPG_female>
+								<Epona_Shota>Things/Pawn/Addons/EarsLoli/Horse_EarLeftWest</Epona_Shota>
+								<Epona_Loli>Things/Pawn/Addons/EarsLoli/Horse_EarLeftWest</Epona_Loli>
+                </hediffGraphics>
+				<hiddenUnderApparelFor>
+				<li>EponaEars</li>
+				<li>EponaEarsNotHair</li>
+				</hiddenUnderApparelFor>
+            </li>
+			
+			
+			<li>
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Torso</bodyPart>
+				<drawSize>0.85</drawSize>
+				<colorChannel>hair</colorChannel>
+                <drawnInBed>true</drawnInBed>
+                <inFrontOfBody>true</inFrontOfBody>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.43)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </south>
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(0,0.88)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </north>
+				<!-- 여기가 귀-->
+				<east>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.4,0.392)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </east>
+				<west>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.4,0.392)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </west>
+                </offsets>
+                <hediffGraphics>
+								<Epona_OHPG_male>Things/Pawn/Addons/EarsRightMale/Horse_EarRightEast</Epona_OHPG_male>
+								<Epona_OHPG_female>Things/Pawn/Addons/EarsRight/Horse_EarRightEast</Epona_OHPG_female>
+								<Epona_Shota>Things/Pawn/Addons/EarsRightLoli/Horse_EarRightEast</Epona_Shota>
+								<Epona_Loli>Things/Pawn/Addons/EarsRightLoli/Horse_EarRightEast</Epona_Loli>
+                </hediffGraphics>
+				<hiddenUnderApparelFor>
+				<li>EponaEars</li>
+				<li>EponaEarsNotHair</li>
+				</hiddenUnderApparelFor>
+            </li>
+			<li>
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Torso</bodyPart>
+				<drawSize>0.85</drawSize>
+				<colorChannel>hair</colorChannel>
+                <drawnInBed>true</drawnInBed>
+                <inFrontOfBody>false</inFrontOfBody>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.43)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </south>
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(0,0.787)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.3</layerOffset>
+                </north>
+				<!-- 여기가 귀-->
+				<east>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.398)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </east>
+				<west>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.398)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </west>
+                </offsets>
+                <hediffGraphics>
+								<Epona_OHPG_male>Things/Pawn/Addons/EarsRightMale/Horse_EarRightNorth</Epona_OHPG_male>
+								<Epona_OHPG_female>Things/Pawn/Addons/EarsRight/Horse_EarRightNorth</Epona_OHPG_female>
+								<Epona_Shota>Things/Pawn/Addons/EarsRightLoli/Horse_EarRightNorth</Epona_Shota>
+								<Epona_Loli>Things/Pawn/Addons/EarsRightLoli/Horse_EarRightNorth</Epona_Loli>
+                </hediffGraphics>
+				<hiddenUnderApparelFor>
+				<li>EponaEars</li>
+				<li>EponaEarsNotHair</li>
+				</hiddenUnderApparelFor>
+            </li>
+			<li>
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Torso</bodyPart>
+				<drawSize>0.85</drawSize>
+				<colorChannel>hair</colorChannel>
+                <drawnInBed>true</drawnInBed>
+                <inFrontOfBody>true</inFrontOfBody>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.418,0.43)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </south>
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(0,0.88)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </north>
+				<!-- 여기가 귀-->
+				<east>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.398)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </east>
+				<west>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.398)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </west>
+                </offsets>
+                <hediffGraphics>
+								<Epona_OHPG_male>Things/Pawn/Addons/EarsRightMale/Horse_EarRightSouth</Epona_OHPG_male>
+								<Epona_OHPG_female>Things/Pawn/Addons/EarsRight/Horse_EarRightSouth</Epona_OHPG_female>
+								<Epona_Shota>Things/Pawn/Addons/EarsRightLoli/Horse_EarRightSouth</Epona_Shota>
+								<Epona_Loli>Things/Pawn/Addons/EarsRightLoli/Horse_EarRightSouth</Epona_Loli>
+                </hediffGraphics>
+				<hiddenUnderApparelFor>
+				<li>EponaEars</li>
+				<li>EponaEarsNotHair</li>
+				</hiddenUnderApparelFor>
+            </li>
+			<li>
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Torso</bodyPart>
+				<drawSize>0.85</drawSize>
+				<colorChannel>hair</colorChannel>
+                <drawnInBed>true</drawnInBed>
+                <inFrontOfBody>false</inFrontOfBody>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.43,0.43)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </south>
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(0,0.88)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </north>
+				<!-- 여기가 귀-->
+				<east>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.4,0.392)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </east>
+				<west>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.4,0.392)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </west>
+                </offsets>
+                <hediffGraphics>
+								<Epona_OHPG_male>Things/Pawn/Addons/EarsRightMale/Horse_EarRightWest</Epona_OHPG_male>
+								<Epona_OHPG_female>Things/Pawn/Addons/EarsRight/Horse_EarRightWest</Epona_OHPG_female>
+								<Epona_Shota>Things/Pawn/Addons/EarsRightLoli/Horse_EarRightWest</Epona_Shota>
+								<Epona_Loli>Things/Pawn/Addons/EarsRightLoli/Horse_EarRightWest</Epona_Loli>
+                </hediffGraphics>
+				<hiddenUnderApparelFor>
+				<li>EponaEars</li>
+				<li>EponaEarsNotHair</li>
+				</hiddenUnderApparelFor>
+            </li>
+			
+			<li>
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Torso</bodyPart>
+				<drawSize>1.2</drawSize>
+				<colorChannel>hair</colorChannel>
+                <drawnInBed>true</drawnInBed>
+                <inFrontOfBody>false</inFrontOfBody>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.42,0.215)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.32</layerOffset>
+                </south>
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(0,0.88)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.2</layerOffset>
+                </north>
+				<!-- 여기가 귀-->
+				<east>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.42,0.215)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.32</layerOffset>
+                </east>
+				<west>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.42,0.215)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.32</layerOffset>
+                </west>
+                </offsets>
+				<hediffGraphics>
+								<Epona_OHPG_female>Things/Pawn/Addons/Breasts/Breasts</Epona_OHPG_female>
+				</hediffGraphics>
+				<hiddenUnderApparelFor>
+			                    <li>Torso</li>
+				</hiddenUnderApparelFor>
+            </li>
+			
+			<li>
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Torso</bodyPart>
+				<drawSize>1.2</drawSize>
+                <inFrontOfBody>false</inFrontOfBody>
+				<colorChannel>hediff</colorChannel>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.42,0.215)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>1</layerOffset>
+                </south>
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.0,0.52)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>0.9</layerOffset>
+                </north>
+				<east>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.42,0.215)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>0.9</layerOffset>
+                </east>
+				<west>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.42,0.215)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>0.9</layerOffset>
+                </west>
+                </offsets>
+				<hediffGraphics>
+								<Hediff_Epona_Arrow_Poison>Things/Pawn/Addons/ItemQuiver/Quiver_Poison</Hediff_Epona_Arrow_Poison>
+								<Hediff_Epona_Pack_Carrot>Things/Pawn/Addons/ItemQuiver/Pack_Carrot</Hediff_Epona_Pack_Carrot>
+                                <Hediff_Epona_Shield_Heater_Plain>Things/Pawn/Addons/ItemShield/Shield_Plain</Hediff_Epona_Shield_Heater_Plain>
+								<Hediff_Epona_Shield_Heater_Hippogryph>Things/Pawn/Addons/ItemShield/Shield_Hippogryph</Hediff_Epona_Shield_Heater_Hippogryph>
+								<Hediff_Epona_Shield_Heater_Swords>Things/Pawn/Addons/ItemShield/Shield_Swords</Hediff_Epona_Shield_Heater_Swords>
+								<Hediff_Epona_Shield_Heater_Wine>Things/Pawn/Addons/ItemShield/Shield_Wine</Hediff_Epona_Shield_Heater_Wine>
+								
+				</hediffGraphics>
+				<hiddenUnderApparelFor>
+				</hiddenUnderApparelFor>
+            </li>
+			<li Class="MoharCustomHAR.MoharBodyAddon">
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Torso</bodyPart>
+				<drawSize>1.2</drawSize>
+				<colorChannel>hediff</colorChannel>
+                <inFrontOfBody>true</inFrontOfBody>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+				<drawIfDrafted>false</drawIfDrafted>
+				<drawIfUndrafted>true</drawIfUndrafted>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.42,0.215)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>1.0</layerOffset>
+                </south>
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.0,0.52)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.7</layerOffset>
+                </north>
+				<east>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.42,0.215)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-1</layerOffset>
+                </east>
+				<west>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.42,0.215)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-1</layerOffset>
+                </west>
+                </offsets>
+
+				<hediffGraphics>
+					<Hediff_Epona_NewShield_Light>Things/ApparelNewShield/Light/OnBack/OnBack</Hediff_Epona_NewShield_Light>
+					<Hediff_Epona_NewShield_Balistic>Things/ApparelNewShield/Balistic/OnBack/OnBack</Hediff_Epona_NewShield_Balistic>
+					<Hediff_Epona_NewShield_Medic>Things/ApparelNewShield/Medic/OnBack/OnBack</Hediff_Epona_NewShield_Medic>
+
+				</hediffGraphics>
+				<hiddenUnderApparelFor>
+				</hiddenUnderApparelFor>
+            </li>			
+			<li Class="MoharCustomHAR.MoharBodyAddon">
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Torso</bodyPart>
+				<drawSize>1.2</drawSize>
+				<colorChannel>hediff</colorChannel>
+                <inFrontOfBody>true</inFrontOfBody>
+                <defaultOffset>Tail</defaultOffset>
+                <shaderType>Cutout</shaderType>
+				<drawIfDrafted>true</drawIfDrafted>
+				<drawIfUndrafted>false</drawIfUndrafted>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.42,0.215)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-0.266</layerOffset>
+                </south>
+                <north>
+                                    <bodyTypes>
+                                    <EponaBody>(-0.0,0.52)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>0.305</layerOffset>
+                </north>
+				<east>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.42,0.215)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>-1</layerOffset>
+                </east>
+				<west>
+				
+                                    <bodyTypes>
+                                    <EponaBody>(-0.42,0.215)</EponaBody>
+                                    </bodyTypes>
+							        <layerOffset>1</layerOffset>
+                </west>
+                </offsets>
+				<hediffGraphics>
+					<Hediff_Epona_NewShield_Light>Things/ApparelNewShield/Light/Equip/Equip</Hediff_Epona_NewShield_Light>
+					<Hediff_Epona_NewShield_Balistic>Things/ApparelNewShield/Balistic/Equip/Equip</Hediff_Epona_NewShield_Balistic>
+					<Hediff_Epona_NewShield_Medic>Things/ApparelNewShield/Medic/Equip/Equip</Hediff_Epona_NewShield_Medic>
+
+				</hediffGraphics>
+				<hiddenUnderApparelFor>
+				</hiddenUnderApparelFor>
+            </li>			
+            </bodyAddons>
+            </alienPartGenerator>
+            <chemicalSettings>
+			<!--
+                <li>
+                    <chemical>Smokeleaf</chemical>
+                    <reactions>
+                        <li Class="IngestionOutcomeDoer_GiveHediff">
+                                <hediff>LungFailure</hediff>
+                                <severity>0.75</severity>
+                        </li>
+                    </reactions>
+                </li>
+                <li>
+                    <chemical>Luciferium</chemical>
+                    <ingestible>false</ingestible>
+                </li>
+			-->
+            </chemicalSettings>
+        </generalSettings>
+        <relationSettings>
+            <relationChanceModifierChild>1</relationChanceModifierChild>
+            <relationChanceModifierExLover>1</relationChanceModifierExLover>
+            <relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+            <relationChanceModifierFiance>1</relationChanceModifierFiance>
+            <relationChanceModifierLover>1</relationChanceModifierLover>
+            <relationChanceModifierParent>1</relationChanceModifierParent>
+            <relationChanceModifierSibling>1</relationChanceModifierSibling>
+            <relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+        </relationSettings>
+		
+            <styleSettings>
+                <li>
+                    <key>HairDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>BeardDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>TattooDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+            </styleSettings>
+
+		<!-- 기분관련 -->	
+				
+		<thoughtSettings>
+
+            <replacerList>
+
+                 <li>
+                    <original>AteEponaStarboomPie</original>
+                    <replacer>AteEponaStarboomPieforEpona</replacer>
+                 </li>
+                 <li>
+                    <original>AteEponaHaySoup</original>
+                    <replacer>AteEponaHaySoupforEpona</replacer>
+                 </li>
+				 
+            </replacerList>
+			
+			<cannotReceiveThoughts>
+			<li>NeedOutdoors</li>
+			</cannotReceiveThoughts>
+			<restrictedThoughts>
+			<li>EponaNeedOutdoors</li>
+			</restrictedThoughts>
+		</thoughtSettings>
+		
+		
+        <raceRestriction>
+		<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+		<apparelList>
+	          <li>Epona_Apparel_Farmer</li>
+			  <li>Epona_Apparel_Noble</li>
+			  <li>Epona_Apparel_BuffCoat</li>
+			  <li>Epona_Apparel_Priest</li>
+			  <li>Epona_Apparel_Child</li>
+              <li>Epona_Apparel_JackPlate</li>
+              <li>Epona_Apparel_Adventurer</li>
+
+			  
+			  <li>Epona_Apparel_BreastPlate</li>
+			  <li>Epona_Apparel_FullPlate</li>
+			  <li>Epona_Apparel_FullPlateMedic</li>
+			  <li>Epona_Apparel_DragoonPlate</li>
+
+			  <li>Epona_Apparel_FurCape</li>
+			  <li>Epona_Apparel_NobleCape</li>
+
+			  <li>Epona_Apparel_PowerArmor</li>
+              <li>Epona_Apparel_PowerArmorMunition</li>
+			  <li>Epona_Apparel_Quiver_Poison</li>
+			  <li>Epona_Apparel_Pack_Carrot</li>
+			  
+			  <li>Epona_Apparel_NewShield_Light</li>
+			  <li>Epona_Apparel_NewShield_Balistic</li>
+			  <li>Epona_Apparel_NewShield_Medic</li>
+
+			  <li>Epona_Apparel_Shield_Heater_Plain</li>
+			  <li>Epona_Apparel_Shield_Heater_Hippogryph</li>
+			  <li>Epona_Apparel_Shield_Heater_Swords</li>
+			  <li>Epona_Apparel_Shield_Heater_Wine</li>
+
+			  <li>Epona_Apparel_Hat_Helmet</li>
+			  <li>Epona_Apparel_Hat_EliteHelmet</li>
+			  <li>Epona_Apparel_Hat_GuardianHelmet</li>
+
+			  <li>Epona_Apparel_Hat_Tiara</li>
+              <li>Epona_Apparel_Hat_Priest</li>
+              <li>Epona_Apparel_Hat_Common</li>
+              <li>Epona_Apparel_Hat_Winter</li>
+
+              <li>Epona_Apparel_EVA</li>
+              <li>Epona_Apparel_Hat_EVA</li>
+
+              <li MayRequire="Ludeon.RimWorld.Ideology">Epona_Apparel_Hat_SlaveEarTag</li>
+
+        </apparelList>
+            <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+
+		<weaponList>
+		<li>Epona_Weapon_Lance</li>
+		<li>Epona_Weapon_LanceToranos</li>
+
+		<li>Epona_Weapon_Steamlance</li>
+		<li>Epona_Weapon_Steamgatling</li>
+		<li>Epona_Weapon_Steamflak</li>
+
+		</weaponList>
+		<whiteApparelList>
+              <li>Apparel_ShieldBelt</li>
+
+		</whiteApparelList>
+            <researchList>
+                <li>
+                    <projects> <!-- list the defname of any project that Only this race can reseach -->
+                    </projects>
+                    <apparelList> <!-- list the defname of any apparel that this race requires to wear to reseach -->
+                    </apparelList>
+                </li>
+            </researchList>
+            <recipeList> <!-- list the defname of any recipie that Only this race can do -->
+            </recipeList>
+        </raceRestriction>
+    </alienRace>
+	<statBases>
+      <!--스펙설정(일반)-->
+	  <MarketValue>2500</MarketValue>
+	  <RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">3</RoyalFavorValue>
+	  <CarryingCapacity>110</CarryingCapacity>
+	  <GlobalLearningFactor>1.0</GlobalLearningFactor>
+	  <PsychicSensitivity>1</PsychicSensitivity>
+	  <RestRateMultiplier>0.85</RestRateMultiplier>
+      <ImmunityGainSpeed>0.9</ImmunityGainSpeed>
+	  <!--스펙(일)-->
+	  <WorkSpeedGlobal>0.9</WorkSpeedGlobal>
+	  <ForagedNutritionPerDay>0.5</ForagedNutritionPerDay>
+	  <NegotiationAbility>0.9</NegotiationAbility>
+	  <SocialImpact>1.0</SocialImpact>
+	  <TradePriceImprovement>1.0</TradePriceImprovement>
+      <LeatherAmount>40</LeatherAmount>
+      <Flammability>1.0</Flammability>
+	  <PainShockThreshold>0.85</PainShockThreshold>
+      <ComfyTemperatureMin>12</ComfyTemperatureMin>
+      <ComfyTemperatureMax>25</ComfyTemperatureMax>
+	  <!--스펙설정(전투)-->
+	  <MoveSpeed>6.5</MoveSpeed>
+	  <AimingDelayFactor>0.9</AimingDelayFactor>
+	  <MeleeDodgeChance>10</MeleeDodgeChance>
+	  <MeleeHitChance>1.2</MeleeHitChance>
+
+    </statBases>
+        <tools>
+      <li>
+        <label>Left Punch</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>Right Punch</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>Teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+      <li>
+        <label>Kick</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>3</cooldownTime>
+        <linkedBodyPartsGroup>CentaurHooves</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.07</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>75</lifeExpectancy>
+      <leatherDef>Meat_Human</leatherDef>
+	  <fleshType>Flesh_Epona</fleshType>
+      <!-- 
+	  <nameCategory>HumanStandard</nameCategory>
+      -->
+	  <nameGenerator>NamerPersonEpona</nameGenerator>
+      <nameGeneratorFemale>NamerPersonEpona</nameGeneratorFemale>
+      <!-- 
+	  <body>Human</body>
+      -->
+	  <body>Centaur</body>
+      <bloodDef>Filth_Blood_Epona</bloodDef>	
+      <useMeatFrom>Horse</useMeatFrom>
+	  <meatLabel>horse meat</meatLabel>     
+	  <baseBodySize>1.5</baseBodySize>
+      <baseHealthScale>1.2</baseHealthScale>
+      <baseHungerRate>1.0</baseHungerRate>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>45</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0.02)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeToddler</def>
+          <minAge>1.2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>EponalikeTeenager</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+	  
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(8,0)</li>
+		  <li>(16,60)</li>
+		  <li>(23,100)</li>
+          <li>(32,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+        <li>Human</li>
+		<li>Epona_LifeStage_HediffGiverSet</li>
+      </hediffGiverSets>
+    </race>
+    <recipes>
+       <li>InstallArchotechEye</li>
+      <li>InstallArchotechArm</li>
+      <li>InstallArchotechLeg</li>
+      <li>InstallPowerClaw</li>
+      <li>InstallBionicEye</li>
+      <li>InstallBionicArm</li>
+      <li>InstallBionicLeg</li>
+      <li>InstallBionicSpine</li>
+      <li>InstallBionicHeart</li>
+      <li>InstallBionicStomach</li>
+      <li>InstallBionicEar</li>
+      <li>InstallSimpleProstheticArm</li>
+      <li>InstallSimpleProstheticLeg</li>
+      <li>InstallSimpleProstheticHeart</li>
+      <li>InstallCochlearImplant</li>
+      <li>InstallPegLeg</li>
+      <li>InstallDenture</li>
+      <li>InstallJoywire</li>
+      <li>InstallPainstopper</li>
+      <li>InstallNaturalHeart</li>
+      <li>InstallNaturalLung</li>
+      <li>InstallNaturalKidney</li>
+      <li>InstallNaturalLiver</li>
+      <li>ExciseCarcinoma</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+    </recipes>
+</AlienRace.ThingDef_AlienRace>
+
+
+  <LifeStageDef>
+    <defName>EponalikeTeenager</defName>
+    <label>teenager</label>
+    <adjective>teenage</adjective>
+    <reproductive>true</reproductive>
+    <healthScaleFactor>0.90</healthScaleFactor>
+    <meleeDamageFactor>0.75</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.95</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+
+  <LifeStageDef>
+    <defName>EponalikeChild</defName>
+    <label>child</label>
+    <adjective>childage</adjective>
+    <reproductive>true</reproductive>
+    <healthScaleFactor>0.5</healthScaleFactor>
+    <meleeDamageFactor>0.4</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.85</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+
+</Defs>

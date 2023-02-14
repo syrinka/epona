@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BodyPartDef>
+    <defName>CentaurTail</defName>
+    <label>꼬리</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>1</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  <!--  <BodyPartDef>
+    <defName>CentaurHoof</defName>
+    <label>말굽</label>
+    <hitPoints>30</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>-->
+</Defs>

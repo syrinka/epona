@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SiegeBombCannon_Main_Cluster.label>Bomb</SiegeBombCannon_Main_Cluster.label>
+  <SiegeBombCannon_Main_Cluster.deathMessage>{0} has Shredded by Crystal</SiegeBombCannon_Main_Cluster.deathMessage>
+  <SiegeBombCannon_Cluster.label>Bomb</SiegeBombCannon_Cluster.label>
+  <SiegeBombCannon_Cluster.deathMessage>{0} has Shredded by Crystal</SiegeBombCannon_Cluster.deathMessage>
+  <EponaAPStab.label>stab</EponaAPStab.label>
+  <EponaAPStab.deathMessage>{0} has been stabbed to death.</EponaAPStab.deathMessage>
+  <SiegeBomb.label>bomb</SiegeBomb.label>
+  <SiegeBomb.deathMessage>{0} has died in an explosion.</SiegeBomb.deathMessage>
+  <SiegeBombPowerful.label>bomb</SiegeBombPowerful.label>
+  <SiegeBombPowerful.deathMessage>{0} has died in an explosion.</SiegeBombPowerful.deathMessage>
+  <SiegeBombArbalest.label>bomb</SiegeBombArbalest.label>
+  <SiegeBombArbalest.deathMessage>{0} has died in an explosion.</SiegeBombArbalest.deathMessage>
+  <EponaPoisonArrow.label>arrow</EponaPoisonArrow.label>
+  <EponaPoisonArrow.deathMessage>{0} has been shot to death by an arrow.</EponaPoisonArrow.deathMessage>
+  <SteamBomb.label>Compressed Steam</SteamBomb.label>
+  <SteamBomb.deathMessage>{0} has been crushed to death.</SteamBomb.deathMessage>
+  <SteamBomb_Cluster.label>Compressed Steam</SteamBomb_Cluster.label>
+  <SteamBomb_Cluster.deathMessage>{0} has been crushed to death.</SteamBomb_Cluster.deathMessage>
+</LanguageData>

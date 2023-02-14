@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs><!-- Buying
+	<TraderKindDef>
+		<defName>Caravan_Epona_Tribute</defName>
+		<label>에포나 상왕 조공단</label>
+		<commonality>25</commonality>
+		<tradeCurrency>Favor</tradeCurrency>
+		<faction>EponicKingdomFaction</faction>
+		<hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
+		<stockGenerators Inherit="False">
+			 
+
+            <li Class="StockGenerator_BuySlaves" />
+
+			<li Class="StockGenerator_BuySingleDef">
+			  <thingDef>Skull</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef">
+			  <thingDef>Beer</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef">
+			  <thingDef>Silver</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef">
+			  <thingDef>Epona_Bombarrot_HE</thingDef>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+		<RoyalTitleDef Abstract="True" Name="BaseEponaTitle" >
+			<tags>
+				<li>EponaTitle</li>
+			</tags>
+			<awardThought>GainedTitle</awardThought>
+			<lostThought>LostTitle</lostThought>
+		</RoyalTitleDef>
+
+		<RoyalTitleDef ParentName="BaseEponaTitle">
+			<defName>Epona_Clansman</defName>
+			<label>에포나 클랜마</label>
+			<description>Clansman of eponic kingdoms.</description>
+			<seniority>0</seniority>
+			<favorCost>1</favorCost>
+			<changeHeirQuestPoints>1000</changeHeirQuestPoints>
+			<allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+			<permitPointsAwarded>1</permitPointsAwarded>
+			<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+		</RoyalTitleDef>
+		
+		<RoyalTitleDef ParentName="BaseEponaTitle">
+			<defName>Epona_Squire</defName>
+			<label>에포나 종자</label>
+			<description>Squire of eponic kingdoms.</description>
+			<seniority>100</seniority>
+			<favorCost>9</favorCost>
+			<changeHeirQuestPoints>1000</changeHeirQuestPoints>
+			<commonality>1</commonality>
+			<permitPointsAwarded>1</permitPointsAwarded>
+			<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+		</RoyalTitleDef>
+		
+		<RoyalTitleDef ParentName="BaseEponaTitle">
+			<defName>Epona_KnightBachelor</defName>
+			<label>에포나 정규기사</label>
+			<description>Knight Bachelor of eponic kingdoms.</description>
+			<seniority>200</seniority>
+			<favorCost>20</favorCost>
+			<minExpectation>Moderate</minExpectation>
+			<changeHeirQuestPoints>1200</changeHeirQuestPoints>
+			<recruitmentResistanceOffset>10</recruitmentResistanceOffset>
+			<commonality>1</commonality>
+			<canBeInherited>True</canBeInherited>
+			<permitPointsAwarded>2</permitPointsAwarded>
+            <disabledWorkTags>
+               <li>ManualDumb</li>
+               <li>ManualSkilled</li>
+               <li>PlantWork</li>
+               <li>Mining</li>
+            </disabledWorkTags>
+			<requiredApparel>
+			<li>
+				<bodyPartGroupsMatchAny>
+				<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+				<li>Royal</li>
+				</requiredTags>
+				<allowedTags>
+				<li>Cape</li>
+				<li>PrestigeCombatGear</li>
+				<li>Psychic</li>
+				</allowedTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+				<li>UpperHead</li>
+				<li>FullHead</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+				<li>Royal</li>
+				</requiredTags>
+				<allowedTags>
+				<li>PrestigeCombatGear</li>
+				<li>Psychic</li>
+				</allowedTags>
+			</li>
+			</requiredApparel>
+
+			<bedroomRequirements>
+			<li Class="RoomRequirement_Area">
+				<area>35</area>
+			</li>
+			<li Class="RoomRequirement_TerrainWithTags">
+				<labelKey>RoomRequirementAllFloored</labelKey>
+				<tags>
+				<li>Floor</li>
+				<li>FineFloor</li>
+				</tags>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags><li>Production</li></buildingTags>
+			</li>
+			</bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+			<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+		</RoyalTitleDef>
+
+
+		<RoyalTitleDef ParentName="BaseEponaTitle">
+			<defName>Epona_KnightBanneret</defName>
+			<label>에포나 상급기사</label>
+			<description>Knight Banneret of eponic kingdoms.</description>
+			<seniority>250</seniority>
+			<favorCost>50</favorCost>
+			<minExpectation>Moderate</minExpectation>
+			<changeHeirQuestPoints>1200</changeHeirQuestPoints>
+			<recruitmentResistanceOffset>10</recruitmentResistanceOffset>
+			<commonality>1</commonality>
+			<canBeInherited>True</canBeInherited>
+			<permitPointsAwarded>1</permitPointsAwarded>
+            <disabledWorkTags>
+               <li>ManualDumb</li>
+               <li>ManualSkilled</li>
+               <li>PlantWork</li>
+               <li>Mining</li>
+            </disabledWorkTags>
+			<requiredApparel>
+			<li>
+				<bodyPartGroupsMatchAny>
+				<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+        <li>Royal</li>
+				</requiredTags>
+				<allowedTags>
+				<li>Cape</li>
+				<li>PrestigeCombatGear</li>
+				<li>Psychic</li>
+				</allowedTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+				<li>UpperHead</li>
+				<li>FullHead</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+        <li>Royal</li>
+				</requiredTags>
+				<allowedTags>
+				<li>PrestigeCombatGear</li>
+				<li>Psychic</li>
+				</allowedTags>
+			</li>
+			</requiredApparel>
+
+			<bedroomRequirements>
+			<li Class="RoomRequirement_Area">
+				<area>40</area>
+			</li>
+			<li Class="RoomRequirement_TerrainWithTags">
+				<labelKey>RoomRequirementAllFloored</labelKey>
+				<tags>
+				<li>Floor</li>
+				<li>FineFloor</li>
+				</tags>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags><li>Production</li></buildingTags>
+			</li>
+			</bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+			<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+		</RoyalTitleDef>
+		
+		<RoyalTitleDef ParentName="BaseEponaTitle">
+			<defName>Epona_Uasal</defName>
+			<label>에포나 우아살</label>
+			<description>세습 귀족입니다. 하나의 기사단을 동원할 수 있습니다.</description>
+			<seniority>300</seniority>
+			<minExpectation>High</minExpectation>
+			<changeHeirQuestPoints>1600</changeHeirQuestPoints>
+			<recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+			<commonality>1</commonality>
+			<canBeInherited>True</canBeInherited>
+			<permitPointsAwarded>1</permitPointsAwarded>
+            <disabledJoyKinds>
+              <li>Gaming_Dexterity</li>
+            </disabledJoyKinds>
+            <disabledWorkTags>
+               <li>Commoner</li>
+            </disabledWorkTags>
+			<requiredApparel>
+			<li>
+				<bodyPartGroupsMatchAny>
+				<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+        <li>Royal</li>
+				</requiredTags>
+				<allowedTags>
+				<li>Cape</li>
+				<li>PrestigeCombatGear</li>
+				<li>Psychic</li>
+				</allowedTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+				<li>UpperHead</li>
+				<li>FullHead</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+        <li>Royal</li>
+				</requiredTags>
+				<allowedTags>
+				<li>PrestigeCombatGear</li>
+				<li>Psychic</li>
+				</allowedTags>
+			</li>
+			</requiredApparel>
+
+			<bedroomRequirements>
+			<li Class="RoomRequirement_Area">
+				<area>49</area>
+			</li>
+			<li Class="RoomRequirement_Impressiveness">
+				<impressiveness>40</impressiveness>
+			</li>
+			<li Class="RoomRequirement_TerrainWithTags">
+				<labelKey>RoomRequirementAllFloored</labelKey>
+				<tags>
+				<li>Floor</li>
+				<li>FineFloor</li>
+				</tags>
+			</li>
+			<li Class="RoomRequirement_ThingAnyOf">
+				<things>
+				<li>DoubleBed</li>
+				<li>RoyalBed</li>
+				</things>
+			</li>
+			<li Class="RoomRequirement_ThingAnyOf">
+				<things>
+				<li>SculptureSmall</li>
+				<li>SculptureLarge</li>
+				</things>
+			</li>
+			<li Class="RoomRequirement_Thing">
+				<thingDef>EndTable</thingDef>
+			</li>
+			<li Class="RoomRequirement_Thing">
+				<thingDef>Dresser</thingDef>
+			</li>
+			<li Class="RoomRequirement_ThingCount">
+				<thingDef>Drape</thingDef>
+				<count>2</count>
+			</li>
+			<li Class="RoomRequirement_ThingCount">
+				<thingDef>Brazier</thingDef>
+				<count>2</count>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags><li>Production</li></buildingTags>
+			</li>
+			</bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+		</RoyalTitleDef>
+
+		<RoyalTitleDef ParentName="BaseEponaTitle">
+			<defName>Epona_Taoiseach</defName>
+			<label>에포나 티셔흐</label>
+			<description>고위 세습 귀족입니다. 두개의 기사단을 동원할 수 있습니다.</description>
+			<seniority>350</seniority>
+			<minExpectation>High</minExpectation>
+			<changeHeirQuestPoints>1800</changeHeirQuestPoints>
+			<recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+			<commonality>1</commonality>
+			<canBeInherited>True</canBeInherited>
+			<permitPointsAwarded>1</permitPointsAwarded>
+            <disabledJoyKinds>
+              <li>Gaming_Dexterity</li>
+            </disabledJoyKinds>
+            <disabledWorkTags>
+               <li>Commoner</li>
+            </disabledWorkTags>
+			<requiredApparel>
+			<li>
+				<bodyPartGroupsMatchAny>
+				<li>Shoulders</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+        <li>Royal</li>
+				</requiredTags>
+				<allowedTags>
+				<li>Cape</li>
+				<li>PrestigeCombatGear</li>
+				<li>Psychic</li>
+				</allowedTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+				<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+        <li>Royal</li>
+				</requiredTags>
+				<allowedTags>
+				<li>Cape</li>
+				<li>PrestigeCombatGear</li>
+				<li>Psychic</li>
+				</allowedTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+				<li>UpperHead</li>
+				<li>FullHead</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+        <li>Royal</li>
+				</requiredTags>
+				<allowedTags>
+				<li>PrestigeCombatGear</li>
+				<li>Psychic</li>
+				</allowedTags>
+			</li>
+			</requiredApparel>
+
+			<bedroomRequirements>
+			<li Class="RoomRequirement_Area">
+				<area>74</area>
+			</li>
+			<li Class="RoomRequirement_Impressiveness">
+				<impressiveness>40</impressiveness>
+			</li>
+			<li Class="RoomRequirement_TerrainWithTags">
+				<labelKey>RoomRequirementAllFloored</labelKey>
+				<tags>
+				<li>Floor</li>
+				<li>FineFloor</li>
+				</tags>
+			</li>
+			<li Class="RoomRequirement_ThingAnyOf">
+				<things>
+				<li>DoubleBed</li>
+				<li>RoyalBed</li>
+				</things>
+			</li>
+			<li Class="RoomRequirement_ThingAnyOf">
+				<things>
+				<li>SculptureSmall</li>
+				<li>SculptureLarge</li>
+				</things>
+			</li>
+			<li Class="RoomRequirement_Thing">
+				<thingDef>EndTable</thingDef>
+			</li>
+			<li Class="RoomRequirement_Thing">
+				<thingDef>Dresser</thingDef>
+			</li>
+			<li Class="RoomRequirement_ThingCount">
+				<thingDef>Drape</thingDef>
+				<count>2</count>
+			</li>
+			<li Class="RoomRequirement_ThingCount">
+				<thingDef>Brazier</thingDef>
+				<count>2</count>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags><li>Production</li></buildingTags>
+			</li>
+			</bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+		</RoyalTitleDef>
+		
+
+		<RoyalTitleDef ParentName="BaseEponaTitle">
+			<defName>Epona_Ri</defName>
+			<label>에포나 리</label>
+			<description>에포나 왕국연합을 이루는 소왕(petty king), 왕입니다.</description>
+			<seniority>400</seniority>
+			<minExpectation>Royal</minExpectation>
+			<changeHeirQuestPoints>2000</changeHeirQuestPoints>
+			<recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+			<commonality>1</commonality>
+			<canBeInherited>True</canBeInherited>
+			<permitPointsAwarded>1</permitPointsAwarded>
+            <disabledJoyKinds>
+              <li>Gaming_Dexterity</li>
+            </disabledJoyKinds>
+            <disabledWorkTags>
+               <li>Commoner</li>
+            </disabledWorkTags>
+			<requiredApparel>
+			<li>
+				<bodyPartGroupsMatchAny>
+				<li>Shoulders</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+        <li>Royal</li>
+				</requiredTags>
+				<allowedTags>
+				<li>Cape</li>
+				<li>PrestigeCombatGear</li>
+				<li>Psychic</li>
+				</allowedTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+				<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+        <li>Royal</li>
+				</requiredTags>
+				<allowedTags>
+				<li>Cape</li>
+				<li>PrestigeCombatGear</li>
+				<li>Psychic</li>
+				</allowedTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+				<li>UpperHead</li>
+				<li>FullHead</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+        <li>Royal</li>
+				</requiredTags>
+				<allowedTags>
+				<li>PrestigeCombatGear</li>
+				<li>Psychic</li>
+				</allowedTags>
+			</li>
+			</requiredApparel>
+
+			<bedroomRequirements>
+			<li Class="RoomRequirement_Area">
+				<area>99</area>
+			</li>
+			<li Class="RoomRequirement_Impressiveness">
+				<impressiveness>40</impressiveness>
+			</li>
+			<li Class="RoomRequirement_TerrainWithTags">
+				<labelKey>RoomRequirementAllFloored</labelKey>
+				<tags>
+				<li>Floor</li>
+				<li>FineFloor</li>
+				</tags>
+			</li>
+			<li Class="RoomRequirement_ThingAnyOf">
+				<things>
+				<li>DoubleBed</li>
+				<li>RoyalBed</li>
+				</things>
+			</li>
+			<li Class="RoomRequirement_ThingAnyOf">
+				<things>
+				<li>SculptureSmall</li>
+				<li>SculptureLarge</li>
+				</things>
+			</li>
+			<li Class="RoomRequirement_Thing">
+				<thingDef>EndTable</thingDef>
+			</li>
+			<li Class="RoomRequirement_Thing">
+				<thingDef>Dresser</thingDef>
+			</li>
+			<li Class="RoomRequirement_ThingCount">
+				<thingDef>Drape</thingDef>
+				<count>2</count>
+			</li>
+			<li Class="RoomRequirement_ThingCount">
+				<thingDef>Brazier</thingDef>
+				<count>2</count>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags><li>Production</li></buildingTags>
+			</li>
+			</bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+		</RoyalTitleDef>
+		
+	<ThingDef Abstract="True" Name="EponaEggsBase" ParentName="OrganicProductBase" >
+		<graphicData>
+			<texPath>Things/Item/Mercenary/Mercenary</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<Mass>0.15</Mass>
+			<MaxHitPoints>20</MaxHitPoints>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Flammability>0.7</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EponaEggsBase">
+		<defName>EponaSquireEgg</defName>
+		<label>스콰이어</label>
+		<description>.</description>
+		<statBases>
+			<Mass>40</Mass>			
+			<MarketValue>1000.0</MarketValue>
+		</statBases>
+		<tradeability>None</tradeability>
+		<generateCommonality>0</generateCommonality>
+
+		<comps>
+			<li Class="OHFP.CompProperties_OHFP_Hatcher">
+				<hatcherDaystoHatch>0.007</hatcherDaystoHatch>
+				<hatcherPawnList>
+					<li>EponaPlayerSquire</li>
+				</hatcherPawnList>
+
+				<randomAdoption>
+					<li>
+						<factionType>player</factionType>
+						<weight>100</weight>
+					</li>
+				</randomAdoption>
+
+				<manhunterChance>.0</manhunterChance>
+				<newBornChance>0</newBornChance>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EponaEggsBase">
+		<defName>EponaMercenaryRangedEgg</defName>
+		<label>에포나 전문용병 (척후)</label>
+		<description>.</description>
+		<statBases>
+			<Mass>40</Mass>			
+			<MarketValue>3500.0</MarketValue>
+		</statBases>
+		<tradeability>Buyable</tradeability>
+		<generateCommonality>0</generateCommonality>
+
+		<comps>
+			<li Class="OHFP.CompProperties_OHFP_Hatcher">
+				<hatcherDaystoHatch>0.003</hatcherDaystoHatch>
+				<hatcherPawnList>
+					<li>Epona_Soldier_Dragoon</li>
+					<li>Epona_Soldier_Besieger</li>
+				</hatcherPawnList>
+
+				<randomAdoption>
+					<li>
+						<factionType>player</factionType>
+						<weight>100</weight>
+					</li>
+				</randomAdoption>
+
+				<manhunterChance>.0</manhunterChance>
+				<newBornChance>0</newBornChance>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="EponaEggsBase">
+		<defName>EponaMercenaryMeleeEgg</defName>
+		<label>에포나 전문용병 (선봉)</label>
+		<description>.</description>
+		<statBases>
+			<Mass>40</Mass>			
+			<MarketValue>4500.0</MarketValue>
+		</statBases>
+		<tradeability>Buyable</tradeability>
+		<generateCommonality>0</generateCommonality>
+
+		<comps>
+			<li Class="OHFP.CompProperties_OHFP_Hatcher">
+				<hatcherDaystoHatch>0.003</hatcherDaystoHatch>
+				<hatcherPawnList>
+					<li>Epona_Soldier_Gallowglass</li>
+					<li>Epona_Soldier_Destrier_Gallowglass</li>
+				</hatcherPawnList>
+
+				<randomAdoption>
+					<li>
+						<factionType>player</factionType>
+						<weight>100</weight>
+					</li>
+				</randomAdoption>
+
+				<manhunterChance>.0</manhunterChance>
+				<newBornChance>0</newBornChance>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<RoyalTitlePermitDef>
+			<defName>Epona_Call_Peasantry</defName>
+			<label>농노 호출</label>
+			<description>4명의 농노들을 3일동안 거의 공짜로 부려먹으세요!</description>
+			<workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+			<minTitle>Epona_Clansman</minTitle>
+			<faction>EponicKingdomFaction</faction>
+			<permitPointCost>1</permitPointCost>
+			<uiPosition>(0,0)</uiPosition>
+			<royalAid>
+				<favorCost>10</favorCost>
+				<pawnKindDef>EponaPlayerColonist</pawnKindDef>
+				<pawnCount>4</pawnCount>
+				<aidDurationDays>3</aidDurationDays>
+			</royalAid>
+			<cooldownDays>60</cooldownDays>
+		</RoyalTitlePermitDef>
+
+		<RoyalTitlePermitDef>
+			<defName>Epona_Call_ArmedPeasantry</defName>
+			<label>무장농노 징집</label>
+			<description>5명의 무장한 농노들을 부릅니다.</description>
+			<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+			<minTitle>Epona_Squire</minTitle>
+			<faction>EponicKingdomFaction</faction>
+			<permitPointCost>1</permitPointCost>
+			<uiPosition>(0,1)</uiPosition>
+			<royalAid>
+				<favorCost>10</favorCost>
+				<pawnKindDef>Epona_Aid_Soldier_Peasant</pawnKindDef>
+				<pawnCount>5</pawnCount>
+				<targetingRange>39.9</targetingRange>
+			</royalAid>
+			<cooldownDays>600</cooldownDays>
+		</RoyalTitlePermitDef>
+
+		<RoyalTitlePermitDef>
+			<defName>Epona_Call_FreeCompany</defName>
+			<label>용병대 단기 계약</label>
+			<description>8명의 베테랑 용병들을 전장으로 부릅니다.</description>
+			<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+			<minTitle>Epona_KnightBachelor</minTitle>
+			<faction>EponicKingdomFaction</faction>
+			<permitPointCost>1</permitPointCost>
+			<uiPosition>(1,2)</uiPosition>
+			<royalAid>
+				<favorCost>25</favorCost>
+				<pawnKindDef>Epona_Aid_Soldier_FreeCompany</pawnKindDef>
+				<pawnCount>8</pawnCount>
+				<targetingRange>39.9</targetingRange>
+			</royalAid>
+			<cooldownDays>600</cooldownDays>
+		</RoyalTitlePermitDef>
+
+
+		
+  <RoyalTitlePermitDef>
+    <defName>Epona_Hire_Squire</defName>
+    <label>기사-종자 계약</label>
+    <description>기사와 종자간의 계약입니다. 기사 휘하의 종자를 지원받습니다.</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <faction>EponicKingdomFaction</faction>
+    <permitPointCost>1</permitPointCost>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <minTitle>Epona_KnightBachelor</minTitle>
+    <uiPosition>(0,2)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <EponaSquireEgg>1</EponaSquireEgg>
+      </itemsToDrop>
+        <targetingRange>39.9</targetingRange>
+      <favorCost>500</favorCost>
+    </royalAid>
+			<cooldownDays>600</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  
+  <RoyalTitlePermitDef>
+    <defName>Epona_Get_Powerarmor</defName>
+    <label>로열 파워아머 하사받기</label>
+    <description>증기로 작동하는 에포나 전용 파워아머를 상왕에게 하사받을 수 있습니다.</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <faction>EponicKingdomFaction</faction>
+    <permitPointCost>1</permitPointCost>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <minTitle>Epona_KnightBanneret</minTitle>
+    <uiPosition>(0,3)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Epona_Apparel_PowerArmor>1</Epona_Apparel_PowerArmor>
+      </itemsToDrop>
+        <targetingRange>39.9</targetingRange>
+      <favorCost>80</favorCost>
+    </royalAid>
+			<cooldownDays>600</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+		<RoyalTitlePermitDef>
+			<defName>Epona_Call_Knight</defName>
+			<label>피안 기사단 호출</label>
+			<description>4명의 기사들을 호출합니다.</description>
+			<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+			<minTitle>Epona_Uasal</minTitle>
+			<faction>EponicKingdomFaction</faction>
+			<permitPointCost>1</permitPointCost>
+			<uiPosition>(0,4)</uiPosition>
+			<royalAid>
+				<favorCost>25</favorCost>
+				<pawnKindDef>Epona_Soldier_Fian</pawnKindDef>
+				<pawnCount>4</pawnCount>
+				<targetingRange>39.9</targetingRange>
+			</royalAid>
+			<cooldownDays>15</cooldownDays>
+		</RoyalTitlePermitDef>
+
+
+		<RoyalTitlePermitDef>
+			<defName>Epona_Call_MassPeasantry</defName>
+			<label>대규모 농노 동원</label>
+			<description>10명의 농노들을 1주동안 강제 동원합니다.</description>
+			<workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+			<minTitle>Epona_Uasal</minTitle>
+			<faction>EponicKingdomFaction</faction>
+			<permitPointCost>1</permitPointCost>
+			<uiPosition>(1,4)</uiPosition>
+			<royalAid>
+				<favorCost>50</favorCost>
+				<pawnKindDef>EponaPlayerColonist</pawnKindDef>
+				<pawnCount>10</pawnCount>
+				<aidDurationDays>7</aidDurationDays>
+			</royalAid>
+			<cooldownDays>60</cooldownDays>
+		</RoyalTitlePermitDef>
+		
+		<RoyalTitlePermitDef>
+			<defName>Epona_Call_KnightDestrier</defName>
+			<label>데스트리어 기사단 호출</label>
+			<description>4명의 기사들을 호출합니다.</description>
+			<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+			<minTitle>Epona_Taoiseach</minTitle>
+			<faction>EponicKingdomFaction</faction>
+            <prerequisite>Epona_Call_Knight</prerequisite>
+			<permitPointCost>1</permitPointCost>
+			<uiPosition>(0,5)</uiPosition>
+			<royalAid>
+				<favorCost>25</favorCost>
+				<pawnKindDef>Epona_Soldier_Destrier_Fian</pawnKindDef>
+				<pawnCount>4</pawnCount>
+				<targetingRange>39.9</targetingRange>
+			</royalAid>
+			<cooldownDays>20</cooldownDays>
+		</RoyalTitlePermitDef>
+
+		<RoyalTitlePermitDef>
+			<defName>Epona_Call_KnightSteam</defName>
+			<label>증기기사 호출</label>
+			<description>증기 파워아머를 입은 정예 기사를 호출합니다.</description>
+			<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+			<minTitle>Epona_Ri</minTitle>
+			<faction>EponicKingdomFaction</faction>
+			<permitPointCost>1</permitPointCost>
+			<uiPosition>(0,6)</uiPosition>
+			<royalAid>
+				<favorCost>25</favorCost>
+				<pawnKindDef>Epona_Soldier_SteamFian</pawnKindDef>
+				<pawnCount>2</pawnCount>
+				<targetingRange>39.9</targetingRange>
+			</royalAid>
+			<cooldownDays>15</cooldownDays>
+		</RoyalTitlePermitDef>
+		
+				-->
+</Defs>

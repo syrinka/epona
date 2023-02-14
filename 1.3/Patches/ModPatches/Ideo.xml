@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Ideology</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs</xpath>
+                <value>
+  <StyleCategoryDef>
+    <defName>EponicDruidry</defName>
+    <label>숲에포나</label>
+    <iconPath>UI/EponicDruidry</iconPath>
+    <soundOngoingRitual>RitualSustainer_Animalist</soundOngoingRitual>
+    <ritualVisualEffectDef>Animalist</ritualVisualEffectDef>
+    <thingDefStyles>
+      <li>
+        <thingDef>Epona_Apparel_Hat_Helmet</thingDef>
+        <styleDef>EponicDruidry_Apparel_Hat_Helmet</styleDef>
+      </li>
+      <li>
+        <thingDef>Epona_Apparel_Hat_EliteHelmet</thingDef>
+        <styleDef>EponicDruidry_Apparel_Hat_EliteHelmet</styleDef>
+      </li>
+      <li>
+        <thingDef>Epona_Apparel_Hat_Tiara</thingDef>
+        <styleDef>EponicDruidry_Apparel_Hat_Tiara</styleDef>
+      </li>
+      <li>
+        <thingDef>Epona_Apparel_BreastPlate</thingDef>
+        <styleDef>EponicDruidry_Apparel_BreastPlate</styleDef>
+      </li>
+      <li>
+        <thingDef>Epona_Apparel_NobleCape</thingDef>
+        <styleDef>EponicDruidry_Apparel_NobleCape</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+  
+  <ThingStyleDef>
+    <defName>EponicDruidry_Apparel_Hat_Helmet</defName>
+    <wornGraphicPath>Things/Styles/EponaHatHelmet/EponaHelmet</wornGraphicPath>
+    <graphicData>
+      <texPath>Things/Styles/EponaHatHelmet/EponaHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef>
+    <defName>EponicDruidry_Apparel_Hat_EliteHelmet</defName>
+    <wornGraphicPath>Things/Styles/EponaHatEliteHelmet/EponaEliteHelmet</wornGraphicPath>
+    <graphicData>
+      <texPath>Things/Styles/EponaHatEliteHelmet/EponaEliteHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>EponicDruidry_Apparel_Hat_Tiara</defName>
+    <wornGraphicPath>Things/Styles/EponaHatTiara/EponaTiara</wornGraphicPath>
+    <graphicData>
+      <texPath>Things/Styles/EponaHatTiara/EponaTiara</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>EponicDruidry_Apparel_BreastPlate</defName>
+    <wornGraphicPath>Things/Styles/EponaPlateBreast/EponaPlateBreast</wornGraphicPath>
+    <graphicData>
+      <texPath>Things/Styles/EponaPlateBreast/EponaPlateBreast</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef>
+    <defName>EponicDruidry_Apparel_NobleCape</defName>
+    <wornGraphicPath>Things/Styles/EponaNobleCape/EponaNobleCape</wornGraphicPath>
+    <graphicData>
+      <texPath>Things/Styles/EponaNobleCape/EponaNobleCape</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <MemeDef>
+    <defName>Structure_TheistEponic</defName>
+    <label>에포나 신앙</label>
+    <description>에포나를 찬양하라!</description>
+    <category>Structure</category>
+    <iconPath>UI/EponicTheist</iconPath>
+    <impact>0</impact>
+    <worshipRoomLabel>성스런 마굿간</worshipRoomLabel>
+	<deityNameMakerOverride>NamerDeityEponic</deityNameMakerOverride>
+	<deityTypeMakerOverride>DeityTypeMakerEponic</deityTypeMakerOverride>
+    <deityCount>1</deityCount>
+    <generalRules>
+      <rulesStrings>
+        <li>r_ideoName(p=99)->[globalAdjective] [packIdeoName]</li>
+        <li>r_ideoName(p=99)->[memeAdjective] [packIdeoName]</li>
+        <li>r_ideoName(p=99)->[packAdjective] [packIdeoName]</li>
+        <li>r_ideoName(p=99)->[packIdeoName]</li>
+        <li>memeLeaderNoun->왕</li>
+        <li>memeLeaderAdjective->높으신</li>
+        <li>memeLeaderAdjective->훌륭하신</li>
+        <li>memeMoralist->수녀</li>
+        <li>memeMoralist->학자</li>
+        <li>memeMoralist->수도사</li>
+        <li>memeMoralist->말딸</li>
+        <li>memeCreed->종파</li>
+        <li>memeCreed->컬트</li>
+        <li>memeCreed->신전</li>
+        <li>memeCreed->의 믿음</li>
+        <li>memeHyphenPrefix->신정</li>
+        <li>memeConcept->탄생</li>
+        <li>memeConcept->생명</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li><def>TheistMyth</def></li>
+        <li><def>TheistFounder</def></li>
+      </patterns>
+      <constants>
+        <li><key>structure_theist</key><value>true</value></li>
+        <li><key>structure_theistEmbodied</key><value>true</value></li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>에포니즘</ideoName>
+        <theme>애포니즘</theme>
+        <adjective>에포니스트</adjective>
+        <member>에포니스트</member>
+      </li>
+      <li>
+        <ideoName>우마뾰이 전설</ideoName>
+        <theme>우마뾰이 전설</theme>
+        <adjective>우마뾰이 전승자</adjective>
+        <member>우마뾰이 전승자</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+  
+
+  <ThingDef  ParentName="HatMakeableBase">
+		<defName>Epona_Apparel_Hat_SlaveEarTag</defName>
+		<label>축산물관리 이어 태그</label>
+		<description>넌 이제 말이야!</description>
+		<graphicData>
+			<texPath>Things/Apparel/EponaHatEar/EponaHatEar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Epona_Headgear</li>
+		</thingCategories>
+
+    <costList>
+      <WoodLog>10</WoodLog>
+
+    </costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.5</Mass>			
+					<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>						
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>			
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+    <equippedStatOffsets>
+      <SlaveSuppressionOffset>0.15</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+		<apparel>
+      <slaveApparel>true</slaveApparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+            <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+			<wornGraphicPath>Things/Apparel/EponaHatEar/EponaHatEar</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+         <defaultOutfitTags>
+        <li>Slave</li>
+      </defaultOutfitTags>
+			<tags>
+		<li>Horse</li>
+			</tags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>		
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingTailor</li>
+
+      </recipeUsers>
+	  
+
+  
+		</recipeMaker>
+	</ThingDef>
+	
+  <RulePackDef>
+    <defName>LeaderTitleMaker_Eponic</defName>
+    <include>
+      <li>LeaderTitleMaker_GlobalStructure</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+        <li>cultureLeaderAdjective->아드</li>
+        <li>cultureLeaderAdjective->올람</li>
+        <li>cultureLeaderAdjective->그루피드</li>
+
+        <li>cultureLeaderNoun->리</li>
+        <li>cultureLeaderNoun->마엘</li>
+        <li>cultureLeaderNoun->브레닌</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+                </value>
+            </li>
+        </operations>
+    </match>
+  </Operation>
+
+
+	
+</Patch>

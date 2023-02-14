@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<AlienRace.BackstoryDef Name="Epona_BaseBackstory" Abstract="True">
+		<disallowedTraits>
+			<li>
+				<defName>Beauty</defName>
+				<degree>-2</degree>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>Undergrounder</defName>
+				<degree>0</degree>
+				<chance>100</chance>
+			</li>
+		</disallowedTraits>
+		<bodyTypeMale>EponaBody</bodyTypeMale>
+		<bodyTypeFemale>EponaBody</bodyTypeFemale>
+	</AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Kern</defName>
+    <title>에포나 무장농민</title>
+    <titleShort>무장농민</titleShort>
+    <baseDescription>[PAWN_nameDef]는 평생동안의 탄압받는 가난한 삶에 질려 무기를 들었습니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Plants</defName>
+			<amount>5</amount>
+		</li>
+	</skillGains>
+	<workDisables>
+        <li>Intellectual</li>
+    </workDisables>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+ 
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Farmer</defName>
+    <title>에포나 해방 농노</title>
+    <titleShort>해방 농노</titleShort>
+    <baseDescription>[PAWN_nameDef]는 농민입니다. 원래는 영주의 예속민이지만 최근에 자유를 얻었습니다.</baseDescription>
+	<skillGains>
+			<li>
+				<defName>Animals</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-4</amount>
+			</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_FreeFarmer</defName>
+    <title>에포나 자유농</title>
+    <titleShort>자유농</titleShort>
+    <baseDescription>[PAWN_nameDef]는 자유농 입니다. 부모의 계급을 물려받았습니다. 운이 좋게도 부모는 자유민이었습니다.</baseDescription>
+	<skillGains>
+			<li>
+				<defName>Animals</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-4</amount>
+			</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_SmartFarmer</defName>
+    <title>에포나 똑똑한 농노</title>
+    <titleShort>똘똘이</titleShort>
+    <baseDescription>도와줘요! 도와줘요! 나 지금 억압받고 있어요!</baseDescription>
+	<skillGains>
+			<li>
+				<defName>Animals</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>6</amount>
+			</li>
+		<li>
+			<defName>Shooting</defName>
+			<amount>-2</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>-2</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Innkeeper</defName>
+    <title>에포나 여관 주인</title>
+    <titleShort>여관주인</titleShort>
+    <baseDescription>와우! 황금 전설 카드!</baseDescription>
+	<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-4</amount>
+			</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>  
+ 
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_DesertedLevy</defName>
+    <title>에포나 탈영 징집병</title>
+    <titleShort>징집병</titleShort>
+    <baseDescription>[PAWN_nameDef]는 탈영한 징집병입니다. 애초에 강제로 끌려간게 억울한 케이스입니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>3</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>4</amount>
+		</li>
+		<li>
+			<defName>Construction</defName>
+			<amount>3</amount>
+		</li>
+	</skillGains>
+	<workDisables>
+        <li>Intellectual</li>
+    </workDisables>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_LowFallenNoble</defName>
+    <title>에포나 몰락귀족</title>
+    <titleShort>몰락귀족</titleShort>
+    <baseDescription>[PAWN_nameDef]는 몰락한 귀족입니다. 여러 전쟁터를 전전하며 겨우 살아가고 있습니다. 도저히 귀족의 냄새가 풍기지 않습니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>4</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>5</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Brigand</defName>
+    <title>에포나 산적</title>
+    <titleShort>산적</titleShort>
+    <baseDescription>[PAWN_nameDef]는 마음을 굳게 고쳐먹고 산적질을 그만두고 새 삶을 찾기로 했습니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>5</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>4</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_WanderDoctor</defName>
+    <title>에포나 떠돌이 의사</title>
+    <titleShort>떠돌이 의사</titleShort>
+    <baseDescription>[PAWN_nameDef]는 왕국을 떠돌아 다니며 대가를 받고 수술이나 처방을 합니다. 전문적인 지식따윈 없어도요.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Medicine</defName>
+			<amount>4</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>2</amount>
+		</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>1</amount>
+			</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>  
+  
+
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Carpenter</defName>
+    <title>에포나 목수</title>
+    <titleShort>목수</titleShort>
+    <baseDescription>[PAWN_nameDef]는 적당한 건축기술을 가지고 있습니다. 주로 농민의 집이나 헛간을 지었습니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Construction</defName>
+			<amount>6</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Blacksmith</defName>
+    <title>에포나 대장장이</title>
+    <titleShort>대장장이</titleShort>
+    <baseDescription>[PAWN_nameDef]는 작은 에포나 마을에서 대장간을 운영하고 있었습니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Construction</defName>
+			<amount>1</amount>
+		</li>
+		<li>
+			<defName>Crafting</defName>
+			<amount>5</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Labour</defName>
+    <title>에포나 공장 노동자</title>
+    <titleShort>장인</titleShort>
+    <baseDescription>[PAWN_nameDef]는 근대적인 공장에서 일을 했습니다. 기계적인 단순노동자 보다는 장인의 성격이 더 강했습니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Crafting</defName>
+			<amount>6</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Stonemason</defName>
+    <title>에포나 석공</title>
+    <titleShort>석공</titleShort>
+    <baseDescription>[PAWN_nameDef]는 귀족의 석재 성을 설계한적이 있는 베테랑 석공입니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Construction</defName>
+			<amount>5</amount>
+		</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Witch</defName>
+    <title>에포나 마녀</title>
+    <titleShort>마녀</titleShort>
+    <baseDescription>Q : 그럼, 마녀는 왜 불에 타지? A : 나무로.... 만들어져서?</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Medicine</defName>
+			<amount>6</amount>
+		</li>
+		<li>
+			<defName>Social</defName>
+			<amount>-4</amount>
+		</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>4</amount>
+			</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Toy</defName>
+    <title>수상하게 돈이 많은 귀족의 장난감</title>
+    <titleShort>장난감</titleShort>
+    <baseDescription>"가능"</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Social</defName>
+			<amount>5</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<forcedTraits>
+			<li>
+				<defName>Beauty</defName>
+				<degree>2</degree>
+				<chance>100</chance>
+			</li>
+	</forcedTraits>
+	<spawnCategories>
+	  <li>Epona_LowCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Poacher</defName>
+    <title>에포나 밀렵꾼</title>
+    <titleShort>밀렵꾼</titleShort>
+    <baseDescription>[PAWN_nameDef]는 종종 영주의 숲에 몰래 침입하여 좋은 사냥감들을 쓸어가기도 했습니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>5</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>4</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_MidCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Cavalry</defName>
+    <title>에포나 중기병</title>
+    <titleShort>중기병</titleShort>
+    <baseDescription>[PAWN_nameDef]는 중기병으로 평생 복무해왔고 훈련받았습니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>1</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>8</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_MidCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_LightCavalry</defName>
+    <title>에포나 경기병</title>
+    <titleShort>경기병</titleShort>
+    <baseDescription>[PAWN_nameDef]는 경기병으로 평생 복무해왔고 훈련받았습니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>7</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>2</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_MidCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Varangian</defName>
+    <title>에포나 퇴역한 제국군인</title>
+    <titleShort>제국인</titleShort>
+    <baseDescription>[PAWN_nameDef]는 제국에서 체계적인 훈련을 받았습니다. 그리고 제국 예법도 조금이나마 배웠습니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>5</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>6</amount>
+		</li>
+		<li>
+			<defName>Social</defName>
+			<amount>2</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_MidCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_MidFallenNoble</defName>
+    <title>에포나 소귀족</title>
+    <titleShort>소귀족</titleShort>
+    <baseDescription>[PAWN_nameDef]는 매우 미약한 가문의 귀족입니다. 덕분에 전쟁터에서 평생을 살아야만 했습니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>1</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>4</amount>
+		</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>1</amount>
+			</li>
+		<li>
+			<defName>Social</defName>
+			<amount>4</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_MidCaste</li>
+	  <li>Epona_SquireCaste</li>
+
+    </spawnCategories>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Inquisition</defName>
+    <title>에포나 이단심문관</title>
+    <titleShort>이단심문관</titleShort>
+    <baseDescription>에포나 종교재판은 아무도 예상못하지!</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Shooting</defName>
+			<amount>8</amount>
+		</li>
+		<li>
+			<defName>Melee</defName>
+			<amount>6</amount>
+		</li>
+		<li>
+			<defName>Social</defName>
+			<amount>-4</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_MidCaste</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Noble</defName>
+    <title>에포나 왕궁귀족</title>
+    <titleShort>귀족</titleShort>
+    <baseDescription>[PAWN_nameDef]는 귀족입니다. 왕궁에서 자라 콧대가 유독 높습니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Melee</defName>
+			<amount>5</amount>
+		</li>
+		<!-- 
+			<li>
+				<defName>Intellectual</defName>
+				<amount>5</amount>
+			</li>
+		-->
+		<li>
+			<defName>Social</defName>
+			<amount>5</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_HighCasteRoyal</li>
+    </spawnCategories>
+		<workDisables>
+			<li>Commoner</li>
+		</workDisables>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Scholar</defName>
+    <title>에포나 학자</title>
+    <titleShort>학자</titleShort>
+    <baseDescription>[PAWN_nameDef]는 학자입니다.</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Medicine</defName>
+			<amount>2</amount>
+		</li>
+		<li>
+			<defName>Crafting</defName>
+			<amount>2</amount>
+		</li>
+		<li>
+			<defName>Artistic</defName>
+			<amount>2</amount>
+		</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>7</amount>
+			</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_HighCaste</li>
+    </spawnCategories>
+		<workDisables>
+			<li>ManualDumb</li>
+			</workDisables>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstory">
+    <defName>Epona_Adult_Warlord</defName>
+    <title>에포나 전쟁군주</title>
+    <titleShort>전쟁군주</titleShort>
+    <baseDescription>[PAWN_nameDef]는 악명높은 전쟁군주입니다..</baseDescription>
+	<skillGains>
+		<li>
+			<defName>Melee</defName>
+			<amount>8</amount>
+		</li>
+		<li>
+			<defName>Social</defName>
+			<amount>5</amount>
+		</li>
+	</skillGains>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+        
+	  <li>Epona_HighCaste</li>
+    </spawnCategories>
+		<workDisables>
+			<li>Commoner</li>
+		</workDisables>
+  </AlienRace.BackstoryDef>
+  
+
+</Defs>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <CultureDef>
+    <defName>EponicCultures</defName>
+    <label>에포나</label>
+    <description>에포나 문화입니다.</description>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoSophian</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityEponic</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerEponic</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Eponic</leaderTitleMaker>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>World/WorldObjects/IconEponicKingdom</iconPath>
+    <iconColor>(0.8, 0.8, 0.8)</iconColor>
+    <thingStyleCategories>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Christian</category>
+        <priority>2</priority>
+      </li>
+    </thingStyleCategories>
+    <styleItemTags>
+	  <li>
+        <tag>Urban</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>BeardRural</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+	  <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+  
+  <CultureDef>
+    <defName>EponicDruidCultures</defName>
+    <label>숲 에포나</label>
+    <description>숲 에포나 문화입니다.</description>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoSophian</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityEponic</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerEponic</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Eponic</leaderTitleMaker>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>World/WorldObjects/IconEponicKingdom</iconPath>
+    <iconColor>(0.8, 0.8, 0.8)</iconColor>
+    <thingStyleCategories>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>EponicDruidry</category>
+        <priority>2</priority>
+      </li>
+    </thingStyleCategories>
+    <styleItemTags>
+	  <li>
+        <tag>Urban</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>BeardRural</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+	  <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+  
+  
+
+  
+
+	<RulePackDef>
+		<defName>NamerDeityEponic</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->[name]</li>
+				<li>name(p=9)->에포나</li>
+				<li>name(p=4)->에포니아</li>
+				<li>name(p=4)->에포니에</li>
+				<li>name(p=3)->에포나이</li>
+				<li>name(p=3)->에포니나</li>
+				<li>name(p=3)->에포네아</li>
+				<li>name(p=3)->에포네</li>
+				<li>name(p=1)->에포넨</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+  <RulePackDef>
+    <defName>DeityTypeMakerEponic</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->[memeConcept]의 [god]</li>
+
+        <li>god(p=7)->신</li>
+        <li>god(p=4)->[memeGod]</li>
+        <li>god(p=3)->성스런 말</li>
+        <li>god->말들의 왕</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+</Defs>

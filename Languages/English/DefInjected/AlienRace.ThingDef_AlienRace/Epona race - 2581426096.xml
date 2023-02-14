@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Alien_Destrier.label>Destrier</Alien_Destrier.label>
+  <Alien_Destrier.description>This is Epona, which has become huge due to a problem with the gene called Destrier Syndrome. Only women get Destrier syndrome and get stronger to match their size, but they become a little stupid.</Alien_Destrier.description>
+  <Alien_Destrier.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>hediff</Alien_Destrier.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <Alien_Destrier.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>skin</Alien_Destrier.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+  <Alien_Destrier.alienRace.generalSettings.alienPartGenerator.colorChannels.2.name>hair</Alien_Destrier.alienRace.generalSettings.alienPartGenerator.colorChannels.2.name>
+  <Alien_Destrier.tools.0.label>Left Punch</Alien_Destrier.tools.0.label>
+  <Alien_Destrier.tools.1.label>Right Punch</Alien_Destrier.tools.1.label>
+  <Alien_Destrier.tools.2.label>Teeth</Alien_Destrier.tools.2.label>
+  <Alien_Destrier.tools.3.label>Kick</Alien_Destrier.tools.3.label>
+  <Alien_Epona.label>Epona</Alien_Epona.label>
+  <Alien_Epona.description>Epona is a humanoid creature whose origin is completely unknown except that it has its origin in Glitterworld. Some scholars view Epona as a kind of chimera with insects, not a gene-binding race with horses. Whatever the truth is. Epona considers themselves a centaur. They have established their own kingdoms in the name of horses in Rimworlds on the periphery.</Alien_Epona.description>
+  <Alien_Epona.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>hediff</Alien_Epona.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <Alien_Epona.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>skin</Alien_Epona.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+  <Alien_Epona.alienRace.generalSettings.alienPartGenerator.colorChannels.2.name>hair</Alien_Epona.alienRace.generalSettings.alienPartGenerator.colorChannels.2.name>
+  <Alien_Epona.tools.0.label>Left Punch</Alien_Epona.tools.0.label>
+  <Alien_Epona.tools.1.label>Right Punch</Alien_Epona.tools.1.label>
+  <Alien_Epona.tools.2.label>Teeth</Alien_Epona.tools.2.label>
+  <Alien_Epona.tools.3.label>Kick</Alien_Epona.tools.3.label>
+  <Alien_Unicorn.label>Uniponen</Alien_Unicorn.label>
+  <Alien_Unicorn.description>Uniponen is a male epona with horns. The male incarnation of the goddess Epona. They are beautiful, but above all they have medicinal properties in their horns, so they are often hunted by foreign mercenaries and poachers in the Empire.</Alien_Unicorn.description>
+  <Alien_Unicorn.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>hediff</Alien_Unicorn.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <Alien_Unicorn.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>skin</Alien_Unicorn.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+  <Alien_Unicorn.alienRace.generalSettings.alienPartGenerator.colorChannels.2.name>hair</Alien_Unicorn.alienRace.generalSettings.alienPartGenerator.colorChannels.2.name>
+</LanguageData>

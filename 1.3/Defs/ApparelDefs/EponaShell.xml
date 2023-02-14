@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_FurCape</defName>
+    <label>에포나 퍼 케이프</label>
+    <description>털이 달린 케이프 입니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaFurCape/EponaFurCape</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingTailor</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <WorkToMake>12000</WorkToMake>
+      <Mass>2.5</Mass>
+      <Flammability>0.6</Flammability>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
+      <Insulation_Cold>14</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaFurCape/EponaFurCape</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+		<li>Shell</li>
+      </layers>
+      <tags>
+        <li>EponaCommon</li>
+        <li>EponaCuteCape</li>
+
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+	</ThingDef>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_NobleCape</defName>
+    <label>에포나 귀족 케이프</label>
+    <description>아름다운 케이프 입니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaNobleCape/EponaNobleCape</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>250</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingTailor</li>
+
+      </recipeUsers>
+      <researchPrerequisite>Epona_Research_AdvancedSewing</researchPrerequisite>
+    </recipeMaker>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>220</MaxHitPoints>
+	  <WorkToMake>20000</WorkToMake>
+      <Mass>2</Mass>
+      <Flammability>0.4</Flammability>
+      <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+      <Insulation_Cold>5</Insulation_Cold>
+      <Insulation_Heat>1</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaNobleCape/EponaNobleCape</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+		<li>Shell</li>
+      </layers>
+      <tags>
+        <li>EponaKnight</li>
+        <li>Royal</li>
+
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<ScenarioDef>
+	<defName>EponaStart</defName>
+	<label>에포나 모험가</label>	
+		<description>에포나들의 모험이 시작됩니다</description>
+		<scenario>
+		<summary>네 에포나들의 모험.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>EponaPlayerColony</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>4</pawnCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+                <method>Standing</method>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>EponaHaySoup</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Steel</thingDef>
+				<count>400</count>
+			</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Epona_Research_Sewing</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Epona_Research_Kitchen</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Epona_Research_Smith</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Epona_Research_Bombarrot</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Brewing</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ComplexFurniture</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Stonecutting</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Smithing</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>LongBlades</project>
+				</li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Bow_Great</thingDef>
+          <count>1</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Epona_Weapon_BulletBow</thingDef>
+          <count>1</count>
+        </li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>StartingThing_Defined</def>
+          <thingDef>Epona_Weapon_Broadsword</thingDef>
+          <stuff>Steel</stuff>
+			</li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Epona_Weapon_Handgun</thingDef>
+          <count>1</count>
+        </li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>8</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>225</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>10</count>
+			</li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>800</count>
+        </li>
+
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Silver</thingDef>
+				<count>500</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>MedicineHerbal</thingDef>
+				<count>50</count>
+			</li>
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+		  <animalKind>Sheep</animalKind>
+          <count>3</count>
+          <bondToRandomPlayerPawnChance>0</bondToRandomPlayerPawnChance>
+        </li>
+        <li Class="ScenPart_StartingAnimal">
+				<def>StartingAnimal</def>
+				<animalKind>Epona_GiantSheep_Pawn</animalKind>
+				<count>1</count>
+				<bondToRandomPlayerPawnChance>0</bondToRandomPlayerPawnChance>
+        </li>
+		</parts>
+	</scenario>
+</ScenarioDef>
+</Defs>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--
+<Operation Class="PatchOperationReplace">	
+      <xpath>/Defs/ThingDef[defName = "Bow_Short"]/verbs</xpath>
+      <value>
+	      <verbs>
+            <li>
+                <verbClass>Ovis.Verb_HediffVariantProjectile</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Arrow_Short</defaultProjectile>
+                <warmupTime>1.35</warmupTime>
+                <range>22.9</range>
+                <soundCast>Bow_Small</soundCast>
+            </li>
+	       </verbs>
+      </value>		
+</Operation>
+<Operation Class="PatchOperationAdd">	
+      <xpath>/Defs/ThingDef[defName = "Bow_Short"]</xpath>
+	<value>
+        <comps>
+            <li Class="Ovis.CompProperties_HediffToProjectile">
+                <hediffProjectilePair>
+                    <li>
+                        <hediffDef>Hediff_Epona_Arrow_Poison</hediffDef>
+                        <thingDef>Bow_Short_Proj_Poison</thingDef>
+                        <priority>3</priority>
+                    </li>
+                </hediffProjectilePair>
+            </li>
+        </comps>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">	
+      <xpath>/Defs/ThingDef[defName = "Bow_Recurve"]/verbs</xpath>
+      <value>
+	      <verbs>
+            <li>
+                <verbClass>Ovis.Verb_HediffVariantProjectile</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Arrow_Recurve</defaultProjectile>
+                <warmupTime>1.45</warmupTime>
+                <range>25.9</range>
+                <soundCast>Bow_Recurve</soundCast>
+            </li>
+	       </verbs>
+      </value>		
+</Operation>
+<Operation Class="PatchOperationAdd">	
+      <xpath>/Defs/ThingDef[defName = "Bow_Recurve"]</xpath>
+	<value>
+        <comps>
+            <li Class="Ovis.CompProperties_HediffToProjectile">
+                <hediffProjectilePair>
+                    <li>
+                        <hediffDef>Hediff_Epona_Arrow_Poison</hediffDef>
+                        <thingDef>Bow_Recurve_Proj_Poison</thingDef>
+                        <priority>3</priority>
+                    </li>
+                </hediffProjectilePair>
+            </li>
+        </comps>
+	</value>
+</Operation>
+	
+<Operation Class="PatchOperationReplace">	
+      <xpath>/Defs/ThingDef[defName = "Bow_Great"]/verbs</xpath>
+      <value>
+	      <verbs>
+            <li>
+                <verbClass>Ovis.Verb_HediffVariantProjectile</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Arrow_Great</defaultProjectile>
+                <warmupTime>2.0</warmupTime>
+                <range>29.9</range>
+                <soundCast>Bow_Large</soundCast>
+            </li>
+	       </verbs>
+      </value>		
+</Operation>
+<Operation Class="PatchOperationAdd">	
+      <xpath>/Defs/ThingDef[defName = "Bow_Great"]</xpath>
+	<value>
+        <comps>
+            <li Class="Ovis.CompProperties_HediffToProjectile">
+                <hediffProjectilePair>
+                    <li>
+                        <hediffDef>Hediff_Epona_Arrow_Poison</hediffDef>
+                        <thingDef>Bow_Great_Proj_Poison</thingDef>
+                        <priority>3</priority>
+                    </li>
+                </hediffProjectilePair>
+            </li>
+        </comps>
+	</value>
+</Operation>
+-->
+</Patch>

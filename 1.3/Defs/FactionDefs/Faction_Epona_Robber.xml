@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 
+	1.2와의 비교점
+	
+	- <startingGoodwill>항목이 삭제됨.
+	- 이데올로기dlc 관련하여 allowedCultures,requiredMemes,disallowedMemes,structureMemeWeights 항목이 추가됨.
+	- maxConfigurableAtWorldCreation 옵션이 생김(없으면 팩션 갯수를 조절하는 메뉴에서 나타나지 않음.)
+
+	-->
+  <FactionDef ParentName="FactionBase" >
+	<defName>EponicRobberFaction</defName>
+	<label>에포나 강도남작국</label>
+    <description>Robber Barony of Epona</description>
+	<colorSpectrum>
+      <li>(0.2, 0.2, 0.2)</li>
+	  <li>(0.3, 0.3, 0.3)</li>
+    </colorSpectrum>
+	<pawnSingular>에포나</pawnSingular>
+    <pawnsPlural>에포나들</pawnsPlural>
+	<categoryTag>Eponic</categoryTag>
+	<listOrderPriority>30</listOrderPriority>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <naturalEnemy>true</naturalEnemy>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>대 남작</leaderTitle>
+	<factionNameMaker>NamerFaction_EponaKingdom</factionNameMaker>
+	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+	<allowedCultures><li>EponicCultures</li></allowedCultures> <!--허용하는 문화(CultureDef)지정-->
+	<requiredMemes> <!--필수로 들어가는 meme지정-->
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEponic</li>
+    </requiredMemes>
+	<disallowedMemes> <!--포함시키지 않는 meme지정-->
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+    </disallowedMemes>
+	<structureMemeWeights>    <!--기반이념(종교같은 큰틀)의 비율-->
+      <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Animist>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Ideological>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+    </structureMemeWeights>
+	<techLevel>Medieval</techLevel>
+ <backstoryFilters>
+      <li>
+        <categories>
+			<li>Outlander</li>
+        </categories>
+      </li>
+ </backstoryFilters>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Epona_BulkGoods</li>
+      <li>Caravan_Epona_CombatSupplier</li>
+      <li>Caravan_Epona_Exotic</li>
+	  <li>Caravan_Epona_ExoExotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Caravan_Epona_BulkGoods</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-50~45</allowedArrivalTemperatureRange>
+	    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
+	<raidLootMaker>EponaRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+        <options>
+		  <Epona_Soldier_Kern>30</Epona_Soldier_Kern>
+          <Epona_Soldier_Dragoon>10</Epona_Soldier_Dragoon>
+		  <Epona_Soldier_Caracole>20</Epona_Soldier_Caracole>
+		  <Epona_Robber_Soldier_Argoulet>2</Epona_Robber_Soldier_Argoulet>
+
+		  <Epona_Soldier_Bomber>1</Epona_Soldier_Bomber>
+		  <Epona_Soldier_Destrier_Gallowglass>3</Epona_Soldier_Destrier_Gallowglass>
+		  <Epona_Soldier_Gallowglass>40</Epona_Soldier_Gallowglass>
+        </options>
+      </li>
+
+	  <li>
+        <kindDef>Combat</kindDef>		
+        <commonality>30</commonality>
+        <options>
+		  <Epona_Soldier_Besieger>5</Epona_Soldier_Besieger>
+		  <Epona_Soldier_Bomber>3</Epona_Soldier_Bomber>
+          <Epona_Soldier_Dragoon>10</Epona_Soldier_Dragoon>
+		  <Epona_Soldier_Caracole>10</Epona_Soldier_Caracole>
+		  <Epona_Soldier_Destrier_Gallowglass>5</Epona_Soldier_Destrier_Gallowglass>
+		  <Epona_Soldier_Gallowglass>10</Epona_Soldier_Gallowglass>
+		  <Epona_Robber_Soldier_Destrier_Fian>1</Epona_Robber_Soldier_Destrier_Fian>
+		  <Epona_Robber_Soldier_Fian>10</Epona_Robber_Soldier_Fian>
+        </options>
+      </li>
+	  	  <li>
+        <kindDef>Combat</kindDef>		
+        <commonality>12</commonality>
+        <options>
+		  <Epona_Soldier_Bomber>4</Epona_Soldier_Bomber>
+		  <Epona_Soldier_Besieger>7</Epona_Soldier_Besieger>
+		  <Epona_Robber_Soldier_Argoulet>2</Epona_Robber_Soldier_Argoulet>
+
+		  <Epona_Robber_Soldier_Destrier_Fian>3</Epona_Robber_Soldier_Destrier_Fian>
+		  <Epona_Robber_Soldier_SteamFian>3</Epona_Robber_Soldier_SteamFian>
+		  <Epona_Robber_Soldier_Fian>20</Epona_Robber_Soldier_Fian>
+
+        </options>
+      </li>
+	  	  <li>
+        <kindDef>Combat</kindDef>		
+        <commonality>5</commonality>
+        <options>
+		  <Epona_Soldier_Bomber>7</Epona_Soldier_Bomber>
+		  <Epona_Soldier_Besieger>7</Epona_Soldier_Besieger>
+		  <Epona_Robber_Soldier_Destrier_Fian>3</Epona_Robber_Soldier_Destrier_Fian>
+		  <Epona_Robber_Soldier_SteamFian>2</Epona_Robber_Soldier_SteamFian>
+		  <Epona_Robber_Soldier_Fian>20</Epona_Robber_Soldier_Fian>
+
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>		
+        <commonality>3</commonality>
+        <options>
+		
+		  <Epona_Soldier_Kern>5</Epona_Soldier_Kern>
+		  <Epona_Robber_Soldier_Destrier_Fian>5</Epona_Robber_Soldier_Destrier_Fian>
+
+		  <Epona_Robber_Soldier_Fian>100</Epona_Robber_Soldier_Fian>
+
+        </options>
+      </li>
+	   <li>
+        <kindDef>Combat</kindDef>		
+        <commonality>0</commonality>
+        <options>
+          <Epona_Robber_Leader>1</Epona_Robber_Leader>
+        </options>
+      </li>
+           <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Epona_Colonist>10</Epona_Colonist>
+		  <Epona_Robber_Soldier_Fian>2</Epona_Robber_Soldier_Fian>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+	  <commonality>1</commonality>
+        <traders>
+          <Epona_Trader>1</Epona_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>5</Muffalo>
+          <Epona_GiantSheep_Pawn>5</Epona_GiantSheep_Pawn>
+        </carriers>
+        <guards>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Epona_Colonist>100</Epona_Colonist>
+          <Epona_Leader>1</Epona_Leader>
+          <Epona_Robber_Soldier_Fian>30</Epona_Robber_Soldier_Fian>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <factionIconPath>World/WorldObjects/IconEponicKingdom</factionIconPath>
+	<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation> <!--초기설정에서 최대로 넣을 수 있는 팩션의 갯수 -->
+    <configurationListOrderPriority>31</configurationListOrderPriority> <!--초기설정에서 팩션갯수를 정하는 메뉴에서의 정렬순서?인듯	-->
+  </FactionDef>
+  
+</Defs>

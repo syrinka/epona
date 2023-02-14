@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!-- 
+	<BodyPartDef>
+		<defName>Epona_Hull</defName>
+		<label>차체</label>
+		<bleedRate>0</bleedRate>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>HearingSource</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Epona_Engine</defName>
+		<label>엔진</label>
+		<bleedRate>0</bleedRate>
+		<hitPoints>15</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>ConsciousnessSource</li>
+			<li>MovingLimbCore</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+	</BodyPartDef>
+
+
+	<BodyPartDef>
+		<defName>Epona_Caterpillar</defName>
+		<bleedRate>0</bleedRate>
+		<label>케터필러</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Epona_Loader</defName>
+		<bleedRate>0</bleedRate>
+		<label>장전장치</label>
+		<hitPoints>5</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<tags>
+			<li>ManipulationLimbCore</li>
+			<li>ManipulationLimbSegment</li>
+			<li>ManipulationLimbDigit</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Epona_Glass</defName>
+		<label>관측창</label>
+		<bleedRate>0</bleedRate>
+		<hitPoints>1</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+	</BodyPartDef> -->
+</Defs>

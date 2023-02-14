@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_PowerArmorMunition</defName>
+    <label>에포나 뮤니션 스팀아머</label>
+    <description>증기동력을 제공하는 파워아머 입니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaPowerArmorMunition/EponaPowerArmorMunition</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>500</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>Epona_Research_Steam</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <ComponentIndustrial>25</ComponentIndustrial>
+      <WoodLog>250</WoodLog>
+    </costList>
+    <statBases>
+	  <MaxHitPoints>355</MaxHitPoints>
+	  <WorkToMake>100000</WorkToMake>
+      <Mass>20</Mass>
+      <StuffEffectMultiplierArmor>1.0</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>15</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>12</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>-2.1</MoveSpeed>
+	    <MeleeDodgeChance>-3</MeleeDodgeChance>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+				<li>Torso</li>
+                <li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaPowerArmorMunition/EponaPowerArmorMunition</wornGraphicPath>
+      <layers>
+		<li>Middle</li>
+      </layers>
+      <tags>
+        <li>EponaKnight</li>
+        <li>EponaSteam</li>
+        <li>Royal</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Hediff_Epona_SteamPowered</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  	
+	<HediffDef ParentName="Epona_Hidden_Hediff_Base"> 
+		<defName>Hediff_Epona_SteamPowered</defName>
+		<label>증기동력 연결됨</label>
+	</HediffDef>
+	
+<ThingDef ParentName="ArmorMachineableBase">
+    <defName>Epona_Apparel_PowerArmor</defName>
+    <label>에포나 로열 파워아머</label>
+    <description>르네상스풍의 강력한 파워아머입니다. 증기동력을 제공합니다.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/EponaPowerArmor/EponaPowerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>105000</WorkToMake>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Mass>20</Mass>
+      <Flammability>0.1</Flammability>
+      <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.1</ArmorRating_Heat>
+      <Insulation_Cold>49</Insulation_Cold>
+      <Insulation_Heat>12</Insulation_Heat>
+      <EquipDelay>12</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-1.8</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <costList>
+      <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>20</ComponentIndustrial>
+      <Plasteel>250</Plasteel>
+      <Synthread>20</Synthread>
+    </costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+                <li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/EponaPowerArmor/EponaPowerArmor</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+        <li>Epona_Elite</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Hediff_Epona_SteamPowered</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

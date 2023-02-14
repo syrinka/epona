@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Epona_Steamarmor_Cantreason>\n\n{16}Must be worn with the equipment below : \n\n{17}</Epona_Steamarmor_Cantreason>
+  <Epona_Steamarmor_ForceDropMessage>{1} does not wear a steam armor, so {1} can no longer wear {2}.</Epona_Steamarmor_ForceDropMessage>
+</LanguageData>

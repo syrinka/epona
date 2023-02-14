@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Epona race Renaissance</name>
+	<author>Outremer</author>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<packageId>Epona.EponaRenaissance</packageId>
+	<description>
+	
+	 Renaissance for Epona!
+	 </description>
+  <modDependencies>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>HumanoidAlienRaces</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+    </li>
+	<li>
+      <packageId>goudaquiche.MoharFramework</packageId>
+      <displayName>MoHARframework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2057001924</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>erdelf.HumanoidAlienRaces</li>
+	<li>goudaquiche.MoharFramework</li>
+  </loadAfter>
+</ModMetaData>

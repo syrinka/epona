@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>Epona_Apparel</defName>
+		<label>Epona Apparel</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_Farmer</defName>
+    <label>에포나 농부복</label>
+    <description>농부의 의상입니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaFarmingDress/EponaFarmingDress</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingTailor</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <WorkToMake>8000</WorkToMake>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>5</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.9</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+            <PlantHarvestYield>0.05</PlantHarvestYield>
+			<PlantWorkSpeed>0.1</PlantWorkSpeed>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaFarmingDress/EponaFarmingDress</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>EponaCommon</li>
+		<li>Horse</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_Noble</defName>
+    <label>에포나 귀족의상</label>
+    <description>귀족의 의상입니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaNoble/EponaNoble</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>250</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingTailor</li>
+
+      </recipeUsers>
+      <researchPrerequisite>Epona_Research_AdvancedSewing</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>150</MaxHitPoints>
+	  <WorkToMake>34000</WorkToMake>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>5</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaNoble/EponaNoble</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>EponaNoble</li>
+        <li>Royal</li>
+
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_JackPlate</defName>
+    <label>에포나 잭 오브 플레이트</label>
+    <description>단단한 내의입니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaJackPlate/EponaJackPlate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>150</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <Steel>110</Steel>
+    </costList>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingTailor</li>
+
+      </recipeUsers>
+      <researchPrerequisite>Epona_Research_JackofPlate</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>240</MaxHitPoints>
+	  <WorkToMake>50000</WorkToMake>
+      <Mass>8</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.48</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>5</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+	  <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+	  <MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaJackPlate/EponaJackPlate</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>EponaNoble</li>
+        <li>Royal</li>
+		</tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+	
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_BuffCoat</defName>
+    <label>에포나 버프코트</label>
+    <description>어느정도의 총격을 막을 수 있는 튼튼한 가죽제 코트입니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaBuffCoat/EponaBuffCoat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>150</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingTailor</li>
+
+      </recipeUsers>
+      <researchPrerequisite>Epona_Research_AdvancedSewing</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>170</MaxHitPoints>
+	  <WorkToMake>22000</WorkToMake>
+      <Mass>5</Mass>
+      <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>5</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaBuffCoat/EponaBuffCoat</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>EponaCommon</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_Priest</defName>
+    <label>에포나 사제의상</label>
+    <description>사제의 의상입니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaPriest/EponaPriest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>140</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingTailor</li>
+
+      </recipeUsers>
+      <researchPrerequisite>Epona_Research_AdvancedSewing</researchPrerequisite>
+
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>120</MaxHitPoints>
+	  <WorkToMake>25500</WorkToMake>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.7</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>5</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaPriest/EponaPriest</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>EponaNoble</li>
+        <li>EponaPriest</li>
+
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+  
+  	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_Child</defName>
+    <label>에포나 어린이 의상</label>
+    <description>어린이 의상입니다. 체온조절이 용이하게 바지가 달려있습니다. 성인들에겐 맞지도 않을뿐더러 입는순간 애새끼 취급을 받으니 안입는게 좋습니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaChild/EponaChild</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>120</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingTailor</li>
+
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>120</MaxHitPoints>
+	  <WorkToMake>10000</WorkToMake>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>5</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1.0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <NegotiationAbility>-0.8</NegotiationAbility>
+	  <TradePriceImprovement>-0.8</TradePriceImprovement>
+
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaChild/EponaChild</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+
+      </layers>
+      <tags>
+        <li>EponaChild</li>
+        <li>Royal</li>
+
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_EVA</defName>
+    <label>에포나 우주복</label>
+    <description>뭔가 정상적으로 작동이 되는게 신기한 우주복 입니다. 다시 한번 말하지만 우주복 맞습니다. 안에 갑옷을 입을 수 있습니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaEVASuit/EponaEVASuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>200</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costList>
+      <ComponentSpacer>5</ComponentSpacer>
+      <Uranium>50</Uranium>
+    </costList>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+      <researchPrerequisite>Epona_Research_Space</researchPrerequisite>
+	  </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>300</MaxHitPoints>
+	  <WorkToMake>65000</WorkToMake>
+      <Mass>6</Mass>
+      <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+	  <Insulation_Cold>100</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1.5</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-1.6</MoveSpeed>
+      <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+				<li>Torso</li>
+                <li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+				<li>EponaTail</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaEVASuit/EponaEVASuit</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+		<li>Shell</li>
+      </layers>
+      <tags>
+        <li>EponaEVA</li>
+        <li>Royal</li>
+        <li>EVA</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_Adventurer</defName>
+    <label>에포나 모험가 의복</label>
+    <description>모험가에게 걸맞는 가벼운 사슬갑옷과 브리건딘입니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaAdventurer/EponaAdventurer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>250</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costList>
+      <Steel>125</Steel>
+    </costList>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+      <researchPrerequisite>Epona_Research_Munition</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>275</MaxHitPoints>
+	  <WorkToMake>80000</WorkToMake>
+      <Mass>15</Mass>
+      <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.32</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>3</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.78</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+	  <WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+		<MeleeHitChance>0.5</MeleeHitChance>	
+	    <MeleeDodgeChance>2</MeleeDodgeChance>
+	  <MoveSpeed>-0.25</MoveSpeed>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaAdventurer/EponaAdventurer</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>EponaCommon</li>
+        <li>EponaNoble</li>
+		</tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+	
+</Defs>

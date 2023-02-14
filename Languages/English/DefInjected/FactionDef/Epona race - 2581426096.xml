@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <EponicKingdomFaction.label>High Kingdom of Epona</EponicKingdomFaction.label>
+  <EponicKingdomFaction.description>High Kingdom of Epona</EponicKingdomFaction.description>
+  <EponicKingdomFaction.pawnSingular>Epona</EponicKingdomFaction.pawnSingular>
+  <EponicKingdomFaction.pawnsPlural>Epones</EponicKingdomFaction.pawnsPlural>
+  <EponicKingdomFaction.leaderTitle>Ri</EponicKingdomFaction.leaderTitle>
+  <EponicKingdomFaction.royalFavorLabel>Dignity</EponicKingdomFaction.royalFavorLabel>
+  <EponicDruidFaction.label>Forest Epona</EponicDruidFaction.label>
+  <EponicDruidFaction.description>Forest Epona</EponicDruidFaction.description>
+  <EponicDruidFaction.pawnSingular>Epona</EponicDruidFaction.pawnSingular>
+  <EponicDruidFaction.pawnsPlural>Epones</EponicDruidFaction.pawnsPlural>
+  <EponicDruidFaction.leaderTitle>Great Druid</EponicDruidFaction.leaderTitle>
+  <EponaPlayerColony.label>Epona Settlement</EponaPlayerColony.label>
+  <EponaPlayerColony.description>Your own Epona Settlement.</EponaPlayerColony.description>
+  <EponaPlayerColony.pawnSingular>colonist</EponaPlayerColony.pawnSingular>
+  <EponaPlayerColony.pawnsPlural>colonists</EponaPlayerColony.pawnsPlural>
+  <EponicRobberFaction.label>Robber Barony of Epona</EponicRobberFaction.label>
+  <EponicRobberFaction.description>Robber Barony of Epona</EponicRobberFaction.description>
+  <EponicRobberFaction.pawnSingular>Epona</EponicRobberFaction.pawnSingular>
+  <EponicRobberFaction.pawnsPlural>Epones</EponicRobberFaction.pawnsPlural>
+  <EponicRobberFaction.leaderTitle>Grand Baron</EponicRobberFaction.leaderTitle>
+</LanguageData>

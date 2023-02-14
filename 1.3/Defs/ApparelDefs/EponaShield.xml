@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ApparelLayerDef>
+    <defName>Epona_Shield</defName>
+    <label>Epona Shield</label>
+    <drawOrder>560</drawOrder>
+  </ApparelLayerDef>
+  
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_NewShield_Light</defName>
+    <label>에포나 경량 방패</label>
+    <description>기병 전용 방패입니다. 적당한 방어력을 지니고 있습니다.</description>
+    <graphicData>
+      <texPath>Things/ApparelNewShield/Light/Light</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>20</Steel>
+      <WoodLog>60</WoodLog>
+	</costList>
+    <recipeMaker>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>110</MaxHitPoints>
+	  <WorkToMake>9000</WorkToMake>
+      <Mass>2.7</Mass>
+      <Flammability>1</Flammability>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+	 	<AimingDelayFactor>0.8</AimingDelayFactor>
+		<MeleeHitChance>-1</MeleeHitChance>	
+	    <MeleeDodgeChance>0</MeleeDodgeChance>
+        <MoveSpeed>-0.3</MoveSpeed>
+        <IncomingDamageFactor>-0.1</IncomingDamageFactor>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+	</bodyPartGroups>
+      <layers>
+        <li>Epona_Shield</li>
+      </layers>
+      <tags>
+        <li>EponaNewShieldLight</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Hediff_Epona_NewShield_Light</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo"> 
+		<defName>Hediff_Epona_NewShield_Light</defName>
+		<label>방패</label>
+	</HediffDef>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_NewShield_Balistic</defName>
+    <label>에포나 방탄 방패</label>
+    <description>기병 전용 방패입니다. 무겁지만 대구경의 총탄도 방어 할 수 있습니다.</description>
+    <graphicData>
+      <texPath>Things/ApparelNewShield/Balistic/Balistic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Plasteel>65</Plasteel>
+	</costList>
+    <recipeMaker>
+      <researchPrerequisite>Epona_Research_Shield</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>160</MaxHitPoints>
+	  <WorkToMake>38000</WorkToMake>
+      <Mass>7.5</Mass>
+      <Flammability>1</Flammability>
+      <ArmorRating_Sharp>0.78</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.8</ArmorRating_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+	 	<AimingDelayFactor>1</AimingDelayFactor>
+		<MeleeHitChance>-2.5</MeleeHitChance>	
+	    <MeleeDodgeChance>-3</MeleeDodgeChance>
+      <MoveSpeed>-1.1</MoveSpeed>
+        <IncomingDamageFactor>-0.15</IncomingDamageFactor>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+	</bodyPartGroups>
+      <layers>
+        <li>Epona_Shield</li>
+      </layers>
+      <tags>
+        <li>EponaNewShieldBalistic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Hediff_Epona_NewShield_Balistic</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo"> 
+		<defName>Hediff_Epona_NewShield_Balistic</defName>
+		<label>방패</label>
+	</HediffDef>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_NewShield_Medic</defName>
+    <label>유니포넨 구호기사 방패</label>
+    <description>기병 전용 방패입니다. 다른 방패보다 이동시 덜 걸리적 거리고 방어력 또한 준수합니다.</description>
+    <graphicData>
+      <texPath>Things/ApparelNewShield/Medic/Medic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <AlicornMedicine>5</AlicornMedicine>
+      <Silver>500</Silver>
+	</costList>
+    <recipeMaker>
+      <researchPrerequisite>Epona_Research_Shield</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>160</MaxHitPoints>
+	  <WorkToMake>38000</WorkToMake>
+      <Mass>4</Mass>
+      <Flammability>1</Flammability>
+      <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.8</ArmorRating_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+	 	<AimingDelayFactor>1</AimingDelayFactor>
+		<MeleeHitChance>-5</MeleeHitChance>	
+	    <MeleeDodgeChance>-3</MeleeDodgeChance>
+        <MoveSpeed>-0.18</MoveSpeed>
+        <IncomingDamageFactor>-0.15</IncomingDamageFactor>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+	</bodyPartGroups>
+      <layers>
+        <li>Epona_Shield</li>
+      </layers>
+      <tags>
+        <li>EponaNewShieldMedic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Hediff_Epona_NewShield_Medic</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo"> 
+		<defName>Hediff_Epona_NewShield_Medic</defName>
+		<label>방패</label>
+	</HediffDef>
+	
+</Defs>

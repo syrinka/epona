@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Player initial namers - used initially -->
+
+  
+	<RulePackDef>
+		<defName>NamerFaction_EponaKingdom</defName>
+		<include>
+			<li>EmpireNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->홀스래디시 세오본리체</li>
+				<li>r_name->스타게이지 소왕국 연합체</li>
+				<li>r_name->당근 왕국</li>
+				<li>r_name->대 라버브레드 연방</li>
+				<li>r_name->블랙푸딩 씨족 연합</li>
+				<li>r_name->에포랜드</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerPersonEpona</defName>
+    <include>
+      <li>EponaWordUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=2)->[HistoricHorse] [LastnameHorse]</li>
+        <li>r_name->[HistoricHorse] '[MythHorse]' [LastnameHorse]</li>
+        <li>r_name->[HistoricHorse] '[CuteHorse]' [LastnameHorse]</li>
+        <li>r_name(p=1)->[CuteHorse] [LastnameHorse]</li>
+        <li>r_name->[MythHorse] [LastnameHorse]</li>
+        <li>r_name->[HistoricHorse] [LastnameJapanHorse]</li>
+        <li>r_name(p=0.2)->[HistoricHorse] '[MythHorse]' [LastnameJapanHorse]</li>
+        <li>r_name(p=0.1)->[MythHorse] [LastnameJapanHorse]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>EponaWordUtility</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>CuteHorse->Fluffy</li>
+        <li>CuteHorse->Chub</li>
+        <li>CuteHorse->Doodle</li>
+        <li>CuteHorse->Buttercup</li>
+        <li>CuteHorse->Buttermilk</li>
+
+        <li>CuteHorse->Carrots</li>
+        <li>CuteHorse->Jellybeans</li>
+        <li>CuteHorse->Chippy</li>
+        <li>CuteHorse->Chestnuts</li>
+        <li>CuteHorse->Apple</li>
+
+        <li>CuteHorse->Buttermilk</li>
+        <li>MythHorse->Liath Macha</li>
+        <li>MythHorse->Dub Sainglend</li>
+        <li>MythHorse->Gringolet</li>
+        <li>MythHorse->Hengroen</li>
+        <li>MythHorse->Amerigo</li>
+        <li>MythHorse->Kelpie</li>
+        <li>MythHorse->Llamrei</li>
+        <li>MythHorse->Morvarc'h</li>
+        <li>MythHorse->Nuckelavee</li>
+        <li>MythHorse->Ros Beiaard</li>
+        <li>MythHorse->Arion</li>
+        <li>MythHorse->Balius</li>
+        <li>MythHorse->Xanthos</li>
+        <li>MythHorse->Hippocampus</li>
+        <li>MythHorse->Pegasus</li>
+        <li>MythHorse->Phaethon</li>
+        <li>MythHorse->Rhaebus</li>
+        <li>MythHorse->Sterope</li>
+
+        <li>HistoricHorse->Babieca</li>
+        <li>HistoricHorse->Bucephalus</li>
+        <li>HistoricHorse->Bucephalas</li>
+        <li>HistoricHorse->Favorito</li>
+        <li>HistoricHorse->Kasztanka</li>
+        <li>HistoricHorse->Marengo</li>
+        <li>HistoricHorse->Matsukaze</li>
+        <li>HistoricHorse->Nelson</li>
+        <li>HistoricHorse->Palomo</li>
+        <li>HistoricHorse->Reckless</li>
+        <li>HistoricHorse->Veillantif</li>
+        <li>HistoricHorse->Tencendur</li>
+        <li>HistoricHorse->Streiff</li>
+        <li>HistoricHorse->Brooklyn</li>
+        <li>HistoricHorse->Huaso</li>
+        <li>HistoricHorse->Incitatus</li>
+        <li>HistoricHorse->King</li>
+        <li>HistoricHorse->Prometea</li>
+        <li>HistoricHorse->Sampson</li>
+        <li>HistoricHorse->Marocco</li>
+											
+        <li>LastnameHorse->Supreme</li>
+        <li>LastnameHorse->Nevis</li>
+        <li>LastnameHorse->Caviar</li>
+        <li>LastnameHorse->Chrome</li>
+        <li>LastnameHorse->House</li>
+        <li>LastnameHorse->Smartly</li>
+        <li>LastnameHorse->Impact</li>
+        <li>LastnameHorse->Gold</li>
+        <li>LastnameHorse->Cide</li>
+        <li>LastnameHorse->Risk</li>
+        <li>LastnameHorse->Go</li>
+        <li>LastnameHorse->Maid</li>
+        <li>LastnameHorse->Fly</li>
+        <li>LastnameHorse->Glory</li>
+        <li>LastnameHorse->Lucky</li>
+        <li>LastnameHorse->Lap</li>
+        <li>LastnameHorse->Quiet</li>
+        <li>LastnameHorse->Rum</li>
+        <li>LastnameHorse->Silence</li>
+        <li>LastnameHorse->Colors</li>
+        <li>LastnameHorse->Chippy</li>
+
+        <li>LastnameJapanHorse->Week</li>
+        <li>LastnameJapanHorse->Month</li>
+        <li>LastnameJapanHorse->Day</li>
+        <li>LastnameJapanHorse->Mcqueen</li>
+        <li>LastnameJapanHorse->Ship</li>
+        <li>LastnameJapanHorse->Scarlet</li>
+        <li>LastnameJapanHorse->Topgun</li>
+        <li>LastnameJapanHorse->Cross</li>
+        <li>LastnameJapanHorse->Shower</li>
+        <li>LastnameJapanHorse->Cafe</li>								
+        <li>LastnameJapanHorse->Tachyon</li>
+        <li>LastnameJapanHorse->Sky</li>
+        <li>LastnameJapanHorse->Princess</li>					
+        <li>LastnameJapanHorse->Flash</li>					
+        <li>LastnameJapanHorse->Turbo</li>					
+
+		
+		
+		
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+</Defs>

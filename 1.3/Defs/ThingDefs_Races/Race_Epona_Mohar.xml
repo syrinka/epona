@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef Name="Epona_Hidden_Hediff_BaseTwo" Abstract="True"> 
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>히든 헤디프</description>
+		<defaultLabelColor>(0.392, 0.678, 0.737)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef> 
+	
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Epona_EarPLZ</defName>
+		<description>ear hediff</description>
+		<label>ear hediff</label>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>10~60</disappearsAfterTicks>
+      </li>
+    </comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Epona_Loli</defName>
+		<description>loli hediff</description>
+		<label>young hediff</label>
+	</HediffDef>
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Epona_Shota</defName>
+		<description>shota hediff</description>
+		<label>young hediff</label>
+	</HediffDef>
+  
+	<!-- male -->
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Epona_OHPG_male</defName>
+		<description>male hediff</description>
+		<label>male hediff</label>
+	</HediffDef>
+	<!-- female -->
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Epona_OHPG_female</defName>
+		<description>female hediff</description>
+		<label>female hediff</label>
+	</HediffDef>
+	<!---->	
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Epona_OneHediffPerGender</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply one hediff per gender</description>
+		<label>OneHediffPerGender</label>
+
+		<comps>
+			<li Class="OHPG.HediffCompProperties_GenderHediffAssociation">
+				<race>Alien_Epona</race>
+
+				<bodyPartDef>Torso</bodyPartDef>
+				 <!--<bodyPartLabel>left hand</bodyPartLabel> -->
+
+				<associations>
+					<li>
+						<gender>Male</gender>
+						<hediff>Epona_OHPG_male</hediff>
+					</li>
+					<li>
+						<gender>Female</gender>
+						<hediff>Epona_OHPG_female</hediff>
+					</li>
+				</associations>
+				
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Epona_OneHediffPerGenderLoli</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply one hediff per gender</description>
+		<label>OneHediffPerGender</label>
+
+		<comps>
+			<li Class="OHPG.HediffCompProperties_GenderHediffAssociation">
+				<race>Alien_Epona</race>
+
+				<bodyPartDef>Torso</bodyPartDef>
+				 <!--<bodyPartLabel>left hand</bodyPartLabel> -->
+
+				<associations>
+					<li>
+						<gender>Male</gender>
+						<hediff>Epona_Shota</hediff>
+					</li>
+					<li>
+						<gender>Female</gender>
+						<hediff>Epona_Loli</hediff>
+					</li>
+				</associations>
+				
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Epona_OneHediffPerLifeStage</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply one hediff per lifestage</description>
+		<label>OneHediffPerLifeStage</label>
+		<labelNoun>OneHediffPerLifeStage.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="OHPLS.HediffCompProperties_LifeStageHediffAssociation">
+				<race>Alien_Epona</race>
+
+				<bodyPartDef>Torso</bodyPartDef>
+				 <!--<bodyPartLabel>left hand</bodyPartLabel> -->
+
+				<associations>
+					<li>
+						<lifeStageDef>HumanlikeBaby</lifeStageDef>
+						<hediff>Epona_OneHediffPerGenderLoli</hediff>
+					</li>
+					<li>
+						<lifeStageDef>HumanlikeToddler</lifeStageDef>
+						<hediff>Epona_OneHediffPerGenderLoli</hediff>
+					</li>
+					<li>
+						<lifeStageDef>HumanlikeChild</lifeStageDef>
+						<hediff>Epona_OneHediffPerGenderLoli</hediff>
+					</li>
+					<li>
+						<lifeStageDef>EponalikeTeenager</lifeStageDef>
+						<hediff>Epona_OneHediffPerGender</hediff>
+					</li>
+					<li>
+						<lifeStageDef>HumanlikeAdult</lifeStageDef>
+						<hediff>Epona_OneHediffPerGender</hediff>
+					</li>
+				</associations>
+				
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffGiverSetDef>
+		<defName>Epona_LifeStage_HediffGiverSet</defName>
+		<hediffGivers>
+			<li Class="OHPLS.CustomRace_HediffGiver_OHPLS">
+				<hediff>Epona_OneHediffPerLifeStage</hediff>
+				<partsToAffect>
+					<li>Torso</li>
+				</partsToAffect>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+	
+	
+	
+	
+	
+	
+	
+	<!---->	
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Destrier_OneHediffPerGender</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply one hediff per gender</description>
+		<label>OneHediffPerGender</label>
+
+		<comps>
+			<li Class="OHPG.HediffCompProperties_GenderHediffAssociation">
+				<race>Alien_Destrier</race>
+
+				<bodyPartDef>Torso</bodyPartDef>
+				 <!--<bodyPartLabel>left hand</bodyPartLabel> -->
+
+				<associations>
+					<li>
+						<gender>Male</gender>
+						<hediff>Epona_OHPG_male</hediff>
+					</li>
+					<li>
+						<gender>Female</gender>
+						<hediff>Epona_OHPG_female</hediff>
+					</li>
+				</associations>
+				
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Destrier_OneHediffPerGenderLoli</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply one hediff per gender</description>
+		<label>OneHediffPerGender</label>
+
+		<comps>
+			<li Class="OHPG.HediffCompProperties_GenderHediffAssociation">
+				<race>Alien_Destrier</race>
+
+				<bodyPartDef>Torso</bodyPartDef>
+				 <!--<bodyPartLabel>left hand</bodyPartLabel> -->
+
+				<associations>
+					<li>
+						<gender>Male</gender>
+						<hediff>Epona_Shota</hediff>
+					</li>
+					<li>
+						<gender>Female</gender>
+						<hediff>Epona_Loli</hediff>
+					</li>
+				</associations>
+				
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Destrier_OneHediffPerLifeStage</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply one hediff per lifestage</description>
+		<label>OneHediffPerLifeStage</label>
+		<labelNoun>OneHediffPerLifeStage.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="OHPLS.HediffCompProperties_LifeStageHediffAssociation">
+				<race>Alien_Destrier</race>
+
+				<bodyPartDef>Torso</bodyPartDef>
+				 <!--<bodyPartLabel>left hand</bodyPartLabel> -->
+
+				<associations>
+					<li>
+						<lifeStageDef>HumanlikeBaby</lifeStageDef>
+						<hediff>Destrier_OneHediffPerGenderLoli</hediff>
+					</li>
+					<li>
+						<lifeStageDef>HumanlikeToddler</lifeStageDef>
+						<hediff>Destrier_OneHediffPerGenderLoli</hediff>
+					</li>
+					<li>
+						<lifeStageDef>HumanlikeChild</lifeStageDef>
+						<hediff>Destrier_OneHediffPerGenderLoli</hediff>
+					</li>
+					<li>
+						<lifeStageDef>EponalikeTeenager</lifeStageDef>
+						<hediff>Destrier_OneHediffPerGender</hediff>
+					</li>
+					<li>
+						<lifeStageDef>HumanlikeAdult</lifeStageDef>
+						<hediff>Destrier_OneHediffPerGender</hediff>
+					</li>
+				</associations>
+				
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffGiverSetDef>
+		<defName>Destrier_LifeStage_HediffGiverSet</defName>
+		<hediffGivers>
+			<li Class="OHPLS.CustomRace_HediffGiver_OHPLS">
+				<hediff>Destrier_OneHediffPerLifeStage</hediff>
+				<partsToAffect>
+					<li>Torso</li>
+				</partsToAffect>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+	
+	<!---->	
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Unicorn_OneHediffPerGender</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply one hediff per gender</description>
+		<label>OneHediffPerGender</label>
+
+		<comps>
+			<li Class="OHPG.HediffCompProperties_GenderHediffAssociation">
+				<race>Alien_Unicorn</race>
+
+				<bodyPartDef>Torso</bodyPartDef>
+				 <!--<bodyPartLabel>left hand</bodyPartLabel> -->
+
+				<associations>
+					<li>
+						<gender>Male</gender>
+						<hediff>Epona_OHPG_male</hediff>
+					</li>
+					<li>
+						<gender>Female</gender>
+						<hediff>Epona_OHPG_female</hediff>
+					</li>
+				</associations>
+				
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Unicorn_OneHediffPerGenderLoli</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply one hediff per gender</description>
+		<label>OneHediffPerGender</label>
+
+		<comps>
+			<li Class="OHPG.HediffCompProperties_GenderHediffAssociation">
+				<race>Alien_Unicorn</race>
+
+				<bodyPartDef>Torso</bodyPartDef>
+				 <!--<bodyPartLabel>left hand</bodyPartLabel> -->
+
+				<associations>
+					<li>
+						<gender>Male</gender>
+						<hediff>Epona_Shota</hediff>
+					</li>
+					<li>
+						<gender>Female</gender>
+						<hediff>Epona_Loli</hediff>
+					</li>
+				</associations>
+				
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+		<defName>Unicorn_OneHediffPerLifeStage</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>apply one hediff per lifestage</description>
+		<label>OneHediffPerLifeStage</label>
+		<labelNoun>OneHediffPerLifeStage.labelNoun</labelNoun>
+
+		<comps>
+			<li Class="OHPLS.HediffCompProperties_LifeStageHediffAssociation">
+				<race>Alien_Unicorn</race>
+
+				<bodyPartDef>Torso</bodyPartDef>
+				 <!--<bodyPartLabel>left hand</bodyPartLabel> -->
+
+				<associations>
+					<li>
+						<lifeStageDef>HumanlikeBaby</lifeStageDef>
+						<hediff>Unicorn_OneHediffPerGenderLoli</hediff>
+					</li>
+					<li>
+						<lifeStageDef>HumanlikeToddler</lifeStageDef>
+						<hediff>Unicorn_OneHediffPerGenderLoli</hediff>
+					</li>
+					<li>
+						<lifeStageDef>HumanlikeChild</lifeStageDef>
+						<hediff>Unicorn_OneHediffPerGenderLoli</hediff>
+					</li>
+					<li>
+						<lifeStageDef>EponalikeTeenager</lifeStageDef>
+						<hediff>Unicorn_OneHediffPerGender</hediff>
+					</li>
+					<li>
+						<lifeStageDef>HumanlikeAdult</lifeStageDef>
+						<hediff>Unicorn_OneHediffPerGender</hediff>
+					</li>
+				</associations>
+				
+				<!-- <debug>true</debug> -->
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffGiverSetDef>
+		<defName>Unicorn_LifeStage_HediffGiverSet</defName>
+		<hediffGivers>
+			<li Class="OHPLS.CustomRace_HediffGiver_OHPLS">
+				<hediff>Unicorn_OneHediffPerLifeStage</hediff>
+				<partsToAffect>
+					<li>Torso</li>
+				</partsToAffect>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+	
+</Defs>

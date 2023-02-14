@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>Epona_ResearchTab</defName>
+		<label>에포나 연구</label>
+	</ResearchTabDef>
+</Defs>

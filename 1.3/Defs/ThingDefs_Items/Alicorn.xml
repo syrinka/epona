@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>Epona_Weapon_Alicorn</defName>
+		<label>유니포넨 알리콘</label>
+    <techLevel>Medieval</techLevel>
+		<description>유니포넨의 뿔 입니다.</description>
+		<graphicData>
+			<texPath>Things/WeaponMelee/EponaAlicorn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+    <weaponTags>
+      <li>EponaCharger</li>
+    </weaponTags>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>2.5</Mass>
+			<MarketValue>4200</MarketValue>
+		</statBases>
+		<equippedStatOffsets>	
+      <MoveSpeed>-0.02</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+    <costList>
+      <AlicornMedicine>100</AlicornMedicine>
+	</costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>32</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <recipeUsers Inherit="False">
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="MedicineBase">
+		<defName>AlicornMedicine</defName>
+		<label>알리콘 가루</label>
+		<description>의료용품으로 사용가능한 알리콘 가루 입니다..</description>				
+		<graphicData>
+      <texPath>Things/Item/AlicornPowder/AlicornPowder</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+			<MarketValue>40</MarketValue>
+			<Mass>0.025</Mass>
+			<Flammability>0.7</Flammability>
+			<MedicalPotency>1.0</MedicalPotency>
+			<MedicalQualityMax>1.1</MedicalQualityMax>
+			<DeteriorationRate>2</DeteriorationRate>
+			<WorkToMake>1500</WorkToMake>
+		</statBases>
+	</ThingDef>
+	<!---->	
+  <ThingDef ParentName="MedicineBase">
+    <defName>AlicornMedicineUltratech</defName>
+    <label>알리콘 약품</label>
+    <description>알리콘 가루를 이용해 제작한 번화계급 의약품입니다.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Medicine/MedicineUltratech</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MarketValue>47</MarketValue>
+      <Mass>0.50</Mass>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>1.60</MedicalPotency>
+      <MedicalQualityMax>1.30</MedicalQualityMax>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <WorkToMake>3500</WorkToMake>
+    </statBases>
+    <costList>
+      <MedicineIndustrial>1</MedicineIndustrial>
+      <AlicornMedicine>1</AlicornMedicine>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>Epona_Research_Alicorn</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+        <Intellectual>6</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>Make_AlicornMedicine</defName>
+    <label>알리콘 파괴</label>
+    <description>알리콘을 부숴서 가루를 얻습니다.</description>
+    <jobString>알리콘 파괴중.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <workAmount>2500</workAmount>
+    <recipeUsers>
+      <li>TableButcher</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Epona_Weapon_Alicorn</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+          <thingDefs>
+            <li>Epona_Weapon_Alicorn</li>
+          </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AlicornMedicine>100</AlicornMedicine>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <ThingDef ParentName="DrugBase">
+		<defName>EponaAlicornCocktail</defName>
+		<label>알리콘 엘릭서</label>
+		<description>마시면 노화에 따른 질병과 영구적 상처가 회복된다 합니다. 오...</description>  
+    <descriptionHyperlinks>
+      <HediffDef>AlcoholHigh</HediffDef>
+	  <HediffDef>AlcoholAddiction</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/PotionAlicorn</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>2740</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.1</Nutrition>
+      <WorkToMake>39900</WorkToMake>
+    </statBases>
+    <costList>
+      <EponaBombarrotCocktail>1</EponaBombarrotCocktail>
+      <AlicornMedicine>100</AlicornMedicine>
+      <Gold>100</Gold>
+    </costList>
+    <ingestible>
+      <foodType>Fluid, Processed, Liquor</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>1.0</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Medical</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>{0} 마시기</ingestCommandString>
+      <ingestReportString>{0} 마시는 중.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.4</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Hediff_AlicornDrinkable</hediffDef>
+					<severity>1</severity>
+        </li>					
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>EponaBuildingKitchen</li>
+      </recipeUsers>
+      <researchPrerequisite>Epona_Research_Elixir</researchPrerequisite>
+      <skillRequirements>
+        <Cooking>6</Cooking>
+        <Intellectual>12</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Alcohol</chemical>
+        <addictiveness>0.010</addictiveness>
+        <minToleranceToAddict>0.25</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>10</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+  
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+
+		<defName>Hediff_AlicornThrowable</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>알리콘 회복.</description>
+		<label>알리콘 회복.</label>
+
+		<scenarioCanAdd>false</scenarioCanAdd>
+
+		<comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>1800~2400</disappearsAfterTicks>
+      </li>
+			<li Class="MoharRegeneration.HediffCompProperties_Regeneration">
+
+				<CheckingTicksPeriod>300</CheckingTicksPeriod>
+
+				<!-- Tending -->
+				<BloodLossTendingParams>
+					<TreatmentLabel>blood loss tending</TreatmentLabel>
+
+					<PeriodBase>300~360</PeriodBase>
+					<HealingQuality>.5 ~1</HealingQuality>
+
+					<HungerCost>.03</HungerCost>
+					<RestCost>.04</RestCost>
+
+					<!-- <MoteDef>Mote_TendingBloodloss</MoteDef> -->
+				</BloodLossTendingParams>
+
+				<!-- Hediff removal -->
+				<PhysicalInjuryRegenParams>
+					<TreatmentLabel>organ healing</TreatmentLabel>
+
+					<PeriodBase>300~360</PeriodBase>
+					<HealingQuality>.05~.15</HealingQuality>
+					<TargetedHediffDefs>
+						<li>Bite</li>
+						<li>Bruise</li>
+						<li>Burn</li>
+						<li>ChemicalBurn</li>
+						<li>Crush</li>
+						<li>Crack</li>
+						<li>Cut</li>
+						<li>ExecutionCut</li>
+						<li>Frostbite</li>
+						<li>Gunshot</li>
+						<li>Shredded</li>
+						<li>Scratch</li>
+						<li>Stab</li>
+						<li>SurgicalCut</li>
+					</TargetedHediffDefs>
+
+					<HungerCost>.11</HungerCost>
+					<RestCost>.13</RestCost>
+
+				</PhysicalInjuryRegenParams>
+
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo">
+
+		<defName>Hediff_AlicornDrinkable</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+
+		<description>알리콘 섭취.</description>
+		<label>알리콘 섭취.</label>
+
+		<scenarioCanAdd>false</scenarioCanAdd>
+
+		<comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>4000~21000</disappearsAfterTicks>
+      </li>
+			<li Class="MoharRegeneration.HediffCompProperties_Regeneration">
+
+				<CheckingTicksPeriod>300</CheckingTicksPeriod>
+
+				<!-- Tending -->
+				<PermanentInjuryRegenParams>
+					<TreatmentLabel>scare removal</TreatmentLabel>
+
+					<PeriodBase>600~1800</PeriodBase>
+					<HealingQuality>.03~.07</HealingQuality>
+
+					<HungerCost>.25</HungerCost>
+					<RestCost>.4</RestCost>
+
+
+				</PermanentInjuryRegenParams>
+
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

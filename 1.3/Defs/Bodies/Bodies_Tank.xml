@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- 
+  <BodyDef>
+    <defName>TrojanTank</defName>
+    <label>TrojanTank</label>
+    <corePart>
+      <def>Epona_Hull</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+       <li>
+          <def>Epona_Glass</def>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+       <li>
+          <def>Epona_Loader</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Epona_Engine</def>
+          <coverage>0.21</coverage>
+          <height>Top</height>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Epona_Caterpillar</def>
+          <customLabel>Right Caterpillar</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+        <li>
+          <def>Epona_Caterpillar</def>
+          <customLabel>Left Caterpillar</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+ </parts>
+    </corePart>
+  </BodyDef>
+ -->
+</Defs>

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 
+	1.2와의 비교점
+	
+	- <startingGoodwill>항목이 삭제됨.
+	- 이데올로기dlc 관련하여 allowedCultures,requiredMemes,disallowedMemes,structureMemeWeights 항목이 추가됨.
+	- maxConfigurableAtWorldCreation 옵션이 생김(없으면 팩션 갯수를 조절하는 메뉴에서 나타나지 않음.)
+
+	-->
+  <FactionDef ParentName="FactionBase" >
+	<defName>EponicDruidFaction</defName>
+	<label>숲 에포나</label>
+    <description>Forest Epona</description>
+	<colorSpectrum>
+      <li>(0.2, 1.0, 0.2)</li>
+	  <li>(0.2, 0.7, 0.5)</li>
+    </colorSpectrum>
+	<pawnSingular>에포나</pawnSingular>
+    <pawnsPlural>에포나들</pawnsPlural>
+	<categoryTag>Eponic</categoryTag>
+	<listOrderPriority>30</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <canMakeRandomly>false</canMakeRandomly>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>대 드루이드</leaderTitle>
+	<factionNameMaker>NamerFaction_EponaKingdom</factionNameMaker>
+	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+	<allowedCultures><li>EponicDruidCultures</li></allowedCultures> <!--허용하는 문화(CultureDef)지정-->
+	<requiredMemes> <!--필수로 들어가는 meme지정-->
+      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEponic</li>
+    </requiredMemes>
+	<disallowedMemes> <!--포함시키지 않는 meme지정-->
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+    </disallowedMemes>
+	<structureMemeWeights>    <!--기반이념(종교같은 큰틀)의 비율-->
+      <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Animist>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Ideological>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+    </structureMemeWeights>
+	<techLevel>Medieval</techLevel>
+ <backstoryFilters>
+      <li>
+        <categories>
+			<li>Outlander</li>
+        </categories>
+      </li>
+ </backstoryFilters>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Epona_BulkGoods</li>
+      <li>Caravan_Epona_CombatSupplier</li>
+      <li>Caravan_Epona_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>18~45</allowedArrivalTemperatureRange>
+    <minSettlementTemperatureChanceCurve> <!-- Nudist setllements should try to appear in warm temperatures -->
+      <points>
+        <li>(17.9,  0.00001)</li>
+        <li>(18,    1)</li>
+        <li>(24,    1)</li>
+      </points>
+    </minSettlementTemperatureChanceCurve>	    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
+	<raidLootMaker>EponaRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <Epona_Druid_Soldier_Spearman>30</Epona_Druid_Soldier_Spearman>
+          <Epona_Pwca_Pawn>7</Epona_Pwca_Pawn>
+		  <Epona_Druid_Soldier_Ranger>5</Epona_Druid_Soldier_Ranger>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>		
+        <commonality>30</commonality>
+        <options>
+		  <Epona_Druid_Soldier_RangerCaptain>1</Epona_Druid_Soldier_RangerCaptain>
+          <Epona_Pwca_Pawn>10</Epona_Pwca_Pawn>
+		  <Epona_Druid_Soldier_Ranger>5</Epona_Druid_Soldier_Ranger>
+        </options>
+      </li>
+	  	  <li>
+        <kindDef>Combat</kindDef>		
+        <commonality>10</commonality>
+        <options>
+		  <Epona_Druid_Soldier_RangerCaptain>1</Epona_Druid_Soldier_RangerCaptain>
+          <Epona_Pwca_Pawn>5</Epona_Pwca_Pawn>
+		  <Epona_Druid_Soldier_Ranger>10</Epona_Druid_Soldier_Ranger>
+        </options>
+      </li>
+	   <li>
+        <kindDef>Combat</kindDef>		
+        <commonality>0</commonality>
+        <options>
+          <Epona_Druid_Leader>1</Epona_Druid_Leader>
+        </options>
+      </li>
+           <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Epona_Druid_Colonist>10</Epona_Druid_Colonist>
+		  <Epona_Druid_Soldier_Ranger>2</Epona_Druid_Soldier_Ranger>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+	  <commonality>1</commonality>
+        <traders>
+          <Epona_Druid_Trader>1</Epona_Druid_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>5</Muffalo>
+          <Dromedary>5</Dromedary>
+		  <Alpaca>5</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Epona_Druid_Colonist>100</Epona_Druid_Colonist>
+          <Epona_Druid_Leader>1</Epona_Druid_Leader>
+          <Epona_Druid_Soldier_Ranger>30</Epona_Druid_Soldier_Ranger>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <factionIconPath>World/WorldObjects/IconEponicKingdom</factionIconPath>
+	<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation> <!--초기설정에서 최대로 넣을 수 있는 팩션의 갯수 -->
+    <configurationListOrderPriority>31</configurationListOrderPriority> <!--초기설정에서 팩션갯수를 정하는 메뉴에서의 정렬순서?인듯	-->
+  </FactionDef>
+  
+</Defs>

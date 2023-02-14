@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+ 
+<AlienRace.BackstoryDef Name="Epona_BaseBackstoryChild" Abstract="True">
+		<disallowedTraits>
+			<li>
+				<defName>Beauty</defName>
+				<degree>-2</degree>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>Undergrounder</defName>
+				<degree>0</degree>
+				<chance>100</chance>
+			</li>
+		</disallowedTraits>
+		<forcedHediffs>
+			<li>Epona_EarPLZ</li>
+		</forcedHediffs>
+		<bodyTypeMale>EponaBody</bodyTypeMale>
+		<bodyTypeFemale>EponaBody</bodyTypeFemale>
+	</AlienRace.BackstoryDef>
+	
+ <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+    <defName>Epona_Child_Farmer</defName>
+    <title>에포나 농민의 아이</title>
+	<titleShort>농민의 아이</titleShort>
+    <baseDescription>[PAWN_nameDef]는 평범한 농민의 자식입니다. 어릴적부터 고된 일을 해왔습니다.</baseDescription>
+	
+	<skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>4</amount>
+      </li>
+	</skillGains>
+	
+	
+	<slot>Childhood</slot>
+	<spawnCategories>
+	  <li>Epona_LowCaste</li>
+
+    </spawnCategories>
+ </AlienRace.BackstoryDef>
+
+ <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+    <defName>Epona_Child_Thief</defName>
+    <title>에포나 서리꾼</title>
+	<titleShort>서리꾼</titleShort>
+    <baseDescription>[PAWN_nameDef]는 서리를 히던 악동이었습니다.</baseDescription>
+	
+	<skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+		<defName>Melee</defName>
+		<amount>2</amount>
+	  </li>
+	</skillGains>
+	
+	
+	<slot>Childhood</slot>
+	<spawnCategories>
+	  
+	  <li>Epona_LowCaste</li>
+
+    </spawnCategories>
+ </AlienRace.BackstoryDef>
+ 
+ <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+    <defName>Epona_Child_Forager</defName>
+    <title>에포나 채집꾼 꼬마</title>
+	<titleShort>채집꾼 꼬마</titleShort>
+    <baseDescription>[PAWN_nameDef]는 평범한 농민의 자식입니다. 산과 들판에서 여러가지를 채집해 먹고 살았습니다.</baseDescription>
+	
+	<skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>6</amount>
+      </li>
+	</skillGains>
+	
+	
+	<slot>Childhood</slot>
+	<spawnCategories>
+	  
+	  <li>Epona_LowCaste</li>
+
+    </spawnCategories>
+ </AlienRace.BackstoryDef>
+ 
+ <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+    <defName>Epona_Child_Shepherd</defName>
+    <title>에포나 목동</title>
+	<titleShort>목동</titleShort>
+    <baseDescription>[PAWN_nameDef]는 양치기였습니다. 자신의 스태프로 양들을 늑대로부터 지켜야 했습니다. 그런데 양이 너무 거대하다보니 딱히 힘든 일은 없었지만요.</baseDescription>
+	
+	<skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+	</skillGains>
+	
+	
+	<slot>Childhood</slot>
+	<spawnCategories>
+	  
+	  <li>Epona_LowCaste</li>
+
+    </spawnCategories>
+ </AlienRace.BackstoryDef>
+ 
+ <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+    <defName>Epona_Child_Wildhorse</defName>
+    <title>에포나 야생마</title>
+	<titleShort>야생마</titleShort>
+    <baseDescription>[PAWN_nameDef]는 어릴적 버려저 야생에서 자랐습니다. 어느 순간 사제들에게 길러졌고 사회화 되었습니다.</baseDescription>
+	
+	<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-4</amount>
+			</li>
+	</skillGains>
+	
+	
+	<slot>Childhood</slot>
+	<spawnCategories>
+	  
+	  <li>Epona_LowCaste</li>
+
+    </spawnCategories>
+ </AlienRace.BackstoryDef>
+ 
+ <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+    <defName>Epona_Child_Blacksmith</defName>
+    <title>에포나 대장장이의 조수</title>
+	<titleShort>조수</titleShort>
+    <baseDescription>[PAWN_nameDef]는 대장장이의 조수입니다. 마을의 대장장이 옆에서 도제식 교육을 받으면서 자랐습니다.</baseDescription>
+	
+	<skillGains>
+			<li>
+				<defName>Crafting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>3</amount>
+			</li>
+	</skillGains>
+	
+	
+	<slot>Childhood</slot>
+	<spawnCategories>
+	  
+	  <li>Epona_LowCaste</li>
+
+    </spawnCategories>
+ </AlienRace.BackstoryDef>
+ 
+  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+    <defName>Epona_Child_Thug</defName>
+    <title>에포나 골목대장</title>
+	<titleShort>골목대장</titleShort>
+    <baseDescription>[PAWN_nameDef]는 마을에서 한가닥 하는 아이였습니다.</baseDescription>
+	
+	<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>
+	</skillGains>
+	
+	
+	<slot>Childhood</slot>
+	<spawnCategories>
+	  
+	  <li>Epona_LowCaste</li>
+
+    </spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>Brawler</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>Greedy</defName>
+				<chance>0.3</chance>
+			</li>
+		</forcedTraits>
+ </AlienRace.BackstoryDef>
+
+ <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+    <defName>Epona_Child_Squire</defName>
+    <title>에포나 종자</title>
+	<titleShort>종자</titleShort>
+    <baseDescription>[PAWN_nameDef]는 기사의 종자로 훈련되어왔습니다.</baseDescription>
+	
+	<skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+	</skillGains>
+	
+	
+	<slot>Childhood</slot>
+	<spawnCategories>
+	  
+	  <li>Epona_MidCaste</li>
+	  <li>Epona_SquireCaste</li>
+
+    </spawnCategories>
+ </AlienRace.BackstoryDef>
+
+ <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+    <defName>Epona_Child_Burgher</defName>
+    <title>에포나 성벽안 꼬마</title>
+	<titleShort>부르거</titleShort>
+    <baseDescription>[PAWN_nameDef]는 성 안에서 살아왔습니다.</baseDescription>
+	
+	<skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+	</skillGains>
+	
+	
+	<slot>Childhood</slot>
+	<spawnCategories>
+	  
+	  <li>Epona_MidCaste</li>
+	  
+    </spawnCategories>
+ </AlienRace.BackstoryDef>
+ 
+ <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+    <defName>Epona_Child_Soldier</defName>
+    <title>에포나 소년병</title>
+	<titleShort>소년병</titleShort>
+    <baseDescription>[PAWN_nameDef]는 소년병입니다. 에포나같은 중 근세 사회에서는 흔한 일 입니다.</baseDescription>
+	
+	<skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+	</skillGains>
+	
+	
+	<slot>Childhood</slot>
+	<spawnCategories>
+	  
+	  <li>Epona_MidCaste</li>
+
+    </spawnCategories>
+ </AlienRace.BackstoryDef>
+ 
+ <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+    <defName>Epona_Child_Noble</defName>
+    <title>에포나 귀공녀</title>
+	<titleShort>귀공녀</titleShort>
+    <baseDescription>[PAWN_nameDef]는 귀공녀입니다.</baseDescription>
+	
+	<skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+	</skillGains>
+	
+	
+	<slot>Childhood</slot>
+	<spawnCategories>
+	  
+	  <li>Epona_HighCasteRoyal</li>
+	  <li>Epona_HighCaste</li>
+
+    </spawnCategories>
+ </AlienRace.BackstoryDef>
+
+ 
+ <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
+    <defName>Epona_Child_Student</defName>
+    <title>에포나 학생</title>
+	<titleShort>학생</titleShort>
+    <baseDescription>[PAWN_nameDef]는 아카데미의 학생입니다. 아카데미에 다니는것은 에포나 사회에서 크나큰 특권입니다.</baseDescription>
+	
+	<skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+	</skillGains>
+	
+	
+	<slot>Childhood</slot>
+	<spawnCategories>
+	  
+	  <li>Epona_HighCaste</li>
+
+    </spawnCategories>
+ </AlienRace.BackstoryDef>
+
+</Defs>

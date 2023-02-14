@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Ideology</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleApparelRequirements</xpath>
+	<value>
+      <li>
+        <allowedFactionCategoryTags><li>Eponic</li></allowedFactionCategoryTags>
+        <anyMemeRequired><li>Structure_TheistEponic</li></anyMemeRequired>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+		    <li>Epona_Apparel_Hat_Tiara</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleApparelRequirements/li[1]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleApparelRequirements/li[2]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleApparelRequirements/li[3]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleApparelRequirements/li[4]/disallowedFactionCategoryTags</xpath>
+	<value>
+        <li>Eponic</li>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleApparelRequirements/li[5]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleApparelRequirements/li[6]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleApparelRequirements/li[7]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleApparelRequirements/li[8]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleApparelRequirements/li[9]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleApparelRequirements/li[10]/disallowedFactionCategoryTags</xpath>
+	<value>
+<li>Eponic</li>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Moralist"]/roleApparelRequirements</xpath>
+	<value>
+      <li>
+        <allowedFactionCategoryTags><li>Eponic</li></allowedFactionCategoryTags>
+        <anyMemeRequired><li>Structure_TheistEponic</li></anyMemeRequired>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>Torso</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Epona_Apparel_Priest</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Moralist"]/roleApparelRequirements/li[1]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Moralist"]/roleApparelRequirements/li[2]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Moralist"]/roleApparelRequirements/li[3]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Moralist"]/roleApparelRequirements/li[4]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Moralist"]/roleApparelRequirements/li[5]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Moralist"]/roleApparelRequirements/li[6]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Moralist"]/roleApparelRequirements/li[7]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Moralist"]/roleApparelRequirements/li[8]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Moralist"]/roleApparelRequirements/li[9]/disallowedFactionCategoryTags</xpath>
+	<value>
+<li>Eponic</li>
+	</value>
+            </li>
+            <li Class="PatchOperationAdd">
+<xpath>/Defs/PreceptDef[defName = "IdeoRole_Moralist"]/roleApparelRequirements/li[10]</xpath>
+	<value>
+        <disallowedFactionCategoryTags><li>Eponic</li></disallowedFactionCategoryTags>
+	</value>
+            </li>
+        </operations>
+    </match>
+  </Operation>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</Patch>

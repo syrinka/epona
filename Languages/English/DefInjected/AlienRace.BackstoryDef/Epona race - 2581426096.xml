@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Epona_Adult_Kern.title>Epona Peasant Rebel</Epona_Adult_Kern.title>
+  <Epona_Adult_Kern.titleShort>Peasant Rebel</Epona_Adult_Kern.titleShort>
+  <Epona_Adult_Kern.baseDescription>[PAWN_nameDef] was fed up with a poor life under oppression and took up weapons.</Epona_Adult_Kern.baseDescription>
+  <Epona_Adult_Farmer.title>Epona Freed Serf</Epona_Adult_Farmer.title>
+  <Epona_Adult_Farmer.titleShort>Freed Serf</Epona_Adult_Farmer.titleShort>
+  <Epona_Adult_Farmer.baseDescription>[PAWN_nameDef] is a serf. Originally, it was a subordinate of the lord, but it recently gained freedom.</Epona_Adult_Farmer.baseDescription>
+  <Epona_Adult_FreeFarmer.title>Epona Yeoman</Epona_Adult_FreeFarmer.title>
+  <Epona_Adult_FreeFarmer.titleShort>Yeoman</Epona_Adult_FreeFarmer.titleShort>
+  <Epona_Adult_FreeFarmer.baseDescription>[PAWN_nameDef] is yeoman. I inherited my parents' class. Fortunately, parents were free people.</Epona_Adult_FreeFarmer.baseDescription>
+  <Epona_Adult_SmartFarmer.title>Epona Smart Serf</Epona_Adult_SmartFarmer.title>
+  <Epona_Adult_SmartFarmer.titleShort>Smartie</Epona_Adult_SmartFarmer.titleShort>
+  <Epona_Adult_SmartFarmer.baseDescription>HELP, HELP, I'M BEING REPRESSED!</Epona_Adult_SmartFarmer.baseDescription>
+  <Epona_Adult_Innkeeper.title>Epona Innkeeper</Epona_Adult_Innkeeper.title>
+  <Epona_Adult_Innkeeper.titleShort>Innkeeper</Epona_Adult_Innkeeper.titleShort>
+  <Epona_Adult_Innkeeper.baseDescription>"Come on in. We got warm food, warm drinks, and warm beds."</Epona_Adult_Innkeeper.baseDescription>
+  <Epona_Adult_DesertedLevy.title>Epona Deserted Levy</Epona_Adult_DesertedLevy.title>
+  <Epona_Adult_DesertedLevy.titleShort>Deserter</Epona_Adult_DesertedLevy.titleShort>
+  <Epona_Adult_DesertedLevy.baseDescription>[PAWN_nameDef] is a deserted conscript soldier. It's an unfair case that I was forcibly dragged in the first place.</Epona_Adult_DesertedLevy.baseDescription>
+  <Epona_Adult_LowFallenNoble.title>Epona Fallen Noble</Epona_Adult_LowFallenNoble.title>
+  <Epona_Adult_LowFallenNoble.titleShort>Fallen Noble</Epona_Adult_LowFallenNoble.titleShort>
+  <Epona_Adult_LowFallenNoble.baseDescription>[PAWN_nameDef] is a fallen noble. I'm barely living on various battlefields. It just doesn't smell like a noble.</Epona_Adult_LowFallenNoble.baseDescription>
+  <Epona_Adult_Brigand.title>Epona Brigand</Epona_Adult_Brigand.title>
+  <Epona_Adult_Brigand.titleShort>Brigand</Epona_Adult_Brigand.titleShort>
+  <Epona_Adult_Brigand.baseDescription>[PAWN_nameDef] firmly changed his mind and decided to quit bandits and find a new life.</Epona_Adult_Brigand.baseDescription>
+  <Epona_Adult_WanderDoctor.title>Epona Wandering Doctor</Epona_Adult_WanderDoctor.title>
+  <Epona_Adult_WanderDoctor.titleShort>Doctor</Epona_Adult_WanderDoctor.titleShort>
+  <Epona_Adult_WanderDoctor.baseDescription>[PAWN_nameDef] wanders around the kingdom, receives a price, and performs surgery or prescriptions. Even without professional knowledge.</Epona_Adult_WanderDoctor.baseDescription>
+  <Epona_Adult_Carpenter.title>Epona Carpenter</Epona_Adult_Carpenter.title>
+  <Epona_Adult_Carpenter.titleShort>Carpenter</Epona_Adult_Carpenter.titleShort>
+  <Epona_Adult_Carpenter.baseDescription>[PAWN_nameDef] has the construction technology. They mainly built farmers' houses or barns.</Epona_Adult_Carpenter.baseDescription>
+  <Epona_Adult_Blacksmith.title>Epona Blacksmith</Epona_Adult_Blacksmith.title>
+  <Epona_Adult_Blacksmith.titleShort>Blacksmith</Epona_Adult_Blacksmith.titleShort>
+  <Epona_Adult_Blacksmith.baseDescription>[PAWN_nameDef]was running a blacksmith in a small Epona village.</Epona_Adult_Blacksmith.baseDescription>
+  <Epona_Adult_Labour.title>Epona Craftsman</Epona_Adult_Labour.title>
+  <Epona_Adult_Labour.titleShort>Craftsman</Epona_Adult_Labour.titleShort>
+  <Epona_Adult_Labour.baseDescription>[PAWN_nameDef] worked in a guild factory.</Epona_Adult_Labour.baseDescription>
+  <Epona_Adult_Stonemason.title>Epona Stonemason</Epona_Adult_Stonemason.title>
+  <Epona_Adult_Stonemason.titleShort>Stonemason</Epona_Adult_Stonemason.titleShort>
+  <Epona_Adult_Stonemason.baseDescription>[PAWN_nameDef] is a veteran mason who has designed a noble stone castle.</Epona_Adult_Stonemason.baseDescription>
+  <Epona_Adult_Poacher.title>Epona Poacher</Epona_Adult_Poacher.title>
+  <Epona_Adult_Poacher.titleShort>Poacher</Epona_Adult_Poacher.titleShort>
+  <Epona_Adult_Poacher.baseDescription>[PAWN_nameDef] often sneaked into the lord's forest and hunted good prey.</Epona_Adult_Poacher.baseDescription>
+  <Epona_Adult_Cavalry.title>Epona Cavalry</Epona_Adult_Cavalry.title>
+  <Epona_Adult_Cavalry.titleShort>Cavalry</Epona_Adult_Cavalry.titleShort>
+  <Epona_Adult_Cavalry.baseDescription>[PAWN_nameDef] has served and trained as a Cavalry all of life.</Epona_Adult_Cavalry.baseDescription>
+  <Epona_Adult_LightCavalry.title>Epona Light Cavalry</Epona_Adult_LightCavalry.title>
+  <Epona_Adult_LightCavalry.titleShort>Light Cavalry</Epona_Adult_LightCavalry.titleShort>
+  <Epona_Adult_LightCavalry.baseDescription>[PAWN_nameDef] has served and trained as a Skirmisher all of life.</Epona_Adult_LightCavalry.baseDescription>
+  <Epona_Adult_Varangian.title>Epona Retired Imperial soldier</Epona_Adult_Varangian.title>
+  <Epona_Adult_Varangian.titleShort>Imperial</Epona_Adult_Varangian.titleShort>
+  <Epona_Adult_Varangian.baseDescription>[PAWN_nameDef] received systematic training in the empire. And  learned a little bit of imperial etiquette.</Epona_Adult_Varangian.baseDescription>
+  <Epona_Adult_MidFallenNoble.title>Epona Petty Noble</Epona_Adult_MidFallenNoble.title>
+  <Epona_Adult_MidFallenNoble.titleShort>Petty Noble</Epona_Adult_MidFallenNoble.titleShort>
+  <Epona_Adult_MidFallenNoble.baseDescription>[PAWN_nameDef] is a noble of a very weak family. which had to live whole life in the war zone.</Epona_Adult_MidFallenNoble.baseDescription>
+  <Epona_Adult_Noble.title>Epona Royal Noble</Epona_Adult_Noble.title>
+  <Epona_Adult_Noble.titleShort>Royal Noble</Epona_Adult_Noble.titleShort>
+  <Epona_Adult_Noble.baseDescription>[PAWN_nameDef] is an aristocrat. It grows up in the royal palace and has a particularly high nose.</Epona_Adult_Noble.baseDescription>
+  <Epona_Adult_Scholar.title>Epona Scholar</Epona_Adult_Scholar.title>
+  <Epona_Adult_Scholar.titleShort>Scholar</Epona_Adult_Scholar.titleShort>
+  <Epona_Adult_Scholar.baseDescription>[PAWN_nameDef] is a scholar.</Epona_Adult_Scholar.baseDescription>
+  <Epona_Adult_Warlord.title>Epona Warlord</Epona_Adult_Warlord.title>
+  <Epona_Adult_Warlord.titleShort>Warlord</Epona_Adult_Warlord.titleShort>
+  <Epona_Adult_Warlord.baseDescription>[PAWN_nameDef] is a notorious war monarch.</Epona_Adult_Warlord.baseDescription>
+  <Epona_Child_Farmer.title>Epona Farmer's child</Epona_Child_Farmer.title>
+  <Epona_Child_Farmer.titleShort>child</Epona_Child_Farmer.titleShort>
+  <Epona_Child_Farmer.baseDescription>[PAWN_nameDef] is a child of an ordinary farmer. it have been working hard since it was young.</Epona_Child_Farmer.baseDescription>
+  <Epona_Child_Thief.title>Epona Roamer</Epona_Child_Thief.title>
+  <Epona_Child_Thief.titleShort>Roamer</Epona_Child_Thief.titleShort>
+  <Epona_Child_Thief.baseDescription>[PAWN_nameDef] was a bad boy who was Roaming.</Epona_Child_Thief.baseDescription>
+  <Epona_Child_Forager.title>Epona Gatherer</Epona_Child_Forager.title>
+  <Epona_Child_Forager.titleShort>Gatherer</Epona_Child_Forager.titleShort>
+  <Epona_Child_Forager.baseDescription>[PAWN_nameDef] is a child of an ordinary farmer. I lived by collecting various things from mountains and fields.</Epona_Child_Forager.baseDescription>
+  <Epona_Child_Shepherd.title>Epona Shepherd</Epona_Child_Shepherd.title>
+  <Epona_Child_Shepherd.titleShort>Shepherd</Epona_Child_Shepherd.titleShort>
+  <Epona_Child_Shepherd.baseDescription>[PAWN_nameDef] was a shepherd. It had to protect the sheep from wolves with staff. But the amount was so huge that nothing particularly difficult happened.</Epona_Child_Shepherd.baseDescription>
+  <Epona_Child_Wildhorse.title>Epona Wildhorse</Epona_Child_Wildhorse.title>
+  <Epona_Child_Wildhorse.titleShort>Wildhorse</Epona_Child_Wildhorse.titleShort>
+  <Epona_Child_Wildhorse.baseDescription>[PAWN_nameDef] was abandoned when it was young and grew up in the wild. At some point, was raised by priests and socialized.</Epona_Child_Wildhorse.baseDescription>
+  <Epona_Child_Blacksmith.title>Epona Blacksmith's Apprentice</Epona_Child_Blacksmith.title>
+  <Epona_Child_Blacksmith.titleShort>Apprentice</Epona_Child_Blacksmith.titleShort>
+  <Epona_Child_Blacksmith.baseDescription>[PAWN_nameDef] is a blacksmith's assistant. It grew up next to the blacksmith in the village receiving apprenticeship education.</Epona_Child_Blacksmith.baseDescription>
+  <Epona_Child_Thug.title>Epona Bully</Epona_Child_Thug.title>
+  <Epona_Child_Thug.titleShort>Bully</Epona_Child_Thug.titleShort>
+  <Epona_Child_Thug.baseDescription>[PAWN_nameDef] was a strong child in the village.</Epona_Child_Thug.baseDescription>
+  <Epona_Child_Squire.title>Epona Squire</Epona_Child_Squire.title>
+  <Epona_Child_Squire.titleShort>Squire</Epona_Child_Squire.titleShort>
+  <Epona_Child_Squire.baseDescription>[PAWN_nameDef] as been trained as a knight's squire.</Epona_Child_Squire.baseDescription>
+  <Epona_Child_Burgher.title>Epona Burgher</Epona_Child_Burgher.title>
+  <Epona_Child_Burgher.titleShort>Burgher</Epona_Child_Burgher.titleShort>
+  <Epona_Child_Burgher.baseDescription>[PAWN_nameDef] has lived in the castle.</Epona_Child_Burgher.baseDescription>
+  <Epona_Child_Soldier.title>Epona Child Soldier</Epona_Child_Soldier.title>
+  <Epona_Child_Soldier.titleShort>Soldier</Epona_Child_Soldier.titleShort>
+  <Epona_Child_Soldier.baseDescription>[PAWN_nameDef] is a juvenile soldier. It is common in medieval and ealry modern societies such as Eponish.</Epona_Child_Soldier.baseDescription>
+  <Epona_Child_Noble.title>Epona Noble</Epona_Child_Noble.title>
+  <Epona_Child_Noble.titleShort>Noble</Epona_Child_Noble.titleShort>
+  <Epona_Child_Noble.baseDescription>[PAWN_nameDef] is Noble.</Epona_Child_Noble.baseDescription>
+  <Epona_Child_Student.title>Epona Academician</Epona_Child_Student.title>
+  <Epona_Child_Student.titleShort>Academician</Epona_Child_Student.titleShort>
+  <Epona_Child_Student.baseDescription>[PAWN_nameDef] is a student at the academy. Attending the Academy is a great privilege in Epona society.</Epona_Child_Student.baseDescription>
+  
+  <Epona_Adult_Witch.title>Epona Witch</Epona_Adult_Witch.title>
+  <Epona_Adult_Witch.titleShort>Witch</Epona_Adult_Witch.titleShort>
+  <Epona_Adult_Witch.baseDescription>Q : So, why do witches burn?. A : Cuz they're made of... wood?</Epona_Adult_Witch.baseDescription>
+  <Epona_Adult_Toy.title>Epona Toy</Epona_Adult_Toy.title>
+  <Epona_Adult_Toy.titleShort>Toy</Epona_Adult_Toy.titleShort>
+  <Epona_Adult_Toy.baseDescription>[PAWN_nameDef] was a slave to a nobleman who had a lot of money.</Epona_Adult_Toy.baseDescription>
+  <Epona_Adult_Inquisition.title>Epona Inquisitor</Epona_Adult_Inquisition.title>
+  <Epona_Adult_Inquisition.titleShort>Inquisitor</Epona_Adult_Inquisition.titleShort>
+  <Epona_Adult_Inquisition.baseDescription>NOBODY expects the Eponish Inquisition!</Epona_Adult_Inquisition.baseDescription>
+  
+  <Unicorn_Adult_Doc.title>Uniponen Doctor</Unicorn_Adult_Doc.title>
+  <Unicorn_Adult_Doc.titleShort>Doc</Unicorn_Adult_Doc.titleShort>
+  <Unicorn_Adult_Doc.baseDescription>[PAWN_nameDef] is one of the few really good doctors in the Kingdom of Epona.</Unicorn_Adult_Doc.baseDescription>
+  <Unicorn_Adult_FieldDoc.title>Uniponen Fieldmedic</Unicorn_Adult_FieldDoc.title>
+  <Unicorn_Adult_FieldDoc.titleShort>Fieldmedic</Unicorn_Adult_FieldDoc.titleShort>
+  <Unicorn_Adult_FieldDoc.baseDescription>[PAWN_nameDef] is a field surgeon. It is one of the really important talents needed by the Epona Corps because you can get high-quality medicines anytime, anywhere.</Unicorn_Adult_FieldDoc.baseDescription>
+  <Unicorn_Adult_Paladin.title>Uniponen Paladin</Unicorn_Adult_Paladin.title>
+  <Unicorn_Adult_Paladin.titleShort>Paladin</Unicorn_Adult_Paladin.titleShort>
+  <Unicorn_Adult_Paladin.baseDescription>All to Goddess Epona</Unicorn_Adult_Paladin.baseDescription>
+  <Unicorn_Adult_Priest.title>Uniponen Wandering Priest</Unicorn_Adult_Priest.title>
+  <Unicorn_Adult_Priest.titleShort>Priest</Unicorn_Adult_Priest.titleShort>
+  <Unicorn_Adult_Priest.baseDescription>[PAWN_nameDef] is a noble monk. For some reason, he wandering around and living.</Unicorn_Adult_Priest.baseDescription>
+  <Unicorn_Adult_Mage.title>Uniponen Mage</Unicorn_Adult_Mage.title>
+  <Unicorn_Adult_Mage.titleShort>Mage</Unicorn_Adult_Mage.titleShort>
+  <Unicorn_Adult_Mage.baseDescription>[PAWN_nameDef] is called a wizard. Some are proficient in various techniques, but the biggest reason is that [PAWN_nameDef] is Uniponen.</Unicorn_Adult_Mage.baseDescription>
+  
+  <Unicorn_Child_Commoner.title>Child of Divine message</Unicorn_Child_Commoner.title>
+  <Unicorn_Child_Commoner.titleShort>Oracle</Unicorn_Child_Commoner.titleShort>
+  <Unicorn_Child_Commoner.baseDescription>[PAWN_nameDef] is Uniponen, who was born after the oracle. He believed in the rumor that Unifonen's touch had healing powers and had a busy day because of the people who came to him for healing.</Unicorn_Child_Commoner.baseDescription>
+  <Unicorn_Child_Herb.title>Uniponen Herbalist</Unicorn_Child_Herb.title>
+  <Unicorn_Child_Herb.titleShort>Herbalist</Unicorn_Child_Herb.titleShort>
+  <Unicorn_Child_Herb.baseDescription>[PAWN_nameDef] has a great talent for finding or growing herbs.</Unicorn_Child_Herb.baseDescription>
+  <Unicorn_Child_Priest.title>Uniponen Monastery kid</Unicorn_Child_Priest.title>
+  <Unicorn_Child_Priest.titleShort>Lesser Priest</Unicorn_Child_Priest.titleShort>
+  <Unicorn_Child_Priest.baseDescription>[PAWN_nameDef] played the cutie in the monastery.</Unicorn_Child_Priest.baseDescription>
+  <Unicorn_Child_Doc.title>Uniponen Doctor's apprentice</Unicorn_Child_Doc.title>
+  <Unicorn_Child_Doc.titleShort>Doctor's apprentice</Unicorn_Child_Doc.titleShort>
+  <Unicorn_Child_Doc.baseDescription>[PAWN_nameDef] is the doctor's apprenticeship. We mainly supplied antibacterial agents using Alicorn.</Unicorn_Child_Doc.baseDescription>
+  <Unicorn_Child_Paladin.title>Uniponen Paladin's Squire</Unicorn_Child_Paladin.title>
+  <Unicorn_Child_Paladin.titleShort>Squire</Unicorn_Child_Paladin.titleShort>
+  <Unicorn_Child_Paladin.baseDescription>[PAWN_nameDef] was the servant of the paladin. Learned field first aid and basic weapon skills.</Unicorn_Child_Paladin.baseDescription>
+  
+  
+</LanguageData>

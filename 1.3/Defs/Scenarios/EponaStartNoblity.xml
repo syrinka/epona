@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--
+	<ThingDef ParentName="EponaEggsBase">
+		<defName>EponaNobleStartEgg</defName>
+		<label>노블</label>
+		<description>.</description>
+		<statBases>
+			<Mass>40</Mass>			
+			<MarketValue>1000.0</MarketValue>
+		</statBases>
+		<tradeability>None</tradeability>
+		<generateCommonality>0</generateCommonality>
+
+		<comps>
+			<li Class="OHFP.CompProperties_OHFP_Hatcher">
+				<hatcherDaystoHatch>0.01</hatcherDaystoHatch>
+				<hatcherPawnList>
+					<li>Epona_Soldier_Noble_Hippogryph</li>
+					<li>Epona_Soldier_Noble</li>
+				</hatcherPawnList>
+
+				<randomAdoption>
+					<li>
+						<factionType>player</factionType>
+						<weight>100</weight>
+					</li>
+				</randomAdoption>
+
+				<manhunterChance>.0</manhunterChance>
+				<newBornChance>0</newBornChance>
+				 <debug>true</debug>
+			</li>
+		</comps>
+	</ThingDef>
+	
+<ScenarioDef>
+	<defName>EponaStartNoblity</defName>
+	<label>에포나 변경제후 (Marcher lord)</label>	
+		<description>새로 영지를 하사받은 변경제후 입니다. (당신이 모실 귀족은 선택할 수 없습니다.)</description>
+		<scenario>
+		<summary>프린세스 메이커!</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>EponaPlayerColony</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>5</pawnCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+                <method>Standing</method>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>200</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Steel</thingDef>
+				<count>250</count>
+			</li>
+			
+
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>StartingThing_Defined</def>
+          <thingDef>Epona_Weapon_Axe</thingDef>
+          <stuff>Steel</stuff>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>StartingThing_Defined</def>
+          <thingDef>Epona_Weapon_Broadsword</thingDef>
+          <stuff>Steel</stuff>
+          <count>1</count>
+			</li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Bow_Great</thingDef>
+          <count>2</count>
+        </li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>5</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>225</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>10</count>
+			</li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>1500</count>
+        </li>
+
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Silver</thingDef>
+				<count>5000</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>MedicineHerbal</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>EponaNobleStartEgg</thingDef>
+				<count>1</count>
+			</li>
+        <li Class="ScenPart_StartingAnimal">
+				<def>StartingAnimal</def>
+				<animalKind>Epona_GiantSheep_Pawn</animalKind>
+				<count>3</count>
+				<bondToRandomPlayerPawnChance>0</bondToRandomPlayerPawnChance>
+        </li>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>잉? 분명 여기에 내가 다스릴 마을이 있다 들었는데.</text>
+				<textKey>GameStartDialog</textKey>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+		</parts>
+	</scenario>
+</ScenarioDef>-->
+</Defs> 

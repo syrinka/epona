@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_BreastPlate</defName>
+    <label>에포나 흉갑</label>
+    <description>납탄을 막기에 충분한 흉갑입니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaPlateBreast/EponaPlateBreast</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>170</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>260</MaxHitPoints>
+	  <WorkToMake>28000</WorkToMake>
+      <Mass>6</Mass>
+      <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>5</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaPlateBreast/EponaPlateBreast</wornGraphicPath>
+	  <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>EponaWarrior</li>
+        <li>EponaPlate</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_FullPlate</defName>
+    <label>에포나 풀 플레이트</label>
+    <description>온 몸을 감싸는 금속제 갑옷 입니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaPlate/EponaPlate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>350</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <costList>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Epona_Research_FullPlate</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>355</MaxHitPoints>
+	  <WorkToMake>60000</WorkToMake>
+      <Mass>15</Mass>
+      <StuffEffectMultiplierArmor>0.82</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>5</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>12</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>-0.9</MoveSpeed>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+				<li>Torso</li>
+                <li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaPlate/EponaPlate</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>EponaKnight</li>
+        <li>EponaPlate</li>
+        <li>Royal</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  	
+
+<ThingDef ParentName="ArmorMachineableBase">
+    <defName>Epona_Apparel_FullPlateMedic</defName>
+    <label>유니포넨 구호기사 풀 플레이트</label>
+    <description>온 몸을 감싸는 금속제 갑옷 입니다. 아군에게 도움이 되는 알리콘 의료상자를 던질 수 있고, 착용자의 의료기술을 향상시켜줍니다.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>Epona_Research_FullPlate</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/EponaPlateMedic/EponaPlateMedic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>1</generateCommonality>
+    <statBases>
+      <WorkToMake>75000</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>16</Mass>
+      <Flammability>0.5</Flammability>
+      <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.75</ArmorRating_Heat>
+      <Insulation_Cold>14</Insulation_Cold>
+      <Insulation_Heat>1</Insulation_Heat>
+      <EquipDelay>12</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-1.0</MoveSpeed>
+      <MedicalTendSpeed>1.0</MedicalTendSpeed>
+      <MedicalTendQuality>0.2</MedicalTendQuality>
+      <MedicalOperationSpeed>0.5</MedicalOperationSpeed>
+
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <costList>
+      <Silver>1000</Silver>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Plasteel>50</Plasteel>
+      <WoolSheep>100</WoolSheep>
+    </costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+                <li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/EponaPlateMedic/EponaPlateMedic</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+        <li>Epona_Hospitaller</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+  
+
+  
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_DragoonPlate</defName>
+    <label>에포나 라이터 플레이트</label>
+    <description>온 몸을 감싸는 금속제 갑옷 입니다. 풀플레이트에 비해 방어력이 부족한 대신 팔 부분을 경량화하여 더 빠른 조준이 가능합니다.</description>
+    <graphicData>
+      <texPath>Things/Apparel/EponaPlateDragoon/EponaPlateDragoon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>300</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <costList>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Epona_Research_FullPlate</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>310</MaxHitPoints>
+	  <WorkToMake>60000</WorkToMake>
+      <Mass>15</Mass>
+      <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+	  <Insulation_Cold>5</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>11</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>-0.45</MoveSpeed>
+	  <AimingDelayFactor>-0.25</AimingDelayFactor>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+				<li>Torso</li>
+                <li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/EponaPlateDragoon/EponaPlateDragoon</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>EponaDragoon</li>
+        <li>EponaPlate</li>
+        <li>Royal</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  	
+</Defs>

@@ -1,0 +1,1368 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Epona_Weapon_Handgun</defName>
+    <label>에포닉 페퍼박스 듀얼 피스톨</label>
+    <description>근거리에서 화력을 투사할 수 있는 카라콜들의 권총입니다.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/WeaponRanged/EponaPepperbox</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.82</AccuracyTouch>
+      <AccuracyShort>0.82</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Epona_Research_Munition</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <WoodLog>20</WoodLog>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+	<thingCategories Inherit="False">
+		<li>Epona_WeaponsRanged</li>
+	</thingCategories>
+    <weaponTags Inherit="False">
+      <li>EponaCaracole</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Epona_Weapon_Handgun_Proj</defaultProjectile>
+        <warmupTime>0.1</warmupTime>
+        <range>13</range>
+        <ticksBetweenBurstShots>40</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+	  
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedLight</li>
+    </weaponClasses>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Epona_Weapon_Handgun_Proj</defName>
+    <label>pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+	  <drawSize>1</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.1</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Epona_Weapon_RevolverShotgun</defName>
+    <label>에포닉 리볼버 산탄총</label>
+    <description>중거리에서도 괜찮은 효율을 내는 산탄총 입니다.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/WeaponRanged/EponaRevolverShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.35</AccuracyTouch>
+      <AccuracyShort>0.48</AccuracyShort>
+      <AccuracyMedium>0.48</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Epona_Research_Munition</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <WoodLog>60</WoodLog>
+      <Steel>60</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+	<thingCategories Inherit="False">
+		<li>Epona_WeaponsRanged</li>
+	</thingCategories>
+    <weaponTags Inherit="False">
+      <li>EponaGunner</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Epona_Weapon_RevolverShotgun_Proj</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <range>21</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+	  
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+  </ThingDef>
+ 
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Epona_Weapon_RevolverShotgun_Proj</defName>
+    <label>shotgun blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+	  <drawSize>1</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <armorPenetrationBase>0.36</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Epona_Weapon_HandcannonShotgun</defName>
+    <label>에포닉 핸드캐논 (산탄)</label>
+    <description>강력한 화력을 뽐내는 산탄 핸드캐논 입니다.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/WeaponRanged/EponicHandcannon_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>36000</WorkToMake>
+      <Mass>9.5</Mass>
+      <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.42</AccuracyShort>
+      <AccuracyMedium>0.38</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>5.1</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Epona_Research_HandCannon</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <WoodLog>50</WoodLog>
+      <Steel>120</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+	<thingCategories Inherit="False">
+		<li>Epona_WeaponsRanged</li>
+	</thingCategories>
+    <weaponTags Inherit="False">
+      <li>EponaGunner</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Epona_Weapon_HandcannonShotgun_Proj</defaultProjectile>
+        <warmupTime>1.9</warmupTime>
+        <range>17</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>7</burstShotCount>
+        <soundCast>Epona_HandCannon_fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+	  
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Epona_Weapon_HandcannonMortar</defName>
+    <label>에포닉 핸드캐논 (고폭탄)</label>
+    <description>건물 공격에 효과적인 핸드캐논 입니다.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/WeaponRanged/EponicHandcannon_Mortar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>42000</WorkToMake>
+      <Mass>9.5</Mass>
+      <AccuracyTouch>0.45</AccuracyTouch>
+      <AccuracyShort>0.66</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.7</AccuracyLong>
+      <RangedWeapon_Cooldown>5.7</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>Epona_Research_HandCannon</li>
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <WoodLog>50</WoodLog>
+      <Steel>120</Steel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+      <Chemfuel>50</Chemfuel>
+    </costList>
+	<thingCategories Inherit="False">
+		<li>Epona_WeaponsRanged</li>
+	</thingCategories>
+    <weaponTags Inherit="False">
+      <li>EponaBesieger</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Epona_Weapon_HandcannonMortar_Proj</defaultProjectile>
+		<forcedMissRadius>2</forcedMissRadius> 
+        <warmupTime>1.9</warmupTime>
+        <range>21</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Epona_HandCannon_fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+	  
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Epona_Weapon_HandcannonShotgun_Proj</defName>
+    <label>shotgun blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+	  <drawSize>1</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.47</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Epona_Weapon_HandcannonMortar_Proj</defName>
+		<label>grenade</label>
+    <thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/HandMortar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>SiegeBomb</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationBase>0.08</armorPenetrationBase>
+			<stoppingPower>12</stoppingPower>
+			<speed>20</speed>
+			<explosionRadius>2</explosionRadius>
+			<alwaysFreeIntercept>false</alwaysFreeIntercept>
+			<flyOverhead>true</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+
+  <DamageDef>
+    <defName>SiegeBomb</defName>
+    <label>bomb</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>50</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>8</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>SiegeBombPowerful</defName>
+    <label>bomb</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>50</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>40</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>20</buildingDamageFactorPassable>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Epona_Weapon_SiegeArbalest</defName>
+    <label>에포닉 공성쇠뇌</label>
+    <description>움직이지 않는 적에게 효과적인 공성쇠뇌 입니다.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/WeaponRanged/EponicSiegeArbalest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>9.5</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>6.7</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Epona_Research_FullPlate</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <WoodLog>150</WoodLog>
+      <Steel>150</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+	<thingCategories Inherit="False">
+		<li>Epona_WeaponsRanged</li>
+	</thingCategories>
+    <weaponTags Inherit="False">
+      <li>EponaBesieger</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Epona_Weapon_SiegeArbalest_Proj</defaultProjectile>
+		<forcedMissRadius>0.1</forcedMissRadius> 
+        <warmupTime>3.0</warmupTime>
+       <minRange>5</minRange>
+        <range>55</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+      </li>
+	  
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+	<ThingDef ParentName="BaseBullet">
+		<defName>Epona_Weapon_SiegeArbalest_Proj</defName>
+		<label>bolt</label>
+    <thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/SiegeBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>SiegeBombArbalest</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<stoppingPower>12</stoppingPower>
+			<speed>34</speed>
+			<explosionRadius>1</explosionRadius>
+			<alwaysFreeIntercept>false</alwaysFreeIntercept>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	</ThingDef>
+
+  <DamageDef>
+    <defName>SiegeBombArbalest</defName>
+    <label>bomb</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <defaultDamage>50</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>5</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>4</buildingDamageFactorPassable>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionCellMote>BlankMote</explosionCellMote>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Epona_Impact</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+
+
+  <thingDef ParentName="EponaMoteBase">
+    <defName>BlankMote</defName>
+	<altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>Things/WeaponRanged/BlankMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <pathCost>85</pathCost>
+    <mote>
+      <solidTime>0.75</solidTime>
+      <fadeInTime>0.75</fadeInTime>
+      <fadeOutTime>2.2</fadeOutTime>
+    </mote>
+  </thingDef>
+ 
+  <thingDef Name="EponaMoteBase" Abstract="True">
+    <thingClass>MoteThrown</thingClass>
+    <label>Mote</label>
+    <category>Mote</category>
+    <graphicData>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>Mote</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>false</useHitPoints>
+    <isSaveable>false</isSaveable>
+    <rotatable>false</rotatable>
+  </thingDef>
+  
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>Epona_Weapon_RangerBow</defName>
+        <label>에포닉 숲지기 장궁</label>
+        <description>트럼보의 뿔을 깎아 만든 활 입니다. 솔레나리온 (기본), 독화살, 폭발화살등의 여러가지 화살을 발사 가능합니다</description>
+        <graphicData>
+            <texPath>Things/WeaponRanged/EponaRangerBow</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.1</uiIconScale>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <soundInteract>Bow_Large</soundInteract>
+        <statBases>
+            <WorkToMake>124000</WorkToMake>
+            <Mass>4</Mass>
+            <AccuracyTouch>0.70</AccuracyTouch>
+            <AccuracyShort>0.98</AccuracyShort>
+            <AccuracyMedium>0.98</AccuracyMedium>
+            <AccuracyLong>0.99</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>EponaRanger</li>
+        </weaponTags>
+        <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+	  </weaponClasses>
+        <costList>
+            <ThrumboHorn>1</ThrumboHorn>
+            <WoodLog>150</WoodLog>
+        </costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <!-- Ovis를 소스코드의 네임스페이스에 맞게 수정해주세요-->
+                <verbClass>Ovis.Verb_HediffVariantProjectile</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Epona_Weapon_RangerBow_Proj</defaultProjectile>
+                <warmupTime>2.0</warmupTime>
+                <range>45</range>
+                <soundCast>Bow_Large</soundCast>
+            </li>
+        </verbs>
+        <comps>
+            <!-- Ovis를 소스코드의 네임스페이스에 맞게 수정해주세요-->
+            <li Class="Ovis.CompProperties_HediffToProjectile">
+                <hediffProjectilePair>
+                    <li>
+                        <hediffDef>Hediff_Epona_Arrow_Poison</hediffDef> <!--조건 헤디프-->
+                        <thingDef>Epona_Weapon_RangerBow_Proj_Poison</thingDef>
+                        <priority>3</priority> <!--여러 조건이 겹칠시 가장놓은걸 선택-->
+                    </li>
+                </hediffProjectilePair>
+            </li>
+        </comps>
+        <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+        </tools>
+    </ThingDef>
+	
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Epona_Weapon_RangerBow_Proj</defName>
+    <label>greatbow arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/ArrowSolenarion</texPath>
+
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.4</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+ 
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Epona_Weapon_RangerBow_Proj_Poison</defName>
+    <label>poison arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/ArrowRanger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>EponaPoisonArrow</damageDef>
+      <damageAmountBase>28</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef>
+    <defName>EponaPoisonArrow</defName>
+    <label>arrow</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death by an arrow.</deathMessage>
+		<additionalHediffs>
+			<li>
+				<hediff>ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+    <hediff>Cut</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+  
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Epona_Weapon_BoarSpear</defName>
+    <label>에포나 프란시스카</label>
+    <description>갤로글라들의 단짝입니다. 적의 방어를 흐트릴 수 있습니다.</description>
+    <graphicData>
+      <texPath>Things/WeaponRanged/EponaFrancisca</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+      <WoodLog>20</WoodLog>
+      <Steel>70</Steel>
+      <Plasteel>10</Plasteel>
+    </costList>
+    <relicChance>0</relicChance>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>EponaSpear</li>
+      <li>NoRelic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Epona_Weapon_BoarSpear_Proj</defaultProjectile>
+        <warmupTime>3.2</warmupTime>
+        <range>13</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+         <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>17</power>
+         <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Epona_Weapon_BoarSpear_Proj</defName>
+    <label>francisca</label>
+    <graphicData>
+      <texPath>Things/Projectile/FranciscaThrowing</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>EponaSniperBullet</damageDef>
+      <damageAmountBase>24</damageAmountBase>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>15</speed>
+    </projectile>                         
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Bow_Short_Proj_Poison</defName>
+    <label>poison arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/ArrowRanger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>EponaPoisonArrow</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.05</armorPenetrationBase>
+      <speed>44</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Bow_Recurve_Proj_Poison</defName>
+    <label>poison arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/ArrowRanger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>EponaPoisonArrow</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.1</armorPenetrationBase>
+      <speed>56</speed>
+    </projectile>
+  </ThingDef>
+   
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Bow_Great_Proj_Poison</defName>
+    <label>poison arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/ArrowRanger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>EponaPoisonArrow</damageDef>
+      <damageAmountBase>17</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>49</speed>
+    </projectile>
+  </ThingDef>   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Epona_Weapon_LongRifle</defName>
+    <label>에포닉 하이랜드 롱 라이플</label>
+    <description>악명높은 용병부대가 사용하는 저격소총 입니다.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/WeaponRanged/EponaLongRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>75000</WorkToMake>
+      <Mass>6</Mass>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.86</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <WoodLog>120</WoodLog>
+      <Steel>75</Steel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+	<thingCategories Inherit="False">
+		<li>Epona_WeaponsRanged</li>
+	</thingCategories>
+    <weaponTags Inherit="False">
+      <li>EponaRedshank</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Epona_Weapon_LongRifle_Proj</defaultProjectile>
+        <warmupTime>4</warmupTime>
+        <range>43</range>
+        <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Epona_Sniper_fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+	  
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+  </ThingDef>
+ 
+  <ThingDef ParentName="BaseBullet">
+    <defName>Epona_Weapon_LongRifle_Proj</defName>
+    <label>bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+	  <drawSize>1</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>EponaSniperBullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef>
+    <defName>EponaSniperBullet</defName>
+    <label>bullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Gunshot</hediff>
+    <additionalHediffs>
+      <li>
+        <hediff>EponaAP</hediff>
+        <severityPerDamageDealt>1</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>3</buildingDamageFactorPassable>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+  
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Epona_Weapon_Swashbuckler</defName>
+    <label>스와시버클러</label>
+    <description>진정한 영웅에겐 비겁함이란 없습니다! 대구경 권총탄 2발이 장전되어있습니다.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/WeaponRanged/EponaSwashbuckler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>67000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.98</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.1</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <WoodLog>60</WoodLog>
+      <Steel>140</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+	<thingCategories Inherit="False">
+		<li>Epona_WeaponsRanged</li>
+	</thingCategories>
+    <weaponTags Inherit="False">
+      <li>EponaMerc</li>
+	</weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Epona_Weapon_Swashbuckler_Proj</defaultProjectile>
+        <warmupTime>0.1</warmupTime>
+        <range>7</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+	  
+    </verbs>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>36</power>
+        <cooldownTime>3.0</cooldownTime>
+      </li>
+    </tools>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+  </ThingDef>
+ 
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Epona_Weapon_Swashbuckler_Proj</defName>
+    <label>bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+	  <drawSize>1</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>17</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.1</armorPenetrationBase>
+      <speed>48</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Epona_Weapon_BulletBow</defName>
+    <label>에포닉 석궁</label>
+    <description>쇠뇌가 아닙니다! 석궁입니다.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/WeaponRanged/EponaBulletBow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.7</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <WoodLog>90</WoodLog>
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+	<thingCategories Inherit="False">
+		<li>Epona_WeaponsRanged</li>
+	</thingCategories>
+    <weaponTags Inherit="False">
+      <li>EponaKern</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Epona_Weapon_BulletBow_Proj</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius> 
+        <warmupTime>1.5</warmupTime>
+       <minRange>3</minRange>
+        <range>32.9</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Bow_Small</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+      </li>
+	  
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Epona_Weapon_BulletBow_Proj</defName>
+		<label>bullet</label>
+    <thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/EponaLead</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>SiegeBombArbalest</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>0.03</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>27</speed>
+			<explosionRadius>1</explosionRadius>
+			<alwaysFreeIntercept>false</alwaysFreeIntercept>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	</ThingDef>
+	
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Epona_Weapon_HandgunGatling</defName>
+    <label>에포닉 듀얼 개틀링</label>
+    <description>근거리에서 압도적인 화력을 투사할 수 있는 연발권총입니다.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/WeaponRanged/EponaDualgatling</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.84</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Epona_Research_Saw</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <WoodLog>20</WoodLog>
+      <Steel>40</Steel>
+      <ComponentIndustrial>14</ComponentIndustrial>
+    </costList>
+	<thingCategories Inherit="False">
+		<li>Epona_WeaponsRanged</li>
+	</thingCategories>
+    <weaponTags Inherit="False">
+      <li>EponaEliteCav</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Epona_Weapon_HandgunGatling_Proj</defaultProjectile>
+        <warmupTime>2.2</warmupTime>
+        <range>13</range>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <burstShotCount>18</burstShotCount>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+	  
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedLight</li>
+    </weaponClasses>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Epona_Weapon_HandgunGatling_Proj</defName>
+    <label>pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+	  <drawSize>1</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.12</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Epona_Apparel_Quiver_Poison.label>Epona Poison Quiver</Epona_Apparel_Quiver_Poison.label>
+  <Epona_Apparel_Quiver_Poison.description>Poison Quiver. It's used for the Epona Ranger bow.</Epona_Apparel_Quiver_Poison.description>
+  <Epona_Apparel_Pack_Carrot.label>Boomarrot Bag</Epona_Apparel_Pack_Carrot.label>
+  <Epona_Apparel_Pack_Carrot.description>It's a bag with 10 Boomarrots. It also has a self-destruct function.</Epona_Apparel_Pack_Carrot.description>
+  <Epona_Apparel_Pack_Carrot.verbs.0.label>Throw!</Epona_Apparel_Pack_Carrot.verbs.0.label>
+  <Epona_Apparel_Pack_Carrot_Proj.label>Carrot</Epona_Apparel_Pack_Carrot_Proj.label>
+  <Epona_Pack_Bomb.label>퍽탄</Epona_Pack_Bomb.label>
+  <Epona_Pack_Bomb.description>퍽탄.</Epona_Pack_Bomb.description>
+  <Epona_Apparel_Shield_Heater_Plain.label>Epona Shield</Epona_Apparel_Shield_Heater_Plain.label>
+  <Epona_Apparel_Shield_Heater_Plain.description>It's a shield that creates a small defensive field.</Epona_Apparel_Shield_Heater_Plain.description>
+  <Epona_Apparel_Shield_Heater_Hippogryph.label>에포나 역장발생 방패 (로열 히포그리프)</Epona_Apparel_Shield_Heater_Hippogryph.label>
+  <Epona_Apparel_Shield_Heater_Hippogryph.description>It's a shield that creates a small defensive field. It is a royal coat of arms of House Ordinary Month.</Epona_Apparel_Shield_Heater_Hippogryph.description>
+  <Epona_Apparel_Shield_Heater_Swords.label>에포나 역장발생 방패 (쌍검)</Epona_Apparel_Shield_Heater_Swords.label>
+  <Epona_Apparel_Shield_Heater_Swords.description>It's a shield that creates a small defensive field. It is a royal coat of arms of House Varia.</Epona_Apparel_Shield_Heater_Swords.description>
+  <Epona_Apparel_Shield_Heater_Wine.label>에포나 역장발생 방패 (와인잔)</Epona_Apparel_Shield_Heater_Wine.label>
+  <Epona_Apparel_Shield_Heater_Wine.description>It's a shield that creates a small defensive field. It is a royal coat of arms of House Welch.</Epona_Apparel_Shield_Heater_Wine.description>
+  <Epona_Apparel_Hat_Helmet.label>Epona Helm</Epona_Apparel_Hat_Helmet.label>
+  <Epona_Apparel_Hat_Helmet.description>It is a helmet for Epona that can stop bullets.</Epona_Apparel_Hat_Helmet.description>
+  <Epona_Apparel_Hat_EliteHelmet.label>Epona Elite Helm</Epona_Apparel_Hat_EliteHelmet.label>
+  <Epona_Apparel_Hat_EliteHelmet.description>This is an Epona helmet that can cover the entire face.</Epona_Apparel_Hat_EliteHelmet.description>
+  <Epona_Apparel_Hat_Tiara.label>Epona Tiara</Epona_Apparel_Hat_Tiara.label>
+  <Epona_Apparel_Hat_Tiara.description>This is a cute tiara for Epona.</Epona_Apparel_Hat_Tiara.description>
+  <Epona_Apparel_Hat_Priest.label>Epona Priest Wreath</Epona_Apparel_Hat_Priest.label>
+  <Epona_Apparel_Hat_Priest.description>It is a Wreath for priest.</Epona_Apparel_Hat_Priest.description>
+  <Epona_Apparel_Hat_Common.label>Epona Hat</Epona_Apparel_Hat_Common.label>
+  <Epona_Apparel_Hat_Common.description>Epona Hat.</Epona_Apparel_Hat_Common.description>
+  <Epona_Apparel_BreastPlate.label>Epona Breastplate</Epona_Apparel_BreastPlate.label>
+  <Epona_Apparel_BreastPlate.description>Breastplate enough to stop lead bullets.</Epona_Apparel_BreastPlate.description>
+  <Epona_Apparel_FullPlate.label>Epona Full Plate</Epona_Apparel_FullPlate.label>
+  <Epona_Apparel_FullPlate.description>It is a metal armor that covers the whole body..</Epona_Apparel_FullPlate.description>
+  <Epona_Apparel_Farmer.label>Epona Farming Cloth</Epona_Apparel_Farmer.label>
+  <Epona_Apparel_Farmer.description>Farmer's cloth.</Epona_Apparel_Farmer.description>
+  <Epona_Apparel_Noble.label>Epona Noble Cloth</Epona_Apparel_Noble.label>
+  <Epona_Apparel_Noble.description>Noble's cloth.</Epona_Apparel_Noble.description>
+  <Epona_Apparel_JackPlate.label>Epona Jack of Plate</Epona_Apparel_JackPlate.label>
+  <Epona_Apparel_JackPlate.description>It is a sturdy singlet.</Epona_Apparel_JackPlate.description>
+  <Epona_Apparel_BuffCoat.label>Epona Buff coat</Epona_Apparel_BuffCoat.label>
+  <Epona_Apparel_BuffCoat.description>This is a sturdy leather coat that can stop some gunshots.</Epona_Apparel_BuffCoat.description>
+  <Epona_Apparel_Priest.label>Epona Priest coat</Epona_Apparel_Priest.label>
+  <Epona_Apparel_Priest.description>Priest coat.</Epona_Apparel_Priest.description>
+  <Epona_Apparel_Child.label>Epona Child cloth</Epona_Apparel_Child.label>
+  <Epona_Apparel_Child.description>Children's costume. Pants are attached for easy temperature control. It is not suitable for adults, and it is better not to wear it as it is treated as a child the moment you put it on.</Epona_Apparel_Child.description>
+  <Epona_Apparel_PowerArmorMunition.label>Epona Munition Steam armor</Epona_Apparel_PowerArmorMunition.label>
+  <Epona_Apparel_PowerArmorMunition.description>It is a power armor that provides steam power.</Epona_Apparel_PowerArmorMunition.description>
+  <Epona_Apparel_PowerArmor.label>Epona Royal Armor</Epona_Apparel_PowerArmor.label>
+  <Epona_Apparel_PowerArmor.description>This is a powerful renaissance style power armor. Provides steam power.</Epona_Apparel_PowerArmor.description>
+  <Epona_Apparel_FurCape.label>Epona Fur cape</Epona_Apparel_FurCape.label>
+  <Epona_Apparel_FurCape.description>It is a hairy cape.</Epona_Apparel_FurCape.description>
+  <Epona_Apparel_NobleCape.label>Epona Noble cape</Epona_Apparel_NobleCape.label>
+  <Epona_Apparel_NobleCape.description>This is a beautiful cape.</Epona_Apparel_NobleCape.description>
+  <EponaSquireEgg.label>Squire</EponaSquireEgg.label>
+  <EponaSquireEgg.description>.</EponaSquireEgg.description>
+  <EponaMercenaryRangedEgg.label>Epona Mercenary (Skirmisher)</EponaMercenaryRangedEgg.label>
+  <EponaMercenaryRangedEgg.description>.</EponaMercenaryRangedEgg.description>
+  <EponaMercenaryMeleeEgg.label>Epona Mercenary (Vanguard)</EponaMercenaryMeleeEgg.label>
+  <EponaMercenaryMeleeEgg.description>.</EponaMercenaryMeleeEgg.description>
+  <Filth_Blood_Epona.label>blood</Filth_Blood_Epona.label>
+  <EponaBuildingTailor.label>Eponator-5500</EponaBuildingTailor.label>
+  <EponaBuildingTailor.description>A modern sewing machine that works when you cut down a tree. It can sew even huge clothes.</EponaBuildingTailor.description>
+  <EponaBuildingForge.label>Epona Forge</EponaBuildingForge.label>
+  <EponaBuildingForge.description>This is the traditional forge of Epona that uses wood as fuel.</EponaBuildingForge.description>
+  <EponaBuildingBombForge.label>Epona Explosive Forge</EponaBuildingBombForge.label>
+  <EponaBuildingBombForge.description>This is the traditional forge of Epona that uses boomarrot as fuel.</EponaBuildingBombForge.description>
+  <EponaBuildingBombGenerator.label>Explosive Generator</EponaBuildingBombGenerator.label>
+  <EponaBuildingBombGenerator.description>Explosive Generator. consume boomarrot.</EponaBuildingBombGenerator.description>
+  <EponaBuildingMortar.label>Boomarrot Rotating Barrel Mortar</EponaBuildingMortar.label>
+  <EponaBuildingMortar.description>A mortar with a rotating barrel that can fire rapidly. Used for base defense or siege.</EponaBuildingMortar.description>
+  <Epona_Weapon_BuildingMortar_Proj.label>폭당근</Epona_Weapon_BuildingMortar_Proj.label>
+  <Epona_Weapon_BuildingMortar.label>박격포</Epona_Weapon_BuildingMortar.label>
+  <Epona_Weapon_BuildingMortar.description>.</Epona_Weapon_BuildingMortar.description>
+  <EponaBuildingMonsMeg.label>Gordyfu Cannon</EponaBuildingMonsMeg.label>
+  <EponaBuildingMonsMeg.description>Huge Siege Cannon.</EponaBuildingMonsMeg.description>
+  <Epona_Weapon_BuildingMonsMeg_Proj.label>포탄</Epona_Weapon_BuildingMonsMeg_Proj.label>
+  <Epona_Weapon_BuildingMonsMeg_Proj_Cluster.label>클러스터</Epona_Weapon_BuildingMonsMeg_Proj_Cluster.label>
+  <Epona_Weapon_BuildingMonsMeg.label>거포</Epona_Weapon_BuildingMonsMeg.label>
+  <Epona_Weapon_BuildingMonsMeg.description>.</Epona_Weapon_BuildingMonsMeg.description>
+  <Epona_Bombarrot_HE.label>Boomarrot</Epona_Bombarrot_HE.label>
+  <Epona_Bombarrot_HE.description>A wide carrot that can be used as currency or as a bomb. It is also used to make bomb liquor.</Epona_Bombarrot_HE.description>
+  <Epona_Cannonball.label>Gordyfu Cannonball</Epona_Cannonball.label>
+  <Epona_Cannonball.description>Huge Cannonball.</Epona_Cannonball.description>
+  <EponaBuildingOrganGun.label>Boomarrot Organ gun</EponaBuildingOrganGun.label>
+  <EponaBuildingOrganGun.comps.3.fuelLabel>Boomarrot</EponaBuildingOrganGun.comps.3.fuelLabel>
+  <EponaBuildingOrganGun.comps.3.fuelGizmoLabel>Boomarrot</EponaBuildingOrganGun.comps.3.fuelGizmoLabel>
+  <EponaBuildingOrganGun.comps.3.outOfFuelMessage>Cannot shoot: Needs new carrots.</EponaBuildingOrganGun.comps.3.outOfFuelMessage>
+  <EponaBuildingOrganGun.description>It is an organ cannon that can drive 12 carrots directly into the enemy's jaws before charging. Uses shredded Boomarrots as bullets</EponaBuildingOrganGun.description>
+  <Epona_Weapon_EponaBuildingOrganGun_Proj.label>폭당근</Epona_Weapon_EponaBuildingOrganGun_Proj.label>
+  <Epona_Weapon_EponaBuildingOrganGun.label>오르간포</Epona_Weapon_EponaBuildingOrganGun.label>
+  <Epona_Weapon_EponaBuildingOrganGun.description>.</Epona_Weapon_EponaBuildingOrganGun.description>
+  <Plant_Bombarrot.label>Boomarrot</Plant_Bombarrot.label>
+  <Plant_Bombarrot.description>Boomarrot!</Plant_Bombarrot.description>
+  <Leather_Epona.label>Epona leather</Leather_Epona.label>
+  <Leather_Epona.description>Tanned, dried, scraped Epona skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</Leather_Epona.description>
+  <Epona_Sheep.label>Gordyfu</Epona_Sheep.label>
+  <Epona_Sheep.description>A gordyfu is a gigantic genetically engineered sheep that takes its name from the Welsh word 'wedi gordyfu', meaning "overgrown". It has been adapted for wool and meat and is one of the most important livestock for the Epona nomads.</Epona_Sheep.description>
+  <Epona_Sheep.tools.0.label>head</Epona_Sheep.tools.0.label>
+  <Epona_Sheep_Leather.label>Gordyfu Leather</Epona_Sheep_Leather.label>
+  <Epona_Sheep_Leather.description>Unlike wool, leather is a cool, breathable material.</Epona_Sheep_Leather.description>
+  <Epona_Pwca.label>Pwca</Epona_Pwca.label>
+  <Epona_Pwca.description>It is a crustacean that looks like a mixture of horse and deer, which Eponas believe are fairies. It has a fibrous shell. Produces rusthorn.</Epona_Pwca.description>
+  <Epona_Pwca.tools.0.label>head</Epona_Pwca.tools.0.label>
+  <Epona_Pwca.tools.1.label>left hoof</Epona_Pwca.tools.1.label>
+  <Epona_Pwca.tools.2.label>right hoof</Epona_Pwca.tools.2.label>
+  <Epona_Weapon_Broadsword.label>Eponic Broadsword</Epona_Weapon_Broadsword.label>
+  <Epona_Weapon_Broadsword.description>It is a broadsword with a consistent design..</Epona_Weapon_Broadsword.description>
+  <Epona_Weapon_Broadsword.tools.0.label>handle</Epona_Weapon_Broadsword.tools.0.label>
+  <Epona_Weapon_Broadsword.tools.1.label>blade</Epona_Weapon_Broadsword.tools.1.label>
+  <Epona_Weapon_Broadsword.tools.2.label>point</Epona_Weapon_Broadsword.tools.2.label>
+  <Epona_Weapon_Axe.label>Eponic Lochaber Axe</Epona_Weapon_Axe.label>
+  <Epona_Weapon_Axe.description>It is an ax similar to a halberd. It has hooks and is said to be fatal to cavalry.</Epona_Weapon_Axe.description>
+  <Epona_Weapon_Axe.tools.0.label>handle</Epona_Weapon_Axe.tools.0.label>
+  <Epona_Weapon_Axe.tools.1.label>blade</Epona_Weapon_Axe.tools.1.label>
+  <Epona_Weapon_Axe.tools.2.label>point</Epona_Weapon_Axe.tools.2.label>
+  <Epona_Weapon_Claymore.label>Eponic War Saw</Epona_Weapon_Claymore.label>
+  <Epona_Weapon_Claymore.description>A circular saw with a small engine.</Epona_Weapon_Claymore.description>
+  <Epona_Weapon_Claymore.tools.0.label>blade</Epona_Weapon_Claymore.tools.0.label>
+  <Epona_Weapon_Lance.label>Eponic Lance</Epona_Weapon_Lance.label>
+  <Epona_Weapon_Lance.description>A lance that can deliver a powerful blow with acceleration. Only Epona and Destrier can be equipped.</Epona_Weapon_Lance.description>
+  <Epona_Weapon_Lance.tools.0.label>blade</Epona_Weapon_Lance.tools.0.label>
+  <Epona_Weapon_Hammer.label>Eponic Warpick</Epona_Weapon_Hammer.label>
+  <Epona_Weapon_Hammer.description>A combat pickaxe that can inflict additional damage to hit targets.</Epona_Weapon_Hammer.description>
+  <Epona_Weapon_Hammer.tools.0.label>handle</Epona_Weapon_Hammer.tools.0.label>
+  <Epona_Weapon_Hammer.tools.1.label>pick</Epona_Weapon_Hammer.tools.1.label>
+  <Epona_Weapon_Hammer.tools.2.label>point</Epona_Weapon_Hammer.tools.2.label>
+  <Epona_Weapon_Handgun.label>Eponic Pepperbox Dual Pistol</Epona_Weapon_Handgun.label>
+  <Epona_Weapon_Handgun.description>Caracole's pistol that can project fire at close range.</Epona_Weapon_Handgun.description>
+  <Epona_Weapon_Handgun.tools.0.label>stock</Epona_Weapon_Handgun.tools.0.label>
+  <Epona_Weapon_Handgun.tools.1.label>barrel</Epona_Weapon_Handgun.tools.1.label>
+  <Epona_Weapon_Handgun_Proj.label>pellet</Epona_Weapon_Handgun_Proj.label>
+  <Epona_Weapon_RevolverShotgun.label>Eponic Revolver Shotgun</Epona_Weapon_RevolverShotgun.label>
+  <Epona_Weapon_RevolverShotgun.description>It's a shotgun that's effective even at mid-range.</Epona_Weapon_RevolverShotgun.description>
+  <Epona_Weapon_RevolverShotgun.tools.0.label>stock</Epona_Weapon_RevolverShotgun.tools.0.label>
+  <Epona_Weapon_RevolverShotgun.tools.1.label>barrel</Epona_Weapon_RevolverShotgun.tools.1.label>
+  <Epona_Weapon_RevolverShotgun_Proj.label>shotgun blast</Epona_Weapon_RevolverShotgun_Proj.label>
+  <Epona_Weapon_HandcannonShotgun.label>Eponic Hand Cannon (Canister)</Epona_Weapon_HandcannonShotgun.label>
+  <Epona_Weapon_HandcannonShotgun.description>A shotgun hand cannon that boasts powerful firepower.</Epona_Weapon_HandcannonShotgun.description>
+  <Epona_Weapon_HandcannonShotgun.tools.0.label>stock</Epona_Weapon_HandcannonShotgun.tools.0.label>
+  <Epona_Weapon_HandcannonShotgun.tools.1.label>barrel</Epona_Weapon_HandcannonShotgun.tools.1.label>
+  <Epona_Weapon_HandcannonMortar.label>Eponic Hand Cannon (HE)</Epona_Weapon_HandcannonMortar.label>
+  <Epona_Weapon_HandcannonMortar.description>A hand cannon that is effective for attacking buildings.</Epona_Weapon_HandcannonMortar.description>
+  <Epona_Weapon_HandcannonMortar.tools.0.label>stock</Epona_Weapon_HandcannonMortar.tools.0.label>
+  <Epona_Weapon_HandcannonMortar.tools.1.label>barrel</Epona_Weapon_HandcannonMortar.tools.1.label>
+  <Epona_Weapon_HandcannonShotgun_Proj.label>shotgun blast</Epona_Weapon_HandcannonShotgun_Proj.label>
+  <Epona_Weapon_HandcannonMortar_Proj.label>grenade</Epona_Weapon_HandcannonMortar_Proj.label>
+  <Epona_Weapon_SiegeArbalest.label>Eponic Siege Arbalest</Epona_Weapon_SiegeArbalest.label>
+  <Epona_Weapon_SiegeArbalest.description>An effective siege crossbow against immobile enemies.</Epona_Weapon_SiegeArbalest.description>
+  <Epona_Weapon_SiegeArbalest.tools.0.label>stock</Epona_Weapon_SiegeArbalest.tools.0.label>
+  <Epona_Weapon_SiegeArbalest.tools.1.label>barrel</Epona_Weapon_SiegeArbalest.tools.1.label>
+  <Epona_Weapon_SiegeArbalest_Proj.label>bolt</Epona_Weapon_SiegeArbalest_Proj.label>
+  <Epona_Weapon_RangerBow.label>Eponic Ranger Bow</Epona_Weapon_RangerBow.label>
+  <Epona_Weapon_RangerBow.description>A bow made from the horns of Thrumbo. You can fire various arrows such as Solenarion (default), poison arrows, and explosive arrows.</Epona_Weapon_RangerBow.description>
+  <Epona_Weapon_RangerBow.tools.0.label>limb</Epona_Weapon_RangerBow.tools.0.label>
+  <Epona_Weapon_RangerBow_Proj.label>greatbow arrow</Epona_Weapon_RangerBow_Proj.label>
+  <Epona_Weapon_RangerBow_Proj_Poison.label>poison arrow</Epona_Weapon_RangerBow_Proj_Poison.label>
+  <Epona_Weapon_BoarSpear.label>Eponic Francisca</Epona_Weapon_BoarSpear.label>
+  <Epona_Weapon_BoarSpear.description>It is the best friend of the Galloglass. Can thwart the enemy's defenses.</Epona_Weapon_BoarSpear.description>
+  <Epona_Weapon_BoarSpear.tools.0.label>shaft</Epona_Weapon_BoarSpear.tools.0.label>
+  <Epona_Weapon_BoarSpear.tools.1.label>blade</Epona_Weapon_BoarSpear.tools.1.label>
+  <Epona_Weapon_BoarSpear_Proj.label>francisca</Epona_Weapon_BoarSpear_Proj.label>
+  <Bow_Short_Proj_Poison.label>poison arrow</Bow_Short_Proj_Poison.label>
+  <Bow_Recurve_Proj_Poison.label>poison arrow</Bow_Recurve_Proj_Poison.label>
+  <Bow_Great_Proj_Poison.label>poison arrow</Bow_Great_Proj_Poison.label>
+  <Epona_Weapon_Steamlance.label>Eponic Steamlance</Epona_Weapon_Steamlance.label>
+  <Epona_Weapon_Steamlance.description>Steam Lance fires a grenade filled with compressed steam to perform a wide-area attack. Steam power required.</Epona_Weapon_Steamlance.description>
+  <Epona_Weapon_Steamlance.tools.0.label>stock</Epona_Weapon_Steamlance.tools.0.label>
+  <Epona_Weapon_Steamlance.tools.1.label>barrel</Epona_Weapon_Steamlance.tools.1.label>
+  <Epona_Weapon_Steamlance_Proj_NoSteam.label>grenade</Epona_Weapon_Steamlance_Proj_NoSteam.label>
+  <Epona_Weapon_Steamlance_Proj.label>grenade</Epona_Weapon_Steamlance_Proj.label>
+  <Epona_Weapon_Steamlance_Proj_Cluster.label>클러스터</Epona_Weapon_Steamlance_Proj_Cluster.label>
+  <Gas_Steam.label>smoke</Gas_Steam.label>
+  <Epona_Weapon_Steamgatling.label>Eponic Steamgatling</Epona_Weapon_Steamgatling.label>
+  <Epona_Weapon_Steamgatling.description>A gatling gun that fires bullets with steam pressure. Steam power required.</Epona_Weapon_Steamgatling.description>
+  <Epona_Weapon_Steamgatling.tools.0.label>stock</Epona_Weapon_Steamgatling.tools.0.label>
+  <Epona_Weapon_Steamgatling.tools.1.label>barrel</Epona_Weapon_Steamgatling.tools.1.label>
+  <Epona_Weapon_Steamgatling_Proj_NoSteam.label>HMG Shot</Epona_Weapon_Steamgatling_Proj_NoSteam.label>
+  <Epona_Weapon_Steamgatling_Proj.label>HMG Shot</Epona_Weapon_Steamgatling_Proj.label>
+  
+  
+  
+  
+  
+  <EponaBuildingKitchen.label>Epona Kitchen</EponaBuildingKitchen.label>
+  <EponaBuildingKitchen.description>This is the kitchen of a modest epona. You can make Epona's food and it works with wood.</EponaBuildingKitchen.description>
+  <EponaHaySoup.label>Epona Hay Soup</EponaHaySoup.label>
+  <EponaHaySoup.description>It's horse porridge. It's said to be the worst of the epona food called tasteless. But surprisingly, there are eponas that enjoy this.</EponaHaySoup.description>
+  <EponaStarboomPie.label>Epona Starboom Pie</EponaStarboomPie.label>
+  <EponaStarboomPie.description>It's a large potato pie with a Bombarrots. There is a legend that eating makes you smarter for some reason.</EponaStarboomPie.description>
+  <EponaBombarrotCocktail.label>Epona Bomb Liquor</EponaBombarrotCocktail.label>
+  <EponaBombarrotCocktail.description>It's a very strong Bombarrots liquor. Drinking this will strengthen your combat capabilities.</EponaBombarrotCocktail.description>
+             
+  
+  
+  <Epona_Apparel_NewShield_Light.label>Epona Light Shield</Epona_Apparel_NewShield_Light.label>
+  <Epona_Apparel_NewShield_Light.description>It's a shield exclusively for cavalry. It has an appropriate defense.</Epona_Apparel_NewShield_Light.description>
+  <Epona_Apparel_NewShield_Balistic.label>Epona Balistic Shield</Epona_Apparel_NewShield_Balistic.label>
+  <Epona_Apparel_NewShield_Balistic.description>It's a shield exclusively for cavalry. It's heavy, but you can defend against large-caliber bullets.</Epona_Apparel_NewShield_Balistic.description>
+  
+  <Epona_Apparel_EVA.label>Epona Spacesuit</Epona_Apparel_EVA.label>
+  <Epona_Apparel_EVA.description>It's an amazing spacesuit that works normally. Once again, it is a spacesuit.</Epona_Apparel_EVA.description>
+  <Epona_Apparel_Hat_EVA.label>Epona Spacehelm</Epona_Apparel_Hat_EVA.label>
+  <Epona_Apparel_Hat_EVA.description>It's an amazing spacehelm that works normally. Once again, it is a spacehelm.</Epona_Apparel_Hat_EVA.description>
+  
+  <Epona_Weapon_LongRifle.label>Eponic Highland Long Rifle</Epona_Weapon_LongRifle.label>
+  <Epona_Weapon_LongRifle.description>It is a sniper rifle used by notorious mercenary units.</Epona_Weapon_LongRifle.description>
+  
+  <Epona_Weapon_Steamflak.label>Eponic Steamflak</Epona_Weapon_Steamflak.label>
+  <Epona_Weapon_Steamflak.description>Steamflak fires uranium APFSDS with tremendous kinetic energy at very long distances. Steam power required.</Epona_Weapon_Steamflak.description>
+  <Epona_Weapon_Swashbuckler.label>Eponic Swashbuckler</Epona_Weapon_Swashbuckler.label>
+  <Epona_Weapon_Swashbuckler.description>A true hero has no cowardice! Two large-caliber pistol rounds are loaded.</Epona_Weapon_Swashbuckler.description>
+  <Epona_Weapon_EqusCalibur.label>EqusCalibur</Epona_Weapon_EqusCalibur.label>
+  <Epona_Weapon_EqusCalibur.description>The Equscalibur is the legendary weapon of the first Epona king to the Eponas. For high-ranking nobles, a well-crafted replica of the Equscalibur is almost a necessity.</Epona_Weapon_EqusCalibur.description>
+  <Epona_Weapon_LanceToranos.label>Toranos Lance</Epona_Weapon_LanceToranos.label>
+  <Epona_Weapon_LanceToranos.description>“Silver for monsters. Steel for humans. EMP for Mechanoids.”</Epona_Weapon_LanceToranos.description>
+  <Epona_Weapon_Alicorn.label>Uniponen Alicorn</Epona_Weapon_Alicorn.label>
+  <Epona_Weapon_Alicorn.description>Uniponen's horn.</Epona_Weapon_Alicorn.description>
+  
+  <AlicornMedicine.label>Alicorn Powder</AlicornMedicine.label>
+  <AlicornMedicine.description>Alicorn powder that can be used as a medical product.</AlicornMedicine.description>
+  <AlicornMedicineUltratech.label>Alicorn Medicine</AlicornMedicineUltratech.label>
+  <AlicornMedicineUltratech.description>It is a high-end pharmaceutical product made using Alicorn powder.</AlicornMedicineUltratech.description>
+  <EponaAlicornCocktail.label>Alicorn Elixir</EponaAlicornCocktail.label>
+  <EponaAlicornCocktail.description>It is said to heal diseases and permanent wounds caused by aging.</EponaAlicornCocktail.description>
+  
+  <Epona_Apparel_NewShield_Medic.label>Uniponen Hospitaller Shield</Epona_Apparel_NewShield_Medic.label>
+  <Epona_Apparel_NewShield_Medic.description>This is a shield for cavalry only. It is less cumbersome to move than other shields and has high defense.</Epona_Apparel_NewShield_Medic.description>
+  <Epona_Apparel_Hat_SlaveEarTag.label>Livestock management ear tag</Epona_Apparel_Hat_SlaveEarTag.label>
+  <Epona_Apparel_Hat_SlaveEarTag.description>You are now a horse!</Epona_Apparel_Hat_SlaveEarTag.description>
+  <Epona_Apparel_Hat_Winter.label>Epona Winter Hat</Epona_Apparel_Hat_Winter.label>
+  <Epona_Apparel_Hat_Winter.description>It is a winter hat for Epona. It's warm!!!</Epona_Apparel_Hat_Winter.description>
+  <Epona_Apparel_Hat_GuardianHelmet.label>Epona Guardian Helm</Epona_Apparel_Hat_GuardianHelmet.label>
+  <Epona_Apparel_Hat_GuardianHelmet.description>This is a very sturdy full-face helmet given to elite assault troopers, exclusively for Epona. However, the field of vision is limited when worn, so the shooting ability is lowered.</Epona_Apparel_Hat_GuardianHelmet.description>
+  <Epona_Apparel_Adventurer.label>Epona Adventurer's Armor</Epona_Apparel_Adventurer.label>
+  <Epona_Apparel_Adventurer.description>Light chain armor and brigandine suitable for adventurers.</Epona_Apparel_Adventurer.description>
+        
+  <EponaBuildingLoom.label>Epona Loom</EponaBuildingLoom.label>
+  <EponaBuildingLoom.description>It is a machine that makes high-quality fabric by intertwining threads. Make a tapestry too.</EponaBuildingLoom.description>
+  <EponaCloth.label>Epona Quilt</EponaCloth.label>
+  <EponaCloth.description>It is a sturdy and warm quilt. It is still weak against fire.</EponaCloth.description>
+
+
+  <Epona_Weapon_BulletBow.label>Eponic Bulletbow</Epona_Weapon_BulletBow.label>
+  <Epona_Weapon_BulletBow.description>A crossbow that throws stones. It hurts a lot.</Epona_Weapon_BulletBow.description>
+  
+  <Epona_Weapon_HandgunGatling.label>Eponic Dual Repeater</Epona_Weapon_HandgunGatling.label>
+  <Epona_Weapon_HandgunGatling.description>Light gatling that can project overwhelming firepower at close range.</Epona_Weapon_HandgunGatling.description>
+  <Epona_Apparel_DragoonPlate.label>Epona Reiter Plate</Epona_Apparel_DragoonPlate.label>
+  <Epona_Apparel_DragoonPlate.description>It is a metal armor that covers the whole body. Compared to the full plate, it lacks defense, but the arm part is lighter, allowing faster aiming.</Epona_Apparel_DragoonPlate.description>
+  
+  <Epona_Apparel_FullPlateMedic.label>Uniponen Hospitaller Full Plate</Epona_Apparel_FullPlateMedic.label>
+  <Epona_Apparel_FullPlateMedic.description>It is a metal armor that covers the whole body. You can throw an Alicorn Medical Box that helps your allies, and improves the wearer's medical skills.</Epona_Apparel_FullPlateMedic.description>
+
+</LanguageData>

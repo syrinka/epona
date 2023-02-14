@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>Epona_Weapon_Broadsword</defName>
+		<label>에포닉 브로드소드</label>
+    <techLevel>Medieval</techLevel>
+		<description>설계가 일정한 브로드소드입니다.</description>
+		<graphicData>
+			<texPath>Things/WeaponMelee/EponaBroadsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+    <weaponTags>
+      <li>EponaCharger</li>
+    </weaponTags>
+    <costStuffCount>70</costStuffCount>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedStatOffsets>	
+      <MoveSpeed>-0.01</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>27</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>Epona_Research_Munition</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+	
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Epona_Weapon_Axe</defName>
+		<label>에포닉 로챠버 액스</label>
+    <techLevel>Medieval</techLevel>
+		<description>할버드와 비슷한 도끼입니다. 후크가 달려있어 기병들에게 치명적이라 합니다.</description>
+		<graphicData>
+			<texPath>Things/WeaponMelee/EponaAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+    <weaponTags>
+      <li>EponaCharger</li>
+    </weaponTags>
+		<equippedStatOffsets>
+			<PlantWorkSpeed>0.15</PlantWorkSpeed>
+			<MeleeHitChance>-1</MeleeHitChance>	
+      <MoveSpeed>-0.12</MoveSpeed>
+		</equippedStatOffsets>
+    <costStuffCount>120</costStuffCount>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>42</power>
+        <cooldownTime>4.0</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <recipeUsers Inherit="False"> 
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+	
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Epona_Weapon_Claymore</defName>
+		<label>에포닉 전투톱</label>
+    <techLevel>Medieval</techLevel>
+		<description>작은 엔진이 달려있는 원형톱 입니다.</description>
+		<graphicData>
+			<texPath>Things/WeaponMelee/EponaClaymore</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+    <weaponTags>
+      <li>EponaKnight</li>
+      <li>EponaSteamer</li>
+    </weaponTags>
+		<equippedStatOffsets>
+			<PlantWorkSpeed>0.15</PlantWorkSpeed>
+			<MeleeHitChance>3</MeleeHitChance>	
+      <MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+    <costStuffCount>175</costStuffCount>
+    <costList>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Chemfuel>25</Chemfuel>
+    </costList>
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>10</Mass>
+		</statBases>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>3</power>
+        <armorPenetration>0.55</armorPenetration>
+        <cooldownTime>0.2</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>Epona_Research_Saw</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+	
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Epona_Weapon_Lance</defName>
+		<label>에포닉 랜스</label>
+    <techLevel>Medieval</techLevel>
+		<description>가속도를 실어 강력한 일격을 날릴수 있는 랜스입니다. 에포나와 데스트리어만 장비 가능합니다.</description>
+		<graphicData>
+			<texPath>Things/WeaponMelee/EponaLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+    <weaponTags>
+      <li>EponaKnight</li>
+      <li>EponaLance</li>
+    </weaponTags>
+		<equippedStatOffsets>
+	  <MeleeDodgeChance>-15</MeleeDodgeChance>
+	  <MeleeHitChance>5</MeleeHitChance>	
+      <MoveSpeed>1.4</MoveSpeed>
+		</equippedStatOffsets>
+    <costStuffCount>90</costStuffCount>
+    <costList>
+      <WoodLog>125</WoodLog>
+    </costList>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>10</Mass>
+		</statBases>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>40</power>
+        <armorPenetration>0.55</armorPenetration>
+        <cooldownTime>3.8</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+	
+  <HediffDef Abstract="True" ParentName="InfectionBase" Name="EponaAPBase">
+    <hediffClass>HediffWithComps</hediffClass>
+    <makesSickThought>true</makesSickThought>
+    <makesAlert>false</makesAlert>
+    <minSeverity>0.001</minSeverity>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>0.001</initialSeverity>
+    <tendable>true</tendable>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>600~1200</disappearsAfterTicks>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef ParentName="EponaAPBase">
+    <defName>EponaAP</defName>
+    <label>취약!</label>
+    <description>33퍼센트 더 많은 데미지를 받습니다.</description>
+    <stages>
+      <li>
+        <label>취약</label>
+        <statOffsets>
+          <IncomingDamageFactor>0.33</IncomingDamageFactor>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <label>무너짐</label>
+        <statOffsets>
+          <IncomingDamageFactor>0.33</IncomingDamageFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ToolCapacityDef>
+    <defName>EponaAPStab</defName>
+    <label>stab</label>
+  </ToolCapacityDef>
+  
+  <ManeuverDef>
+    <defName>EponaAPStab</defName>
+    <requiredCapacity>EponaAPStab</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>EponaAPStab</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <DamageDef>
+    <defName>EponaAPStab</defName>
+    <label>stab</label>
+    <workerClass>DamageWorker_Stab</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been stabbed to death.</deathMessage>
+    <hediff>Stab</hediff>
+    <additionalHediffs>
+      <li>
+        <hediff>EponaAP</hediff>
+        <severityPerDamageDealt>1</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <hediffSolid>Crack</hediffSolid>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+    <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+  </DamageDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Epona_Weapon_Hammer</defName>
+		<label>에포닉 워픽</label>
+    <techLevel>Medieval</techLevel>
+		<description>타격당한 대상에게 추가 데미지를 줄 수 있는 전투용 곡괭이 입니다.</description>
+		<graphicData>
+			<texPath>Things/WeaponMelee/EponaHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+    <weaponTags>
+      <li>EponaCharger</li>
+    </weaponTags>
+    <costStuffCount>190</costStuffCount>
+    <costList>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+		<statBases>
+			<WorkToMake>27000</WorkToMake>
+			<Mass>8</Mass>
+		</statBases>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<equippedStatOffsets>	
+      <MoveSpeed>-0.16</MoveSpeed>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>pick</label>
+        <capacities>
+          <li>EponaAPStab</li>
+        </capacities>
+        <power>27</power>
+        <cooldownTime>3.0</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>EponaAPStab</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>Epona_Research_Munition</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+	
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Epona_Weapon_LanceToranos</defName>
+		<label>토라노스 랜스</label>
+    <techLevel>Industrial</techLevel>
+		<description>“괴물에겐 은을. 인간에겐 강철을. 메카에겐 EMP를.”</description>
+		<graphicData>
+			<texPath>Things/WeaponMelee/EponaZeusLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <weaponTags>
+      <li>EponaKnight</li>
+      <li>EponaSteamer</li>
+    </weaponTags>
+		<equippedStatOffsets>
+	  <MeleeDodgeChance>-25</MeleeDodgeChance>
+	  <MeleeHitChance>2</MeleeHitChance>	
+      <MoveSpeed>0.9</MoveSpeed>
+		</equippedStatOffsets>
+    <costList>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Steel>225</Steel>
+      <Chemfuel>25</Chemfuel>
+    </costList>
+		<statBases>
+			<WorkToMake>98000</WorkToMake>
+			<Mass>14</Mass>
+		</statBases>
+		<equippedAngleOffset>0</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>40</power>
+        <armorPenetration>0.75</armorPenetration>
+        <cooldownTime>4.5</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>11</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+		<recipeMaker>
+      <researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+	</ThingDef>
+
+
+  
+</Defs>

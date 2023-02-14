@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingCategoryDef>
+		<defName>Epona_Headgear</defName>
+		<label>Epona Headgear</label>
+		<parent>Epona_Apparel</parent>
+	</ThingCategoryDef>
+	
+  <ThingDef  ParentName="ArmorHelmetMakeableBase">
+		<defName>Epona_Apparel_Hat_Helmet</defName>
+		<label>에포나 헬멧</label>
+		<description>총탄을 막을 수 있는 에포나 전용 헬멧입니다.</description>
+		<graphicData>
+			<texPath>Things/Apparel/EponaHatHelmet/EponaHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>65</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Epona_Headgear</li>
+		</thingCategories>
+    <costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>1.5</Mass>			
+					<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>						
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>			
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/EponaHatHelmet/EponaHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+         <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+			<tags>
+		    		<li>EponaLightHat</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>	
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>			
+		</recipeMaker>
+	</ThingDef>
+	
+
+  <ThingDef  ParentName="ArmorHelmetMakeableBase">
+		<defName>Epona_Apparel_Hat_EliteHelmet</defName>
+		<label>에포나 엘리트 헬멧</label>
+		<description>얼굴 전체를 가릴 수 있는 에포나 전용 헬멧입니다.</description>
+		<graphicData>
+			<texPath>Things/Apparel/EponaHatEliteHelmet/EponaEliteHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Epona_Headgear</li>
+		</thingCategories>
+    <costList>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>17000</WorkToMake>
+			<Mass>1.5</Mass>			
+					<StuffEffectMultiplierArmor>0.77</StuffEffectMultiplierArmor>						
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>			
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+		</equippedStatOffsets>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+		<apparel>
+			<bodyPartGroups>
+    <li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/EponaHatEliteHelmet/EponaEliteHelmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+         <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+			<tags>
+		    		<li>EponaHeavyHat</li>
+		    		<li>EponaEliteHat</li>
+
+        <li>Royal</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <researchPrerequisite>Epona_Research_FullPlate</researchPrerequisite>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>	
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>			
+		</recipeMaker>
+	</ThingDef>
+	
+
+  <ThingDef  ParentName="ArmorHelmetMakeableBase">
+		<defName>Epona_Apparel_Hat_GuardianHelmet</defName>
+		<label>에포나 수호자 헬멧</label>
+		<description>정예 돌격병에게 지급되는 굉장히 튼튼한 얼굴 전체를 가릴 수 있는 에포나 전용 헬멧입니다. 다만 착용시 시야가 제한되므로 사격능력이 낮아집니다.</description>
+		<graphicData>
+			<texPath>Things/Apparel/EponaHatGuardianHelmet/EponaHatGuardianHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>220</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Epona_Headgear</li>
+		</thingCategories>
+    <costList>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>70000</WorkToMake>
+			<Mass>4</Mass>			
+					<StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>						
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>			
+			<EquipDelay>7</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.42</MoveSpeed>
+            <AimingDelayFactor>0.25</AimingDelayFactor>
+            <IncomingDamageFactor>-0.1</IncomingDamageFactor>
+		</equippedStatOffsets>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+		<apparel>
+			<bodyPartGroups>
+    <li>FullHead</li>
+	<li>EponaEarsNotHair</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/EponaHatGuardianHelmet/EponaHatGuardianHelmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+         <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+			<tags>
+		    		<li>EponaHeavyHat</li>
+        <li>Royal</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <researchPrerequisite>Epona_Research_FullPlate</researchPrerequisite>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>	
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>			
+		</recipeMaker>
+	</ThingDef>
+	
+  <ThingDef  ParentName="ArmorHelmetMakeableBase">
+		<defName>Epona_Apparel_Hat_Tiara</defName>
+		<label>에포나 티아라</label>
+		<description>귀여운 에포나용 티아라 입니다.</description>
+		<graphicData>
+			<texPath>Things/Apparel/EponaHatTiara/EponaTiara</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+            <li>Woody</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Epona_Headgear</li>
+		</thingCategories>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>15500</WorkToMake>
+			<Mass>0.5</Mass>			
+					<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>						
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>			
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<apparel>
+            <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/EponaHatTiara/EponaTiara</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+         <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+			<tags>
+		    		<li>EponaKing</li>
+        <li>Royal</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<defaultIngredientFilter>
+			</defaultIngredientFilter>		
+			      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+		</recipeMaker>
+
+	</ThingDef>
+	
+  <ThingDef  ParentName="HatMakeableBase">
+		<defName>Epona_Apparel_Hat_Priest</defName>
+		<label>에포나 사제 월계관</label>
+		<description>사제용 월계관입니다.</description>
+		<graphicData>
+			<texPath>Things/Apparel/EponaHatPriest/EponaHatPriest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Epona_Headgear</li>
+		</thingCategories>
+
+    <costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <WoodLog>25</WoodLog>
+
+    </costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>0.5</Mass>			
+					<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>						
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>			
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/EponaHatPriest/EponaHatPriest</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+         <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+			<tags>
+		    		<li>EponaPriest</li>
+        <li>Royal</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>		
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingTailor</li>
+
+      </recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+  <ThingDef  ParentName="HatMakeableBase">
+		<defName>Epona_Apparel_Hat_Common</defName>
+		<label>에포나 모자</label>
+		<description>에포나용 모자입니다.</description>
+		<graphicData>
+			<texPath>Things/Apparel/EponaHatCommon/EponaHatCommon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Epona_Headgear</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.5</Mass>			
+					<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>						
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>			
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/EponaHatCommon/EponaHatCommon</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+         <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+			<tags>
+		<li>EponaCuteHat</li>
+		<li>EponaLightHat</li>
+        <li>EponaCommon</li>
+        <li>Royal</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>		
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingTailor</li>
+
+      </recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+		
+  <ThingDef  ParentName="ArmorHelmetMakeableBase">
+		<defName>Epona_Apparel_Hat_EVA</defName>
+		<label>에포나 우주 헬멧</label>
+		<description>뭔가 정상적으로 작동이 되는게 신기한 우주헬멧 입니다. 다시 한번 말하지만 우주헬멧 맞습니다.</description>
+		<graphicData>
+			<texPath>Things/Apparel/EponaHatEVA/EponaHatEVA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>125</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Epona_Headgear</li>
+		</thingCategories>
+    <costList>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToMake>33000</WorkToMake>
+			<Mass>1.5</Mass>			
+					<StuffEffectMultiplierArmor>0.83</StuffEffectMultiplierArmor>						
+      <Insulation_Cold>150</Insulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.75</MoveSpeed>
+		</equippedStatOffsets>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+		<apparel>
+			<bodyPartGroups>
+                <li>FullHead</li>
+				<li>EponaEars</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/EponaHatEVA/EponaHatEVA</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+         <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+			<tags>
+        <li>EVA</li>
+        <li>Royal</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <researchPrerequisite>Epona_Research_Space</researchPrerequisite>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>	
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>			
+		</recipeMaker>
+	</ThingDef>
+	
+
+  <ThingDef  ParentName="HatMakeableBase">
+		<defName>Epona_Apparel_Hat_Winter</defName>
+		<label>에포나 겨울모자</label>
+		<description>에포나용 겨울모자입니다. 따떳해!!!</description>
+		<graphicData>
+			<texPath>Things/Apparel/EponaHatWinter/EponaHatWinter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories Inherit="false">
+			<li>Epona_Headgear</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>1.25</Mass>			
+					<StuffEffectMultiplierArmor>0.27</StuffEffectMultiplierArmor>						
+			<StuffEffectMultiplierInsulation_Cold>0.95</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>			
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+				<li>EponaEarsNotHair</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/EponaHatWinter/EponaHatWinter</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+         <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+			<tags>
+		<li>EponaCuteHat</li>
+		<li>EponaLightHat</li>
+        <li>EponaCommon</li>
+        <li>Royal</li>
+			</tags>
+
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<disallowedThingDefs>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>		
+      <recipeUsers Inherit="false">
+        <li>EponaBuildingTailor</li>
+
+      </recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+</Defs>

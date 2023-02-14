@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MealBase" Name="EponisqueFood" Abstract="True">
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  
+  <ThingDef ParentName="EponisqueFood">
+    <defName>EponaHaySoup</defName>
+    <label>에포나 말죽</label>
+    <description>말죽입니다. 맛없다고 불러지는 에포나 음식중에서 제일 맛없다 합니다. 근데 의외로 이걸 즐기는 에포나들도 존재합니다.</description>
+	<stackLimit>10</stackLimit>
+	<thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/HaySoup</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>11</MarketValue>
+      <WorkToMake>250</WorkToMake>
+      <Nutrition>2.10</Nutrition>
+	  <Mass>1.0</Mass>
+	  <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <tasteThought>AteEponaHaySoup</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>1</optimalityOffsetFeedingAnimals>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>EponaEponaHealthy</hediffDef>
+          <severity>1.0</severity>
+          <toleranceChemical>Psychite</toleranceChemical>
+		  <divideByBodySize>false</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+	<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+
+  <HediffDef>
+    <defName>EponaEponaHealthy</defName>
+    <label>건강한 맛</label>
+    <labelNoun>건강한 맛</labelNoun>
+    <description>왠지 건강해지는 느낌이야.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(0.8,0.6,0.3)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.9</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+        <stages>
+            <li>
+				<statOffsets>
+	  <RestRateMultiplier>0.05</RestRateMultiplier>
+      <ImmunityGainSpeed>0.2</ImmunityGainSpeed>
+            	</statOffsets>
+            </li>
+         </stages>
+    </HediffDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>Make_EponaHaySoup</defName>
+    <label>Make Hay soup x2</label>
+    <description>Make Hay soup</description>
+    <jobString>Make Hay soup.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+	<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+	    <li>EponaBuildingKitchen</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>FoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hay</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <EponaHaySoup>2</EponaHaySoup>
+    </products>
+	<skillRequirements>
+      <Cooking>1</Cooking>
+    </skillRequirements>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookMealBase">
+    <defName>Make_EponaHaySoupBulk</defName>
+    <label>Make Hay soup x10</label>
+    <description>Make Hay soup</description>
+    <jobString>Make Hay soup.</jobString>
+    <workAmount>3200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+	<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+	    <li>EponaBuildingKitchen</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>FoodRaw</li>
+          </categories>
+        </filter>
+        <count>3.5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hay</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <EponaHaySoup>10</EponaHaySoup>
+    </products>
+	<skillRequirements>
+      <Cooking>1</Cooking>
+    </skillRequirements>
+  </RecipeDef>
+
+	<ThoughtDef>
+        <defName>AteEponaHaySoup</defName>
+        <durationDays>1.0</durationDays>
+        <stages>
+            <li>
+                <label>말죽 섭취</label>
+                <description>이딴걸... 먹으라고...?</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+          </li>
+        </stages>
+    </ThoughtDef>
+
+	<ThoughtDef>
+        <defName>AteEponaHaySoupforEpona</defName>
+        <durationDays>1.0</durationDays>
+        <stages>
+            <li>
+                <label>말죽 섭취</label>
+                <description>역시 언제 먹어도 맛있군!</description>
+                <baseMoodEffect>2</baseMoodEffect>
+          </li>
+        </stages>
+    </ThoughtDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+  <ThingDef ParentName="EponisqueFood">
+    <defName>EponaStarboomPie</defName>
+    <label>에포나 스타붐 파이</label>
+    <description>폭당근이 든 커다란 감자 파이입니다. 먹으면 왠지 똑똑해진다고 하는 전설이 있습니다.</description>
+	<stackLimit>10</stackLimit>
+	<thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/StarboomPie</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>32</MarketValue>
+      <WorkToMake>1000</WorkToMake>
+      <Nutrition>2.10</Nutrition>
+	  <Mass>1.0</Mass>
+	  <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AteEponaStarboomPie</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>1</optimalityOffsetFeedingAnimals>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>EponaEponaSmarty</hediffDef>
+          <severity>1.0</severity>
+          <toleranceChemical>Psychite</toleranceChemical>
+		  <divideByBodySize>false</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+	<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+
+  <HediffDef>
+    <defName>EponaEponaSmarty</defName>
+    <label>똑똑한 맛</label>
+    <labelNoun>똑똑한 맛</labelNoun>
+    <description>왠지 똑똑해지는 느낌이야.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(0.8,0.6,0.3)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.9</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+        <stages>
+            <li>
+				<statOffsets>
+	  <GlobalLearningFactor>0.75</GlobalLearningFactor>
+            	</statOffsets>
+            </li>
+         </stages>
+    </HediffDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>Make_EponaStarboomPie</defName>
+    <label>Make Starboom Pie</label>
+    <description>Make Starboom Pie</description>
+    <jobString>Make Starboom Pie.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+	<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+	    <li>EponaBuildingKitchen</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPotatoes</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Epona_Bombarrot_HE</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <EponaStarboomPie>1</EponaStarboomPie>
+    </products>
+	<skillRequirements>
+      <Cooking>9</Cooking>
+    </skillRequirements>
+  </RecipeDef>
+
+	<ThoughtDef>
+        <defName>AteEponaStarboomPie</defName>
+        <durationDays>1.0</durationDays>
+        <stages>
+            <li>
+                <label>스타붐 파이 섭취</label>
+                <description>먹을만 한데?</description>
+                <baseMoodEffect>6</baseMoodEffect>
+          </li>
+        </stages>
+    </ThoughtDef>
+
+	<ThoughtDef>
+        <defName>AteEponaStarboomPieforEpona</defName>
+        <durationDays>1.0</durationDays>
+        <stages>
+            <li>
+                <label>스타붐 파이 섭취</label>
+                <description>최고!</description>
+                <baseMoodEffect>15</baseMoodEffect>
+          </li>
+        </stages>
+    </ThoughtDef>
+	
+  <ThingDef ParentName="DrugBase">
+		<defName>EponaBombarrotCocktail</defName>
+		<label>에포나 폭탄주</label>
+		<description>상당히 독한 폭당근 담금주 입니다. 이걸 마시면 전투능력이 강화된다 합니다.</description>  
+    <descriptionHyperlinks>
+      <HediffDef>AlcoholHigh</HediffDef>
+	  <HediffDef>AlcoholAddiction</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/PotionBombarrot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>67</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed, Liquor</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.17</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>{0} 마시기</ingestCommandString>
+      <ingestReportString>{0} 마시는 중.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.4</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>EponaBombarrotCocktailHigh</hediffDef>
+					<severity>0.25</severity>
+        </li>					
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <techLevel>Medieval</techLevel>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Alcohol</chemical>
+        <addictiveness>0.010</addictiveness>
+        <minToleranceToAddict>0.25</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>10</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+  
+	<HediffDef>
+		<defName>EponaBombarrotCocktailHigh</defName>
+		<label>전투능력 상승</label>
+		<description>한판 붙어볼까 애송이?</description>
+		<hediffClass>Hediff_Alcohol</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+	 	      <AimingDelayFactor>-0.2</AimingDelayFactor>
+		      <MeleeHitChance>12</MeleeHitChance>	
+	          <MeleeDodgeChance>8</MeleeDodgeChance>
+			  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			  <ArmorRating_Heat>0.3</ArmorRating_Heat>
+		</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>Make_EponaBombarrotCocktail</defName>
+    <label>Make Epona Bomb Liquor</label>
+    <description>Make Epona Bomb Liquor</description>
+    <jobString>Make Epona Bomb Liquor.</jobString>
+    <workAmount>500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+	<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+	<recipeUsers>
+	    <li>EponaBuildingKitchen</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Beer</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Epona_Bombarrot_HE</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <EponaBombarrotCocktail>1</EponaBombarrotCocktail>
+    </products>
+	<skillRequirements>
+      <Cooking>6</Cooking>
+    </skillRequirements>
+  </RecipeDef>
+  
+</Defs>

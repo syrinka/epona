@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <EponaNeedOutdoors.stages.0.label>severe claustrophobia</EponaNeedOutdoors.stages.0.label>
+  <EponaNeedOutdoors.stages.0.description>ㅁㄴ라ㅓㅁㄴㅇ라ㅣㅓㅁㄴ아ㅣ럼ㄴㅇㄹ</EponaNeedOutdoors.stages.0.description>
+  <EponaNeedOutdoors.stages.1.label>very intense claustrophobia</EponaNeedOutdoors.stages.1.label>
+  <EponaNeedOutdoors.stages.1.description>help me....help me....help me....Please...</EponaNeedOutdoors.stages.1.description>
+  <EponaNeedOutdoors.stages.2.label>intense claustrophobia</EponaNeedOutdoors.stages.2.label>
+  <EponaNeedOutdoors.stages.2.description>help me....</EponaNeedOutdoors.stages.2.description>
+  <EponaNeedOutdoors.stages.3.label>light claustrophobia</EponaNeedOutdoors.stages.3.label>
+  <EponaNeedOutdoors.stages.3.description>I think I'm going crazy.</EponaNeedOutdoors.stages.3.description>
+  <EponaNeedOutdoors.stages.4.label>hate indoors</EponaNeedOutdoors.stages.4.label>
+  <EponaNeedOutdoors.stages.4.description>hah...</EponaNeedOutdoors.stages.4.description>
+  
+  
+  <AteEponaHaySoup.stages.0.label>Eat Hay Soup</AteEponaHaySoup.stages.0.label>
+  <AteEponaHaySoup.stages.0.description>You want me to eat this? Are you kidding me?</AteEponaHaySoup.stages.0.description>
+  <AteEponaHaySoupforEpona.stages.0.label>Eat Hay Soup</AteEponaHaySoupforEpona.stages.0.label>
+  <AteEponaHaySoupforEpona.stages.0.description>It's always delicious!</AteEponaHaySoupforEpona.stages.0.description>
+  <AteEponaStarboomPie.stages.0.label>Eat Starboom Pie</AteEponaStarboomPie.stages.0.label>
+  <AteEponaStarboomPie.stages.0.description>It's not bad. It's good.</AteEponaStarboomPie.stages.0.description>
+  <AteEponaStarboomPieforEpona.stages.0.label>Eat Starboom Pie</AteEponaStarboomPieforEpona.stages.0.label>
+  <AteEponaStarboomPieforEpona.stages.0.description>Definitively the best!</AteEponaStarboomPieforEpona.stages.0.description>
+  
+  <missingAlicornSadness.stages.0.label>Where did my horns go!!!</missingAlicornSadness.stages.0.label>
+  <missingAlicornSadness.stages.0.description>Is this... a dream...? Is that...?</missingAlicornSadness.stages.0.description>
+</LanguageData>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+    <defName>EponaNeedOutdoors</defName>
+    <workerClass>ThoughtWorker_NeedOutdoors</workerClass>
+    <stages>
+      <li>
+        <label>심각한 폐소공포</label>
+        <description>ㅁㄴ라ㅓㅁㄴㅇ라ㅣㅓㅁㄴ아ㅣ럼ㄴㅇㄹ</description>
+        <baseMoodEffect>-14</baseMoodEffect>
+      </li>
+      <li>
+        <label>매우 강렬한 폐소공포</label>
+        <description>갸아아악!</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+      <li>
+        <label>강렬한 폐소공포</label>
+        <description>으악!</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>폐소공포</label>
+        <description>답답해서 미칠거 같아.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>실내 비선호</label>
+        <description>괜찮아. 이정도면.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+</Defs>

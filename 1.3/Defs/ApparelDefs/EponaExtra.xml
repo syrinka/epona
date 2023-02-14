@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef Name="Epona_Hidden_Hediff_Base" Abstract="True"> 
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>히든 헤디프</description>
+		<defaultLabelColor>(0.392, 0.678, 0.737)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+	</HediffDef> 
+	
+
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_Quiver_Poison</defName>
+    <label>에포나 독화살집</label>
+    <description>독화살집 입니다. 에포나 레인저 활에 쓰입니다.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Addons/ItemQuiver/ItemQuiver_Poison</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <recipeMaker>
+      <recipeUsers>
+        <li>EponaBuildingForge</li>
+        <li>EponaBuildingBombForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>20</MaxHitPoints>
+	  <WorkToMake>8000</WorkToMake>
+      <Mass>2</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+	 	<AimingDelayFactor>0.1</AimingDelayFactor>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>EponaRanger</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Hediff_Epona_Arrow_Poison</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+	<HediffDef ParentName="Epona_Hidden_Hediff_Base"> 
+		<defName>Hediff_Epona_Arrow_Poison</defName>
+		<label>독화살 장착</label>
+	</HediffDef>
+
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_Pack_Carrot</defName>
+    <label>폭당근 가방</label>
+    <description>폭당근 10개가 들어가는 가방입니다. 자폭기능도 있습니다.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Addons/ItemQuiver/ItemPack_Carrot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>20</Cloth>
+    </costList>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <recipeMaker>
+      <recipeUsers>
+        <li>EponaBuildingTailor</li>
+
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <WorkToMake>2000</WorkToMake>
+      <Mass>0.2</Mass>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+		<li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>EponaBomber</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>10</maxCharges>
+        <ammoDef>Epona_Bombarrot_HE</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>50</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>carrots</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Hediff_Epona_Pack_Carrot</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>투척!</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>false</onlyManualCast>
+        <range>21</range>
+        <forcedMissRadius>2</forcedMissRadius>
+        <warmupTime>3</warmupTime>
+        <noiseRadius>0</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Epona_Apparel_Pack_Carrot_Proj</defaultProjectile>
+      </li>
+    </verbs>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+	<ThingDef ParentName="BaseBullet">
+		<defName>Epona_Apparel_Pack_Carrot_Proj</defName>
+		<label>Carrot</label>
+		<graphicData>
+			<texPath>Things/Projectile/Carrot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>15</speed>
+			<damageDef>Bomb</damageDef>
+			<explosionRadius>1.5</explosionRadius>
+			<explosionDelay>0</explosionDelay>
+			<damageAmountBase>27</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+	
+	<HediffDef ParentName="Epona_Hidden_Hediff_Base"> 
+		<defName>Hediff_Epona_Pack_Carrot</defName>
+		<label>폭당근가방 장착</label>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_RandySpawnUponDeath">
+				<settings>
+					<things>
+						<li>
+							<thingToSpawn>Epona_Pack_Bomb</thingToSpawn>
+							<weight>100</weight>
+						</li>
+					</things>
+					<defaultSettings>
+						<stack>
+							<spawnCount>1</spawnCount>
+						</stack>
+					</defaultSettings>
+				</settings>
+				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<spawnForbidden>false</spawnForbidden>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<ThingDef Name="Epona_Bomb_Base" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>1</stackLimit>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>14</pathCost>
+		<tickerType>Normal</tickerType>
+		<tradeability>None</tradeability>
+	</ThingDef>
+	
+	<ThingDef ParentName="Epona_Bomb_Base">
+		<defName>Epona_Pack_Bomb</defName>
+		<label>퍽탄</label>
+		<description>퍽탄.</description>
+		<graphicData>
+			<texPath>Things/Projectile/Carrot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.5</explosiveRadius>
+				<explosiveDamageType>SiegeBombPowerful</explosiveDamageType>
+				<damageAmountBase>20</damageAmountBase>
+				<explosiveExpandPerStackcount>1</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>1</startWickHitPointsPercent>
+				<wickTicks>0</wickTicks>
+			</li>
+			<li Class="CompProperties_ProximityFuse">
+				<target>Epona_Pack_Bomb</target>
+				<radius>1</radius>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_Shield_Heater_Plain</defName>
+    <label>에포나 역장발생 방패</label>
+    <description>작은 역장을 발생시키는 방패입니다.</description>
+	
+		<thingClass>ShieldApparel.ShieldApparel</thingClass>
+		
+		<tickerType>Normal</tickerType>
+
+    <graphicData>
+      <texPath>Things/Pawn/Addons/ItemShield/ItemShield_Plain</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Steel>50</Steel>
+      <Plasteel>20</Plasteel>
+      <WoodLog>50</WoodLog>
+	</costList>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>70</MaxHitPoints>
+	  <WorkToMake>18000</WorkToMake>
+      <Mass>2.5</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+	 	<AimingDelayFactor>0.4</AimingDelayFactor>
+		<MeleeHitChance>-2</MeleeHitChance>	
+	    <MeleeDodgeChance>3</MeleeDodgeChance>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>EponaShield</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Hediff_Epona_Shield_Heater_Plain</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+	<HediffDef ParentName="Epona_Hidden_Hediff_Base"> 
+		<defName>Hediff_Epona_Shield_Heater_Plain</defName>
+		<label>방패</label>
+	</HediffDef>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_Shield_Heater_Hippogryph</defName>
+    <label>에포나 역장발생 방패 (로열 히포그리프)</label>
+    <description>작은 역장을 발생시키는 방패입니다. 오디너리 먼스(Ordinary Month) 왕실의 문장입니다.</description>
+	
+		<thingClass>ShieldApparel.ShieldApparel</thingClass>
+		
+		<tickerType>Normal</tickerType>
+
+    <graphicData>
+      <texPath>Things/Pawn/Addons/ItemShield/ItemShield_Hippogryph</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Steel>50</Steel>
+      <Plasteel>20</Plasteel>
+      <WoodLog>50</WoodLog>
+	</costList>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>70</MaxHitPoints>
+	  <WorkToMake>18000</WorkToMake>
+      <Mass>2.5</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+	 	<AimingDelayFactor>0.4</AimingDelayFactor>
+		<MeleeHitChance>-2</MeleeHitChance>	
+	    <MeleeDodgeChance>3</MeleeDodgeChance>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>EponaShield</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Hediff_Epona_Shield_Heater_Hippogryph</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+	<HediffDef ParentName="Epona_Hidden_Hediff_Base"> 
+		<defName>Hediff_Epona_Shield_Heater_Hippogryph</defName>
+		<label>방패</label>
+	</HediffDef>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_Shield_Heater_Swords</defName>
+    <label>에포나 역장발생 방패 (쌍검)</label>
+    <description>작은 역장을 발생시키는 방패입니다. 바리아(Varia) 왕실의 문장입니다.</description>
+	
+		<thingClass>ShieldApparel.ShieldApparel</thingClass>
+		
+		<tickerType>Normal</tickerType>
+
+    <graphicData>
+      <texPath>Things/Pawn/Addons/ItemShield/ItemShield_Swords</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Steel>50</Steel>
+      <Plasteel>20</Plasteel>
+      <WoodLog>50</WoodLog>
+	</costList>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>70</MaxHitPoints>
+	  <WorkToMake>18000</WorkToMake>
+      <Mass>2.5</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+	 	<AimingDelayFactor>0.4</AimingDelayFactor>
+		<MeleeHitChance>-2</MeleeHitChance>	
+	    <MeleeDodgeChance>3</MeleeDodgeChance>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>EponaShield</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Hediff_Epona_Shield_Heater_Swords</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+	<HediffDef ParentName="Epona_Hidden_Hediff_Base"> 
+		<defName>Hediff_Epona_Shield_Heater_Swords</defName>
+		<label>방패</label>
+	</HediffDef>
+	
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>Epona_Apparel_Shield_Heater_Wine</defName>
+    <label>에포나 역장발생 방패 (와인잔)</label>
+    <description>작은 역장을 발생시키는 방패입니다. 웰치(Welch) 왕실의 문장입니다.</description>
+	
+		<thingClass>ShieldApparel.ShieldApparel</thingClass>
+		
+		<tickerType>Normal</tickerType>
+
+    <graphicData>
+      <texPath>Things/Pawn/Addons/ItemShield/ItemShield_Wine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Steel>50</Steel>
+      <Plasteel>20</Plasteel>
+      <WoodLog>50</WoodLog>
+	</costList>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Epona_Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <MaxHitPoints>70</MaxHitPoints>
+	  <WorkToMake>18000</WorkToMake>
+      <Mass>2.5</Mass>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+		<equippedStatOffsets>
+	 	<AimingDelayFactor>0.4</AimingDelayFactor>
+		<MeleeHitChance>-2</MeleeHitChance>	
+	    <MeleeDodgeChance>3</MeleeDodgeChance>
+		</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>EponaShield</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Hediff_Epona_Shield_Heater_Wine</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+	<HediffDef ParentName="Epona_Hidden_Hediff_Base"> 
+		<defName>Hediff_Epona_Shield_Heater_Wine</defName>
+		<label>방패</label>
+	</HediffDef>
+	
+</Defs>

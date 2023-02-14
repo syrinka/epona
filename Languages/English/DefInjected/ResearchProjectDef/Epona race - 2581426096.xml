@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Epona_Research_Smith.label>Epona Forging</Epona_Research_Smith.label>
+  <Epona_Research_Smith.description>Learn the traditional forging of epona.</Epona_Research_Smith.description>
+  <Epona_Research_FullPlate.label>Epona Full Plate</Epona_Research_FullPlate.label>
+  <Epona_Research_FullPlate.description>Learn how to manufacture Plate Armor that can cover the whole body.</Epona_Research_FullPlate.description>
+  <Epona_Research_Shield.label>Epona Balistic Shield</Epona_Research_Shield.label>
+  <Epona_Research_Shield.description>Learn how to manufacture a Balistic shield that is heavy but has a clear performance.</Epona_Research_Shield.description>
+  <Epona_Research_Steam.label>Epona Steam Power</Epona_Research_Steam.label>
+  <Epona_Research_Steam.description>Learn how to manufacture power armors with steam power.</Epona_Research_Steam.description>
+  <Epona_Research_SteamGatling.label>Epona Steam Weapon</Epona_Research_SteamGatling.label>
+  <Epona_Research_SteamGatling.description>Learn how to manufacture Heavy weapons that can be fired with steam power.</Epona_Research_SteamGatling.description>
+  <Epona_Research_Munition.label>Epona Munition Gear</Epona_Research_Munition.label>
+  <Epona_Research_Munition.description>Learn how to manufacture weapons of epona, where design and metrology are unified.</Epona_Research_Munition.description>
+  <Epona_Research_HandCannon.label>Epona Handcannon</Epona_Research_HandCannon.label>
+  <Epona_Research_HandCannon.description>Learn how to make large-caliber handcanons.</Epona_Research_HandCannon.description>
+  <Epona_Research_Saw.label>Epona War Saw</Epona_Research_Saw.label>
+  <Epona_Research_Saw.description>Learn how to manufacture combat circular saws with excellent cutting power.</Epona_Research_Saw.description>
+  <Epona_Research_Sewing.label>Epona Sewing</Epona_Research_Sewing.label>
+  <Epona_Research_Sewing.description>Learn how to sew simple epona clothes.</Epona_Research_Sewing.description>
+  <Epona_Research_AdvancedSewing.label>Epona Advanced Sewing</Epona_Research_AdvancedSewing.label>
+  <Epona_Research_AdvancedSewing.description>Learn how to sew advanced epona clothes.</Epona_Research_AdvancedSewing.description>
+  <Epona_Research_JackofPlate.label>Epona Battle Singlet</Epona_Research_JackofPlate.label>
+  <Epona_Research_JackofPlate.description>Learn how to make Jack of Plate.</Epona_Research_JackofPlate.description>
+  <Epona_Research_Bombarrot.label>Boomarrot</Epona_Research_Bombarrot.label>
+  <Epona_Research_Bombarrot.description>Learn how to grow Boomarrot, which are used as shells or as a kind of currency.</Epona_Research_Bombarrot.description>
+  <Epona_Research_Cannon.label>Boomarrot Cannon</Epona_Research_Cannon.label>
+  <Epona_Research_Cannon.description>Learn how to manufacture Boomarrot Mortar and organ guns.</Epona_Research_Cannon.description>
+  <Epona_Research_MonsMeg.label>Gordyfu Cannon</Epona_Research_MonsMeg.label>
+  <Epona_Research_MonsMeg.description>learn how to make a huge siege cannon.</Epona_Research_MonsMeg.description>
+  
+  <Epona_Research_Kitchen.label>Horse's Kitchen</Epona_Research_Kitchen.label>
+  <Epona_Research_Kitchen.description>Don't say it's not good!</Epona_Research_Kitchen.description>
+  
+  <Epona_Research_Space.label>Epoland can into space!</Epona_Research_Space.label>
+  <Epona_Research_Space.description>Epoland cannot into space... Really...? (for SOS2!)</Epona_Research_Space.description>
+  
+  <Epona_Research_Alicorn.label>Alicorn Medicine</Epona_Research_Alicorn.label>
+  <Epona_Research_Alicorn.description>You can use Alicorn to turn industrial medicine into glitterworld medicine.</Epona_Research_Alicorn.description>
+  <Epona_Research_Elixir.label>Alicorn Elixir</Epona_Research_Elixir.label>
+  <Epona_Research_Elixir.description>how to make an elixir that can heal permanent wounds that can be crafted using Alicorn.</Epona_Research_Elixir.description>
+  
+</LanguageData>

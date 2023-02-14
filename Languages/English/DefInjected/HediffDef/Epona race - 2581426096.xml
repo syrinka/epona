@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Hediff_Epona_Arrow_Poison.description>.</Hediff_Epona_Arrow_Poison.description>
+  <Hediff_Epona_Arrow_Poison.label>Poison Arrow</Hediff_Epona_Arrow_Poison.label>
+  <Hediff_Epona_Pack_Carrot.description>히든 헤디프</Hediff_Epona_Pack_Carrot.description>
+  <Hediff_Epona_Pack_Carrot.label>Pack of Boomarrot</Hediff_Epona_Pack_Carrot.label>
+  <Hediff_Epona_Shield_Heater_Plain.description>.</Hediff_Epona_Shield_Heater_Plain.description>
+  <Hediff_Epona_Shield_Heater_Plain.label>Shielded</Hediff_Epona_Shield_Heater_Plain.label>
+  <Hediff_Epona_Shield_Heater_Hippogryph.description>.</Hediff_Epona_Shield_Heater_Hippogryph.description>
+  <Hediff_Epona_Shield_Heater_Hippogryph.label>Shielded</Hediff_Epona_Shield_Heater_Hippogryph.label>
+  <Hediff_Epona_Shield_Heater_Swords.description>.</Hediff_Epona_Shield_Heater_Swords.description>
+  <Hediff_Epona_Shield_Heater_Swords.label>Shielded</Hediff_Epona_Shield_Heater_Swords.label>
+  <Hediff_Epona_Shield_Heater_Wine.description>.</Hediff_Epona_Shield_Heater_Wine.description>
+  <Hediff_Epona_Shield_Heater_Wine.label>Shielded</Hediff_Epona_Shield_Heater_Wine.label>
+  <Hediff_Epona_SteamPowered.description>.</Hediff_Epona_SteamPowered.description>
+  <Hediff_Epona_SteamPowered.label>Steam Powered</Hediff_Epona_SteamPowered.label>
+  <Epona_Loli.description>loli hediff</Epona_Loli.description>
+  <Epona_Loli.label>young hediff</Epona_Loli.label>
+  <Epona_Shota.description>shota hediff</Epona_Shota.description>
+  <Epona_Shota.label>young hediff</Epona_Shota.label>
+  <Epona_OHPG_male.description>male hediff</Epona_OHPG_male.description>
+  <Epona_OHPG_male.label>male hediff</Epona_OHPG_male.label>
+  <Epona_OHPG_female.description>female hediff</Epona_OHPG_female.description>
+  <Epona_OHPG_female.label>female hediff</Epona_OHPG_female.label>
+  <Epona_OneHediffPerGender.description>apply one hediff per gender</Epona_OneHediffPerGender.description>
+  <Epona_OneHediffPerGender.label>OneHediffPerGender</Epona_OneHediffPerGender.label>
+  <Epona_OneHediffPerGenderLoli.description>apply one hediff per gender</Epona_OneHediffPerGenderLoli.description>
+  <Epona_OneHediffPerGenderLoli.label>OneHediffPerGender</Epona_OneHediffPerGenderLoli.label>
+  <Epona_OneHediffPerLifeStage.description>apply one hediff per lifestage</Epona_OneHediffPerLifeStage.description>
+  <Epona_OneHediffPerLifeStage.label>OneHediffPerLifeStage</Epona_OneHediffPerLifeStage.label>
+  <Epona_OneHediffPerLifeStage.labelNoun>OneHediffPerLifeStage.labelNoun</Epona_OneHediffPerLifeStage.labelNoun>
+  <Destrier_OneHediffPerGender.description>apply one hediff per gender</Destrier_OneHediffPerGender.description>
+  <Destrier_OneHediffPerGender.label>OneHediffPerGender</Destrier_OneHediffPerGender.label>
+  <Destrier_OneHediffPerGenderLoli.description>apply one hediff per gender</Destrier_OneHediffPerGenderLoli.description>
+  <Destrier_OneHediffPerGenderLoli.label>OneHediffPerGender</Destrier_OneHediffPerGenderLoli.label>
+  <Destrier_OneHediffPerLifeStage.description>apply one hediff per lifestage</Destrier_OneHediffPerLifeStage.description>
+  <Destrier_OneHediffPerLifeStage.label>OneHediffPerLifeStage</Destrier_OneHediffPerLifeStage.label>
+  <Destrier_OneHediffPerLifeStage.labelNoun>OneHediffPerLifeStage.labelNoun</Destrier_OneHediffPerLifeStage.labelNoun>
+  <EponaAP.label>Vulnerable!</EponaAP.label>
+  <EponaAP.description>33 percent more damage.</EponaAP.description>
+  <EponaAP.stages.0.label>Vulnerable</EponaAP.stages.0.label>
+  <EponaAP.stages.1.label>Broken down</EponaAP.stages.1.label>
+  
+  
+  
+  
+  <EponaEponaHealthy.description>I feel like I'm getting healthier.</EponaEponaHealthy.description>
+  <EponaEponaHealthy.label>Healthy taste</EponaEponaHealthy.label>
+  <EponaEponaSmarty.description>I feel like I'm getting Smarter.</EponaEponaSmarty.description>
+  <EponaEponaSmarty.label>Smart taste</EponaEponaSmarty.label>
+  <EponaBombarrotCocktailHigh.description>You want a piece of me boy?</EponaBombarrotCocktailHigh.description>
+  <EponaBombarrotCocktailHigh.label>Increased combat capability.</EponaBombarrotCocktailHigh.label>
+    
+	
+	
+	
+	
+	
+  <Hediff_Epona_Alicorn.description>It is the foundation of Uniponen's pride.</Hediff_Epona_Alicorn.description>
+  <Hediff_Epona_Alicorn.label>Uniponen Alicorn</Hediff_Epona_Alicorn.label>
+    
+</LanguageData>
