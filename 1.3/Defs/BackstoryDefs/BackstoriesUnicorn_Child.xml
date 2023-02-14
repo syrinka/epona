@@ -48,8 +48,8 @@
         <value>7</value>
       </li>
 	  <li>
-		<defName>Social</defName>
-		<amount>-4</amount>
+		<key>Social</key>
+		<value>-4</value>
 	  </li>
 	</skillGains>
 	
@@ -96,12 +96,12 @@
         <value>1</value>
       </li>
 	  <li>
-		<defName>Intellectual</defName>
-		<amount>3</amount>
+		<key>Intellectual</key>
+		<value>3</value>
 	  </li>
 	  <li>
-		<defName>Social</defName>
-		<amount>3</amount>
+		<key>Social</key>
+		<value>3</value>
 	  </li>
 	</skillGains>
 	

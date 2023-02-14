@@ -25,16 +25,16 @@
     <baseDesc>[PAWN_nameDef]는 평생동안의 탄압받는 가난한 삶에 질려 무기를 들었습니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Shooting</defName>
-			<amount>3</amount>
+			<key>Shooting</key>
+			<value>3</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>3</amount>
+			<key>Melee</key>
+			<value>3</value>
 		</li>
 		<li>
-			<defName>Plants</defName>
-			<amount>5</amount>
+			<key>Plants</key>
+			<value>5</value>
 		</li>
 	</skillGains>
 	<workDisables>
@@ -54,16 +54,16 @@
     <baseDesc>[PAWN_nameDef]는 농민입니다. 원래는 영주의 예속민이지만 최근에 자유를 얻었습니다.</baseDesc>
 	<skillGains>
 			<li>
-				<defName>Animals</defName>
-				<amount>2</amount>
+				<key>Animals</key>
+				<value>2</value>
 			</li>
 			<li>
-				<defName>Plants</defName>
-				<amount>8</amount>
+				<key>Plants</key>
+				<value>8</value>
 			</li>
 			<li>
-				<defName>Intellectual</defName>
-				<amount>-4</amount>
+				<key>Intellectual</key>
+				<value>-4</value>
 			</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -80,20 +80,20 @@
     <baseDesc>[PAWN_nameDef]는 자유농 입니다. 부모의 계급을 물려받았습니다. 운이 좋게도 부모는 자유민이었습니다.</baseDesc>
 	<skillGains>
 			<li>
-				<defName>Animals</defName>
-				<amount>2</amount>
+				<key>Animals</key>
+				<value>2</value>
 			</li>
 			<li>
-				<defName>Cooking</defName>
-				<amount>2</amount>
+				<key>Cooking</key>
+				<value>2</value>
 			</li>
 			<li>
-				<defName>Plants</defName>
-				<amount>6</amount>
+				<key>Plants</key>
+				<value>6</value>
 			</li>
 			<li>
-				<defName>Intellectual</defName>
-				<amount>-4</amount>
+				<key>Intellectual</key>
+				<value>-4</value>
 			</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -110,32 +110,32 @@
     <baseDesc>도와줘요! 도와줘요! 나 지금 억압받고 있어요!</baseDesc>
 	<skillGains>
 			<li>
-				<defName>Animals</defName>
-				<amount>1</amount>
+				<key>Animals</key>
+				<value>1</value>
 			</li>
 			<li>
-				<defName>Cooking</defName>
-				<amount>1</amount>
+				<key>Cooking</key>
+				<value>1</value>
 			</li>
 			<li>
-				<defName>Medicine</defName>
-				<amount>1</amount>
+				<key>Medicine</key>
+				<value>1</value>
 			</li>
 			<li>
-				<defName>Plants</defName>
-				<amount>4</amount>
+				<key>Plants</key>
+				<value>4</value>
 			</li>
 			<li>
-				<defName>Intellectual</defName>
-				<amount>6</amount>
+				<key>Intellectual</key>
+				<value>6</value>
 			</li>
 		<li>
-			<defName>Shooting</defName>
-			<amount>-2</amount>
+			<key>Shooting</key>
+			<value>-2</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>-2</amount>
+			<key>Melee</key>
+			<value>-2</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -152,16 +152,16 @@
     <baseDesc>와우! 황금 전설 카드!</baseDesc>
 	<skillGains>
 			<li>
-				<defName>Social</defName>
-				<amount>6</amount>
+				<key>Social</key>
+				<value>6</value>
 			</li>
 			<li>
-				<defName>Cooking</defName>
-				<amount>4</amount>
+				<key>Cooking</key>
+				<value>4</value>
 			</li>
 			<li>
-				<defName>Intellectual</defName>
-				<amount>-4</amount>
+				<key>Intellectual</key>
+				<value>-4</value>
 			</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -178,16 +178,16 @@
     <baseDesc>[PAWN_nameDef]는 탈영한 징집병입니다. 애초에 강제로 끌려간게 억울한 케이스입니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Shooting</defName>
-			<amount>3</amount>
+			<key>Shooting</key>
+			<value>3</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>4</amount>
+			<key>Melee</key>
+			<value>4</value>
 		</li>
 		<li>
-			<defName>Construction</defName>
-			<amount>3</amount>
+			<key>Construction</key>
+			<value>3</value>
 		</li>
 	</skillGains>
 	<workDisables>
@@ -207,12 +207,12 @@
     <baseDesc>[PAWN_nameDef]는 몰락한 귀족입니다. 여러 전쟁터를 전전하며 겨우 살아가고 있습니다. 도저히 귀족의 냄새가 풍기지 않습니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Shooting</defName>
-			<amount>4</amount>
+			<key>Shooting</key>
+			<value>4</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>5</amount>
+			<key>Melee</key>
+			<value>5</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -229,12 +229,12 @@
     <baseDesc>[PAWN_nameDef]는 마음을 굳게 고쳐먹고 산적질을 그만두고 새 삶을 찾기로 했습니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Shooting</defName>
-			<amount>5</amount>
+			<key>Shooting</key>
+			<value>5</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>4</amount>
+			<key>Melee</key>
+			<value>4</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -251,16 +251,16 @@
     <baseDesc>[PAWN_nameDef]는 왕국을 떠돌아 다니며 대가를 받고 수술이나 처방을 합니다. 전문적인 지식따윈 없어도요.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Medicine</defName>
-			<amount>4</amount>
+			<key>Medicine</key>
+			<value>4</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>2</amount>
+			<key>Melee</key>
+			<value>2</value>
 		</li>
 			<li>
-				<defName>Intellectual</defName>
-				<amount>1</amount>
+				<key>Intellectual</key>
+				<value>1</value>
 			</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -278,8 +278,8 @@
     <baseDesc>[PAWN_nameDef]는 적당한 건축기술을 가지고 있습니다. 주로 농민의 집이나 헛간을 지었습니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Construction</defName>
-			<amount>6</amount>
+			<key>Construction</key>
+			<value>6</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -296,12 +296,12 @@
     <baseDesc>[PAWN_nameDef]는 작은 에포나 마을에서 대장간을 운영하고 있었습니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Construction</defName>
-			<amount>1</amount>
+			<key>Construction</key>
+			<value>1</value>
 		</li>
 		<li>
-			<defName>Crafting</defName>
-			<amount>5</amount>
+			<key>Crafting</key>
+			<value>5</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -318,8 +318,8 @@
     <baseDesc>[PAWN_nameDef]는 근대적인 공장에서 일을 했습니다. 기계적인 단순노동자 보다는 장인의 성격이 더 강했습니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Crafting</defName>
-			<amount>6</amount>
+			<key>Crafting</key>
+			<value>6</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -336,12 +336,12 @@
     <baseDesc>[PAWN_nameDef]는 귀족의 석재 성을 설계한적이 있는 베테랑 석공입니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Construction</defName>
-			<amount>5</amount>
+			<key>Construction</key>
+			<value>5</value>
 		</li>
 			<li>
-				<defName>Intellectual</defName>
-				<amount>2</amount>
+				<key>Intellectual</key>
+				<value>2</value>
 			</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -358,16 +358,16 @@
     <baseDesc>Q : 그럼, 마녀는 왜 불에 타지? A : 나무로.... 만들어져서?</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Medicine</defName>
-			<amount>6</amount>
+			<key>Medicine</key>
+			<value>6</value>
 		</li>
 		<li>
-			<defName>Social</defName>
-			<amount>-4</amount>
+			<key>Social</key>
+			<value>-4</value>
 		</li>
 			<li>
-				<defName>Intellectual</defName>
-				<amount>4</amount>
+				<key>Intellectual</key>
+				<value>4</value>
 			</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -384,8 +384,8 @@
     <baseDesc>"가능"</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Social</defName>
-			<amount>5</amount>
+			<key>Social</key>
+			<value>5</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -408,12 +408,12 @@
     <baseDesc>[PAWN_nameDef]는 종종 영주의 숲에 몰래 침입하여 좋은 사냥감들을 쓸어가기도 했습니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Shooting</defName>
-			<amount>5</amount>
+			<key>Shooting</key>
+			<value>5</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>4</amount>
+			<key>Melee</key>
+			<value>4</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -430,12 +430,12 @@
     <baseDesc>[PAWN_nameDef]는 중기병으로 평생 복무해왔고 훈련받았습니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Shooting</defName>
-			<amount>1</amount>
+			<key>Shooting</key>
+			<value>1</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>8</amount>
+			<key>Melee</key>
+			<value>8</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -452,12 +452,12 @@
     <baseDesc>[PAWN_nameDef]는 경기병으로 평생 복무해왔고 훈련받았습니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Shooting</defName>
-			<amount>7</amount>
+			<key>Shooting</key>
+			<value>7</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>2</amount>
+			<key>Melee</key>
+			<value>2</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -474,16 +474,16 @@
     <baseDesc>[PAWN_nameDef]는 제국에서 체계적인 훈련을 받았습니다. 그리고 제국 예법도 조금이나마 배웠습니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Shooting</defName>
-			<amount>5</amount>
+			<key>Shooting</key>
+			<value>5</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>6</amount>
+			<key>Melee</key>
+			<value>6</value>
 		</li>
 		<li>
-			<defName>Social</defName>
-			<amount>2</amount>
+			<key>Social</key>
+			<value>2</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -500,20 +500,20 @@
     <baseDesc>[PAWN_nameDef]는 매우 미약한 가문의 귀족입니다. 덕분에 전쟁터에서 평생을 살아야만 했습니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Shooting</defName>
-			<amount>1</amount>
+			<key>Shooting</key>
+			<value>1</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>4</amount>
+			<key>Melee</key>
+			<value>4</value>
 		</li>
 			<li>
-				<defName>Intellectual</defName>
-				<amount>1</amount>
+				<key>Intellectual</key>
+				<value>1</value>
 			</li>
 		<li>
-			<defName>Social</defName>
-			<amount>4</amount>
+			<key>Social</key>
+			<value>4</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -535,16 +535,16 @@
     <baseDesc>에포나 종교재판은 아무도 예상못하지!</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Shooting</defName>
-			<amount>8</amount>
+			<key>Shooting</key>
+			<value>8</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>6</amount>
+			<key>Melee</key>
+			<value>6</value>
 		</li>
 		<li>
-			<defName>Social</defName>
-			<amount>-4</amount>
+			<key>Social</key>
+			<value>-4</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -561,18 +561,18 @@
     <baseDesc>[PAWN_nameDef]는 귀족입니다. 왕궁에서 자라 콧대가 유독 높습니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Melee</defName>
-			<amount>5</amount>
+			<key>Melee</key>
+			<value>5</value>
 		</li>
 		<!-- 
 			<li>
-				<defName>Intellectual</defName>
-				<amount>5</amount>
+				<key>Intellectual</key>
+				<value>5</value>
 			</li>
 		-->
 		<li>
-			<defName>Social</defName>
-			<amount>5</amount>
+			<key>Social</key>
+			<value>5</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -592,20 +592,20 @@
     <baseDesc>[PAWN_nameDef]는 학자입니다.</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Medicine</defName>
-			<amount>2</amount>
+			<key>Medicine</key>
+			<value>2</value>
 		</li>
 		<li>
-			<defName>Crafting</defName>
-			<amount>2</amount>
+			<key>Crafting</key>
+			<value>2</value>
 		</li>
 		<li>
-			<defName>Artistic</defName>
-			<amount>2</amount>
+			<key>Artistic</key>
+			<value>2</value>
 		</li>
 			<li>
-				<defName>Intellectual</defName>
-				<amount>7</amount>
+				<key>Intellectual</key>
+				<value>7</value>
 			</li>
 	</skillGains>
     <slot>Adulthood</slot>
@@ -625,12 +625,12 @@
     <baseDesc>[PAWN_nameDef]는 악명높은 전쟁군주입니다..</baseDesc>
 	<skillGains>
 		<li>
-			<defName>Melee</defName>
-			<amount>8</amount>
+			<key>Melee</key>
+			<value>8</value>
 		</li>
 		<li>
-			<defName>Social</defName>
-			<amount>5</amount>
+			<key>Social</key>
+			<value>5</value>
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
