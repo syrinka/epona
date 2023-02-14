@@ -181,22 +181,34 @@
 
     <alienRace>
       <graphicPaths>
-        <li>
-          <head>Things/Pawn/LoliDesuChan/Heads/</head>
-          <body>Things/Pawn/LoliDesuChan/Bodies/</body>
-          <skeleton>Things/Pawn/LoliEpona/Bodies/Dessicated/Dessicated_Male</skeleton>
-          <skull>Things/Pawn/LoliEpona/Heads/Skull/Skull</skull>
-        </li>
-        <li>
-          <lifeStageDefs>
-            <li>HumanlikeAdult</li>
-            <li>EponalikeTeenager</li>
-          </lifeStageDefs>
-          <head>Things/Pawn/Destrier/Heads/</head>
-          <body>Things/Pawn/Destrier/Bodies/</body>
-          <skeleton>Things/Pawn/Destrier/Bodies/Dessicated/Dessicated_Male</skeleton>
-          <skull>Things/Pawn/Destrier/Heads/Skull/Skull</skull>
-        </li>
+        <head>
+          <path>Things/Pawn/LoliDesuChan/Heads/</path>
+          <ageGraphics>
+            <HumanlikeAdult>Things/Pawn/Destrier/Heads/</HumanlikeAdult>
+            <EponalikeTeenager>Things/Pawn/Destrier/Heads/</EponalikeTeenager>
+          </ageGraphics>
+        </head>
+        <body>
+          <path>Things/Pawn/LoliDesuChan/Bodies/</path>
+          <ageGraphics>
+            <HumanlikeAdult>Things/Pawn/Destrier/Bodies/</HumanlikeAdult>
+            <EponalikeTeenager>Things/Pawn/Destrier/Bodies/</EponalikeTeenager>
+          </ageGraphics>
+        </body>
+        <skeleton>
+          <path>Things/Pawn/LoliEpona/Bodies/Dessicated/Dessicated_Male</path>
+          <ageGraphics>
+            <HumanlikeAdult>Things/Pawn/Destrier/Bodies/Dessicated/Dessicated_Male</HumanlikeAdult>
+            <EponalikeTeenager>Things/Pawn/Destrier/Bodies/Dessicated/Dessicated_Male</EponalikeTeenager>
+          </ageGraphics>
+        </skeleton>
+        <skull>
+          <path>Things/Pawn/LoliEpona/Heads/Skull/Skull</path>
+          <ageGraphics>
+            <HumanlikeAdult>Things/Pawn/Destrier/Heads/Skull/Skull</HumanlikeAdult>
+            <EponalikeTeenager>Things/Pawn/Destrier/Heads/Skull/Skull</EponalikeTeenager>
+          </ageGraphics>
+        </skull>
       </graphicPaths>
       <generalSettings>
         <humanRecipeImport>true</humanRecipeImport>

@@ -309,26 +309,34 @@
 
     <alienRace>
       <graphicPaths>
-        <!-- This tells the game to look in the folder MODFOLER/Textures/Things/Pawn/Heads/ for
-        Images -->
-        <!-- -->
-        <li>
-          <head>Things/Pawn/LoliEpona/Heads/</head>
-          <body>Things/Pawn/LoliEpona/Bodies/</body>
-          <skeleton>Things/Pawn/LoliEpona/Bodies/Dessicated/Dessicated_Male</skeleton>
-          <skull>Things/Pawn/LoliEpona/Heads/Skull/Skull</skull>
-        </li>
-        <li>
-          <lifeStageDefs>
-            <li>HumanlikeAdult</li>
-            <li>EponalikeTeenager</li>
-          </lifeStageDefs>
-          <head>Things/Pawn/Epona/Heads/</head>
-          <body>Things/Pawn/Epona/Bodies/</body>
-          <skeleton>Things/Pawn/Epona/Bodies/Dessicated/Dessicated_Male</skeleton>
-          <skull>Things/Pawn/Epona/Heads/Skull/Skull</skull>
-        </li>
-        <!-- -->
+        <head>
+          <path>Things/Pawn/LoliEpona/Heads/</path>
+          <ageGraphics>
+            <HumanlikeAdult>Things/Pawn/Epona/Heads/</HumanlikeAdult>
+            <EponalikeTeenager>Things/Pawn/Epona/Heads/</EponalikeTeenager>
+          </ageGraphics>
+        </head>
+        <body>
+          <path>Things/Pawn/LoliEpona/Bodies/</path>
+          <ageGraphics>
+            <HumanlikeAdult>Things/Pawn/Epona/Bodies/</HumanlikeAdult>
+            <EponalikeTeenager>Things/Pawn/Epona/Bodies/</EponalikeTeenager>
+          </ageGraphics>
+        </body>
+        <skeleton>
+          <path>Things/Pawn/LoliEpona/Bodies/Dessicated/Dessicated_Male</path>
+          <ageGraphics>
+            <HumanlikeAdult>Things/Pawn/Epona/Bodies/Dessicated/Dessicated_Male</HumanlikeAdult>
+            <EponalikeTeenager>Things/Pawn/Epona/Bodies/Dessicated/Dessicated_Male</EponalikeTeenager>
+          </ageGraphics>
+        </skeleton>
+        <skull>
+          <path>Things/Pawn/LoliEpona/Heads/Skull/Skull</path>
+          <ageGraphics>
+            <HumanlikeAdult>Things/Pawn/Epona/Heads/Skull/Skull</HumanlikeAdult>
+            <EponalikeTeenager>Things/Pawn/Epona/Heads/Skull/Skull</EponalikeTeenager>
+          </ageGraphics>
+        </skull>
       </graphicPaths>
       <generalSettings>
         <humanRecipeImport>true</humanRecipeImport>
