@@ -26,13 +26,13 @@
 		</disallowedTraits>
 		<bodyTypeMale>EponaBody</bodyTypeMale>
 		<bodyTypeFemale>EponaBody</bodyTypeFemale>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
   <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstory">
     <defName>Unicorn_Adult_Doc</defName>
     <title>유니포넨 의사</title>
     <titleShort>의사</titleShort>
-    <baseDescription>[PAWN_nameDef]는 에포나 왕국에서 얼마없는 정말 제대로된 의사입니다.</baseDescription>
+    <baseDesc>[PAWN_nameDef]는 에포나 왕국에서 얼마없는 정말 제대로된 의사입니다.</baseDesc>
 	<skillGains>
 		<li>
 			<defName>Intellectual</defName>
@@ -51,13 +51,13 @@
         
 	  <li>Unicorn_Caste</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
  
   <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstory">
     <defName>Unicorn_Adult_FieldDoc</defName>
     <title>유니포넨 야전군의관</title>
     <titleShort>야전군의관</titleShort>
-    <baseDescription>[PAWN_nameDef]는 야전군의관 입니다. 언제 어디서든 양질의 의약품을 얻을 수 있기에 에포나 군단에서 필요한 정말 중요한 인재중 하나입니다.</baseDescription>
+    <baseDesc>[PAWN_nameDef]는 야전군의관 입니다. 언제 어디서든 양질의 의약품을 얻을 수 있기에 에포나 군단에서 필요한 정말 중요한 인재중 하나입니다.</baseDesc>
 	<skillGains>
 			<li>
 				<defName>Melee</defName>
@@ -73,13 +73,13 @@
         
 	  <li>Unicorn_Caste</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>  
+  </AlienRace.AlienBackstoryDef>  
   
   <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstory">
     <defName>Unicorn_Adult_Paladin</defName>
     <title>유니포넨 팔라딘</title>
     <titleShort>팔라딘</titleShort>
-    <baseDescription>모든것은 에포나 여신님께...</baseDescription>
+    <baseDesc>모든것은 에포나 여신님께...</baseDesc>
 	<skillGains>
 			<li>
 				<defName>Melee</defName>
@@ -103,13 +103,13 @@
         
 	  <li>Unicorn_Caste</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>  
+  </AlienRace.AlienBackstoryDef>  
   
   <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstory">
     <defName>Unicorn_Adult_Priest</defName>
     <title>유니포넨 방랑 수도사</title>
     <titleShort>방랑 수도사</titleShort>
-    <baseDescription>[PAWN_nameDef]는 고결한 수도사 입니다. 어찌된 이유인지 떠돌아 다니며 살고 있습니다.</baseDescription>
+    <baseDesc>[PAWN_nameDef]는 고결한 수도사 입니다. 어찌된 이유인지 떠돌아 다니며 살고 있습니다.</baseDesc>
 	<skillGains>
 			<li>
 				<defName>Medicine</defName>
@@ -133,13 +133,13 @@
         
 	  <li>Unicorn_Caste</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>  
+  </AlienRace.AlienBackstoryDef>  
   
   <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstory">
     <defName>Unicorn_Adult_Mage</defName>
     <title>유니포넨 마법사</title>
     <titleShort>마법사</titleShort>
-    <baseDescription>[PAWN_nameDef]는 마법사라 불립니다. 여러 기술에 능통한것도 있지만 [PAWN_nameDef]이 유니포넨이라는게 가장 큰 이유입니다.</baseDescription>
+    <baseDesc>[PAWN_nameDef]는 마법사라 불립니다. 여러 기술에 능통한것도 있지만 [PAWN_nameDef]이 유니포넨이라는게 가장 큰 이유입니다.</baseDesc>
 	<skillGains>
 			<li>
 				<defName>Medicine</defName>
@@ -163,6 +163,6 @@
         
 	  <li>Unicorn_Caste</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>  
+  </AlienRace.AlienBackstoryDef>  
   
 </Defs>

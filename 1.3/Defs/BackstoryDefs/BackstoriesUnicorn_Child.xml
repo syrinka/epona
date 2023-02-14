@@ -30,13 +30,13 @@
 		</forcedHediffs>
 		<bodyTypeMale>EponaBody</bodyTypeMale>
 		<bodyTypeFemale>EponaBody</bodyTypeFemale>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
  <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstoryChild">
     <defName>Unicorn_Child_Commoner</defName>
     <title>유니포넨 신탁의 아이</title>
 	<titleShort>신탁의 아이</titleShort>
-    <baseDescription>[PAWN_nameDef]는 신탁 후에 태어난 유니포넨으로. 유니포넨의 손길에 치유능력이 있다는 소문을 믿어 자신에게 치유를 받으려고 오는 사람들 때문에 바쁜 나날들을 보냈습니다.</baseDescription>
+    <baseDesc>[PAWN_nameDef]는 신탁 후에 태어난 유니포넨으로. 유니포넨의 손길에 치유능력이 있다는 소문을 믿어 자신에게 치유를 받으려고 오는 사람들 때문에 바쁜 나날들을 보냈습니다.</baseDesc>
 	
 	<skillGains>
       <li>
@@ -58,13 +58,13 @@
 	<spawnCategories>
 	  <li>Unicorn_Caste</li>
     </spawnCategories>
- </AlienRace.BackstoryDef>
+ </AlienRace.AlienBackstoryDef>
 
  <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstoryChild">
     <defName>Unicorn_Child_Herb</defName>
     <title>유니포넨 약초꾼</title>
 	<titleShort>약초꾼</titleShort>
-    <baseDescription>[PAWN_nameDef]는 약초를 찾거나 재배하는 재능이 뛰어납니다.</baseDescription>
+    <baseDesc>[PAWN_nameDef]는 약초를 찾거나 재배하는 재능이 뛰어납니다.</baseDesc>
 	
 	<skillGains>
       <li>
@@ -82,13 +82,13 @@
 	<spawnCategories>
 	  <li>Unicorn_Caste</li>
     </spawnCategories>
- </AlienRace.BackstoryDef>
+ </AlienRace.AlienBackstoryDef>
  
  <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstoryChild">
     <defName>Unicorn_Child_Priest</defName>
     <title>유니포넨 수도원 꼬마</title>
 	<titleShort>수도원 꼬마</titleShort>
-    <baseDescription>[PAWN_nameDef]는 수도원에서 귀염둥이 역할을 했습니다.</baseDescription>
+    <baseDesc>[PAWN_nameDef]는 수도원에서 귀염둥이 역할을 했습니다.</baseDesc>
 	
 	<skillGains>
       <li>
@@ -112,13 +112,13 @@
 	  <li>Unicorn_Caste</li>
 
     </spawnCategories>
- </AlienRace.BackstoryDef>
+ </AlienRace.AlienBackstoryDef>
  
  <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstoryChild">
     <defName>Unicorn_Child_Doc</defName>
     <title>유니포넨 의사의 도제</title>
 	<titleShort>의사의 도제</titleShort>
-    <baseDescription>[PAWN_nameDef]는 의사의 도제입니다. 주로 알리콘을 이용해 향균자제를 공급했습니다.</baseDescription>
+    <baseDesc>[PAWN_nameDef]는 의사의 도제입니다. 주로 알리콘을 이용해 향균자제를 공급했습니다.</baseDesc>
 	
 	<skillGains>
       <li>
@@ -138,13 +138,13 @@
 	  <li>Unicorn_Caste</li>
 
     </spawnCategories>
- </AlienRace.BackstoryDef>
+ </AlienRace.AlienBackstoryDef>
 
  <AlienRace.BackstoryDef ParentName="Unicorn_BaseBackstoryChild">
     <defName>Unicorn_Child_Paladin</defName>
     <title>유니포넨 팔라딘의 종자</title>
 	<titleShort>팔라딘의 종자</titleShort>
-    <baseDescription>[PAWN_nameDef]는 성기사의 종자였습니다. 야전 응급시술과 기본적인 무기 기술을 배웠습니다.</baseDescription>
+    <baseDesc>[PAWN_nameDef]는 성기사의 종자였습니다. 야전 응급시술과 기본적인 무기 기술을 배웠습니다.</baseDesc>
 	
 	<skillGains>
       <li>
@@ -168,6 +168,6 @@
 	  <li>Unicorn_Caste</li>
 
     </spawnCategories>
- </AlienRace.BackstoryDef>
+ </AlienRace.AlienBackstoryDef>
 
 </Defs>
