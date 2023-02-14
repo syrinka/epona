@@ -2,7 +2,7 @@
 <Defs>
 
 <AlienRace.BackstoryDef Name="Epona_BaseBackstory" Abstract="True">
-		<disallowedTraits>
+		<disallowedTraitsChance>
 			<li>
 				<defName>Beauty</defName>
 				<degree>-2</degree>
@@ -13,7 +13,7 @@
 				<degree>0</degree>
 				<chance>100</chance>
 			</li>
-		</disallowedTraits>
+		</disallowedTraitsChance>
 		<bodyTypeMale>EponaBody</bodyTypeMale>
 		<bodyTypeFemale>EponaBody</bodyTypeFemale>
 	</AlienRace.AlienBackstoryDef>
@@ -389,13 +389,13 @@
 		</li>
 	</skillGains>
     <slot>Adulthood</slot>
-	<forcedTraits>
+	<forcedTraitsChance>
 			<li>
 				<defName>Beauty</defName>
 				<degree>2</degree>
 				<chance>100</chance>
 			</li>
-	</forcedTraits>
+	</forcedTraitsChance>
 	<spawnCategories>
 	  <li>Epona_LowCaste</li>
     </spawnCategories>

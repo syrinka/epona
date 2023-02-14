@@ -2,7 +2,7 @@
 <Defs>
  
 <AlienRace.BackstoryDef Name="Unicorn_BaseBackstoryChild" Abstract="True">
-		<disallowedTraits>
+		<disallowedTraitsChance>
 			<li>
 				<defName>Beauty</defName>
 				<degree>-2</degree>
@@ -23,7 +23,7 @@
 				<degree>0</degree>
 				<chance>100</chance>
 			</li>
-		</disallowedTraits>
+		</disallowedTraitsChance>
 		<forcedHediffs>
 			<li>Epona_EarPLZ</li>
 			<li>Hediff_Epona_Alicorn</li>

@@ -2,7 +2,7 @@
 <Defs>
  
 <AlienRace.BackstoryDef Name="Epona_BaseBackstoryChild" Abstract="True">
-		<disallowedTraits>
+		<disallowedTraitsChance>
 			<li>
 				<defName>Beauty</defName>
 				<degree>-2</degree>
@@ -13,7 +13,7 @@
 				<degree>0</degree>
 				<chance>100</chance>
 			</li>
-		</disallowedTraits>
+		</disallowedTraitsChance>
 		<forcedHediffs>
 			<li>Epona_EarPLZ</li>
 		</forcedHediffs>
@@ -208,7 +208,7 @@
 	  <li>Epona_LowCaste</li>
 
     </spawnCategories>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Brawler</defName>
 				<chance>0.3</chance>
@@ -217,7 +217,7 @@
 				<defName>Greedy</defName>
 				<chance>0.3</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
  </AlienRace.AlienBackstoryDef>
 
  <AlienRace.BackstoryDef ParentName="Epona_BaseBackstoryChild">
