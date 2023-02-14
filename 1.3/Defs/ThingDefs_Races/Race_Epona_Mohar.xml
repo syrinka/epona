@@ -131,10 +131,6 @@
 						<hediff>Epona_OneHediffPerGenderLoli</hediff>
 					</li>
 					<li>
-						<lifeStageDef>HumanlikeToddler</lifeStageDef>
-						<hediff>Epona_OneHediffPerGenderLoli</hediff>
-					</li>
-					<li>
 						<lifeStageDef>HumanlikeChild</lifeStageDef>
 						<hediff>Epona_OneHediffPerGenderLoli</hediff>
 					</li>
@@ -253,10 +249,6 @@
 						<hediff>Destrier_OneHediffPerGenderLoli</hediff>
 					</li>
 					<li>
-						<lifeStageDef>HumanlikeToddler</lifeStageDef>
-						<hediff>Destrier_OneHediffPerGenderLoli</hediff>
-					</li>
-					<li>
 						<lifeStageDef>HumanlikeChild</lifeStageDef>
 						<hediff>Destrier_OneHediffPerGenderLoli</hediff>
 					</li>
@@ -366,10 +358,6 @@
 				<associations>
 					<li>
 						<lifeStageDef>HumanlikeBaby</lifeStageDef>
-						<hediff>Unicorn_OneHediffPerGenderLoli</hediff>
-					</li>
-					<li>
-						<lifeStageDef>HumanlikeToddler</lifeStageDef>
 						<hediff>Unicorn_OneHediffPerGenderLoli</hediff>
 					</li>
 					<li>

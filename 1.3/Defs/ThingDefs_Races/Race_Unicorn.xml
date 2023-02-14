@@ -1187,10 +1187,6 @@
                     <minAge>0</minAge>
                 </li>
                 <li>
-                    <def>HumanlikeToddler</def>
-                    <minAge>1.2</minAge>
-                </li>
-                <li>
                     <def>HumanlikeChild</def>
                     <minAge>4</minAge>
                 </li>
@@ -1355,7 +1351,6 @@
 
         <lifeStages>
             <li>HumanlikeBaby</li>
-            <li>HumanlikeToddler</li>
             <li>HumanlikeChild</li>
             <li>EponalikeTeenager</li>
             <li>HumanlikeAdult</li>
