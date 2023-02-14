@@ -40,12 +40,12 @@
 	
 	<skillGains>
       <li>
-        <defName>Animals</defName>
-        <amount>1</amount>
+        <key>Animals</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>7</amount>
+        <key>Medicine</key>
+        <value>7</value>
       </li>
 	  <li>
 		<defName>Social</defName>
@@ -68,12 +68,12 @@
 	
 	<skillGains>
       <li>
-        <defName>Plants</defName>
-        <amount>5</amount>
+        <key>Plants</key>
+        <value>5</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>2</amount>
+        <key>Medicine</key>
+        <value>2</value>
       </li>
 	</skillGains>
 	
@@ -92,8 +92,8 @@
 	
 	<skillGains>
       <li>
-        <defName>Medicine</defName>
-        <amount>1</amount>
+        <key>Medicine</key>
+        <value>1</value>
       </li>
 	  <li>
 		<defName>Intellectual</defName>
@@ -122,12 +122,12 @@
 	
 	<skillGains>
       <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
+        <key>Intellectual</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>4</amount>
+        <key>Medicine</key>
+        <value>4</value>
       </li>
 	</skillGains>
 	
@@ -148,16 +148,16 @@
 	
 	<skillGains>
       <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
+        <key>Intellectual</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>3</amount>
+        <key>Medicine</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>3</amount>
+        <key>Melee</key>
+        <value>3</value>
       </li>
 	</skillGains>
 	

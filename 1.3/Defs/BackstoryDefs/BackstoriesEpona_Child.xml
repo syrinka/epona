@@ -29,12 +29,12 @@
 	
 	<skillGains>
       <li>
-        <defName>Animals</defName>
-        <amount>2</amount>
+        <key>Animals</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>4</amount>
+        <key>Plants</key>
+        <value>4</value>
       </li>
 	</skillGains>
 	
@@ -54,8 +54,8 @@
 	
 	<skillGains>
       <li>
-        <defName>Plants</defName>
-        <amount>4</amount>
+        <key>Plants</key>
+        <value>4</value>
       </li>
 	  <li>
 		<defName>Melee</defName>
@@ -80,8 +80,8 @@
 	
 	<skillGains>
       <li>
-        <defName>Plants</defName>
-        <amount>6</amount>
+        <key>Plants</key>
+        <value>6</value>
       </li>
 	</skillGains>
 	
@@ -102,12 +102,12 @@
 	
 	<skillGains>
       <li>
-        <defName>Animals</defName>
-        <amount>3</amount>
+        <key>Animals</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>3</amount>
+        <key>Melee</key>
+        <value>3</value>
       </li>
 	</skillGains>
 	
@@ -228,12 +228,12 @@
 	
 	<skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>3</amount>
+        <key>Melee</key>
+        <value>3</value>
       </li>
 	</skillGains>
 	
@@ -255,16 +255,16 @@
 	
 	<skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Artistic</defName>
-        <amount>1</amount>
+        <key>Artistic</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>3</amount>
+        <key>Social</key>
+        <value>3</value>
       </li>
 	</skillGains>
 	
@@ -285,16 +285,16 @@
 	
 	<skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>4</amount>
+        <key>Melee</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Shooting</defName>
-        <amount>3</amount>
+        <key>Shooting</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
 	</skillGains>
 	
@@ -315,20 +315,20 @@
 	
 	<skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>3</amount>
+        <key>Intellectual</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Artistic</defName>
-        <amount>3</amount>
+        <key>Artistic</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>4</amount>
+        <key>Social</key>
+        <value>4</value>
       </li>
 	</skillGains>
 	
@@ -351,16 +351,16 @@
 	
 	<skillGains>
       <li>
-        <defName>Intellectual</defName>
-        <amount>4</amount>
+        <key>Intellectual</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Artistic</defName>
-        <amount>4</amount>
+        <key>Artistic</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>3</amount>
+        <key>Social</key>
+        <value>3</value>
       </li>
 	</skillGains>
 	
