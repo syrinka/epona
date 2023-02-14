@@ -1,22 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Epona race Renaissance</name>
-	<author>Outremer</author>
-	<supportedVersions>
+  <name>Epona race Renaissance (1.4 Unofficial)</name>
+  <author>Outremer</author>
+  <supportedVersions>
     <li>1.4</li>
-	</supportedVersions>
-	<packageId>Epona.EponaRenaissance</packageId>
-	<description>
-	
-	 Renaissance for Epona!
-	 </description>
+  </supportedVersions>
+  <packageId>Epona.EponaRenaissance</packageId>
+  <description>
+Renaissance for Epona!
+
+Note:
+=====
+This is an unofficial update for 1.4, all rights are preserved by original author.
+Not compatible with 1.3
+
+Known issue:
+=====
+- Children Epona have their texture misplaced
+- Epona Steamlance doesn't work
+  </description>
   <modDependencies>
     <li>
       <packageId>erdelf.HumanoidAlienRaces</packageId>
       <displayName>HumanoidAlienRaces</displayName>
       <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
     </li>
-	<li>
+    <li>
       <packageId>goudaquiche.MoharFramework</packageId>
       <displayName>MoHARframework</displayName>
       <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2057001924</steamWorkshopUrl>
@@ -26,6 +35,6 @@
     <li>Ludeon.RimWorld.Royalty</li>
     <li>Ludeon.RimWorld.Ideology</li>
     <li>erdelf.HumanoidAlienRaces</li>
-	<li>goudaquiche.MoharFramework</li>
+    <li>goudaquiche.MoharFramework</li>
   </loadAfter>
 </ModMetaData>
