@@ -100,11 +100,12 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Epona_Weapon_Steamlance_Proj</defaultProjectile>
+        <defaultProjectile>Epona_Weapon_Steamlance_Proj_Cluster</defaultProjectile>
+        <forcedMissRadius>0.1</forcedMissRadius>
         <warmupTime>2.5</warmupTime>
         <range>29.9</range>
-        <ticksBetweenBurstShots>65</ticksBetweenBurstShots>
-        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>16</burstShotCount>
         <soundCast>Epona_HandCannon_fire</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>0</muzzleFlashScale>
@@ -169,7 +170,7 @@
       <armorPenetrationBase>0.5</armorPenetrationBase>
       <damageAmountBase>5</damageAmountBase>
       <speed>45</speed>
-      <explosionRadius>1.6</explosionRadius>
+      <explosionRadius>3</explosionRadius>
     </projectile>
   </ThingDef>
 
