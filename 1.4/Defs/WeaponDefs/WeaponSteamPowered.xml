@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <DamageDef>
+  <DamageDef>
     <defName>SteamBomb</defName>
     <label>Compressed Steam</label>
     <workerClass>DamageWorker_AddInjury</workerClass>
@@ -26,24 +26,24 @@
     <soundExplosion>Explosion_Bomb</soundExplosion>
     <combatLogRules>Damage_Bomb</combatLogRules>
   </DamageDef>
-  
-	<DamageDef>
-		<defName>SteamBomb_Cluster</defName>
-		<label>Compressed Steam</label>
-		<workerClass>TorgueAnty.TorgueAnty_DamageWorker_AddInjury</workerClass>
-		<externalViolence>true</externalViolence>
-		<isExplosive>true</isExplosive>
+
+  <DamageDef>
+    <defName>SteamBomb_Cluster</defName>
+    <label>Compressed Steam</label>
+    <workerClass>TorgueAnty.TorgueAnty_DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
     <deathMessage>{0} has been crushed to death.</deathMessage>
-        <hediff>Burn</hediff>
-		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-		<impactSoundType>Blunt</impactSoundType>
-		<armorCategory>Blunt</armorCategory>
-		<minDamageToFragment>20</minDamageToFragment>
-		<defaultDamage>200</defaultDamage>
-		<defaultStoppingPower>1</defaultStoppingPower>
-		<defaultArmorPenetration>1</defaultArmorPenetration>
-		<buildingDamageFactor>0.5</buildingDamageFactor>
-		<plantDamageFactor>3</plantDamageFactor>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <minDamageToFragment>20</minDamageToFragment>
+    <defaultDamage>200</defaultDamage>
+    <defaultStoppingPower>1</defaultStoppingPower>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
+    <buildingDamageFactor>0.5</buildingDamageFactor>
+    <plantDamageFactor>3</plantDamageFactor>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
     <explosionHeatEnergyPerCell>25</explosionHeatEnergyPerCell>
     <explosionCellMote>BlankMote</explosionCellMote>
@@ -51,53 +51,53 @@
     <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
     <soundExplosion>Epona_Steam_fire</soundExplosion>
     <combatLogRules>Damage_Bomb</combatLogRules>
-	</DamageDef>
-	
-    <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>Epona_Weapon_Steamlance</defName>
-        <label>에포나 스팀랜스</label>
-        <description>스팀랜스는 압축증기가 든 유탄을 발사시켜 광역공격을 합니다. 증기동력 필요.</description>
-        <graphicData>
-            <texPath>Things/WeaponRanged/EponaSteamlance</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
+  </DamageDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Epona_Weapon_Steamlance</defName>
+    <label>에포나 스팀랜스</label>
+    <description>스팀랜스는 압축증기가 든 유탄을 발사시켜 광역공격을 합니다. 증기동력 필요.</description>
+    <graphicData>
+      <texPath>Things/WeaponRanged/EponaSteamlance</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <techLevel>Medieval</techLevel>
-        <uiIconScale>1.1</uiIconScale>
-        <soundInteract>Interact_ChargeRifle</soundInteract>
-        <statBases>
-            <WorkToMake>144000</WorkToMake>
-            <Mass>12</Mass>
-            <AccuracyTouch>0.30</AccuracyTouch>
-            <AccuracyShort>0.4</AccuracyShort>
-            <AccuracyMedium>0.4</AccuracyMedium>
-            <AccuracyLong>0.1</AccuracyLong>
-            <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
-        </statBases>
-        <weaponTags>
-            <li>EponaSteamer</li>
-        </weaponTags>
-        <weaponClasses>
+    <uiIconScale>1.1</uiIconScale>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>144000</WorkToMake>
+      <Mass>12</Mass>
+      <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.4</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>EponaSteamer</li>
+    </weaponTags>
+    <weaponClasses>
       <li>Ranged</li>
       <li>RangedHeavy</li>
-	  </weaponClasses>
-        <costList>
-            <WoodLog>100</WoodLog>
-            <Steel>250</Steel>
-			<Epona_Bombarrot_HE>12</Epona_Bombarrot_HE>
-            <ComponentIndustrial>18</ComponentIndustrial>
-        </costList>
-        <recipeMaker>
+    </weaponClasses>
+    <costList>
+      <WoodLog>100</WoodLog>
+      <Steel>250</Steel>
+      <Epona_Bombarrot_HE>12</Epona_Bombarrot_HE>
+      <ComponentIndustrial>18</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
       <researchPrerequisite>Epona_Research_SteamGatling</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>9</Crafting>
-            </skillRequirements>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
       <recipeUsers Inherit="False">
         <li>EponaBuildingForge</li>
         <li>EponaBuildingBombForge</li>
       </recipeUsers>
-        </recipeMaker>
-        <verbs>
-            <li>
+    </recipeMaker>
+    <verbs>
+      <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Epona_Weapon_Steamlance_Proj</defaultProjectile>
@@ -108,8 +108,8 @@
         <soundCast>Epona_HandCannon_fire</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>0</muzzleFlashScale>
-            </li>
-        </verbs>
+      </li>
+    </verbs>
     <tools>
       <li>
         <label>stock</label>
@@ -129,50 +129,50 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    </ThingDef>
+  </ThingDef>
 
-	
-	<ThingDef ParentName="BaseBullet">
-		<defName>Epona_Weapon_Steamlance_Proj</defName>
-		<label>grenade</label>
-		<thingClass>TorgueAnty.Projectile_Torgue_Rocket</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/SteamLaunchBullet</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Epona_Weapon_Steamlance_Proj</defName>
+    <label>grenade</label>
+    <thingClass>TorgueAnty.Projectile_Torgue_Rocket</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/SteamLaunchBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <projectile Class="TorgueAnty.TorgueProjectileProps">
       <damageDef>SteamBomb</damageDef>
       <damageAmountBase>17</damageAmountBase>
       <speed>25</speed>
       <explosionRadius>2</explosionRadius>
       <stoppingPower>5</stoppingPower>
-			<subProjectile>Epona_Weapon_Steamlance_Proj_Cluster</subProjectile>
-			<clusterCount>16</clusterCount>
-			<clusterRadius>6</clusterRadius>
-	  <armorPenetrationBase>0.5</armorPenetrationBase>
-			<alwaysFreeIntercept>false</alwaysFreeIntercept>
-			<flyOverhead>false</flyOverhead>
+      <subProjectile>Epona_Weapon_Steamlance_Proj_Cluster</subProjectile>
+      <clusterCount>16</clusterCount>
+      <clusterRadius>6</clusterRadius>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
+      <alwaysFreeIntercept>false</alwaysFreeIntercept>
+      <flyOverhead>false</flyOverhead>
     </projectile>
-	</ThingDef>
+  </ThingDef>
 
-	<ThingDef ParentName="BaseBullet">
-		<defName>Epona_Weapon_Steamlance_Proj_Cluster</defName>
-		<label>클러스터</label>
-		<graphicData>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Epona_Weapon_Steamlance_Proj_Cluster</defName>
+    <label>클러스터</label>
+    <graphicData>
       <texPath>Things/Projectile/SteamLaunch</texPath>
-	  <drawSize>1.5</drawSize>
+      <drawSize>1.5</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
-		<projectile>
-			<damageDef>SteamBomb_Cluster</damageDef>
-			<armorPenetrationBase>0.5</armorPenetrationBase>
-			<damageAmountBase>5</damageAmountBase>
-			<speed>45</speed>
-			<explosionRadius>1.6</explosionRadius>
-		</projectile>
-	</ThingDef>
-  
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>SteamBomb_Cluster</damageDef>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
+      <damageAmountBase>5</damageAmountBase>
+      <speed>45</speed>
+      <explosionRadius>1.6</explosionRadius>
+    </projectile>
+  </ThingDef>
+
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Epona_Weapon_Steamgatling</defName>
     <label>에포나 스팀개틀링</label>
@@ -204,14 +204,14 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-            <WoodLog>125</WoodLog>
-            <Steel>250</Steel>
-			<Plasteel>40</Plasteel>
-            <ComponentIndustrial>15</ComponentIndustrial>
+      <WoodLog>125</WoodLog>
+      <Steel>250</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>15</ComponentIndustrial>
     </costList>
-	<thingCategories Inherit="False">
-		<li>Epona_WeaponsRanged</li>
-	</thingCategories>
+    <thingCategories Inherit="False">
+      <li>Epona_WeaponsRanged</li>
+    </thingCategories>
     <weaponTags Inherit="False">
       <li>EponaSteamer</li>
     </weaponTags>
@@ -228,7 +228,7 @@
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
       </li>
-	  
+
     </verbs>
     <tools>
       <li>
@@ -254,13 +254,13 @@
       <li>RangedHeavy</li>
     </weaponClasses>
   </ThingDef>
-  
+
   <ThingDef ParentName="BaseBullet">
     <defName>Epona_Weapon_Steamgatling_Proj</defName>
     <label>HMG Shot</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
-	  <drawSize>1</drawSize>
+      <drawSize>1</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -271,79 +271,79 @@
       <speed>67</speed>
     </projectile>
   </ThingDef>
-  
-	
-    <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>Epona_Weapon_Steamflak</defName>
-        <label>에포나 스팀플랙</label>
+
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Epona_Weapon_Steamflak</defName>
+    <label>에포나 스팀플랙</label>
     <techLevel>Industrial</techLevel>
 
-        <description>스팀플랙은 초장거리에서 엄청난 운동에너지의 우라늄 날탄을 날립니다. 증기동력 필요.</description>
-        <graphicData>
-            <texPath>Things/WeaponRanged/EponaSteamflak</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-		<equippedAngleOffset>45</equippedAngleOffset>
-        <uiIconScale>1.1</uiIconScale>
-        <soundInteract>Interact_ChargeRifle</soundInteract>
-        <statBases>
-            <WorkToMake>205000</WorkToMake>
-            <Mass>20</Mass>
-            <AccuracyTouch>0.30</AccuracyTouch>
-            <AccuracyShort>0.4</AccuracyShort>
-            <AccuracyMedium>0.75</AccuracyMedium>
-            <AccuracyLong>0.98</AccuracyLong>
-            <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
-        </statBases>
-        <weaponTags>
-            <li>EponaSteamerNonuser</li>
-        </weaponTags>
-        <weaponClasses>
+    <description>스팀플랙은 초장거리에서 엄청난 운동에너지의 우라늄 날탄을 날립니다. 증기동력 필요.</description>
+    <graphicData>
+      <texPath>Things/WeaponRanged/EponaSteamflak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <uiIconScale>1.1</uiIconScale>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>205000</WorkToMake>
+      <Mass>20</Mass>
+      <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.98</AccuracyLong>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>EponaSteamerNonuser</li>
+    </weaponTags>
+    <weaponClasses>
       <li>Ranged</li>
       <li>RangedHeavy</li>
-	  </weaponClasses>
-        <costList>
-            <WoodLog>100</WoodLog>
-            <Steel>325</Steel>
-            <Uranium>100</Uranium>
+    </weaponClasses>
+    <costList>
+      <WoodLog>100</WoodLog>
+      <Steel>325</Steel>
+      <Uranium>100</Uranium>
 
-			<Epona_Bombarrot_HE>10</Epona_Bombarrot_HE>
-            <ComponentIndustrial>25</ComponentIndustrial>
-            <ComponentSpacer>4</ComponentSpacer>
+      <Epona_Bombarrot_HE>10</Epona_Bombarrot_HE>
+      <ComponentIndustrial>25</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
 
-        </costList>
-        <recipeMaker>
+    </costList>
+    <recipeMaker>
       <researchPrerequisite>Epona_Research_SteamGatling</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>14</Crafting>
-            </skillRequirements>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
       <recipeUsers Inherit="False">
         <li>EponaBuildingForge</li>
         <li>EponaBuildingBombForge</li>
       </recipeUsers>
-	
-        </recipeMaker>
-		<equippedStatOffsets>
-	  <MeleeDodgeChance>-25</MeleeDodgeChance>
-	  <MeleeHitChance>-10</MeleeHitChance>	
+
+    </recipeMaker>
+    <equippedStatOffsets>
+      <MeleeDodgeChance>-25</MeleeDodgeChance>
+      <MeleeHitChance>-10</MeleeHitChance>
       <MoveSpeed>-2.5</MoveSpeed>
-		</equippedStatOffsets>
-        <verbs>
-            <li>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Epona_Weapon_Steamflak_Proj</defaultProjectile>
         <warmupTime>2.8</warmupTime>
-       <minRange>18</minRange>
-		<forcedMissRadius>0.1</forcedMissRadius> 
+        <minRange>18</minRange>
+        <forcedMissRadius>0.1</forcedMissRadius>
         <range>110</range>
         <ticksBetweenBurstShots>40</ticksBetweenBurstShots>
         <burstShotCount>4</burstShotCount>
         <soundCast>Epona_HandCannon_fire</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>30</muzzleFlashScale>
-            </li>
-        </verbs>
+      </li>
+    </verbs>
     <tools>
       <li>
         <label>stock</label>
@@ -363,34 +363,34 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    </ThingDef>
+  </ThingDef>
 
 
-  
-	<ThingDef ParentName="BaseBullet">
-		<defName>Epona_Weapon_Steamflak_Proj</defName>
-		<label>bolt</label>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Epona_Weapon_Steamflak_Proj</defName>
+    <label>bolt</label>
     <thingClass>Projectile_Explosive</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/WingBolt</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>SiegeBombArbalest</damageDef>
-			<damageAmountBase>37</damageAmountBase>
-			<armorPenetrationBase>0.90</armorPenetrationBase>
-			<stoppingPower>12</stoppingPower>
-			<speed>150</speed>
-			<explosionRadius>0.5</explosionRadius>
-			<alwaysFreeIntercept>false</alwaysFreeIntercept>
-			<flyOverhead>false</flyOverhead>
-			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-			<soundAmbient>MortarRound_Ambient</soundAmbient>
-		</projectile>
+    <graphicData>
+      <texPath>Things/Projectile/WingBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>SiegeBombArbalest</damageDef>
+      <damageAmountBase>37</damageAmountBase>
+      <armorPenetrationBase>0.90</armorPenetrationBase>
+      <stoppingPower>12</stoppingPower>
+      <speed>150</speed>
+      <explosionRadius>0.5</explosionRadius>
+      <alwaysFreeIntercept>false</alwaysFreeIntercept>
+      <flyOverhead>false</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
     <weaponClasses>
       <li>Ranged</li>
       <li>RangedHeavy</li>
     </weaponClasses>
-	</ThingDef>
+  </ThingDef>
 
 </Defs>
