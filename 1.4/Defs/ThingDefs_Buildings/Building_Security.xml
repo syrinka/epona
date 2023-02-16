@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>EponaBuildingMortar</defName>
     <label>폭당근 로테이팅 배럴 박격포</label>
@@ -47,9 +47,9 @@
     <castEdgeShadows>false</castEdgeShadows>
     <hasTooltip>true</hasTooltip>
     <costList>
-			<ComponentIndustrial>8</ComponentIndustrial>
-            <WoodLog>150</WoodLog>
-            <Steel>300</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <WoodLog>150</WoodLog>
+      <Steel>300</Steel>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <constructEffect>ConstructMetal</constructEffect>
@@ -67,12 +67,12 @@
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
-		<researchPrerequisites>
-			<li>Epona_Research_Cannon</li>
-		</researchPrerequisites>
+    <researchPrerequisites>
+      <li>Epona_Research_Cannon</li>
+    </researchPrerequisites>
   </ThingDef>
-  
- 
+
+
   <ThingDef ParentName="BaseBullet">
     <defName>Epona_Weapon_BuildingMortar_Proj</defName>
     <label>폭당근</label>
@@ -87,10 +87,10 @@
       <speed>50</speed>
       <explosionRadius>3</explosionRadius>
       <stoppingPower>5</stoppingPower>
-	  <armorPenetrationBase>0.05</armorPenetrationBase>
+      <armorPenetrationBase>0.05</armorPenetrationBase>
       <alwaysFreeIntercept>false</alwaysFreeIntercept>
-	  <flyOverhead>true</flyOverhead>
-	  <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
       <arcHeightFactor>0.2</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
@@ -109,7 +109,7 @@
     <weaponTags Inherit="false">
       <li>TurretGun</li>
     </weaponTags>
-	<recoilPower>5</recoilPower>
+    <recoilPower>5</recoilPower>
     <tradeability>None</tradeability>
     <destroyOnDrop>true</destroyOnDrop>
     <statBases>
@@ -162,9 +162,9 @@
       </defaultStorageSettings>
     </building>
   </ThingDef>
-  
-  
-  
+
+
+
   <ThingDef ParentName="BuildingBase">
     <defName>EponaBuildingMonsMeg</defName>
     <label>고르뒤푸 캐논</label>
@@ -214,9 +214,9 @@
     <castEdgeShadows>false</castEdgeShadows>
     <hasTooltip>true</hasTooltip>
     <costList>
-			<ComponentIndustrial>20</ComponentIndustrial>
-            <WoodLog>500</WoodLog>
-            <Steel>1500</Steel>
+      <ComponentIndustrial>20</ComponentIndustrial>
+      <WoodLog>500</WoodLog>
+      <Steel>1500</Steel>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <constructEffect>ConstructMetal</constructEffect>
@@ -234,28 +234,28 @@
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
-		<researchPrerequisites>
-			<li>Epona_Research_MonsMeg</li>
-		</researchPrerequisites>
+    <researchPrerequisites>
+      <li>Epona_Research_MonsMeg</li>
+    </researchPrerequisites>
   </ThingDef>
-  
-	<DamageDef>
-		<defName>SiegeBombCannon_Main_Cluster</defName>
-		<label>Bomb</label>
-		<workerClass>DamageWorker_AddInjury</workerClass>
-		<externalViolence>true</externalViolence>
-		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has Shredded by Crystal</deathMessage>
-		<hediff>Shredded</hediff>
-		<hediffSolid>Crack</hediffSolid>
-		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-		<impactSoundType>Blunt</impactSoundType>
-		<armorCategory>Sharp</armorCategory>
-		<defaultDamage>450</defaultDamage>
-		<defaultStoppingPower>1</defaultStoppingPower>
-		<defaultArmorPenetration>1.3</defaultArmorPenetration>
-		<buildingDamageFactor>10</buildingDamageFactor>
-		<plantDamageFactor>2</plantDamageFactor>
+
+  <DamageDef>
+    <defName>SiegeBombCannon_Main_Cluster</defName>
+    <label>Bomb</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has Shredded by Crystal</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <defaultDamage>450</defaultDamage>
+    <defaultStoppingPower>1</defaultStoppingPower>
+    <defaultArmorPenetration>1.3</defaultArmorPenetration>
+    <buildingDamageFactor>10</buildingDamageFactor>
+    <plantDamageFactor>2</plantDamageFactor>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
     <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
     <explosionCellFleck>BlastDry</explosionCellFleck>
@@ -263,25 +263,25 @@
     <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
     <soundExplosion>Explosion_Bomb</soundExplosion>
     <combatLogRules>Damage_Bomb</combatLogRules>
-	</DamageDef>	
-	<DamageDef>
-		<defName>SiegeBombCannon_Cluster</defName>
-		<label>Bomb</label>
-		<workerClass>TorgueAnty.TorgueAnty_DamageWorker_AddInjury</workerClass>
-		<externalViolence>true</externalViolence>
-		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has Shredded by Crystal</deathMessage>
-		<hediff>Shredded</hediff>
-		<hediffSolid>Crack</hediffSolid>
-		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-		<impactSoundType>Blunt</impactSoundType>
-		<armorCategory>Sharp</armorCategory>
-		<minDamageToFragment>20</minDamageToFragment>
-		<defaultDamage>200</defaultDamage>
-		<defaultStoppingPower>1</defaultStoppingPower>
-		<defaultArmorPenetration>1</defaultArmorPenetration>
-		<buildingDamageFactor>25</buildingDamageFactor>
-		<plantDamageFactor>3</plantDamageFactor>
+  </DamageDef>
+  <DamageDef>
+    <defName>SiegeBombCannon_Cluster</defName>
+    <label>Bomb</label>
+    <workerClass>TorgueAnty.TorgueAnty_DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has Shredded by Crystal</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>20</minDamageToFragment>
+    <defaultDamage>200</defaultDamage>
+    <defaultStoppingPower>1</defaultStoppingPower>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
+    <buildingDamageFactor>25</buildingDamageFactor>
+    <plantDamageFactor>3</plantDamageFactor>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
     <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
     <explosionCellFleck>BlastDry</explosionCellFleck>
@@ -289,54 +289,54 @@
     <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
     <soundExplosion>Explosion_Bomb</soundExplosion>
     <combatLogRules>Damage_Bomb</combatLogRules>
-	</DamageDef>
-	
+  </DamageDef>
+
   <ThingDef ParentName="BaseBullet">
     <defName>Epona_Weapon_BuildingMonsMeg_Proj</defName>
     <label>포탄</label>
     <graphicData>
       <texPath>Things/Projectile/EponaCannonball</texPath>
-	  <drawSize>1.5</drawSize>
+      <drawSize>1.5</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-		<thingClass>TorgueAnty.Projectile_Torgue_Rocket</thingClass>
+    <thingClass>TorgueAnty.Projectile_Torgue_Rocket</thingClass>
     <projectile Class="TorgueAnty.TorgueProjectileProps">
       <damageDef>SiegeBombCannon_Main_Cluster</damageDef>
       <damageAmountBase>600</damageAmountBase>
       <speed>40</speed>
       <explosionRadius>3</explosionRadius>
       <stoppingPower>5</stoppingPower>
-			<subProjectile>Epona_Weapon_BuildingMonsMeg_Proj_Cluster</subProjectile>
-			<clusterCount>60</clusterCount>
-			<clusterRadius>40</clusterRadius>
-	  <armorPenetrationBase>1</armorPenetrationBase>
+      <subProjectile>Epona_Weapon_BuildingMonsMeg_Proj_Cluster</subProjectile>
+      <clusterCount>60</clusterCount>
+      <clusterRadius>40</clusterRadius>
+      <armorPenetrationBase>1</armorPenetrationBase>
       <alwaysFreeIntercept>false</alwaysFreeIntercept>
-	  <flyOverhead>true</flyOverhead>
-	  <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
       <arcHeightFactor>0.2</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
     </projectile>
   </ThingDef>
 
-	<ThingDef ParentName="BaseBullet">
-		<defName>Epona_Weapon_BuildingMonsMeg_Proj_Cluster</defName>
-		<label>클러스터</label>
-		<graphicData>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Epona_Weapon_BuildingMonsMeg_Proj_Cluster</defName>
+    <label>클러스터</label>
+    <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
-	  <drawSize>2</drawSize>
+      <drawSize>2</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
-		<projectile>
-			<damageDef>SiegeBombCannon_Cluster</damageDef>
-			<armorPenetrationBase>0.2</armorPenetrationBase>
-			<damageAmountBase>20</damageAmountBase>
-			<speed>32</speed>
-			<explosionRadius>5</explosionRadius>
-		</projectile>
-	</ThingDef>
-	
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>SiegeBombCannon_Cluster</damageDef>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <damageAmountBase>20</damageAmountBase>
+      <speed>32</speed>
+      <explosionRadius>5</explosionRadius>
+    </projectile>
+  </ThingDef>
+
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>Epona_Weapon_BuildingMonsMeg</defName>
     <label>거포</label>
@@ -349,7 +349,7 @@
     <weaponTags Inherit="false">
       <li>TurretGun</li>
     </weaponTags>
-	<recoilPower>32</recoilPower>
+    <recoilPower>32</recoilPower>
     <tradeability>None</tradeability>
     <destroyOnDrop>true</destroyOnDrop>
     <statBases>
@@ -402,23 +402,23 @@
       </defaultStorageSettings>
     </building>
   </ThingDef>
-  
+
   <ThingCategoryDef>
     <defName>Epona_Shell</defName>
     <label>에포나 폭발물</label>
     <parent>Manufactured</parent>
     <resourceReadoutRoot>true</resourceReadoutRoot>
     <iconPath>UI/Icons/ThingCategories/Manufactured</iconPath>
-  </ThingCategoryDef>  
-  
+  </ThingCategoryDef>
+
   <ThingCategoryDef>
     <defName>Epona_LargeShell</defName>
     <label>에포나 대형 폭발물</label>
     <parent>Manufactured</parent>
     <resourceReadoutRoot>true</resourceReadoutRoot>
     <iconPath>UI/Icons/ThingCategories/Manufactured</iconPath>
-  </ThingCategoryDef>  
-  
+  </ThingCategoryDef>
+
   <ThingDef ParentName="ResourceBase">
     <defName>Epona_Bombarrot_HE</defName>
     <label>폭당근</label>
@@ -518,25 +518,25 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <ThingDef ParentName="BuildingBase">
     <defName>EponaBuildingOrganGun</defName>
     <label>폭당근 오르간포</label>
@@ -577,7 +577,7 @@
         <manWorkType>Violent</manWorkType>
       </li>
       <li Class="CompProperties_Forbiddable"/>
-	  <li Class="CompProperties_Refuelable">
+      <li Class="CompProperties_Refuelable">
         <fuelLabel>폭당근</fuelLabel>
         <fuelGizmoLabel>폭당근</fuelGizmoLabel>
         <fuelFilter>
@@ -605,9 +605,9 @@
     <castEdgeShadows>false</castEdgeShadows>
     <hasTooltip>true</hasTooltip>
     <costList>
-			<ComponentIndustrial>6</ComponentIndustrial>
-            <WoodLog>75</WoodLog>
-            <Steel>150</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <WoodLog>75</WoodLog>
+      <Steel>150</Steel>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <constructEffect>ConstructMetal</constructEffect>
@@ -621,12 +621,12 @@
       <turretTopDrawSize>1.6</turretTopDrawSize>
       <turretTopOffset>(0, 0)</turretTopOffset>
     </building>
-		<researchPrerequisites>
-			<li>Epona_Research_Cannon</li>
-		</researchPrerequisites>
+    <researchPrerequisites>
+      <li>Epona_Research_Cannon</li>
+    </researchPrerequisites>
   </ThingDef>
-  
- 
+
+
   <ThingDef ParentName="BaseBullet">
     <defName>Epona_Weapon_EponaBuildingOrganGun_Proj</defName>
     <label>폭당근</label>
@@ -641,10 +641,10 @@
       <speed>70</speed>
       <explosionRadius>1</explosionRadius>
       <stoppingPower>5</stoppingPower>
-	  <armorPenetrationBase>0.4</armorPenetrationBase>
+      <armorPenetrationBase>0.4</armorPenetrationBase>
       <alwaysFreeIntercept>false</alwaysFreeIntercept>
-	  <flyOverhead>false</flyOverhead>
-	  <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <flyOverhead>false</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
       <arcHeightFactor>0.2</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
@@ -663,7 +663,7 @@
     <weaponTags Inherit="false">
       <li>TurretGun</li>
     </weaponTags>
-	<recoilPower>5</recoilPower>
+    <recoilPower>5</recoilPower>
     <tradeability>None</tradeability>
     <destroyOnDrop>true</destroyOnDrop>
     <statBases>
@@ -695,23 +695,23 @@
       </li>
     </verbs>
   </ThingDef>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <ThingDef ParentName="PlantBase">
     <defName>Plant_Bombarrot</defName>
@@ -749,5 +749,5 @@
       </sowResearchPrerequisites>
     </plant>
   </ThingDef>
-  
+
 </Defs>
