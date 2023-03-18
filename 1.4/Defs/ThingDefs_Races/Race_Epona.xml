@@ -534,6 +534,97 @@
           <customPortraitDrawSize>(1.2, 1.2)</customPortraitDrawSize>
           <atlasScale>4</atlasScale>
           <bodyAddons>
+          <li>
+              <path>Things/Pawn/Addons/Blank</path>
+              <bodyPart>Torso</bodyPart>
+              <drawSize>1.2</drawSize>
+              <colorChannel>hediff</colorChannel>
+              <inFrontOfBody>true</inFrontOfBody>
+              <defaultOffset>Tail</defaultOffset>
+              <shaderType>Cutout</shaderType>
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <EponaBody>(-0.42,0.215)</EponaBody>
+                  </bodyTypes>
+                  <layerOffset>1.0</layerOffset>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <EponaBody>(-0.0,0.52)</EponaBody>
+                  </bodyTypes>
+                  <layerOffset>-0.7</layerOffset>
+                </north>
+                <east>
+
+                  <bodyTypes>
+                    <EponaBody>(-0.42,0.215)</EponaBody>
+                  </bodyTypes>
+                  <layerOffset>-1</layerOffset>
+                </east>
+                <west>
+
+                  <bodyTypes>
+                    <EponaBody>(-0.42,0.215)</EponaBody>
+                  </bodyTypes>
+                  <layerOffset>-1</layerOffset>
+                </west>
+              </offsets>
+
+              <hediffGraphics>
+                <Hediff_Epona_NewShield_Light>Things/ApparelNewShield/Light/OnBack/OnBack</Hediff_Epona_NewShield_Light>
+                <Hediff_Epona_NewShield_Balistic>Things/ApparelNewShield/Balistic/OnBack/OnBack</Hediff_Epona_NewShield_Balistic>
+                <Hediff_Epona_NewShield_Medic>Things/ApparelNewShield/Medic/OnBack/OnBack</Hediff_Epona_NewShield_Medic>
+
+              </hediffGraphics>
+              <hiddenUnderApparelFor>
+              </hiddenUnderApparelFor>
+            </li>
+            <li>
+              <path>Things/Pawn/Addons/Blank</path>
+              <bodyPart>Torso</bodyPart>
+              <drawSize>1.2</drawSize>
+              <colorChannel>hediff</colorChannel>
+              <inFrontOfBody>true</inFrontOfBody>
+              <defaultOffset>Tail</defaultOffset>
+              <shaderType>Cutout</shaderType>
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <EponaBody>(-0.42,0.215)</EponaBody>
+                  </bodyTypes>
+                  <layerOffset>-0.266</layerOffset>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <EponaBody>(-0.0,0.52)</EponaBody>
+                  </bodyTypes>
+                  <layerOffset>0.305</layerOffset>
+                </north>
+                <east>
+
+                  <bodyTypes>
+                    <EponaBody>(-0.42,0.215)</EponaBody>
+                  </bodyTypes>
+                  <layerOffset>-1</layerOffset>
+                </east>
+                <west>
+
+                  <bodyTypes>
+                    <EponaBody>(-0.42,0.215)</EponaBody>
+                  </bodyTypes>
+                  <layerOffset>1</layerOffset>
+                </west>
+              </offsets>
+              <hediffGraphics>
+                <Hediff_Epona_NewShield_Light>Things/ApparelNewShield/Light/Equip/Equip</Hediff_Epona_NewShield_Light>
+                <Hediff_Epona_NewShield_Balistic>Things/ApparelNewShield/Balistic/Equip/Equip</Hediff_Epona_NewShield_Balistic>
+                <Hediff_Epona_NewShield_Medic>Things/ApparelNewShield/Medic/Equip/Equip</Hediff_Epona_NewShield_Medic>
+
+              </hediffGraphics>
+              <hiddenUnderApparelFor>
+              </hiddenUnderApparelFor>
+            </li>
             <li>
               <path>Things/Pawn/Addons/Blank</path>
               <bodyPart>Torso</bodyPart>
