@@ -72,6 +72,9 @@
 	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo"> 
 		<defName>Hediff_Epona_NewShield_Light</defName>
 		<label>방패</label>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped"></li>
+    </comps>
 	</HediffDef>
 	
 <ThingDef ParentName="ApparelMakeableBase">
@@ -142,6 +145,9 @@
 	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo"> 
 		<defName>Hediff_Epona_NewShield_Balistic</defName>
 		<label>방패</label>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped"></li>
+    </comps>
 	</HediffDef>
 	
 <ThingDef ParentName="ApparelMakeableBase">
@@ -213,6 +219,9 @@
 	<HediffDef ParentName="Epona_Hidden_Hediff_BaseTwo"> 
 		<defName>Hediff_Epona_NewShield_Medic</defName>
 		<label>방패</label>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped"></li>
+    </comps>
 	</HediffDef>
 	
 </Defs>
