@@ -30,7 +30,7 @@
   <DamageDef>
     <defName>SteamBomb_Cluster</defName>
     <label>Compressed Steam</label>
-    <workerClass>TorgueAnty.TorgueAnty_DamageWorker_AddInjury</workerClass>
+    <workerClass>PNTorgue.TorgueAnty_DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <isExplosive>true</isExplosive>
     <deathMessage>{0} has been crushed to death.</deathMessage>
@@ -135,12 +135,12 @@
   <ThingDef ParentName="BaseBullet">
     <defName>Epona_Weapon_Steamlance_Proj</defName>
     <label>grenade</label>
-    <thingClass>TorgueAnty.Projectile_Torgue_Rocket</thingClass>
+    <thingClass>PNTorgue.Projectile_Torgue_Rocket</thingClass>
     <graphicData>
       <texPath>Things/Projectile/SteamLaunchBullet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <projectile Class="TorgueAnty.TorgueProjectileProps">
+    <projectile Class="PNTorgue.TorgueProjectileProps">
       <damageDef>SteamBomb</damageDef>
       <damageAmountBase>17</damageAmountBase>
       <speed>25</speed>

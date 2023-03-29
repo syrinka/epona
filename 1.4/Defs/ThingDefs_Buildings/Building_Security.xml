@@ -267,7 +267,7 @@
   <DamageDef>
     <defName>SiegeBombCannon_Cluster</defName>
     <label>Bomb</label>
-    <workerClass>TorgueAnty.TorgueAnty_DamageWorker_AddInjury</workerClass>
+    <workerClass>PNTorgue.TorgueAnty_DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <isExplosive>true</isExplosive>
     <deathMessage>{0} has Shredded by Crystal</deathMessage>
@@ -299,8 +299,8 @@
       <drawSize>1.5</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <thingClass>TorgueAnty.Projectile_Torgue_Rocket</thingClass>
-    <projectile Class="TorgueAnty.TorgueProjectileProps">
+    <thingClass>PNTorgue.Projectile_Torgue_Rocket</thingClass>
+    <projectile Class="PNTorgue.TorgueProjectileProps">
       <damageDef>SiegeBombCannon_Main_Cluster</damageDef>
       <damageAmountBase>600</damageAmountBase>
       <speed>40</speed>
