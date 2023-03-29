@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<Epona_WearSetting.WearSettingDef Name="Epona_Steamarmor_Setting" Abstract="True">
+	<AutomataWearSetting.WearSettingDef Name="Epona_Steamarmor_Setting" Abstract="True">
 		<wearSetting>
 			<li>
 				<!--무기도 제한 할 수 있지만, 줍고 나서 조건 변환등이 있을때 떨구거나 하는건 불가능 -->
@@ -59,17 +59,17 @@
 				</boolString>-->
 			</li>
 		</wearSetting>
-	</Epona_WearSetting.WearSettingDef>
-	<Epona_WearSetting.WearSettingDef ParentName="Epona_Steamarmor_Setting">
+	</AutomataWearSetting.WearSettingDef>
+	<AutomataWearSetting.WearSettingDef ParentName="Epona_Steamarmor_Setting">
 		<defName>Epona_ThingDef_Epona</defName>
 		<targetRace>Alien_Epona</targetRace>
-	</Epona_WearSetting.WearSettingDef>
-	<Epona_WearSetting.WearSettingDef ParentName="Epona_Steamarmor_Setting">
+	</AutomataWearSetting.WearSettingDef>
+	<AutomataWearSetting.WearSettingDef ParentName="Epona_Steamarmor_Setting">
 		<defName>Epona_ThingDef_Destrier</defName>
 		<targetRace>Alien_Destrier</targetRace>
-	</Epona_WearSetting.WearSettingDef>
-	<Epona_WearSetting.WearSettingDef ParentName="Epona_Steamarmor_Setting">
+	</AutomataWearSetting.WearSettingDef>
+	<AutomataWearSetting.WearSettingDef ParentName="Epona_Steamarmor_Setting">
 		<defName>Epona_ThingDef_Unicorn</defName>
 		<targetRace>Alien_Unicorn</targetRace>
-	</Epona_WearSetting.WearSettingDef>
+	</AutomataWearSetting.WearSettingDef>
 </Defs>
