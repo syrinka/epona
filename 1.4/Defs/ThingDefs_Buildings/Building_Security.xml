@@ -254,7 +254,7 @@
     <defaultDamage>450</defaultDamage>
     <defaultStoppingPower>1</defaultStoppingPower>
     <defaultArmorPenetration>1.3</defaultArmorPenetration>
-    <buildingDamageFactor>25</buildingDamageFactor>
+    <buildingDamageFactor>10</buildingDamageFactor>
     <plantDamageFactor>2</plantDamageFactor>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
     <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
@@ -299,13 +299,16 @@
       <drawSize>1.5</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
+    <thingClass>TorgueAnty.Projectile_Torgue_Rocket</thingClass>
     <projectile Class="TorgueAnty.TorgueProjectileProps">
       <damageDef>SiegeBombCannon_Main_Cluster</damageDef>
-      <damageAmountBase>1200</damageAmountBase>
+      <damageAmountBase>600</damageAmountBase>
       <speed>40</speed>
-      <explosionRadius>25</explosionRadius>
+      <explosionRadius>3</explosionRadius>
       <stoppingPower>5</stoppingPower>
+      <subProjectile>Epona_Weapon_BuildingMonsMeg_Proj_Cluster</subProjectile>
+      <clusterCount>60</clusterCount>
+      <clusterRadius>40</clusterRadius>
       <armorPenetrationBase>1</armorPenetrationBase>
       <alwaysFreeIntercept>false</alwaysFreeIntercept>
       <flyOverhead>true</flyOverhead>
@@ -351,10 +354,10 @@
     <destroyOnDrop>true</destroyOnDrop>
     <statBases>
       <Mass>10</Mass>
-      <AccuracyTouch>0.5</AccuracyTouch>
-      <AccuracyShort>0.5</AccuracyShort>
-      <AccuracyMedium>0.5</AccuracyMedium>
-      <AccuracyLong>0.75</AccuracyLong>
+      <AccuracyTouch>0.1</AccuracyTouch>
+      <AccuracyShort>0.1</AccuracyShort>
+      <AccuracyMedium>0.1</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
       <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
